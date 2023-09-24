@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.container {
+    /* height: 100vh; */
+    zoom:1.25;
+}
+
+.tunerchip-block {
+    display: block;
+    position: absolute;
+    width: 55vh;
+    left: 8vh;
+    height: 35vh;
+    top: 10vh;
+    z-index: 100;
+}
+
+.neon-block {
+    display: none;
+    position: absolute;
+    width: 55vh;
+    left: 8vh;
+    height: 35vh;
+    top: 10vh;
+    z-index: 100;
+}
+
+.headlights-block {
+    display: none;
+    position: absolute;
+    width: 55vh;
+    left: 8vh;
+    height: 35vh;
+    top: 10vh;
+    z-index: 100;
+}
+
+.stancer-block {
+    display: none;
+    position: absolute;
+    width: 55vh;
+    left: 8vh;
+    height: 35vh;
+    top: 10vh;
+    z-index: 100;
+}
+
+.neon-software-color-pallete {
+    color: #fff;
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    top: 9vh;
+    left: 8vh;
+}
+
+.neon-software-color-pallete-presets {
+    color: #fff;
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    top: 15vh;
+    left: 8vh;
+}
+
+.headlights-software-color-pallete-presets {
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    top: 4vh;
+    left: 8vh;
+}
+
+.neon-software-color-pallete-color {
+    position: relative;
+    float: left;
+    height: 3vh;
+    width: 3vh;
+    text-align: center;
+    line-height: 3vh;
+    margin-bottom: 0.5vh;
+    margin-right: 0.5vh;
+    border-radius: 0.5vh;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.705);
+    transition: all 0.1s linear;
+}
+
+.neon-software-color-pallete-color:hover {
+    border-radius: 0.6vh;
+}
+
+.neon-software-color-pallete-color-current {
+    position: relative;
+    float: left;
+    height: 3vh;
+    width: 3vh;
+    text-align: center;
+    line-height: 3vh;
+    margin-bottom: 0.5vh;
+    margin-right: 0.5vh;
+    border-radius: 0.5vh;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.705);
+    transition: all 0.1s linear;
+}
+
+.neon-software-color-pallete-color-current:hover {
+    border-radius: 0.6vh;
+}
+
+.color-code {
+    width: 5vh;
+    height: 2vh;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(127, 119, 192);
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1vh;
+    letter-spacing: 0.1vh;
+    color: rgb(10, 10, 10);
+    outline: none;
+    transition: all 0.1s linear;
+}
+
+#color-r {
+    color: #EE7733;
+}
+
+#color-g {
+    color: #EE7733;
+}
+
+#color-b {
+    color: #EE7733;
+}
+
+
+.screen-frame {
+    position: absolute;
+    left: 1px;
+    top: 2.9vh;
+    margin: 0 auto;
+    pointer-events: none;
+    z-index: 200;
+    height: 66vh;
+}
+
+.tunerchip-header {
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(236, 0, 0, 0.5);
+}
+
+.tunerchip-software {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.521);
+    background-image: url('./bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    z-index: 10000;
+}
+.tunerchip-btn {
+    position: relative;
+    background-color: #200D3A;
+    height: 3vh;
+    margin-bottom: 2vh;
+    border-radius: 0.3vh;
+    transition: all 0.2s linear;
+    border: 0.5px solid #180200;
+    color: #fff;
+    background-image: linear-gradient(45deg, #ff0202 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+.tunerchip-btn:hover {
+    border-radius: 0.5vh;
+    background-color: #EE7733;
+
+}
+
+.tunerchip-btn > p {
+    text-align: center;
+    color: white;
+    font-size: 1vh;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    line-height: 3vh;
+}
+
+.tunerchip-software-buttons {
+    position: absolute;
+    height: 20vh;
+    width: 12vh;
+    right: 2.5vh;
+    top: 5.6vh;
+}
+
+.tunerchip-software-boost-slider {
+    position: absolute;
+    width: 30vh;
+    top: 4vh;
+    left: 8vh;
+}
+
+.neon-software-neon-slider {
+    position: absolute;
+    width: 30vh;
+    top: 4vh;
+    left: 8vh;
+}
+
+.tunerchip-software-acceleration-slider {
+    position: absolute;
+    width: 30vh;
+    top: 9vh;
+    left: 8vh;
+}
+
+
+.headlights-software-color-pallete-currentcolor {
+    color: #fff;
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    top: 23.5vh;
+    left: 8vh;
+}
+
+.tunerchip-software-gear-slider {
+    position: absolute;
+    width: 30vh;
+    top: 14vh;
+    left: 8vh;
+}
+
+.tunerchip-software-breaking-slider {
+    position: absolute;
+    width: 30vh;
+    top: 19vh;
+    left: 8vh;
+}
+
+.tunerchip-software-drivetrain-slider {
+    position: absolute;
+    width: 30vh;
+    top: 24vh;
+    left: 8vh;
+}
+
+#slider-titel {
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1.3vh;
+    letter-spacing: 0.15vh;
+    padding-left: 0.2vh;
+    padding-bottom: 1vh;
+}
+
+.neon-software-color-pallete > p {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.15vh;
+    padding-left: 0.2vh;
+    padding-bottom: 1vh;
+}
+
+.neon-software-color-pallete-presets > p {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.15vh;
+    padding-left: 0.2vh;
+    padding-bottom: 1vh;
+}
+
+.headlights-software-color-pallete-currentcolor > p {
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.15vh;
+    padding-left: 0.2vh;
+    padding-bottom: 1vh;
+}
+
+.headlights-software-color-pallete-presets > p {
+    font-family: 'Lato';
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4vh;
+    letter-spacing: 0.15vh;
+    padding-left: 0.2vh;
+    padding-bottom: 1vh;
+}
+
+
+#normalhigh {
+    font-size: 9px;
+    font-weight: lighter;
+    margin-left: 8px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1vh;
+    /* background: #da0000; */
+    background: #e6e5ea;
+    background-image:
+    linear-gradient(
+      to right, 
+      #4bc67d 30%, #f1c40f 45%, #e2211e 99%
+    );
+    outline: none;
+    opacity: 0.85;
+    border-radius: 10px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.7vh;
+    height: 1.7vh;
+    border-radius: 50%;
+    background: rgb(27, 21, 63);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 1.7vh;
+    height: 1.7vh;
+    background: rgb(44, 39, 78);
+    cursor: pointer;
+}
+
+.stancer-front-offset-slider {
+    position: absolute;
+    width: 30vh;
+    top: 4vh;
+    left: 8vh;
+}
+
+.stancer-front-rotation-slider {
+    position: absolute;
+    width: 30vh;
+    top: 9vh;
+    left: 8vh;
+}
+
+.stancer-rear-offset-slider {
+    position: absolute;
+    width: 30vh;
+    top: 14vh;
+    left: 8vh;
+}
+
+.stancer-rear-rotation-slider {
+    position: absolute;
+    width: 30vh;
+    top: 19vh;
+    left: 8vh;
+}

@@ -1,0 +1,17 @@
+.info-app {
+    display: none;
+    color: white;
+    font-size: 0.8vmin;
+    height: 100%;
+    width: 100%;
+    pointer-events: visible;
+    background-color: #222832;
+    
+}
+
+.licenses {
+    display: inline-flex; /* make element size relative to content */
+    align-items: center; /* vertical alignment of items */
+    line-height: 40px; /* vertically size by height, line-height or padding */
+    padding: 0px 10px;
+}

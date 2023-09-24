@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.garage-icon {
+    margin-top: .5vh;
+    width: 3.4vh;
+}
+
+.garage-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #212931;
+    overflow: hidden;
+}
+
+.garages {
+    position: relative;
+    top: 4%;
+    display: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: #212931;
+}
+
+
+#cars-list {
+    position: relative;
+    top: 3%;
+    width: 100%;
+
+    /* display: flex; */
+    justify-content: center;
+    
+}
+
+
+
+.car-shit {
+    margin-top: 1vh;
+    display: inline-block;
+    position: relative;
+    width: 93%;
+    left: 4%;
+    height: 6vh;
+    background-color: #2d4660;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    
+}
+
+.car-shit .block {
+    overflow: hidden;
+}
+  
+.car-shit.expanded .block {
+    overflow: visible;
+}
+
+
+.car-shit .profileicon {
+   position: absolute;
+   top: 1vh;
+   left: 5%;
+font-size: 40px;
+}
+
+.car-shit .p {
+    position: relative;
+    top: 2%;
+    left: 75%;
+    transform: translate(-50% , -50%);
+    font-size: 12px;
+ }
+
+ .car-shit.expanded {
+    height: 27vh;
+  }
+ #car-data {
+    position: relative;
+    left: 50%;
+    top: 28%;
+    width: 80%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-50% , -50%);
+ }
+
+
+ .searchgarage {
+    padding-bottom: 0.7vh;
+    width: 90%;
+    margin-left: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid #828892;
+    border-top: none; 
+    border-left: none; 
+    border-right: none; 
+    font-size: 13px; 
+    color: white; 
+    transition: 0.2s all; 
+    display: inline-block;
+}

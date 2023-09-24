@@ -1,0 +1,41 @@
+<style>
+    .scopecontainer{
+    /* The image used */
+    background-image: url("https://logicrp.com/sniper_scope.png");
+
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99;
+}
+</style>
+
+
+<div style="width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; display: flex; align-items: center; justify-content: center;">
+    <div id="whatever" style="display: none; border-radius: 100%; border: 1px solid black; width: 3.5px; height: 3.5px; background-color: #D3D3D3;"></div>
+</div> 
+
+<!-- Sniper Scope -->
+<div class="scopecontainer" style="display: none;"></div>
+<!-- End Sniper Scope -->
+
+<script>
+    window.addEventListener('message', (evt) => {
+        let ele = document.getElementById('whatever');
+        if (evt.data === 'xhairShow') {
+            ele.style.display = 'block';
+        } else {
+            ele.style.display = 'none';
+        }
+        if (evt.data === 'snipeshow') {
+            $(".scopecontainer").show();
+        } else {
+            $(".scopecontainer").hide();
+        }
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
