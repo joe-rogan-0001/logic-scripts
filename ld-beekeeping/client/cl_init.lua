@@ -1,0 +1,10 @@
+-- Citizen.CreateThread(function()
+--     for id, zone in ipairs(HiveZones) do
+--         exports["ld-polyzone"]:AddCircleZone("ld-beekeeping:bee_zone", zone[1], zone[2],{
+--             zoneEvents={"ld-beekeeping:trigger_zone"},
+--             data = {
+--                 id = id,
+--             },
+--         })
+--     end
+-- end)
