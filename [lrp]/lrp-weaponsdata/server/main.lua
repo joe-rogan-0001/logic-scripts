@@ -160,7 +160,7 @@ RegisterNetEvent("weapons:server:UpdateWeaponAmmo", function(CurrentWeaponData, 
         if Player.PlayerData.items[CurrentWeaponData.slot] then
             Player.PlayerData.items[CurrentWeaponData.slot].info.ammo = amount
         end
-        Player.Functions.SetInventory(Player.PlayerData.items, true)
+        --Player.Functions.SetInventory(Player.PlayerData.items, true)
     end
 end)
 
