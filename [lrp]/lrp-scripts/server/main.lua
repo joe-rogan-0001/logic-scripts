@@ -11,7 +11,7 @@ end)
 
 QBCore.Commands.Add("id", "Check Your ID #", {}, false, function(source, args)
     local src = source
-    TriggerClientEvent('QBCore:Notify', src,  "ID: "..src)
+    TriggerClientEvent('QBCore:Notify', src, "ID: " .. src)
 end)
 
 QBCore.Functions.CreateUseableItem("harness", function(source, item)
@@ -70,8 +70,8 @@ AddEventHandler("stopsign:server:additem", function()
     local src = source
     local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
 
-	xPlayer.Functions.AddItem("stopsign", 1, false)
-	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['stopsign'], "add")
+    xPlayer.Functions.AddItem("stopsign", 1, false)
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['stopsign'], "add")
 end)
 
 RegisterNetEvent("walkingmansign:server:additem")
@@ -79,8 +79,8 @@ AddEventHandler("walkingmansign:server:additem", function()
     local src = source
     local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
 
-	xPlayer.Functions.AddItem("walkingmansign", 1, false)
-	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['walkingmansign'], "add")
+    xPlayer.Functions.AddItem("walkingmansign", 1, false)
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['walkingmansign'], "add")
 end)
 
 RegisterNetEvent("dontblockintersectionsign:server:additem")
@@ -88,8 +88,8 @@ AddEventHandler("dontblockintersectionsign:server:additem", function()
     local src = source
     local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
 
-	xPlayer.Functions.AddItem("dontblockintersectionsign", 1, false)
-	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dontblockintersectionsign'], "add")
+    xPlayer.Functions.AddItem("dontblockintersectionsign", 1, false)
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dontblockintersectionsign'], "add")
 end)
 
 RegisterNetEvent("uturnsign:server:additem")
@@ -97,13 +97,32 @@ AddEventHandler("uturnsign:server:additem", function()
     local src = source
     local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
 
-	xPlayer.Functions.AddItem("uturnsign", 1, false)
-	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['uturnsign'], "add")
+    xPlayer.Functions.AddItem("uturnsign", 1, false)
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['uturnsign'], "add")
 end)
 
+-- TODO: Come back to this
 RegisterNetEvent('vehicle:flipit')
 AddEventHandler('vehicle:flipit', function()
     TriggerClientEvent('vehicle:flipit')
+end)
+
+RegisterNetEvent('consumables:server:addThirst', function(amount)
+    local Player = QBCore.Functions.GetPlayer(source)
+
+    if not Player then return end
+
+    Player.Functions.SetMetaData('thirst', amount)
+    TriggerClientEvent('hud:client:UpdateNeeds', source, Player.PlayerData.metadata.hunger, amount)
+end)
+
+RegisterNetEvent('consumables:server:addHunger', function(amount)
+    local Player = QBCore.Functions.GetPlayer(source)
+
+    if not Player then return end
+
+    Player.Functions.SetMetaData('hunger', amount)
+    TriggerClientEvent('hud:client:UpdateNeeds', source, amount, Player.PlayerData.metadata.thirst)
 end)
 
 AddEventHandler('chatMessage', function(source, name, msg)
@@ -113,30 +132,31 @@ AddEventHandler('chatMessage', function(source, name, msg)
     if msg == "/-playerFocus" or msg == "/+playerFocus" then
         return
     else
-        TriggerEvent("qb-log:server:CreateLog", "ooc", "Chat", "green", "**Player: **"..GetPlayerName(src) .. "\n**Message: **" .. msg)
+        TriggerEvent("qb-log:server:CreateLog", "ooc", "Chat", "green",
+            "**Player: **" .. GetPlayerName(src) .. "\n**Message: **" .. msg)
     end
 end)
 
 QBCore.Functions.CreateUseableItem("nightvisiongoggles", function(source)
     local player = QBCore.Functions.GetPlayer(source)
-        if player ~= nil then 
-            TriggerClientEvent("lrp-nightvision:toggle", source)
-        end 
+    if player ~= nil then
+        TriggerClientEvent("lrp-nightvision:toggle", source)
+    end
 end)
 
-QBCore.Functions.CreateUseableItem("id_card", function(source,item)
+QBCore.Functions.CreateUseableItem("id_card", function(source, item)
     local src = source
     local PlayerPed = GetPlayerPed(source)
     local PlayerCoords = GetEntityCoords(PlayerPed)
-    
+
     local data = {
-		['DOB'] = item.info.birthdate,
-		['Name'] = item.info.firstname,
-		['Surname'] = item.info.lastname,
-		['Sex'] = item.info.gender,
-		['Identifier'] = item.info.citizenid,
-		['pref'] = "sex"
-	}
+        ['DOB'] = item.info.birthdate,
+        ['Name'] = item.info.firstname,
+        ['Surname'] = item.info.lastname,
+        ['Sex'] = item.info.gender,
+        ['Identifier'] = item.info.citizenid,
+        ['pref'] = "sex"
+    }
 
     if data.Sex == 0 then
         data.pref = "Male"
@@ -145,7 +165,7 @@ QBCore.Functions.CreateUseableItem("id_card", function(source,item)
         data.Sex = "F"
         data.pref = "Female"
     end
-    
+
     for k, v in pairs(QBCore.Functions.GetPlayers()) do
         local TargetPed = GetPlayerPed(v)
         local dist = #(PlayerCoords - GetEntityCoords(TargetPed))

@@ -1,8 +1,0 @@
-- Changed all callbacks to server events.
-- Racing app is completed.
-- Fixed mouse click punching peoples. (bitti)
-- Animation repeats fixed when you crouch etc..
-- Call stucks are fixed.
-- Notification system remaked. (bitti)
-- Added racing dingle.
-- Added racer name system.

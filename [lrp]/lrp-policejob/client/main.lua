@@ -106,7 +106,7 @@ RegisterNetEvent('QBCore:Client:OnJobUpdate', function(JobInfo)
     TriggerServerEvent("police:server:UpdateBlips")
     if JobInfo.name == "police" then
         if PlayerJob.onduty then
-            TriggerServerEvent("QBCore:ToggleDuty")
+            --TriggerServerEvent("QBCore:ToggleDuty")
             onDuty = false
         end
     end

@@ -464,7 +464,7 @@ exports['lrp-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -9
 		options = {
 			{
             	type = "client",
-            	event = "Toggle:Duty",
+            	event = "qb-policejob:ToggleDuty",
 				icon = "fas fa-sign-in-alt",
 				label = "Duty Action",
 				job = "police",
@@ -473,10 +473,11 @@ exports['lrp-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -9
 		distance = 2.5
 })
 
-RegisterNetEvent('Toggle:Duty', function()
+RegisterNetEvent('qb-policejob:ToggleDuty', function()
+    print('run')
     onDuty = not onDuty
-    TriggerServerEvent("police:server:UpdateCurrentCops")
     TriggerServerEvent("QBCore:ToggleDuty")
+    TriggerServerEvent("police:server:UpdateCurrentCops")
     TriggerServerEvent("police:server:UpdateBlips")
 end)
 

@@ -103,21 +103,6 @@ end)
 
 
 
-RegisterNetEvent('QBCore:ToggleDuty', function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    Player=Player.PlayerData
-    local job = Player.job
-    if job.name == "police" or job.name == "ambulance" then -- job's name here
-        if job.onduty == false then
-            TriggerEvent("qb-shiftlog:jobchanged", currentjob, job, 1, src)
-        else
-            TriggerEvent("qb-shiftlog:jobchanged", currentjob, job, 0, src)  
-        end
-           
-    end
-    currentjob = job
-end)
 
 
 AddEventHandler("playerDropped", function(reason)
