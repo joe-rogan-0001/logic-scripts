@@ -28,7 +28,7 @@ Like so:
     local FirstStart = false
 ```
 
-4. Headover to your lrp-coree/server/commands.lua and find the follow command 'setjob'
+4. Headover to your lrp-core/server/commands.lua and find the follow command 'setjob'
 
 replace the commands with the code below:
 ```lua
@@ -100,7 +100,7 @@ It should now look like this
 
 ## Crypto Setup
 
-1. Head over to your lrp-coree/server/Player.lua
+1. Head over to your lrp-core/server/Player.lua
 2. Paste the below code into your metadata if you dont know what is metadata it looks something like this: PlayerData.metadata['inside']
 
 Code to be pasted

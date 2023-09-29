@@ -1,4 +1,5 @@
-local weapons = {
+--[[
+	local weapons = {
 	'WEAPON_KNIFE',
 	'WEAPON_NIGHTSTICK',
 	'WEAPON_BREAD',
@@ -333,6 +334,7 @@ function loadAnimDict(dict)
 		Wait(5)
 	end
 end
+]]--
 
 CreateThread(function()
 	while true do    

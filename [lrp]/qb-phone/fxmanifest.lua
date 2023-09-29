@@ -33,4 +33,4 @@ files {
 
 lua54 'yes'
 
-dependency 'lrp-target'
+dependency 'ox_target'

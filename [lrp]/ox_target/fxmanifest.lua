@@ -43,6 +43,6 @@ files {
 }
 
 provide 'qtarget'
-provide 'qb-target'
+provide 'lrp-target'
 
 dependency 'ox_lib'

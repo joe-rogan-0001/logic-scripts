@@ -3,6 +3,8 @@ local PlayerWeaponWounds = {}
 local QBCore = exports['lrp-core']:GetCoreObject()
 -- Events
 
+
+
 -- Compatibility with txAdmin Menu's heal options.
 -- This is an admin only server side event that will pass the target player id or -1.
 AddEventHandler('txAdmin:events:healedPlayer', function(eventData)
@@ -259,11 +261,40 @@ QBCore.Functions.CreateCallback('hospital:GetPlayerBleeding', function(source, c
 	end
 end)
 
+QBCore.Functions.CreateCallback('qb-medical:docOnline', function(source, cb)
+	local src = source
+	local Player = QBCore.Functions.GetPlayer(src)
+	local Players = QBCore.Functions.GetPlayers()
+	local doctor = 0
+	local canpay = false
+	if Player.PlayerData.money["cash"] >= Config.AIPrice then
+		canpay = true
+	else
+		if Player.PlayerData.money["bank"] >= Config.AIPrice then
+			canpay = true
+		end
+	end
+
+	for i=1, #Players, 1 do
+		local Player = QBCore.Functions.GetPlayer(Players[i])
+		if Player.PlayerData.job.name == 'ambulance' then
+			doctor = doctor + 1
+		end
+	end
+
+	cb(doctor, canpay)
+end)
+
 -- Commands
 
 QBCore.Commands.Add("911ems", "Contact EMS (Police not recieve your location)", {{name = "Message", help = "[Message]"}}, true, function(source, args)
     local desc = table.concat(args, " ")
     TriggerClientEvent('un-dispatch:ninecallems', source, desc)
+end)
+
+QBCore.Commands.Add("911h", 'Call AI EMS', {}, false, function(source)
+	local src = source
+	TriggerClientEvent("qb-medical:client:requestai", src)
 end)
 
 QBCore.Commands.Add("status", "Check A Players Health", {}, false, function(source, args)

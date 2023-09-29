@@ -1,15 +1,78 @@
 Config = {}
-Config.Rob = true -- Enables robbing AI cars at gunpoint
--- All chances are 0-1 <= so lower == less chance, higher == higher chance
-Config.HotwireChance = 0.1 -- Chance for successful hotwire or not
+
+-- NPC Vehicle Lock States
+Config.LockNPCDrivingCars = false -- Lock state for NPC cars being driven by NPCs [true = locked, false = unlocked]
+-- USED CODE TO SET TO 5%
+
+Config.LockNPCParkedCars = true -- Lock state for NPC parked cars [true = locked, false = unlocked]
+Config.UseKeyfob = false -- you can set this true if you dont need ui
+-- Lockpick Settings
 Config.RemoveLockpickNormal = 0.5 -- Chance to remove lockpick on fail
 Config.RemoveLockpickAdvanced = 0.2 -- Chance to remove advanced lockpick on fail
-Config.RobberyChance = 0.8 -- Chance to get ped keys or drive off
-Config.AlertCooldown = 10000 -- 10 seconds
-Config.PoliceAlertChance = 0.5 -- Chance of alerting police during the day
-Config.PoliceNightAlertChance = 0.25 -- Chance of alerting police at night (times:01-06)
+Config.LockPickDoorEvent = function() -- This function is called when a player attempts to lock pick a vehicle
+    local seconds = math.random(3,20)
+    local circles = math.random(3,5)
+    local success = exports['lrp-skill']:StartLockPickCircle(circles, seconds, success)
 
-Config.NoRobWeapons = {
+    LockpickFinishCallback(success)
+end
+
+-- Carjack Settings
+Config.CarJackEnable = true -- True allows for the ability to car jack peds.
+Config.CarjackingTime = 7500 -- How long it takes to carjack
+Config.DelayBetweenCarjackings = 10000 -- Time before you can carjack again
+Config.CarjackChance = {
+    ['2685387236'] = 0.0, -- melee
+    ['416676503'] = 0.5, -- handguns
+    ['-957766203'] = 0.75, -- SMG
+    ['860033945'] = 0.90, -- shotgun
+    ['970310034'] = 0.90, -- assault
+    ['1159398588'] = 0.99, -- LMG
+    ['3082541095'] = 0.99, -- sniper
+    ['2725924767'] = 0.99, -- heavy
+    ['1548507267'] = 0.0, -- throwable
+    ['4257178988'] = 0.0, -- misc
+}
+
+-- Hotwire Settings
+Config.HotwireChance = 0.5 -- Chance for successful hotwire or not
+Config.TimeBetweenHotwires = 5000 -- Time in ms between hotwire attempts
+Config.minHotwireTime = 20000 -- Minimum hotwire time in ms
+Config.maxHotwireTime = 40000 --  Maximum hotwire time in ms
+
+-- Police Alert Settings
+Config.AlertCooldown = 10000 -- 10 seconds
+Config.PoliceAlertChance = 0.75 -- Chance of alerting police during the day
+Config.PoliceNightAlertChance = 0.50 -- Chance of alerting police at night (times:01-06)
+
+-- Job Settings
+Config.SharedKeys = { -- Share keys amongst employees. Employees can lock/unlock any job-listed vehicle
+    ['police'] = { -- Job name
+        requireOnduty = false,
+        vehicles = {
+	    'police', -- Vehicle model
+	    'police2', -- Vehicle model
+	}
+    },
+
+    ['mechanic'] = {
+        requireOnduty = false,
+        vehicles = {
+            'towtruck',
+	}
+    }
+}
+
+-- These vehicles cannot be jacked
+Config.ImmuneVehicles = {
+    'stockade'
+}
+
+-- These vehicles will never lock
+Config.NoLockVehicles = {}
+
+-- These weapons cannot be used for carjacking
+Config.NoCarjackWeapons = {
     "WEAPON_UNARMED",
     "WEAPON_Knife",
     "WEAPON_Nightstick",

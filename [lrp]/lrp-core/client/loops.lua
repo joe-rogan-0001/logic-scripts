@@ -9,6 +9,7 @@ CreateThread(function()
     end
 end)
 
+--[[
 CreateThread(function()
     while true do
         if LocalPlayer.state.isLoggedIn then
@@ -22,3 +23,4 @@ CreateThread(function()
         Wait(QBCore.Config.StatusInterval)
     end
 end)
+]]--

@@ -178,7 +178,7 @@ Citizen.CreateThread(function()
 end)
 
 -- Check if ped has weapon in inventory --
-
+--[[
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(5000)
@@ -201,6 +201,7 @@ Citizen.CreateThread(function()
         end
     end
 end)
+]]--
 
 -- Max flags reached = ban, log, explosion & break --
 

@@ -12,6 +12,7 @@ client_scripts {
 	'client/laststand.lua',
 	'client/job.lua',
 	'client/dead.lua',
+	'client/cl_ai.lua'
 }
 
 server_script {

@@ -346,6 +346,15 @@ rootMenuConfig =  {
         end
     },
     {
+        id = "AIEMS",
+        displayName = "Call Local EMS",
+        icon = "#ems-dead",
+        functionName = "qb-medical:client:requestai",
+        enableMenu = function()
+            return (isDead)
+        end
+    },
+    {
         id = "GeneralDead",
         displayName = "Call Help",
         icon = "#ems-dead",
