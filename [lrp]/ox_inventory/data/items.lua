@@ -1,5 +1,5 @@
 return {
-	['testburger'] = {
+	['testburger']                 = {
 		label = 'Test Burger',
 		weight = 220,
 		degrade = 60,
@@ -52,7 +52,7 @@ return {
 		consume = 0.3
 	},
 
-	['bandage'] = {
+	['bandage']                    = {
 		label = 'Bandage',
 		weight = 115,
 		client = {
@@ -63,11 +63,11 @@ return {
 		}
 	},
 
-	['black_money'] = {
+	['black_money']                = {
 		label = 'Dirty Money',
 	},
 
-	['burger'] = {
+	['burger']                     = {
 		label = 'Burger',
 		weight = 220,
 		client = {
@@ -79,7 +79,7 @@ return {
 		},
 	},
 
-	['cola'] = {
+	['cola']                       = {
 		label = 'eCola',
 		weight = 350,
 		client = {
@@ -91,7 +91,7 @@ return {
 		}
 	},
 
-	['parachute'] = {
+	['parachute']                  = {
 		label = 'Parachute',
 		weight = 8000,
 		stack = false,
@@ -101,11 +101,11 @@ return {
 		}
 	},
 
-	['garbage'] = {
+	['garbage']                    = {
 		label = 'Garbage',
 	},
 
-	['paperbag'] = {
+	['paperbag']                   = {
 		label = 'Paper Bag',
 		weight = 1,
 		stack = false,
@@ -113,11 +113,11 @@ return {
 		consume = 0
 	},
 
-	['identification'] = {
+	['identification']             = {
 		label = 'Identification',
 	},
 
-	['panties'] = {
+	['panties']                    = {
 		label = 'Knickers',
 		weight = 10,
 		consume = 0,
@@ -129,12 +129,12 @@ return {
 		}
 	},
 
-	['lockpick'] = {
+	['lockpick']                   = {
 		label = 'Lockpick',
 		weight = 160,
 	},
 
-	['phone'] = {
+	['phone']                      = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
@@ -154,11 +154,11 @@ return {
 		}
 	},
 
-	['money'] = {
+	['money']                      = {
 		label = 'Money',
 	},
 
-	['mustard'] = {
+	['mustard']                    = {
 		label = 'Mustard',
 		weight = 500,
 		client = {
@@ -170,7 +170,7 @@ return {
 		}
 	},
 
-	['water'] = {
+	['water']                      = {
 		label = 'Water',
 		weight = 500,
 		client = {
@@ -183,14 +183,14 @@ return {
 		}
 	},
 
-	['radio'] = {
+	['radio']                      = {
 		label = 'Radio',
 		weight = 1000,
 		stack = false,
 		allowArmed = true
 	},
 
-	['armour'] = {
+	['armour']                     = {
 		label = 'Bulletproof Vest',
 		weight = 3000,
 		stack = false,
@@ -200,23 +200,23 @@ return {
 		}
 	},
 
-	['clothing'] = {
+	['clothing']                   = {
 		label = 'Clothing',
 		consume = 0,
 	},
 
-	['mastercard'] = {
+	['mastercard']                 = {
 		label = 'Mastercard',
 		stack = false,
 		weight = 10,
 	},
 
-	['scrapmetal'] = {
+	['scrapmetal']                 = {
 		label = 'Scrap Metal',
 		weight = 80,
 	},
 
-	["crack_baggy"] = {
+	["crack_baggy"]                = {
 		label = "Bag of Crack",
 		weight = 0,
 		stack = true,
@@ -227,7 +227,7 @@ return {
 		}
 	},
 
-	["milk"] = {
+	["milk"]                       = {
 		label = "Milk",
 		weight = 300,
 		stack = true,
@@ -238,7 +238,7 @@ return {
 		}
 	},
 
-	["casino_member"] = {
+	["casino_member"]              = {
 		label = "Casino Membership",
 		weight = 500,
 		stack = false,
@@ -249,7 +249,7 @@ return {
 		}
 	},
 
-	["plastic"] = {
+	["plastic"]                    = {
 		label = "Plastic",
 		weight = 500,
 		stack = true,
@@ -260,7 +260,7 @@ return {
 		}
 	},
 
-	["casino_goldchip"] = {
+	["casino_goldchip"]            = {
 		label = "Casino Chip",
 		weight = 0,
 		stack = true,
@@ -271,7 +271,7 @@ return {
 		}
 	},
 
-	["fishingkey"] = {
+	["fishingkey"]                 = {
 		label = "Corroded Key",
 		weight = 800,
 		stack = true,
@@ -282,7 +282,7 @@ return {
 		}
 	},
 
-	["orange"] = {
+	["orange"]                     = {
 		label = "Orange",
 		weight = 500,
 		stack = true,
@@ -293,7 +293,7 @@ return {
 		}
 	},
 
-	["methlab"] = {
+	["methlab"]                    = {
 		label = "Methlab Gear",
 		weight = 500,
 		stack = true,
@@ -304,7 +304,7 @@ return {
 		}
 	},
 
-	["vodka"] = {
+	["vodka"]                      = {
 		label = "Vodka",
 		weight = 500,
 		stack = true,
@@ -315,7 +315,7 @@ return {
 		}
 	},
 
-	["glock_extendedclip"] = {
+	["glock_extendedclip"]         = {
 		label = "Glock EXT Clip",
 		weight = 5000,
 		stack = true,
@@ -326,7 +326,7 @@ return {
 		}
 	},
 
-	["marijuana_phone"] = {
+	["marijuana_phone"]            = {
 		label = "Burner Phone",
 		weight = 0,
 		stack = true,
@@ -337,7 +337,7 @@ return {
 		}
 	},
 
-	["marijuana_crop_mid"] = {
+	["marijuana_crop_mid"]         = {
 		label = "Harvested Crop",
 		weight = 5500,
 		stack = true,
@@ -348,7 +348,7 @@ return {
 		}
 	},
 
-	["tunerlaptop"] = {
+	["tunerlaptop"]                = {
 		label = "Tunerchip",
 		weight = 2000,
 		stack = false,
@@ -359,7 +359,7 @@ return {
 		}
 	},
 
-	["table"] = {
+	["table"]                      = {
 		label = "Deployable table",
 		weight = 10000,
 		stack = true,
@@ -370,7 +370,7 @@ return {
 		}
 	},
 
-	["burger-toy1"] = {
+	["burger-toy1"]                = {
 		label = "Action Figure",
 		weight = 350,
 		stack = false,
@@ -381,7 +381,7 @@ return {
 		}
 	},
 
-	["boarskin"] = {
+	["boarskin"]                   = {
 		label = "Boar skin",
 		weight = 8000,
 		stack = true,
@@ -392,7 +392,7 @@ return {
 		}
 	},
 
-	["gelatine"] = {
+	["gelatine"]                   = {
 		label = "Gelatine",
 		weight = 100,
 		stack = true,
@@ -403,7 +403,7 @@ return {
 		}
 	},
 
-	["labkey"] = {
+	["labkey"]                     = {
 		label = "Key",
 		weight = 500,
 		stack = false,
@@ -414,7 +414,7 @@ return {
 		}
 	},
 
-	["tree_lumber"] = {
+	["tree_lumber"]                = {
 		label = "Lumber",
 		weight = 4500,
 		stack = true,
@@ -425,7 +425,7 @@ return {
 		}
 	},
 
-	["burger-toy2"] = {
+	["burger-toy2"]                = {
 		label = "Pink Teddy",
 		weight = 350,
 		stack = false,
@@ -436,7 +436,7 @@ return {
 		}
 	},
 
-	["huntingbait"] = {
+	["huntingbait"]                = {
 		label = "Hunting Bait",
 		weight = 2000,
 		stack = true,
@@ -447,7 +447,7 @@ return {
 		}
 	},
 
-	["water_bottle"] = {
+	["water_bottle"]               = {
 		label = "Bottle of Water",
 		weight = 500,
 		stack = true,
@@ -458,7 +458,7 @@ return {
 		}
 	},
 
-	["weed_white-widow"] = {
+	["weed_white-widow"]           = {
 		label = "White Widow 2g",
 		weight = 600,
 		stack = true,
@@ -469,7 +469,7 @@ return {
 		}
 	},
 
-	["casino_whitechip"] = {
+	["casino_whitechip"]           = {
 		label = "Casino Chip",
 		weight = 0,
 		stack = true,
@@ -480,7 +480,7 @@ return {
 		}
 	},
 
-	["rolls"] = {
+	["rolls"]                      = {
 		label = "Roll Of Small Notes",
 		weight = 100,
 		stack = true,
@@ -491,7 +491,7 @@ return {
 		}
 	},
 
-	["weed_ak47_cbd"] = {
+	["weed_ak47_cbd"]              = {
 		label = "CBD AK47 2g",
 		weight = 2,
 		stack = true,
@@ -502,7 +502,7 @@ return {
 		}
 	},
 
-	["laptop_red"] = {
+	["laptop_red"]                 = {
 		label = "Laptop",
 		weight = 2500,
 		stack = false,
@@ -513,7 +513,7 @@ return {
 		}
 	},
 
-	["gummybearmould"] = {
+	["gummybearmould"]             = {
 		label = "Gummy Bear Mould",
 		weight = 100,
 		stack = true,
@@ -524,7 +524,7 @@ return {
 		}
 	},
 
-	["visa"] = {
+	["visa"]                       = {
 		label = "Visa Card",
 		weight = 500,
 		stack = false,
@@ -535,7 +535,7 @@ return {
 		}
 	},
 
-	["gatecrack"] = {
+	["gatecrack"]                  = {
 		label = "Gatecrack",
 		weight = 0,
 		stack = true,
@@ -546,7 +546,7 @@ return {
 		}
 	},
 
-	["boarmeat"] = {
+	["boarmeat"]                   = {
 		label = "Boar Meat",
 		weight = 5000,
 		stack = true,
@@ -557,7 +557,7 @@ return {
 		}
 	},
 
-	["drill"] = {
+	["drill"]                      = {
 		label = "Drill",
 		weight = 20000,
 		stack = true,
@@ -568,7 +568,7 @@ return {
 		}
 	},
 
-	["rubber"] = {
+	["rubber"]                     = {
 		label = "Rubber",
 		weight = 500,
 		stack = true,
@@ -579,7 +579,7 @@ return {
 		}
 	},
 
-	["casino_bluechip"] = {
+	["casino_bluechip"]            = {
 		label = "Casino Chip",
 		weight = 0,
 		stack = true,
@@ -590,7 +590,7 @@ return {
 		}
 	},
 
-	["marijuana_scale"] = {
+	["marijuana_scale"]            = {
 		label = "Scale",
 		weight = 0,
 		stack = true,
@@ -601,7 +601,7 @@ return {
 		}
 	},
 
-	["gangcrate"] = {
+	["gangcrate"]                  = {
 		label = "Unknown Crate",
 		weight = 30000,
 		stack = false,
@@ -612,7 +612,7 @@ return {
 		}
 	},
 
-	["marijuana_rollingpapers"] = {
+	["marijuana_rollingpapers"]    = {
 		label = "Rolling Papers",
 		weight = 0,
 		stack = true,
@@ -623,7 +623,7 @@ return {
 		}
 	},
 
-	["fruit_pack"] = {
+	["fruit_pack"]                 = {
 		label = "Fruit Pack",
 		weight = 300,
 		stack = true,
@@ -634,7 +634,7 @@ return {
 		}
 	},
 
-	["gunpowder"] = {
+	["gunpowder"]                  = {
 		label = "Gun Powder",
 		weight = 250,
 		stack = true,
@@ -645,7 +645,7 @@ return {
 		}
 	},
 
-	["lawyerpass"] = {
+	["lawyerpass"]                 = {
 		label = "Lawyer Pass",
 		weight = 500,
 		stack = false,
@@ -656,7 +656,7 @@ return {
 		}
 	},
 
-	["casino_blackchip"] = {
+	["casino_blackchip"]           = {
 		label = "Casino Chip",
 		weight = 0,
 		stack = true,
@@ -667,7 +667,7 @@ return {
 		}
 	},
 
-	["remote_detinator"] = {
+	["remote_detinator"]           = {
 		label = "Remote Detinator",
 		weight = 5000,
 		stack = true,
@@ -678,7 +678,7 @@ return {
 		}
 	},
 
-	["cdl_license"] = {
+	["cdl_license"]                = {
 		label = "CDL License",
 		weight = 500,
 		stack = false,
@@ -689,7 +689,7 @@ return {
 		}
 	},
 
-	["advancedlockpick"] = {
+	["advancedlockpick"]           = {
 		label = "Advanced Lockpick",
 		weight = 500,
 		stack = true,
@@ -700,7 +700,7 @@ return {
 		}
 	},
 
-	["meth"] = {
+	["meth"]                       = {
 		label = "Meth",
 		weight = 500,
 		stack = true,
@@ -711,7 +711,7 @@ return {
 		}
 	},
 
-	["dp9_extendedclip"] = {
+	["dp9_extendedclip"]           = {
 		label = "DP9 EXT Clip",
 		weight = 5000,
 		stack = true,
@@ -722,7 +722,7 @@ return {
 		}
 	},
 
-	["stickynote"] = {
+	["stickynote"]                 = {
 		label = "Sticky note",
 		weight = 0,
 		stack = false,
@@ -733,7 +733,7 @@ return {
 		}
 	},
 
-	["boba"] = {
+	["boba"]                       = {
 		label = "Boba",
 		weight = 100,
 		stack = true,
@@ -744,7 +744,7 @@ return {
 		}
 	},
 
-	["fishingrod"] = {
+	["fishingrod"]                 = {
 		label = "Fishing Rod",
 		weight = 1250,
 		stack = true,
@@ -755,7 +755,7 @@ return {
 		}
 	},
 
-	["gummy_amnesia_cbd"] = {
+	["gummy_amnesia_cbd"]          = {
 		label = "CBD Amnesia Gummy",
 		weight = 4,
 		stack = true,
@@ -766,7 +766,7 @@ return {
 		}
 	},
 
-	["weed_skunk"] = {
+	["weed_skunk"]                 = {
 		label = "Skunk 2g",
 		weight = 600,
 		stack = true,
@@ -777,7 +777,7 @@ return {
 		}
 	},
 
-	["boombox"] = {
+	["boombox"]                    = {
 		label = "Boombox",
 		weight = 5000,
 		stack = false,
@@ -788,7 +788,7 @@ return {
 		}
 	},
 
-	["gummy_white-widow_cbd"] = {
+	["gummy_white-widow_cbd"]      = {
 		label = "CBD White-Widow Gummy",
 		weight = 4,
 		stack = true,
@@ -799,7 +799,7 @@ return {
 		}
 	},
 
-	["greendongle"] = {
+	["greendongle"]                = {
 		label = "Green Dongle",
 		weight = 10000,
 		stack = false,
@@ -810,7 +810,7 @@ return {
 		}
 	},
 
-	["heavyarmor"] = {
+	["heavyarmor"]                 = {
 		label = "Heavy Armour",
 		weight = 5000,
 		stack = true,
@@ -821,7 +821,7 @@ return {
 		}
 	},
 
-	["burger-potato"] = {
+	["burger-potato"]              = {
 		label = "Bag of Potatoes",
 		weight = 1500,
 		stack = true,
@@ -832,7 +832,7 @@ return {
 		}
 	},
 
-	["drug_grinder"] = {
+	["drug_grinder"]               = {
 		label = "Tobacco Grinder",
 		weight = 100,
 		stack = true,
@@ -843,7 +843,7 @@ return {
 		}
 	},
 
-	["anchor"] = {
+	["anchor"]                     = {
 		label = "Boat Anchor",
 		weight = 3500,
 		stack = true,
@@ -854,7 +854,7 @@ return {
 		}
 	},
 
-	["usb_red"] = {
+	["usb_red"]                    = {
 		label = "USB Drive",
 		weight = 1000,
 		stack = true,
@@ -865,7 +865,7 @@ return {
 		}
 	},
 
-	["explosive"] = {
+	["explosive"]                  = {
 		label = "Explosive",
 		weight = 5000,
 		stack = true,
@@ -876,7 +876,7 @@ return {
 		}
 	},
 
-	["lmg_barrel"] = {
+	["lmg_barrel"]                 = {
 		label = "LMG Barrel",
 		weight = 5000,
 		stack = true,
@@ -887,7 +887,7 @@ return {
 		}
 	},
 
-	["diamond_ring"] = {
+	["diamond_ring"]               = {
 		label = "Diamond Ring",
 		weight = 1500,
 		stack = true,
@@ -898,7 +898,7 @@ return {
 		}
 	},
 
-	["weed_amnesia"] = {
+	["weed_amnesia"]               = {
 		label = "Amnesia 2g",
 		weight = 600,
 		stack = true,
@@ -909,7 +909,7 @@ return {
 		}
 	},
 
-	["m4_holographic"] = {
+	["m4_holographic"]             = {
 		label = "M4 Holographic",
 		weight = 5000,
 		stack = true,
@@ -920,7 +920,7 @@ return {
 		}
 	},
 
-	["processed_coyotefur"] = {
+	["processed_coyotefur"]        = {
 		label = "Processed Coyote Fur",
 		weight = 6500,
 		stack = true,
@@ -931,7 +931,7 @@ return {
 		}
 	},
 
-	["burger-bun"] = {
+	["burger-bun"]                 = {
 		label = "Bun",
 		weight = 525,
 		stack = true,
@@ -942,7 +942,7 @@ return {
 		}
 	},
 
-	["heistlaptop3"] = {
+	["heistlaptop3"]               = {
 		label = "Green Laptop",
 		weight = 20000,
 		stack = false,
@@ -953,7 +953,7 @@ return {
 		}
 	},
 
-	["huntinglicense"] = {
+	["huntinglicense"]             = {
 		label = "Hunting License",
 		weight = 500,
 		stack = false,
@@ -964,7 +964,7 @@ return {
 		}
 	},
 
-	["marijuana_1oz_low"] = {
+	["marijuana_1oz_low"]          = {
 		label = "1oz marijuana",
 		weight = 2800,
 		stack = false,
@@ -975,7 +975,7 @@ return {
 		}
 	},
 
-	["meth_cured"] = {
+	["meth_cured"]                 = {
 		label = "Unlocked Crate",
 		weight = 30000,
 		stack = true,
@@ -986,7 +986,7 @@ return {
 		}
 	},
 
-	["burger-mshake"] = {
+	["burger-mshake"]              = {
 		label = "Milkshake",
 		weight = 1250,
 		stack = true,
@@ -997,7 +997,7 @@ return {
 		}
 	},
 
-	["package"] = {
+	["package"]                    = {
 		label = "Suspicious Package",
 		weight = 15000,
 		stack = false,
@@ -1008,7 +1008,7 @@ return {
 		}
 	},
 
-	["m4_ironsight"] = {
+	["m4_ironsight"]               = {
 		label = "M4 Iron Sight",
 		weight = 5000,
 		stack = true,
@@ -1019,7 +1019,7 @@ return {
 		}
 	},
 
-	["mincedmeat"] = {
+	["mincedmeat"]                 = {
 		label = "Minced Meat",
 		weight = 100,
 		stack = true,
@@ -1030,7 +1030,7 @@ return {
 		}
 	},
 
-	["limewater"] = {
+	["limewater"]                  = {
 		label = "Bottle of Limewater",
 		weight = 750,
 		stack = true,
@@ -1041,7 +1041,7 @@ return {
 		}
 	},
 
-	["boating_license"] = {
+	["boating_license"]            = {
 		label = "Boating License",
 		weight = 500,
 		stack = false,
@@ -1052,7 +1052,7 @@ return {
 		}
 	},
 
-	["cratekey"] = {
+	["cratekey"]                   = {
 		label = "Crate Key",
 		weight = 0,
 		stack = false,
@@ -1063,7 +1063,7 @@ return {
 		}
 	},
 
-	["weed_og-kush_seed"] = {
+	["weed_og-kush_seed"]          = {
 		label = "OGKush Seed",
 		weight = 0,
 		stack = true,
@@ -1074,7 +1074,7 @@ return {
 		}
 	},
 
-	["bowlingreceipt"] = {
+	["bowlingreceipt"]             = {
 		label = "Bowling Recepit",
 		weight = 150,
 		stack = true,
@@ -1085,7 +1085,7 @@ return {
 		}
 	},
 
-	["ironoxide"] = {
+	["ironoxide"]                  = {
 		label = "Iron Powder",
 		weight = 500,
 		stack = true,
@@ -1096,7 +1096,7 @@ return {
 		}
 	},
 
-	["cookedchicken"] = {
+	["cookedchicken"]              = {
 		label = "Cooked Chicken",
 		weight = 100,
 		stack = true,
@@ -1107,7 +1107,7 @@ return {
 		}
 	},
 
-	["glock_defaultclip"] = {
+	["glock_defaultclip"]          = {
 		label = "Glock Clip",
 		weight = 5000,
 		stack = true,
@@ -1118,7 +1118,7 @@ return {
 		}
 	},
 
-	["burger-torpedo"] = {
+	["burger-torpedo"]             = {
 		label = "Torpedo",
 		weight = 3100,
 		stack = true,
@@ -1129,7 +1129,7 @@ return {
 		}
 	},
 
-	["burger-meatfree"] = {
+	["burger-meatfree"]            = {
 		label = "MeatFree",
 		weight = 1250,
 		stack = true,
@@ -1140,7 +1140,7 @@ return {
 		}
 	},
 
-	["rawhoney"] = {
+	["rawhoney"]                   = {
 		label = "Raw Honey",
 		weight = 100,
 		stack = true,
@@ -1151,7 +1151,7 @@ return {
 		}
 	},
 
-	["weed_og-kush"] = {
+	["weed_og-kush"]               = {
 		label = "OGKush 2g",
 		weight = 600,
 		stack = true,
@@ -1162,7 +1162,7 @@ return {
 		}
 	},
 
-	["emp_cartilage"] = {
+	["emp_cartilage"]              = {
 		label = "EMP Cartridge",
 		weight = 1000,
 		stack = true,
@@ -1173,7 +1173,7 @@ return {
 		}
 	},
 
-	["thermitec"] = {
+	["thermitec"]                  = {
 		label = "Thermite Charge",
 		weight = 1000,
 		stack = true,
@@ -1184,7 +1184,7 @@ return {
 		}
 	},
 
-	["marijuana_1oz_high"] = {
+	["marijuana_1oz_high"]         = {
 		label = "1oz marijuana",
 		weight = 2800,
 		stack = false,
@@ -1195,7 +1195,7 @@ return {
 		}
 	},
 
-	["fishingloot"] = {
+	["fishingloot"]                = {
 		label = "Metal Box",
 		weight = 1500,
 		stack = true,
@@ -1206,7 +1206,7 @@ return {
 		}
 	},
 
-	["marijuana_3.5_high"] = {
+	["marijuana_3.5_high"]         = {
 		label = "3.5g marijuana",
 		weight = 2800,
 		stack = false,
@@ -1217,7 +1217,7 @@ return {
 		}
 	},
 
-	["mackerel"] = {
+	["mackerel"]                   = {
 		label = "Mackerel",
 		weight = 3500,
 		stack = false,
@@ -1228,7 +1228,7 @@ return {
 		}
 	},
 
-	["killerwhale"] = {
+	["killerwhale"]                = {
 		label = "Whale",
 		weight = 15000,
 		stack = false,
@@ -1239,7 +1239,7 @@ return {
 		}
 	},
 
-	["friednoodles"] = {
+	["friednoodles"]               = {
 		label = "Fried Noodles",
 		weight = 100,
 		stack = true,
@@ -1253,7 +1253,7 @@ return {
 		}
 	},
 
-	["wood_plank"] = {
+	["wood_plank"]                 = {
 		label = "Wood Plank",
 		weight = 10000,
 		stack = true,
@@ -1264,7 +1264,7 @@ return {
 		}
 	},
 
-	["weed_ak47_cbd_crop"] = {
+	["weed_ak47_cbd_crop"]         = {
 		label = "CBD AK 47 Crop",
 		weight = 1200,
 		stack = true,
@@ -1275,7 +1275,7 @@ return {
 		}
 	},
 
-	["huntingknife"] = {
+	["huntingknife"]               = {
 		label = "Hunting Knife",
 		weight = 2000,
 		stack = false,
@@ -1286,7 +1286,7 @@ return {
 		}
 	},
 
-	["deermeat"] = {
+	["deermeat"]                   = {
 		label = "Deer Meat",
 		weight = 5000,
 		stack = true,
@@ -1297,7 +1297,7 @@ return {
 		}
 	},
 
-	["rolex"] = {
+	["rolex"]                      = {
 		label = "Golden Watch",
 		weight = 1500,
 		stack = true,
@@ -1308,7 +1308,7 @@ return {
 		}
 	},
 
-	["security_card_01"] = {
+	["security_card_01"]           = {
 		label = "Security Card A",
 		weight = 500,
 		stack = true,
@@ -1319,7 +1319,7 @@ return {
 		}
 	},
 
-	["marijuana_joint3g"] = {
+	["marijuana_joint3g"]          = {
 		label = "Joint",
 		weight = 500,
 		stack = true,
@@ -1330,7 +1330,7 @@ return {
 		}
 	},
 
-	["campfire"] = {
+	["campfire"]                   = {
 		label = "Campfire",
 		weight = 1500,
 		stack = true,
@@ -1341,7 +1341,7 @@ return {
 		}
 	},
 
-	["burger-softdrink"] = {
+	["burger-softdrink"]           = {
 		label = "Soft Drink",
 		weight = 1250,
 		stack = true,
@@ -1352,7 +1352,7 @@ return {
 		}
 	},
 
-	["weed_skunk_cbd_crop"] = {
+	["weed_skunk_cbd_crop"]        = {
 		label = "CBD Skunk Crop",
 		weight = 1200,
 		stack = true,
@@ -1363,7 +1363,7 @@ return {
 		}
 	},
 
-	["burger-moneyshot"] = {
+	["burger-moneyshot"]           = {
 		label = "Moneyshot",
 		weight = 3000,
 		stack = true,
@@ -1374,7 +1374,7 @@ return {
 		}
 	},
 
-	["charcoal"] = {
+	["charcoal"]                   = {
 		label = "Charcoal",
 		weight = 500,
 		stack = true,
@@ -1385,7 +1385,7 @@ return {
 		}
 	},
 
-	["burger-meat"] = {
+	["burger-meat"]                = {
 		label = "Cooked Patty",
 		weight = 525,
 		stack = true,
@@ -1396,7 +1396,7 @@ return {
 		}
 	},
 
-	["fishbait"] = {
+	["fishbait"]                   = {
 		label = "Fish Bait",
 		weight = 500,
 		stack = true,
@@ -1407,7 +1407,7 @@ return {
 		}
 	},
 
-	["box"] = {
+	["box"]                        = {
 		label = "Box",
 		weight = 500,
 		stack = true,
@@ -1418,7 +1418,7 @@ return {
 		}
 	},
 
-	["coke_brick"] = {
+	["coke_brick"]                 = {
 		label = "Coke Brick",
 		weight = 10000,
 		stack = false,
@@ -1429,7 +1429,7 @@ return {
 		}
 	},
 
-	["marijuana_seeds"] = {
+	["marijuana_seeds"]            = {
 		label = "Marijuana Seeds",
 		weight = 500,
 		stack = true,
@@ -1440,7 +1440,7 @@ return {
 		}
 	},
 
-	["burger-sodasyrup"] = {
+	["burger-sodasyrup"]           = {
 		label = "Soda Syrup",
 		weight = 525,
 		stack = true,
@@ -1451,7 +1451,7 @@ return {
 		}
 	},
 
-	["cement"] = {
+	["cement"]                     = {
 		label = "Cement",
 		weight = 2000,
 		stack = true,
@@ -1462,7 +1462,7 @@ return {
 		}
 	},
 
-	["driver_license"] = {
+	["driver_license"]             = {
 		label = "Drivers License",
 		weight = 500,
 		stack = false,
@@ -1473,7 +1473,7 @@ return {
 		}
 	},
 
-	["hydratedlime"] = {
+	["hydratedlime"]               = {
 		label = "Hydrated Lime",
 		weight = 2000,
 		stack = true,
@@ -1484,7 +1484,7 @@ return {
 		}
 	},
 
-	["armor"] = {
+	["armor"]                      = {
 		label = "Armour",
 		weight = 5000,
 		stack = true,
@@ -1495,7 +1495,7 @@ return {
 		}
 	},
 
-	["advancedrepairkit"] = {
+	["advancedrepairkit"]          = {
 		label = "Advanced Repairkit",
 		weight = 4000,
 		stack = true,
@@ -1506,7 +1506,7 @@ return {
 		}
 	},
 
-	["sharktiger"] = {
+	["sharktiger"]                 = {
 		label = "Shark",
 		weight = 8000,
 		stack = false,
@@ -1517,7 +1517,7 @@ return {
 		}
 	},
 
-	["m4_flashlight"] = {
+	["m4_flashlight"]              = {
 		label = "M4 Flashlight",
 		weight = 5000,
 		stack = true,
@@ -1528,7 +1528,7 @@ return {
 		}
 	},
 
-	["ifak"] = {
+	["ifak"]                       = {
 		label = "IFAK",
 		weight = 1000,
 		stack = true,
@@ -1539,7 +1539,7 @@ return {
 		}
 	},
 
-	["coffee"] = {
+	["coffee"]                     = {
 		label = "Coffee",
 		weight = 600,
 		stack = true,
@@ -1550,7 +1550,7 @@ return {
 		}
 	},
 
-	["weed_purple-haze"] = {
+	["weed_purple-haze"]           = {
 		label = "Purple Haze 2g",
 		weight = 600,
 		stack = true,
@@ -1561,7 +1561,7 @@ return {
 		}
 	},
 
-	["noodles"] = {
+	["noodles"]                    = {
 		label = "Instant Noodles",
 		weight = 100,
 		stack = true,
@@ -1572,7 +1572,7 @@ return {
 		}
 	},
 
-	["id_card"] = {
+	["id_card"]                    = {
 		label = "ID Card",
 		weight = 500,
 		stack = false,
@@ -1583,7 +1583,7 @@ return {
 		}
 	},
 
-	["grape"] = {
+	["grape"]                      = {
 		label = "Grape",
 		weight = 500,
 		stack = true,
@@ -1594,7 +1594,7 @@ return {
 		}
 	},
 
-	["10kgoldchain"] = {
+	["10kgoldchain"]               = {
 		label = "10k Gold Chain",
 		weight = 2000,
 		stack = true,
@@ -1605,7 +1605,7 @@ return {
 		}
 	},
 
-	["firstaid"] = {
+	["firstaid"]                   = {
 		label = "First Aid",
 		weight = 2500,
 		stack = true,
@@ -1616,7 +1616,7 @@ return {
 		}
 	},
 
-	["weed_ak47_seed"] = {
+	["weed_ak47_seed"]             = {
 		label = "AK47 Seed",
 		weight = 0,
 		stack = true,
@@ -1627,7 +1627,7 @@ return {
 		}
 	},
 
-	["firework3"] = {
+	["firework3"]                  = {
 		label = "WipeOut",
 		weight = 10000,
 		stack = true,
@@ -1638,7 +1638,7 @@ return {
 		}
 	},
 
-	["weed_white-widow_cbd_crop"] = {
+	["weed_white-widow_cbd_crop"]  = {
 		label = "CBD White Widow Crop",
 		weight = 1200,
 		stack = true,
@@ -1649,7 +1649,7 @@ return {
 		}
 	},
 
-	["washedstone"] = {
+	["washedstone"]                = {
 		label = "Washed Stone",
 		weight = 2500,
 		stack = true,
@@ -1660,7 +1660,7 @@ return {
 		}
 	},
 
-	["markedbills"] = {
+	["markedbills"]                = {
 		label = "Marked Money",
 		weight = 10000,
 		stack = false,
@@ -1671,7 +1671,7 @@ return {
 		}
 	},
 
-	["pinger"] = {
+	["pinger"]                     = {
 		label = "Pinger",
 		weight = 10000,
 		stack = true,
@@ -1682,7 +1682,7 @@ return {
 		}
 	},
 
-	["radioscanner"] = {
+	["radioscanner"]               = {
 		label = "Radio Scanner",
 		weight = 10000,
 		stack = true,
@@ -1693,7 +1693,7 @@ return {
 		}
 	},
 
-	["m4bp"] = {
+	["m4bp"]                       = {
 		label = "M4 BluePrint",
 		weight = 0,
 		stack = true,
@@ -1704,7 +1704,7 @@ return {
 		}
 	},
 
-	["lithium"] = {
+	["lithium"]                    = {
 		label = "Lithium",
 		weight = 500,
 		stack = true,
@@ -1715,7 +1715,7 @@ return {
 		}
 	},
 
-	["tent"] = {
+	["tent"]                       = {
 		label = "Deployable tent",
 		weight = 2000,
 		stack = true,
@@ -1726,7 +1726,7 @@ return {
 		}
 	},
 
-	["saltandpepperchicken"] = {
+	["saltandpepperchicken"]       = {
 		label = "S & P Chicken",
 		weight = 500,
 		stack = true,
@@ -1740,7 +1740,7 @@ return {
 		}
 	},
 
-	["marijuana_crop_low"] = {
+	["marijuana_crop_low"]         = {
 		label = "Harvested Crop",
 		weight = 5500,
 		stack = true,
@@ -1751,7 +1751,7 @@ return {
 		}
 	},
 
-	["tree_bark"] = {
+	["tree_bark"]                  = {
 		label = "Tree Bark",
 		weight = 1200,
 		stack = true,
@@ -1762,7 +1762,7 @@ return {
 		}
 	},
 
-	["bass"] = {
+	["bass"]                       = {
 		label = "Bass",
 		weight = 2250,
 		stack = false,
@@ -1773,7 +1773,7 @@ return {
 		}
 	},
 
-	["harness"] = {
+	["harness"]                    = {
 		label = "Race Harness",
 		weight = 10000,
 		stack = false,
@@ -1784,7 +1784,7 @@ return {
 		}
 	},
 
-	["casino_redchip"] = {
+	["casino_redchip"]             = {
 		label = "Casino Chip",
 		weight = 0,
 		stack = true,
@@ -1795,7 +1795,7 @@ return {
 		}
 	},
 
-	["firework4"] = {
+	["firework4"]                  = {
 		label = "Weeping Willow",
 		weight = 10000,
 		stack = true,
@@ -1806,7 +1806,7 @@ return {
 		}
 	},
 
-	["weed_brick"] = {
+	["weed_brick"]                 = {
 		label = "Weed Brick",
 		weight = 10000,
 		stack = true,
@@ -1817,7 +1817,7 @@ return {
 		}
 	},
 
-	["marijuana_water"] = {
+	["marijuana_water"]            = {
 		label = "Plant Water",
 		weight = 0,
 		stack = true,
@@ -1828,7 +1828,7 @@ return {
 		}
 	},
 
-	["recvoucher"] = {
+	["recvoucher"]                 = {
 		label = "Recycling Voucher",
 		weight = 200,
 		stack = true,
@@ -1839,7 +1839,7 @@ return {
 		}
 	},
 
-	["coke"] = {
+	["coke"]                       = {
 		label = "Coke Powder",
 		weight = 100,
 		stack = true,
@@ -1850,7 +1850,7 @@ return {
 		}
 	},
 
-	["metalscrap"] = {
+	["metalscrap"]                 = {
 		label = "Metal Scrap",
 		weight = 500,
 		stack = true,
@@ -1861,7 +1861,7 @@ return {
 		}
 	},
 
-	["weed_skunk_seed"] = {
+	["weed_skunk_seed"]            = {
 		label = "Skunk Seed",
 		weight = 0,
 		stack = true,
@@ -1872,7 +1872,7 @@ return {
 		}
 	},
 
-	["weaponlicense"] = {
+	["weaponlicense"]              = {
 		label = "Weapon License",
 		weight = 500,
 		stack = false,
@@ -1883,7 +1883,7 @@ return {
 		}
 	},
 
-	["drug_shears"] = {
+	["drug_shears"]                = {
 		label = "Trimming Shears",
 		weight = 200,
 		stack = true,
@@ -1894,7 +1894,7 @@ return {
 		}
 	},
 
-	["weed_bag"] = {
+	["weed_bag"]                   = {
 		label = "Weed Bag",
 		weight = 350,
 		stack = true,
@@ -1905,7 +1905,7 @@ return {
 		}
 	},
 
-	["barrel"] = {
+	["barrel"]                     = {
 		label = "Barrel",
 		weight = 3000,
 		stack = true,
@@ -1916,7 +1916,7 @@ return {
 		}
 	},
 
-	["laptop"] = {
+	["laptop"]                     = {
 		label = "Laptop",
 		weight = 4000,
 		stack = true,
@@ -1927,7 +1927,7 @@ return {
 		}
 	},
 
-	["firework1"] = {
+	["firework1"]                  = {
 		label = "2Brothers",
 		weight = 10000,
 		stack = true,
@@ -1938,7 +1938,7 @@ return {
 		}
 	},
 
-	["weed_ak47"] = {
+	["weed_ak47"]                  = {
 		label = "AK47 2g",
 		weight = 600,
 		stack = true,
@@ -1949,7 +1949,7 @@ return {
 		}
 	},
 
-	["pestle"] = {
+	["pestle"]                     = {
 		label = "Pestle",
 		weight = 900,
 		stack = true,
@@ -1960,7 +1960,7 @@ return {
 		}
 	},
 
-	["bowlingball"] = {
+	["bowlingball"]                = {
 		label = "Bowling Ball",
 		weight = 150,
 		stack = true,
@@ -1971,7 +1971,7 @@ return {
 		}
 	},
 
-	["pdarmor"] = {
+	["pdarmor"]                    = {
 		label = "Police Armour",
 		weight = 5000,
 		stack = true,
@@ -1982,7 +1982,7 @@ return {
 		}
 	},
 
-	["rollingpapers"] = {
+	["rollingpapers"]              = {
 		label = "Rolling Papers",
 		weight = 50,
 		stack = true,
@@ -1993,7 +1993,7 @@ return {
 		}
 	},
 
-	["kurkakola"] = {
+	["kurkakola"]                  = {
 		label = "Cola",
 		weight = 500,
 		stack = true,
@@ -2004,7 +2004,7 @@ return {
 		}
 	},
 
-	["ramen"] = {
+	["ramen"]                      = {
 		label = "Ramen Noodles",
 		weight = 100,
 		stack = true,
@@ -2015,7 +2015,7 @@ return {
 		}
 	},
 
-	["handcuffs"] = {
+	["handcuffs"]                  = {
 		label = "Handcuffs",
 		weight = 500,
 		stack = true,
@@ -2026,7 +2026,7 @@ return {
 		}
 	},
 
-	["weed_amnesia_cbd_joint"] = {
+	["weed_amnesia_cbd_joint"]     = {
 		label = "CBD Amnesia Joint",
 		weight = 1,
 		stack = true,
@@ -2037,7 +2037,7 @@ return {
 		}
 	},
 
-	["iphone"] = {
+	["iphone"]                     = {
 		label = "iPhone",
 		weight = 10000,
 		stack = true,
@@ -2048,7 +2048,7 @@ return {
 		}
 	},
 
-	["burger-murdermeal"] = {
+	["burger-murdermeal"]          = {
 		label = "Murder Meal",
 		weight = 325,
 		stack = true,
@@ -2059,7 +2059,7 @@ return {
 		}
 	},
 
-	["snikkel_candy"] = {
+	["snikkel_candy"]              = {
 		label = "Snikkel",
 		weight = 500,
 		stack = true,
@@ -2070,7 +2070,7 @@ return {
 		}
 	},
 
-	["cannabis"] = {
+	["cannabis"]                   = {
 		label = "Weed",
 		weight = 80,
 		stack = true,
@@ -2081,7 +2081,7 @@ return {
 		}
 	},
 
-	["lowervaultcodes"] = {
+	["lowervaultcodes"]            = {
 		label = "Access Codes",
 		weight = 0,
 		stack = false,
@@ -2092,7 +2092,7 @@ return {
 		}
 	},
 
-	["weed_amnesia_seed"] = {
+	["weed_amnesia_seed"]          = {
 		label = "Amnesia Seed",
 		weight = 0,
 		stack = true,
@@ -2103,7 +2103,7 @@ return {
 		}
 	},
 
-	["dendrogyra_coral"] = {
+	["dendrogyra_coral"]           = {
 		label = "Dendrogyra",
 		weight = 10000,
 		stack = true,
@@ -2114,7 +2114,7 @@ return {
 		}
 	},
 
-	["printerdocument"] = {
+	["printerdocument"]            = {
 		label = "Document",
 		weight = 500,
 		stack = false,
@@ -2125,7 +2125,7 @@ return {
 		}
 	},
 
-	["usb_green"] = {
+	["usb_green"]                  = {
 		label = "USB Drive",
 		weight = 1000,
 		stack = true,
@@ -2136,7 +2136,7 @@ return {
 		}
 	},
 
-	["walkstick"] = {
+	["walkstick"]                  = {
 		label = "Walking Stick",
 		weight = 10000,
 		stack = true,
@@ -2147,7 +2147,7 @@ return {
 		}
 	},
 
-	["fishtacklebox"] = {
+	["fishtacklebox"]              = {
 		label = "Tackle Box",
 		weight = 11000,
 		stack = true,
@@ -2158,7 +2158,7 @@ return {
 		}
 	},
 
-	["marijuana_trowel"] = {
+	["marijuana_trowel"]           = {
 		label = "Trowel",
 		weight = 0,
 		stack = true,
@@ -2169,7 +2169,7 @@ return {
 		}
 	},
 
-	["strawberry"] = {
+	["strawberry"]                 = {
 		label = "Strawberry",
 		weight = 100,
 		stack = true,
@@ -2180,7 +2180,7 @@ return {
 		}
 	},
 
-	["marijuana_3.5_mid"] = {
+	["marijuana_3.5_mid"]          = {
 		label = "3.5g marijuana",
 		weight = 2800,
 		stack = false,
@@ -2191,7 +2191,7 @@ return {
 		}
 	},
 
-	["marijuana_nutrition"] = {
+	["marijuana_nutrition"]        = {
 		label = "Plant Fertilizer",
 		weight = 0,
 		stack = true,
@@ -2202,7 +2202,7 @@ return {
 		}
 	},
 
-	["grapejuice"] = {
+	["grapejuice"]                 = {
 		label = "Grape Juice",
 		weight = 600,
 		stack = true,
@@ -2213,7 +2213,7 @@ return {
 		}
 	},
 
-	["laptop_blue"] = {
+	["laptop_blue"]                = {
 		label = "Laptop",
 		weight = 2500,
 		stack = false,
@@ -2224,18 +2224,19 @@ return {
 		}
 	},
 
-	["electronickit"] = {
+	["electronickit"]              = {
 		label = "Electronic Kit",
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "If you've always wanted to build a robot you can maybe start here. Maybe you'll be the new Elon Musk?",
+		description =
+		"If you've always wanted to build a robot you can maybe start here. Maybe you'll be the new Elon Musk?",
 		client = {
 			image = "electronickit.png",
 		}
 	},
 
-	["weed_ak47_cbd_joint"] = {
+	["weed_ak47_cbd_joint"]        = {
 		label = "CBD AK 47 Joint",
 		weight = 1,
 		stack = true,
@@ -2246,7 +2247,7 @@ return {
 		}
 	},
 
-	["laptop_gold"] = {
+	["laptop_gold"]                = {
 		label = "Laptop",
 		weight = 2500,
 		stack = false,
@@ -2257,7 +2258,7 @@ return {
 		}
 	},
 
-	["fishinglicense"] = {
+	["fishinglicense"]             = {
 		label = "Fishing License",
 		weight = 500,
 		stack = false,
@@ -2268,7 +2269,7 @@ return {
 		}
 	},
 
-	["deerskin"] = {
+	["deerskin"]                   = {
 		label = "Deer Pelt",
 		weight = 7500,
 		stack = true,
@@ -2279,7 +2280,7 @@ return {
 		}
 	},
 
-	["empty_evidence_bag"] = {
+	["empty_evidence_bag"]         = {
 		label = "Empty Evidence Bag",
 		weight = 1000,
 		stack = true,
@@ -2290,7 +2291,7 @@ return {
 		}
 	},
 
-	["corn_packet"] = {
+	["corn_packet"]                = {
 		label = "Cone Packet",
 		weight = 500,
 		stack = true,
@@ -2301,7 +2302,7 @@ return {
 		}
 	},
 
-	["weed_nutrition"] = {
+	["weed_nutrition"]             = {
 		label = "Plant Fertilizer",
 		weight = 2000,
 		stack = true,
@@ -2312,7 +2313,7 @@ return {
 		}
 	},
 
-	["weed_white-widow_cbd"] = {
+	["weed_white-widow_cbd"]       = {
 		label = "CBD White Widow 2g",
 		weight = 2,
 		stack = true,
@@ -2323,7 +2324,7 @@ return {
 		}
 	},
 
-	["coyotemeat"] = {
+	["coyotemeat"]                 = {
 		label = "Coyote Meat",
 		weight = 4000,
 		stack = true,
@@ -2334,7 +2335,7 @@ return {
 		}
 	},
 
-	["gummy_skunk_cbd"] = {
+	["gummy_skunk_cbd"]            = {
 		label = "CBD Skunk Gummy",
 		weight = 4,
 		stack = true,
@@ -2345,7 +2346,7 @@ return {
 		}
 	},
 
-	["sugar"] = {
+	["sugar"]                      = {
 		label = "Sugar",
 		weight = 100,
 		stack = true,
@@ -2356,7 +2357,7 @@ return {
 		}
 	},
 
-	["marijuana_joint"] = {
+	["marijuana_joint"]            = {
 		label = "Joint",
 		weight = 500,
 		stack = true,
@@ -2367,7 +2368,7 @@ return {
 		}
 	},
 
-	["burger-lettuce"] = {
+	["burger-lettuce"]             = {
 		label = "Lettuce",
 		weight = 525,
 		stack = true,
@@ -2378,7 +2379,7 @@ return {
 		}
 	},
 
-	["diving_gear"] = {
+	["diving_gear"]                = {
 		label = "Diving Gear",
 		weight = 30000,
 		stack = false,
@@ -2389,7 +2390,7 @@ return {
 		}
 	},
 
-	["iron"] = {
+	["iron"]                       = {
 		label = "Iron",
 		weight = 500,
 		stack = true,
@@ -2400,7 +2401,7 @@ return {
 		}
 	},
 
-	["wine"] = {
+	["wine"]                       = {
 		label = "Wine",
 		weight = 300,
 		stack = true,
@@ -2411,7 +2412,7 @@ return {
 		}
 	},
 
-	["screwdriverset"] = {
+	["screwdriverset"]             = {
 		label = "Toolkit",
 		weight = 1000,
 		stack = true,
@@ -2422,7 +2423,7 @@ return {
 		}
 	},
 
-	["burger-tomato"] = {
+	["burger-tomato"]              = {
 		label = "Tomato",
 		weight = 525,
 		stack = true,
@@ -2433,7 +2434,7 @@ return {
 		}
 	},
 
-	["steel"] = {
+	["steel"]                      = {
 		label = "Steel",
 		weight = 500,
 		stack = true,
@@ -2444,7 +2445,7 @@ return {
 		}
 	},
 
-	["sulfur"] = {
+	["sulfur"]                     = {
 		label = "Sulfur",
 		weight = 500,
 		stack = true,
@@ -2455,7 +2456,7 @@ return {
 		}
 	},
 
-	["burger-fries"] = {
+	["burger-fries"]               = {
 		label = "Fries",
 		weight = 1250,
 		stack = true,
@@ -2466,7 +2467,7 @@ return {
 		}
 	},
 
-	["moneybag"] = {
+	["moneybag"]                   = {
 		label = "Money Bag",
 		weight = 0,
 		stack = false,
@@ -2477,7 +2478,7 @@ return {
 		}
 	},
 
-	["gummy_og-kush_cbd"] = {
+	["gummy_og-kush_cbd"]          = {
 		label = "CBD OG-Kush Gummy",
 		weight = 4,
 		stack = true,
@@ -2488,7 +2489,7 @@ return {
 		}
 	},
 
-	["beer"] = {
+	["beer"]                       = {
 		label = "Beer",
 		weight = 500,
 		stack = true,
@@ -2499,7 +2500,7 @@ return {
 		}
 	},
 
-	["antipatharia_coral"] = {
+	["antipatharia_coral"]         = {
 		label = "Antipatharia",
 		weight = 10000,
 		stack = true,
@@ -2510,7 +2511,7 @@ return {
 		}
 	},
 
-	["redphosphorus"] = {
+	["redphosphorus"]              = {
 		label = "Red Phosphorus",
 		weight = 500,
 		stack = true,
@@ -2521,7 +2522,7 @@ return {
 		}
 	},
 
-	["detinator\9"] = {
+	["detinator\9"]                = {
 		label = "Detinator",
 		weight = 5000,
 		stack = true,
@@ -2532,7 +2533,7 @@ return {
 		}
 	},
 
-	["stingray"] = {
+	["stingray"]                   = {
 		label = "Stingray",
 		weight = 3500,
 		stack = false,
@@ -2543,7 +2544,7 @@ return {
 		}
 	},
 
-	["carrentalpapers"] = {
+	["carrentalpapers"]            = {
 		label = "Car Rental Papers",
 		weight = 500,
 		stack = false,
@@ -2554,7 +2555,7 @@ return {
 		}
 	},
 
-	["noodlebowl"] = {
+	["noodlebowl"]                 = {
 		label = "Noodles",
 		weight = 100,
 		stack = true,
@@ -2568,7 +2569,7 @@ return {
 		}
 	},
 
-	["processed_deerskin"] = {
+	["processed_deerskin"]         = {
 		label = "Procesed Deer Pelt",
 		weight = 7000,
 		stack = true,
@@ -2579,7 +2580,7 @@ return {
 		}
 	},
 
-	["twerks_candy"] = {
+	["twerks_candy"]               = {
 		label = "Twerks",
 		weight = 500,
 		stack = true,
@@ -2590,7 +2591,7 @@ return {
 		}
 	},
 
-	["hydrochloricacid"] = {
+	["hydrochloricacid"]           = {
 		label = "Hydrochloric Acid",
 		weight = 10000,
 		stack = true,
@@ -2601,7 +2602,7 @@ return {
 		}
 	},
 
-	["rentalpapers"] = {
+	["rentalpapers"]               = {
 		label = "Rental Papers",
 		weight = 0,
 		stack = false,
@@ -2612,7 +2613,7 @@ return {
 		}
 	},
 
-	["dmr_receiver"] = {
+	["dmr_receiver"]               = {
 		label = "DMR Receiver",
 		weight = 5000,
 		stack = true,
@@ -2623,7 +2624,7 @@ return {
 		}
 	},
 
-	["laptop_green"] = {
+	["laptop_green"]               = {
 		label = "Laptop",
 		weight = 2500,
 		stack = false,
@@ -2634,7 +2635,7 @@ return {
 		}
 	},
 
-	["untrimmedweed"] = {
+	["untrimmedweed"]              = {
 		label = "Untrimmed Weed",
 		weight = 500,
 		stack = true,
@@ -2645,7 +2646,7 @@ return {
 		}
 	},
 
-	["weed_skunk_cbd_joint"] = {
+	["weed_skunk_cbd_joint"]       = {
 		label = "CBD Skunk Joint",
 		weight = 1,
 		stack = true,
@@ -2656,7 +2657,7 @@ return {
 		}
 	},
 
-	["springrolls"] = {
+	["springrolls"]                = {
 		label = "Spring Rolls",
 		weight = 500,
 		stack = true,
@@ -2670,7 +2671,7 @@ return {
 		}
 	},
 
-	["burger-raw"] = {
+	["burger-raw"]                 = {
 		label = "Raw Patty",
 		weight = 525,
 		stack = true,
@@ -2681,7 +2682,7 @@ return {
 		}
 	},
 
-	["firework2"] = {
+	["firework2"]                  = {
 		label = "Poppelers",
 		weight = 10000,
 		stack = true,
@@ -2692,7 +2693,7 @@ return {
 		}
 	},
 
-	["xtcbaggy"] = {
+	["xtcbaggy"]                   = {
 		label = "Bag of XTC",
 		weight = 0,
 		stack = true,
@@ -2703,7 +2704,7 @@ return {
 		}
 	},
 
-	["methylamine"] = {
+	["methylamine"]                = {
 		label = "Methylamine",
 		weight = 500,
 		stack = true,
@@ -2714,7 +2715,7 @@ return {
 		}
 	},
 
-	["coyotefur"] = {
+	["coyotefur"]                  = {
 		label = "Coyote Fur",
 		weight = 7000,
 		stack = true,
@@ -2725,7 +2726,7 @@ return {
 		}
 	},
 
-	["jerry_can"] = {
+	["jerry_can"]                  = {
 		label = "Jerrycan 20L",
 		weight = 20000,
 		stack = true,
@@ -2736,7 +2737,7 @@ return {
 		}
 	},
 
-	["flounder"] = {
+	["flounder"]                   = {
 		label = "Flounder",
 		weight = 3500,
 		stack = false,
@@ -2747,7 +2748,7 @@ return {
 		}
 	},
 
-	["burger-mshakeformula"] = {
+	["burger-mshakeformula"]       = {
 		label = "Milkshake Formula",
 		weight = 525,
 		stack = true,
@@ -2758,7 +2759,7 @@ return {
 		}
 	},
 
-	["trojan_usb"] = {
+	["trojan_usb"]                 = {
 		label = "Trojan USB",
 		weight = 0,
 		stack = true,
@@ -2769,7 +2770,7 @@ return {
 		}
 	},
 
-	["weed_purple-haze_seed"] = {
+	["weed_purple-haze_seed"]      = {
 		label = "Purple Haze Seed",
 		weight = 0,
 		stack = true,
@@ -2780,7 +2781,7 @@ return {
 		}
 	},
 
-	["coke_small_brick"] = {
+	["coke_small_brick"]           = {
 		label = "Coke Package",
 		weight = 350,
 		stack = false,
@@ -2791,7 +2792,7 @@ return {
 		}
 	},
 
-	["whiskey"] = {
+	["whiskey"]                    = {
 		label = "Whiskey",
 		weight = 500,
 		stack = true,
@@ -2802,7 +2803,7 @@ return {
 		}
 	},
 
-	["corn_kernel"] = {
+	["corn_kernel"]                = {
 		label = "Cone Kernel",
 		weight = 300,
 		stack = true,
@@ -2813,7 +2814,7 @@ return {
 		}
 	},
 
-	["casino_vip"] = {
+	["casino_vip"]                 = {
 		label = "V.I.P Membership",
 		weight = 500,
 		stack = false,
@@ -2824,7 +2825,7 @@ return {
 		}
 	},
 
-	["marijuana_lighter"] = {
+	["marijuana_lighter"]          = {
 		label = "Lighter",
 		weight = 0,
 		stack = true,
@@ -2835,7 +2836,7 @@ return {
 		}
 	},
 
-	["cokepaste"] = {
+	["cokepaste"]                  = {
 		label = "Coke Paste",
 		weight = 100,
 		stack = true,
@@ -2846,7 +2847,7 @@ return {
 		}
 	},
 
-	["aluminum"] = {
+	["aluminum"]                   = {
 		label = "Aluminium",
 		weight = 500,
 		stack = true,
@@ -2857,7 +2858,7 @@ return {
 		}
 	},
 
-	["ammonia"] = {
+	["ammonia"]                    = {
 		label = "Ammonia",
 		weight = 500,
 		stack = true,
@@ -2868,7 +2869,7 @@ return {
 		}
 	},
 
-	["fantaslushy"] = {
+	["fantaslushy"]                = {
 		label = "Fanta Slushy",
 		weight = 100,
 		stack = true,
@@ -2882,7 +2883,7 @@ return {
 		}
 	},
 
-	["onion"] = {
+	["onion"]                      = {
 		label = "Onion",
 		weight = 500,
 		stack = true,
@@ -2893,7 +2894,7 @@ return {
 		}
 	},
 
-	["marijuana_baggies"] = {
+	["marijuana_baggies"]          = {
 		label = "Baggies",
 		weight = 0,
 		stack = true,
@@ -2904,7 +2905,7 @@ return {
 		}
 	},
 
-	["samsungphone"] = {
+	["samsungphone"]               = {
 		label = "Samsung S10",
 		weight = 10000,
 		stack = true,
@@ -2915,7 +2916,7 @@ return {
 		}
 	},
 
-	["m4_muzzle"] = {
+	["m4_muzzle"]                  = {
 		label = "M4 Muzzle",
 		weight = 5000,
 		stack = true,
@@ -2926,7 +2927,7 @@ return {
 		}
 	},
 
-	["soju"] = {
+	["soju"]                       = {
 		label = "Soju",
 		weight = 100,
 		stack = true,
@@ -2940,7 +2941,7 @@ return {
 		}
 	},
 
-	["police_stormram"] = {
+	["police_stormram"]            = {
 		label = "Stormram",
 		weight = 14000,
 		stack = true,
@@ -2951,7 +2952,7 @@ return {
 		}
 	},
 
-	["sharkhammer"] = {
+	["sharkhammer"]                = {
 		label = "Shark",
 		weight = 8000,
 		stack = false,
@@ -2962,7 +2963,7 @@ return {
 		}
 	},
 
-	["weed_og-kush_cbd_crop"] = {
+	["weed_og-kush_cbd_crop"]      = {
 		label = "CBD OG Kush Crop",
 		weight = 1200,
 		stack = true,
@@ -2973,7 +2974,7 @@ return {
 		}
 	},
 
-	["acetone"] = {
+	["acetone"]                    = {
 		label = "Acetone",
 		weight = 500,
 		stack = true,
@@ -2984,7 +2985,7 @@ return {
 		}
 	},
 
-	["lmg_receiver"] = {
+	["lmg_receiver"]               = {
 		label = "LMG Receiver",
 		weight = 5000,
 		stack = true,
@@ -2995,7 +2996,7 @@ return {
 		}
 	},
 
-	["weed_white-widow_seed"] = {
+	["weed_white-widow_seed"]      = {
 		label = "White Widow Seed",
 		weight = 0,
 		stack = true,
@@ -3006,7 +3007,7 @@ return {
 		}
 	},
 
-	["boatrentalpapers"] = {
+	["boatrentalpapers"]           = {
 		label = "Boat Rental Papers",
 		weight = 500,
 		stack = false,
@@ -3017,7 +3018,7 @@ return {
 		}
 	},
 
-	["tazer_cartilage"] = {
+	["tazer_cartilage"]            = {
 		label = "Tazer Cartridges",
 		weight = 1000,
 		stack = true,
@@ -3028,7 +3029,7 @@ return {
 		}
 	},
 
-	["dolphin"] = {
+	["dolphin"]                    = {
 		label = "Dolphin",
 		weight = 7000,
 		stack = false,
@@ -3039,7 +3040,7 @@ return {
 		}
 	},
 
-	["bbobatea"] = {
+	["bbobatea"]                   = {
 		label = "Bubble Tea",
 		weight = 100,
 		stack = true,
@@ -3050,7 +3051,7 @@ return {
 		}
 	},
 
-	["glass"] = {
+	["glass"]                      = {
 		label = "Glass",
 		weight = 500,
 		stack = true,
@@ -3061,7 +3062,7 @@ return {
 		}
 	},
 
-	["weed_amnesia_cbd"] = {
+	["weed_amnesia_cbd"]           = {
 		label = "CBD Amnesia 2g",
 		weight = 2,
 		stack = true,
@@ -3072,7 +3073,7 @@ return {
 		}
 	},
 
-	["burger-heartstopper"] = {
+	["burger-heartstopper"]        = {
 		label = "Heartstopper",
 		weight = 2500,
 		stack = true,
@@ -3083,7 +3084,7 @@ return {
 		}
 	},
 
-	["rolling_paper"] = {
+	["rolling_paper"]              = {
 		label = "Rolling Paper",
 		weight = 0,
 		stack = true,
@@ -3094,7 +3095,7 @@ return {
 		}
 	},
 
-	["painkillers"] = {
+	["painkillers"]                = {
 		label = "Painkillers",
 		weight = 1000,
 		stack = true,
@@ -3105,7 +3106,7 @@ return {
 		}
 	},
 
-	["gummy_ak47_cbd"] = {
+	["gummy_ak47_cbd"]             = {
 		label = "CBD AK47 Gummy",
 		weight = 4,
 		stack = true,
@@ -3116,7 +3117,7 @@ return {
 		}
 	},
 
-	["repairkit"] = {
+	["repairkit"]                  = {
 		label = "Repairkit",
 		weight = 2500,
 		stack = true,
@@ -3127,7 +3128,7 @@ return {
 		}
 	},
 
-	["usb_blue"] = {
+	["usb_blue"]                   = {
 		label = "USB Drive",
 		weight = 1000,
 		stack = true,
@@ -3138,7 +3139,7 @@ return {
 		}
 	},
 
-	["flour"] = {
+	["flour"]                      = {
 		label = "Flour",
 		weight = 100,
 		stack = true,
@@ -3149,7 +3150,7 @@ return {
 		}
 	},
 
-	["launcher_shell"] = {
+	["launcher_shell"]             = {
 		label = "Launcher Shell",
 		weight = 5000,
 		stack = true,
@@ -3160,7 +3161,7 @@ return {
 		}
 	},
 
-	["milk_pack"] = {
+	["milk_pack"]                  = {
 		label = "Milk Pack",
 		weight = 500,
 		stack = true,
@@ -3171,7 +3172,7 @@ return {
 		}
 	},
 
-	["fishingtin"] = {
+	["fishingtin"]                 = {
 		label = "Fishing Tin",
 		weight = 2500,
 		stack = true,
@@ -3182,7 +3183,7 @@ return {
 		}
 	},
 
-	["certificate"] = {
+	["certificate"]                = {
 		label = "Certificate",
 		weight = 0,
 		stack = true,
@@ -3193,7 +3194,7 @@ return {
 		}
 	},
 
-	["methanol"] = {
+	["methanol"]                   = {
 		label = "Methanol",
 		weight = 500,
 		stack = true,
@@ -3204,7 +3205,7 @@ return {
 		}
 	},
 
-	["pilot_license"] = {
+	["pilot_license"]              = {
 		label = "Pilot License",
 		weight = 500,
 		stack = false,
@@ -3215,7 +3216,7 @@ return {
 		}
 	},
 
-	["weed_amnesia_cbd_crop"] = {
+	["weed_amnesia_cbd_crop"]      = {
 		label = "CBD Amnesia Crop",
 		weight = 1200,
 		stack = true,
@@ -3226,7 +3227,7 @@ return {
 		}
 	},
 
-	["pseudoephedrine"] = {
+	["pseudoephedrine"]            = {
 		label = "Pseudoephedrine",
 		weight = 500,
 		stack = true,
@@ -3237,7 +3238,7 @@ return {
 		}
 	},
 
-	["filled_evidence_bag"] = {
+	["filled_evidence_bag"]        = {
 		label = "Evidence Bag",
 		weight = 1200,
 		stack = false,
@@ -3248,7 +3249,7 @@ return {
 		}
 	},
 
-	["cokebaggy"] = {
+	["cokebaggy"]                  = {
 		label = "Bag of Coke",
 		weight = 350,
 		stack = true,
@@ -3259,7 +3260,7 @@ return {
 		}
 	},
 
-	["fitbit"] = {
+	["fitbit"]                     = {
 		label = "Fitbit",
 		weight = 500,
 		stack = false,
@@ -3270,7 +3271,7 @@ return {
 		}
 	},
 
-	["explosives"] = {
+	["explosives"]                 = {
 		label = "Explosives",
 		weight = 5000,
 		stack = true,
@@ -3281,7 +3282,7 @@ return {
 		}
 	},
 
-	["binoculars"] = {
+	["binoculars"]                 = {
 		label = "Binoculars",
 		weight = 600,
 		stack = true,
@@ -3292,7 +3293,7 @@ return {
 		}
 	},
 
-	["weed_og-kush_cbd"] = {
+	["weed_og-kush_cbd"]           = {
 		label = "CBD OGKush 2g",
 		weight = 2,
 		stack = true,
@@ -3303,7 +3304,7 @@ return {
 		}
 	},
 
-	["goldchain"] = {
+	["goldchain"]                  = {
 		label = "Golden Chain",
 		weight = 1500,
 		stack = true,
@@ -3314,7 +3315,7 @@ return {
 		}
 	},
 
-	["empty_weed_bag"] = {
+	["empty_weed_bag"]             = {
 		label = "Empty Bag",
 		weight = 350,
 		stack = true,
@@ -3325,7 +3326,7 @@ return {
 		}
 	},
 
-	["codfish"] = {
+	["codfish"]                    = {
 		label = "Cod",
 		weight = 3500,
 		stack = false,
@@ -3336,7 +3337,7 @@ return {
 		}
 	},
 
-	["usb_grey"] = {
+	["usb_grey"]                   = {
 		label = "USB Drive",
 		weight = 1000,
 		stack = true,
@@ -3347,7 +3348,7 @@ return {
 		}
 	},
 
-	["spikestrip"] = {
+	["spikestrip"]                 = {
 		label = "Spikestrip",
 		weight = 3000,
 		stack = true,
@@ -3358,7 +3359,7 @@ return {
 		}
 	},
 
-	["marijuana_1oz_mid"] = {
+	["marijuana_1oz_mid"]          = {
 		label = "1oz marijuana",
 		weight = 2800,
 		stack = false,
@@ -3369,7 +3370,7 @@ return {
 		}
 	},
 
-	["glockbp"] = {
+	["glockbp"]                    = {
 		label = "Glock BluePrint",
 		weight = 0,
 		stack = true,
@@ -3380,7 +3381,7 @@ return {
 		}
 	},
 
-	["microsmgbp"] = {
+	["microsmgbp"]                 = {
 		label = "Micro Smg BluePrint",
 		weight = 0,
 		stack = true,
@@ -3391,7 +3392,7 @@ return {
 		}
 	},
 
-	["stone"] = {
+	["stone"]                      = {
 		label = "Stone",
 		weight = 2500,
 		stack = true,
@@ -3402,7 +3403,7 @@ return {
 		}
 	},
 
-	["thermite"] = {
+	["thermite"]                   = {
 		label = "Thermite",
 		weight = 1000,
 		stack = true,
@@ -3413,7 +3414,7 @@ return {
 		}
 	},
 
-	["fishicebox"] = {
+	["fishicebox"]                 = {
 		label = "Fishing Ice Chest",
 		weight = 2500,
 		stack = false,
@@ -3424,7 +3425,7 @@ return {
 		}
 	},
 
-	["processed_boarskin"] = {
+	["processed_boarskin"]         = {
 		label = "Processed Boar skin",
 		weight = 7000,
 		stack = true,
@@ -3435,7 +3436,7 @@ return {
 		}
 	},
 
-	["copium"] = {
+	["copium"]                     = {
 		label = "Copium",
 		weight = 100,
 		stack = true,
@@ -3446,7 +3447,7 @@ return {
 		}
 	},
 
-	["burger-bleeder"] = {
+	["burger-bleeder"]             = {
 		label = "Bleeder",
 		weight = 2500,
 		stack = true,
@@ -3457,7 +3458,7 @@ return {
 		}
 	},
 
-	["glock_flashlight"] = {
+	["glock_flashlight"]           = {
 		label = "Glock Flashlight",
 		weight = 5000,
 		stack = true,
@@ -3468,7 +3469,7 @@ return {
 		}
 	},
 
-	["sandwich"] = {
+	["sandwich"]                   = {
 		label = "Sandwich",
 		weight = 600,
 		stack = true,
@@ -3479,7 +3480,7 @@ return {
 		}
 	},
 
-	["lighter"] = {
+	["lighter"]                    = {
 		label = "Lighter",
 		weight = 0,
 		stack = true,
@@ -3490,7 +3491,7 @@ return {
 		}
 	},
 
-	["weed_og-kush_cbd_joint"] = {
+	["weed_og-kush_cbd_joint"]     = {
 		label = "CBD OG Kush Joint",
 		weight = 1,
 		stack = true,
@@ -3501,7 +3502,7 @@ return {
 		}
 	},
 
-	["planerentalpapers"] = {
+	["planerentalpapers"]          = {
 		label = "Aircraft Rental Papers",
 		weight = 500,
 		stack = false,
@@ -3512,7 +3513,7 @@ return {
 		}
 	},
 
-	["pearlscard"] = {
+	["pearlscard"]                 = {
 		label = "Pearls Seafood",
 		weight = 500,
 		stack = true,
@@ -3523,7 +3524,7 @@ return {
 		}
 	},
 
-	["cleaningkit"] = {
+	["cleaningkit"]                = {
 		label = "Cleaning Kit",
 		weight = 250,
 		stack = true,
@@ -3534,7 +3535,7 @@ return {
 		}
 	},
 
-	["joint"] = {
+	["joint"]                      = {
 		label = "Joint",
 		weight = 0,
 		stack = true,
@@ -3545,7 +3546,7 @@ return {
 		}
 	},
 
-	["dp9_defaultclip"] = {
+	["dp9_defaultclip"]            = {
 		label = "DP9 Clip",
 		weight = 5000,
 		stack = true,
@@ -3556,7 +3557,7 @@ return {
 		}
 	},
 
-	["oxy"] = {
+	["oxy"]                        = {
 		label = "Prescription Oxy",
 		weight = 100,
 		stack = true,
@@ -3567,7 +3568,7 @@ return {
 		}
 	},
 
-	["fishingboot"] = {
+	["fishingboot"]                = {
 		label = "Fishing Boot",
 		weight = 2500,
 		stack = true,
@@ -3578,7 +3579,7 @@ return {
 		}
 	},
 
-	["phenylaceticacid"] = {
+	["phenylaceticacid"]           = {
 		label = "Phenylacetic Acid",
 		weight = 500,
 		stack = true,
@@ -3589,7 +3590,7 @@ return {
 		}
 	},
 
-	["cryptostick"] = {
+	["cryptostick"]                = {
 		label = "Crypto Stick",
 		weight = 600,
 		stack = false,
@@ -3600,7 +3601,7 @@ return {
 		}
 	},
 
-	["casinochips"] = {
+	["casinochips"]                = {
 		label = "Casino Chips",
 		weight = 0,
 		stack = true,
@@ -3611,7 +3612,7 @@ return {
 		}
 	},
 
-	["icecube"] = {
+	["icecube"]                    = {
 		label = "icecube",
 		weight = 100,
 		stack = true,
@@ -3622,7 +3623,7 @@ return {
 		}
 	},
 
-	["weed_skunk_cbd"] = {
+	["weed_skunk_cbd"]             = {
 		label = "CBD Skunk 2g",
 		weight = 2,
 		stack = true,
@@ -3633,7 +3634,7 @@ return {
 		}
 	},
 
-	["usb_gold"] = {
+	["usb_gold"]                   = {
 		label = "USB Drive",
 		weight = 1000,
 		stack = true,
@@ -3644,7 +3645,7 @@ return {
 		}
 	},
 
-	["shrimp"] = {
+	["shrimp"]                     = {
 		label = "Shrimp",
 		weight = 100,
 		stack = true,
@@ -3655,7 +3656,7 @@ return {
 		}
 	},
 
-	["marijuana_crop_high"] = {
+	["marijuana_crop_high"]        = {
 		label = "Harvested Crop",
 		weight = 5500,
 		stack = true,
@@ -3666,7 +3667,7 @@ return {
 		}
 	},
 
-	["aluminumoxide"] = {
+	["aluminumoxide"]              = {
 		label = "Aluminium Powder",
 		weight = 500,
 		stack = true,
@@ -3677,7 +3678,7 @@ return {
 		}
 	},
 
-	["dragonrolls"] = {
+	["dragonrolls"]                = {
 		label = "Dragon Rolls",
 		weight = 500,
 		stack = true,
@@ -3691,7 +3692,7 @@ return {
 		}
 	},
 
-	["fishinglootbig"] = {
+	["fishinglootbig"]             = {
 		label = "Treasure Chest",
 		weight = 2500,
 		stack = true,
@@ -3702,7 +3703,7 @@ return {
 		}
 	},
 
-	["security_card_02"] = {
+	["security_card_02"]           = {
 		label = "Security Card B",
 		weight = 500,
 		stack = true,
@@ -3713,7 +3714,7 @@ return {
 		}
 	},
 
-	["m4_grip"] = {
+	["m4_grip"]                    = {
 		label = "M4 Grip",
 		weight = 5000,
 		stack = true,
@@ -3724,7 +3725,7 @@ return {
 		}
 	},
 
-	["rubberslug"] = {
+	["rubberslug"]                 = {
 		label = "12-Gauge Rubber Slugs",
 		weight = 1000,
 		stack = true,
@@ -3735,7 +3736,7 @@ return {
 		}
 	},
 
-	["rpg_shell"] = {
+	["rpg_shell"]                  = {
 		label = "RPG Shell",
 		weight = 5000,
 		stack = true,
@@ -3746,7 +3747,7 @@ return {
 		}
 	},
 
-	["camera"] = {
+	["camera"]                     = {
 		label = "PD Camera",
 		weight = 150,
 		stack = false,
@@ -3757,7 +3758,7 @@ return {
 		}
 	},
 
-	["m4_defaultclip"] = {
+	["m4_defaultclip"]             = {
 		label = "M4 Clip",
 		weight = 5000,
 		stack = true,
@@ -3768,7 +3769,7 @@ return {
 		}
 	},
 
-	["goldbar"] = {
+	["goldbar"]                    = {
 		label = "Gold Bar",
 		weight = 6000,
 		stack = true,
@@ -3779,7 +3780,7 @@ return {
 		}
 	},
 
-	["dmr_barrel\9"] = {
+	["dmr_barrel\9"]               = {
 		label = "DMR Barrel",
 		weight = 5000,
 		stack = true,
@@ -3790,7 +3791,7 @@ return {
 		}
 	},
 
-	["marijuana_3.5_low"] = {
+	["marijuana_3.5_low"]          = {
 		label = "3.5g marijuana",
 		weight = 2800,
 		stack = false,
@@ -3801,7 +3802,7 @@ return {
 		}
 	},
 
-	["bands"] = {
+	["bands"]                      = {
 		label = "Band Of Notes",
 		weight = 100,
 		stack = true,
@@ -3812,7 +3813,7 @@ return {
 		}
 	},
 
-	["nitrous"] = {
+	["nitrous"]                    = {
 		label = "Nitrous",
 		weight = 10000,
 		stack = true,
@@ -3823,7 +3824,7 @@ return {
 		}
 	},
 
-	["tablet"] = {
+	["tablet"]                     = {
 		label = "Tablet",
 		weight = 2000,
 		stack = true,
@@ -3834,7 +3835,7 @@ return {
 		}
 	},
 
-	["grenade_shell"] = {
+	["grenade_shell"]              = {
 		label = "Grenade Shell",
 		weight = 5000,
 		stack = true,
@@ -3845,7 +3846,7 @@ return {
 		}
 	},
 
-	["cocaleaf"] = {
+	["cocaleaf"]                   = {
 		label = "Coca Leaf",
 		weight = 500,
 		stack = true,
@@ -3856,7 +3857,7 @@ return {
 		}
 	},
 
-	["permit"] = {
+	["permit"]                     = {
 		label = "Driving Permit",
 		weight = 500,
 		stack = false,
@@ -3867,7 +3868,7 @@ return {
 		}
 	},
 
-	["tosti"] = {
+	["tosti"]                      = {
 		label = "Grilled Cheese Sandwich",
 		weight = 600,
 		stack = true,
@@ -3878,7 +3879,7 @@ return {
 		}
 	},
 
-	["copper"] = {
+	["copper"]                     = {
 		label = "Copper",
 		weight = 500,
 		stack = true,
@@ -3889,7 +3890,7 @@ return {
 		}
 	},
 
-	["snowball"] = {
+	["snowball"]                   = {
 		label = "Snowball",
 		weight = 0,
 		stack = true,
@@ -3900,7 +3901,7 @@ return {
 		}
 	},
 
-	["bbmenu"] = {
+	["bbmenu"]                     = {
 		label = "Best Buds Menu",
 		weight = 10,
 		stack = true,
@@ -3911,7 +3912,79 @@ return {
 		}
 	},
 
-	["nightvisiongoggles"] = {
+	["medickeycard"] = {
+		label = "Medical Keycard",
+		weight = 10,
+		close = true,
+		description = "A medical key card? I wonder what this opens!",
+		client = {
+			image = "medickeycard.png"
+		}
+	},
+	
+	["documenttube"] = {
+		label = "Document Tube",
+		weight = 1000,
+		close = true,
+		description = "An airtight document tube, could contain anything.",
+		client = {
+			image = "documenttube.png"
+		}
+	},
+	
+	["jewellerybag"] = {
+		label = "Jewellery Bag",
+		weight = 500,
+		close = true,
+		description = "A jewellery bag, anything good inside?",
+		client = {
+			image = "jewellerybag.png"
+		}
+	},
+	
+	["ruineddocuments"] = {
+		label = "Ruined Documents",
+		weight = 100,
+		close = true,
+		description = "Ruined documents.. These are worthless.",
+		client = {
+			image = "ruineddocuments.png"
+		}
+	},
+	
+	["rolex_fake"] = {
+		label = "Fake Rolex",
+		weight = 100,
+		close = true,
+		description = "Would be nice if it was real..",
+		client = {
+			image = "rolex_fake.png"
+		}
+	},
+	
+	["goldchain_fake"] = {
+		label = "Fake Goldchain",
+		weight = 100,
+		close = true,
+		description = "Ruined documents.. These are worthless.",
+		client = {
+			image = "goldchain_fake.png"
+		}
+	},
+
+	["inactivekeycard"]            = {
+		label = "De-Activated Keycard",  
+		weight = 10,
+		stack = false, 
+		close = true,
+		description = "Ruined documents.. These are worthless.",
+		client = {
+			image = "inactivekeycard.png"
+		}
+	},
+
+	
+	["nightvisiongoggles"]         = {
 		label = "Night Vision goggles",
 		weight = 500,
 		stack = false,
