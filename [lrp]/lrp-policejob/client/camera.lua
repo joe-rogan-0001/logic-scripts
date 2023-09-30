@@ -118,6 +118,8 @@ RegisterNetEvent('police:client:ActiveCamera', function(cameraId)
     end
 end)
 
+
+
 RegisterNetEvent('police:client:DisableAllCameras', function()
     for k, v in pairs(Config.SecurityCameras.cameras) do 
         Config.SecurityCameras.cameras[k].isOnline = false

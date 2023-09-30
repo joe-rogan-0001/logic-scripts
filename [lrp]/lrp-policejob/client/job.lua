@@ -474,11 +474,12 @@ exports['lrp-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -9
 })
 
 RegisterNetEvent('qb-policejob:ToggleDuty', function()
-    print('run')
     onDuty = not onDuty
     TriggerServerEvent("QBCore:ToggleDuty")
     TriggerServerEvent("police:server:UpdateCurrentCops")
     TriggerServerEvent("police:server:UpdateBlips")
+    TriggerServerEvent("ps-mdt:server:ToggleDuty")
+    TriggerServerEvent("ps-mdt:server:ClockSystem")
 end)
 
 -- Stash 1

@@ -1,8 +1,8 @@
 DoxCore = exports['lrp-core']:GetCoreObject()
 
-
 RegisterNetEvent('Dox-middleman') -- First Door unlock
 AddEventHandler('Dox-middleman', function()
+    
     TriggerEvent('Dox-firstdoor')
     Wait(1000)
     TriggerEvent('Dox-seconddoor')
@@ -16,6 +16,8 @@ AddEventHandler('Dox-firstdoor', function()
     if dist < 1 then
         DoxCore.Functions.TriggerCallback('Dox-bobcat:server:getCops', function(cops)
             if cops >= Config.RequiredCops then
+                print("cunt")
+                TriggerEvent("ps-dispatch:client:BobcatRobbery")
                 TriggerEvent("Dox-minigamedoor1")
             else
                 DoxCore.Functions.Notify("Not Enough Cops", "error")    

@@ -172,7 +172,6 @@ end)
 RegisterNetEvent('QBCore:ToggleDuty', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    print('hi')
     if not Player then return end
     if Player.PlayerData.job.onduty then
         Player.Functions.SetJobDuty(false)

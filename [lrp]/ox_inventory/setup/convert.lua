@@ -388,6 +388,8 @@ local function Convert_Old_ESX_Property()
 
 		for k,v in pairs(datastore) do
 			local obj = json.decode(v['data'])
+
+			print(obj)
 			if obj then
 				for b = 1, #obj['weapons'] do
 					local item = Items(obj['weapons'][b].name)

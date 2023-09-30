@@ -483,11 +483,11 @@ Config.GlobalVehicleOptions = {
     end,
   },
   ]]--
-  {
+  --[[{
     type = "client",
-    event = "police:client:runplate",
+    event = "ps-mdt:client:trafficStop",
     icon = "fas fa-address-card",
-    label = "Run Plate",
+    label = "Active Traffic Stop",
     job = 'police',
     canInteract = function(entity)
       local model = GetDisplayNameFromVehicleModel(GetEntityModel(entity))
@@ -495,7 +495,7 @@ Config.GlobalVehicleOptions = {
         return true
       end
     end,
-  },
+  },]]--
 },
 distance = 1.5,
 }

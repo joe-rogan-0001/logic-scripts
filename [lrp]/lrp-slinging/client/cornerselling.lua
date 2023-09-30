@@ -141,7 +141,7 @@ function callPolice(ped)
     AddPropToPlayer(ped, "prop_npc_phone_02", 28422, 0, 0, 0, 0, 0, 0)
 
     Wait(5000)
-    TriggerEvent("un-dispatch:drugs")
+    TriggerEvent("ps-dispatch:client:drugsale")
     hasTarget = false
     AlertSend = true
     SetEntityAsNoLongerNeeded(ped)

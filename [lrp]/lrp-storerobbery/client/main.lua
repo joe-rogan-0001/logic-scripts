@@ -93,7 +93,7 @@ RegisterNetEvent('qb-storerobbery:client:cracksafe', function(data)
 
     function()
         QBCore.Functions.Notify("Crack Complete, safe will open soon.", "success")
-        TriggerEvent('un-dispatch:storerobbery')
+        TriggerEvent('ps-dispatch:client:storeRobbery')
 
         if math.random(1,4) > 3 then
             TriggerServerEvent("QBCore:Server:RemoveItem", "advancedlockpick", 1)
@@ -149,7 +149,7 @@ RegisterNetEvent('storerobbery:client:skillbar', function(data)
         return 
     end
 
-    TriggerEvent('un-dispatch:storerobbery')
+    TriggerEvent('ps-dispatch:client:storeRobbery')
 
     local seconds = math.random(5,10)
     local success = exports['lrp-skill']:StartLockPickCircle(2, seconds, success)

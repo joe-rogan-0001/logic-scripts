@@ -95,9 +95,7 @@ end)
 -- Police Alert
 
 function policeAlert()
-	-- exports['qb-dispatch']:DrugSale() -- Project-SLoth qb-dispatch
-	-- TriggerServerEvent('police:server:policeAlert', 'Suspicious Hand-off') -- Regular qbcore
-	-- These are just examples, you will have to implement your own system!
+	TriggerEvent('ps-dispatch:client:suspiciousActivity')
 end 
 
 -- Start!

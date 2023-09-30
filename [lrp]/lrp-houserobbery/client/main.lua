@@ -86,7 +86,7 @@ local function PoliceCall()
         chance = 25
     end
     if math.random(1, 100) <= chance then
-        TriggerEvent('un-dispatch:houserobbery')
+        TriggerEvent('ps-dispatch:client:HouseRobbery')
     end
 end
 

@@ -154,7 +154,7 @@ function ExchangeSuccess()
     end)
 
     -- trigger alarm
-    TriggerEvent('un-dispatch:jewelrobbery')
+    TriggerEvent('ps-dispatch:client:vangelicoRobbery')
     TriggerServerEvent('lrp-jewellery:server:cooldown')
 
     -- open door
@@ -183,7 +183,7 @@ function ExchangeFail()
     -- call police
     local ped = PlayerPedId()
     local pos = GetEntityCoords(ped)
-    TriggerEvent('un-dispatch:suspersononroof')
+    TriggerEvent('ps-dispatch:client:suspiciousActivity')
     --QBCore.Functions.TriggerCallback('lrp-jewellery:server:PoliceHackMessage', function(result)
     --end, "Security system hack attempt", pos, true)
 end

@@ -311,18 +311,18 @@ rootMenuConfig =  {
     },
     {
         id = "policeDeadA",
-        displayName = "10-13A",
+        displayName = "10-99 SOS",
         icon = "#police-dead",
-        functionName = "un-dispatch:tenThirteenA",
+        functionName = "ps-dispatch:client:officerdown",
         enableMenu = function()
             return (isPolice and isDead)
         end
     },
     {
         id = "policeDeadB",
-        displayName = "10-13B",
+        displayName = "10-99",
         icon = "#police-dead",
-        functionName = "un-dispatch:tenThirteenB",
+        functionName = "ps-dispatch:client:officerdown2",
         enableMenu = function()
             return (isPolice and isDead)
         end
@@ -331,16 +331,7 @@ rootMenuConfig =  {
         id = "emsDeadA",
         displayName = "10-14A",
         icon = "#ems-dead",
-        functionName = "un-dispatch:tenFourteenA",
-        enableMenu = function()
-            return (isMedic and isDead)
-        end
-    },
-    {
-        id = "emsDeadB",
-        displayName = "10-14B",
-        icon = "#ems-dead",
-        functionName = "un-dispatch:tenFourteenB",
+        functionName = "ps-dispatch:client:emsdown",
         enableMenu = function()
             return (isMedic and isDead)
         end

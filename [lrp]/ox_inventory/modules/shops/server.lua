@@ -1,5 +1,6 @@
 if not lib then return end
 
+local QBCore = exports['lrp-core']:GetCoreObject()
 local Items = require 'modules.items.server'
 local Inventory = require 'modules.inventory.server'
 local Shops = {}
@@ -163,6 +164,7 @@ local function canAffordItem(inv, currency, price)
 end
 
 local function removeCurrency(inv, currency, price)
+
 	Inventory.RemoveItem(inv, currency, price)
 end
 
@@ -257,7 +259,26 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 					currency = currency,
 				}) then return false end
 
+
+				if shopType == "Ammunation" then
+					if metadata.serial ~= nil then
+						local weaponTable = require('../data/weapons')
+						local serial = metadata.serial
+
+
+						local imageurl = ("https://cfx-nui-ox_inventory/web/images/%s.png"):format(fromData.name)
+						--nui://ox_inventory/web/images
+						local notes = "Purchased at Ammunation"
+						local owner = metadata.registered
+						local weapClass = 1
+						local weapModel = weaponTable.Weapons[fromData.name].label				
+						exports['ps-mdt']:CreateWeaponInfo(serial, imageurl, notes, owner, weapClass, weapModel)
+					end
+				end			
+
 				Inventory.SetSlot(playerInv, fromItem, count, metadata, data.toSlot)
+
+
 				playerInv.weight = newWeight
 				removeCurrency(playerInv, currency, price)
 
