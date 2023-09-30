@@ -45,8 +45,8 @@ if Config.DumpsterDiving.Enable then if Config.Debug then print("^5Debug^7: ^2Lo
         if not searched then -- If hasn't been searched yet
             loadAnimDict("anim@amb@machinery@speed_drill@")
             TaskPlayAnim(Ped, "anim@amb@machinery@speed_drill@", "look_around_left_02_amy_skater_01", 1.0, 1.0, 3500, 1.5, 5, 0, 0, 0)
-            if Config.DumpsterDiving.skillcheck == "lrp-lock" then
-                local Skillbar = exports['lrp-lock']:StartLockPickCircle(math.random(2,4), math.random(7,10), success)
+            if Config.DumpsterDiving.skillcheck == "lrp-skill" then
+                local Skillbar = exports['lrp-skill']:StartLockPickCircle(math.random(2,4), math.random(7,10), success)
                 if Skillbar then searchSuccess = true else searchSuccess = false end
             elseif Config.DumpsterDiving.skillcheck == "ps-ui" then
                 exports['ps-ui']:Circle(function(Skillbar)
