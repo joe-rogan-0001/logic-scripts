@@ -291,7 +291,8 @@ QBCore.Functions.CreateCallback("qb-phone:server:GetMyJobs", function(source, cb
 
     ---- If you were fired while being offline it will remove the job --
     if not CachedPlayers[CID][job] then
-        Player.Functions.SetJob("unemployed", 0)
+        print('possibly fired?')
+        -- Player.Functions.SetJob("unemployed", 0)
     end
 
 

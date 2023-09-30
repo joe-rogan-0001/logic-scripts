@@ -232,7 +232,7 @@ Config.PhoneApplications = {
         tooltipText = "Employment",
         job = false,
         blockedjobs = {},
-        slot = 16,
+        slot = 15,
         Alerts = 0,
     },
     ["lsbn"] = {
@@ -243,7 +243,7 @@ Config.PhoneApplications = {
         tooltipText = "LSBN",
         job = false,
         blockedjobs = {},
-        slot = 17,
+        slot = 16,
         Alerts = 0,
     },
     ["taxi"] = {
@@ -256,7 +256,7 @@ Config.PhoneApplications = {
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
-        slot = 18,
+        slot = 17,
         Alerts = 0,
     },
     ["casino"] = {
@@ -269,7 +269,7 @@ Config.PhoneApplications = {
         style = "font-size: 2.7vh";
         job = false,
         blockedjobs = {},
-        slot = 19,
+        slot = 18,
         Alerts = 0,
     },
     ["calculator"] = {
@@ -282,7 +282,7 @@ Config.PhoneApplications = {
         style = "font-size: 2.5vh";
         job = false,
         blockedjobs = {},
-        slot = 20,
+        slot = 19,
         Alerts = 0,
     },
     ["gallery"] = {
@@ -295,7 +295,7 @@ Config.PhoneApplications = {
         style = "font-size: 2.7vh";
         job = false,
         blockedjobs = {},
-        slot = 21,
+        slot = 20,
         Alerts = 0,
     },
     ["racing"] = {
@@ -307,7 +307,7 @@ Config.PhoneApplications = {
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
-        slot = 22,
+        slot = 21,
         Alerts = 0,
     },
     ["bank"] = {
@@ -319,7 +319,7 @@ Config.PhoneApplications = {
         style = "font-size: 2.7vh";
         job = false,
         blockedjobs = {},
-        slot = 23,
+        slot = 22,
         Alerts = 0,
     },
     ["gopro"] = {
@@ -332,7 +332,7 @@ Config.PhoneApplications = {
         style = "padding-right: .08vh; font-size: 3.3vh";
         job = false,
         blockedjobs = {},
-        slot = 24,
+        slot = 23,
         Alerts = 0,
     },
     ["group-chats"] = {
@@ -345,9 +345,23 @@ Config.PhoneApplications = {
         style = "padding-right: .08vh; font-size: 3.3vh";
         job = false,
         blockedjobs = {},
+        slot = 24,
+        Alerts = 0,
+    },
+    ["realjobcenter"] = {
+        app = "realjobcenter",
+        color = "#7289da",
+        color2 = "#7289da",
+        icon = "fab fa-discord",
+        tooltipText = "real job center",
+        tooltipPos = "top",
+        style = "padding-right: .08vh; font-size: 3.3vh";
+        job = false,
+        blockedjobs = {},
         slot = 25,
         Alerts = 0,
     },
+    --[[
     ["meos"] = {
         app = "meos",
         color = "#004682",
@@ -356,38 +370,39 @@ Config.PhoneApplications = {
         tooltipText = "MDT",
         job = "police",
         blockedjobs = {},
-        slot = 26,
+        slot = 25,
         Alerts = 0,
     },
+    ]]--
 }
 
 Config.MaxSlots = 28
 
 Config.JobCenter = {
     [1] = {
-        job = "unemployed",
-        label = "Unemployment",
-        Coords = {},
-    },
-    [2] = {
         job = "garbage",
         label = "Garbage",
-        Coords = {-344.76, -1564.34},
+        Coords = {-321.77, -1545.84},
     },
-    [3] = {
+    [2] = {
         job = "taxi",
         label = "Taxi Driver",
-        Coords = {909.11, -174.59},
+        Coords = {907.84, -174.8},
     },
-    [4] = {
-        job = "amazon",
-        label = "Amazon Driver",
-        Coords = {-1071.08, -2004.0},
-    },
-    [5] = {
+    [3] = {
         job = "trucker",
         label = "Truck Driver",
-        Coords = {925.83, -1560.23},
+        Coords = {1204.15, -3109.78},
+    },
+    [4] = {
+        job = "lumberjack",
+        label = "Logger",
+        Coords = {1167.73, -1347.27},
+    },
+    [5] = {
+        job = "helicopter",
+        label = "Helicopter",
+        Coords = {1167.73, -1347.27},
     },
 }
 
