@@ -4,37 +4,24 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300;
 }
 
 #container {
     position: absolute;
     height: auto;
-    top: 20%;
+    top: 10%;
     right: 20%;
-    border-radius: 5px;
+    border-radius: 10px;
     background: transparent !important;
-}
-.button {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row !important;
-    gap: 10px;
-}
-.title {
-    cursor: default;
-    gap: 10px;
-    display: flex;
-    flex-direction: row !important;
 }
 
 #buttons {
     max-height: 75vh;
     width: 31vw;
     overflow-x: none;
-    overflow-y: auto;
-    padding: 10px;
+    overflow-y: none;
 }
 
 html,
@@ -51,66 +38,77 @@ body::-webkit-scrollbar {
 }
 
 .button {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+
     width: auto;
     max-width: 45%;
     height: 10%;
-    background: #192e46;
+    background: #1D2538;
     color: white;
     margin: auto;
     position: relative;
     top: 10%;
     margin-top: 0.5rem;
     overflow: hidden;
-    padding: 0.45rem;
-    border-radius: 0.15rem;
+    padding: 12px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0rem 0rem 0.5rem 0.05rem #000000;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
     cursor: pointer;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: left;
+    font-size: 0.9em;
 }
 
 .button:hover {
-    background-color: #356192;
+    border-top-width: 0.01px;
+    border-top-style: solid;
+    border-top-color: #EE7733;
+    
+    border-right-width: 0.01px;
+    border-right-style: solid;
+    border-right-color: #EE7733;
+
+    border-left-width: 4px;
+    border-bottom-width: 5px;
+
+    border-left-color: #EE7733;
+    border-bottom-color: #EE7733;
 }
 
 .title {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+
     width: auto;
     max-width: 45%;
     height: 10%;
-    background: #192e46;
-    color: white;
+    background: #b5cdce;
+    color: rgb(0, 0, 0);
     margin: auto;
     position: relative;
     top: 10%;
     margin-top: 0.5rem;
     overflow: hidden;
-    padding: 0.45rem;
-    border-radius: 0.15rem;
+    padding: 12px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0rem 0rem 0.5rem 0.05rem #000000;
-}
-
-.title > div.header {
-    text-decoration: underline !important;
-}
-
-.disabled {
-    background: rgba(102, 102, 102, 0.9) !important;
-    cursor: default;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    font-size: 1.2em;    
 }
 
 div > .text {
     flex-direction: column;
-    font-size: 0.75rem;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 div > .header {
@@ -121,8 +119,6 @@ div > .header {
     position: relative;
     justify-content: left;
     overflow: wrap;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 550;
     overflow: hidden;
 }
