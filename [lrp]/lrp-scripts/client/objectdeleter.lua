@@ -10,8 +10,6 @@ Citizen.CreateThread(function()
         for i=1, #DeleteList do
             local Del_Entity = GetClosestObjectOfType(DeleteList[i].location, DeleteList[i].radius, DeleteList[i].model, false, false, false)
             if DoesEntityExist(Del_Entity) then
-                print("happened")
-                print(Del_Entity)
                 SetEntityAsMissionEntity(Del_Entity, false, false)
                 DeleteEntity(Del_Entity)               
             end

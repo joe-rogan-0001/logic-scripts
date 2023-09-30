@@ -11,6 +11,12 @@ CreateThread(function()
 end)
 
 CreateThread(function() -- all these should only need to be called once
+	SwitchTrainTrack(0, true) -- Setting the Main train track(s) around LS and towards Sandy Shores active
+	SwitchTrainTrack(3, true) -- Setting the Metro tracks active
+	SetTrainTrackSpawnFrequency(0, 120000) -- The Train spawn frequency set for the game engine
+	SetTrainTrackSpawnFrequency(3, 120000) -- The Metro spawn frequency set for the game engine
+	SetRandomTrains(true) -- Telling the game we want to use randomly spawned trains
+
 	SetPedCanLosePropsOnDamage(PlayerPedId(),false,0)
     StartAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE")
     SetAudioFlag("PoliceScannerDisabled", true)
