@@ -11,17 +11,18 @@
 #container {
     position: absolute;
     height: auto;
-    top: 10%;
+    top: 30%;
     right: 20%;
     border-radius: 10px;
     background: transparent !important;
 }
 
 #buttons {
-    max-height: 75vh;
+    max-height: 70vh;
     width: 31vw;
     overflow-x: none;
     overflow-y: none;
+    padding: 5px;
 }
 
 html,
@@ -38,17 +39,14 @@ body::-webkit-scrollbar {
 }
 
 .button {
-    border-left-width: 3px;
-    border-left-style: solid;
-    border-left-color: black;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #356192;
 
     width: auto;
     max-width: 45%;
     height: 10%;
-    background: #1D2538;
+    background: #192e46; 
     color: white;
     margin: auto;
     position: relative;
@@ -56,43 +54,42 @@ body::-webkit-scrollbar {
     margin-top: 0.5rem;
     overflow: hidden;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 0.15rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    box-shadow: 0rem 0rem 0.5rem 0.05rem #000000;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .button:hover {
     border-top-width: 0.01px;
     border-top-style: solid;
-    border-top-color: #EE7733;
+    background-color: #356192;
     
     border-right-width: 0.01px;
     border-right-style: solid;
-    border-right-color: #EE7733;
+    background-color: #356192;
 
-    border-left-width: 4px;
-    border-bottom-width: 5px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
 
-    border-left-color: #EE7733;
-    border-bottom-color: #EE7733;
+    background-color: #356192;
+    background-color: #356192;
 }
 
 .title {
-    border-left-width: 3px;
-    border-left-style: solid;
-    border-left-color: black;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #356192;
 
     width: auto;
     max-width: 45%;
     height: 10%;
-    background: #b5cdce;
-    color: rgb(0, 0, 0);
+    background: #192e46;
+    color: white;
     margin: auto;
     position: relative;
     top: 10%;
