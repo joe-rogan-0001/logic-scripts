@@ -1,5 +1,5 @@
 # qb-taxijob
-Taxi Job For QB-Core
+Taxi Job For lrp-core
 
 # License
 

@@ -2,17 +2,31 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'QB-TaxiJob'
-version '1.0.0'
+version '1.2.0'
 
 ui_page 'html/meter.html'
 
 shared_scripts {
     '@lrp-core/shared/locale.lua',
-    'locales/en.lua', -- Change to the language you want to use
+    'locales/en.lua',
+    'locales/*.lua',
     'config.lua',
 }
 
-client_script 'client/main.lua'
+dependencies {
+    'lrp-core',
+    'PolyZone',
+}
+
+client_scripts {
+    '@PolyZone/client.lua',
+    '@PolyZone/BoxZone.lua',
+    '@PolyZone/EntityZone.lua',
+    '@PolyZone/CircleZone.lua',
+    '@PolyZone/ComboZone.lua',
+    'client/main.lua',
+}
+
 server_script 'server/main.lua'
 
 files {

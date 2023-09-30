@@ -527,7 +527,29 @@ Config.Peds = {
       distance = 3,
     },
    },
-
+   { 
+    model = 'a_m_m_indian_01', 
+    coords = vector4(901.34, -170.06, 72.08, 228.81), 
+    gender = 'male',
+    freeze = true,
+    invincible = true,
+    blockevents = true,
+    target = { 
+      options = { 
+        {
+          event = 'qb-taxijob:client:requestcab',
+          icon = "fas fa-sign-in-alt",
+          label = '🚕 Request Taxi Cab'
+        },
+        {
+          event = 'qb-taxi:client:DoTaxiNpc',
+          icon = "fas fa-sign-in-alt",
+          label = '🚕 Request Local Job'
+        }
+      },
+      distance = 3,
+    },
+   },
 --license person
 { 
   model = 'u_f_m_casinoshop_01', 
@@ -1339,6 +1361,59 @@ local function AddTargetModel(models, parameters)
 end
 
 CreateThread(function()
+  for k, v in pairs(Config.Peds) do
+    if not v.currentpednumber or v.currentpednumber == 0 then
+      local spawnedped = 0
+      RequestModel(v.model)
+      while not HasModelLoaded(v.model) do
+        Wait(0)
+      end
+
+      if type(v.model) == 'string' then v.model = GetHashKey(v.model) end
+
+      if v.minusOne then
+        spawnedped = CreatePed(0, v.model, v.coords.x, v.coords.y, v.coords.z - 1.0, v.coords.w, v.networked or false, false)
+      else
+        spawnedped = CreatePed(0, v.model, v.coords.x, v.coords.y, v.coords.z, v.coords.w, v.networked or false, false)
+      end
+
+      if v.freeze then
+        FreezeEntityPosition(spawnedped, true)
+      end
+
+      if v.invincible then
+        SetEntityInvincible(spawnedped, true)
+      end
+
+      if v.blockevents then
+        SetBlockingOfNonTemporaryEvents(spawnedped, true)
+      end
+
+      if v.animDict and v.anim then
+        RequestAnimDict(v.animDict)
+        while not HasAnimDictLoaded(v.animDict) do
+          Wait(0)
+        end
+
+        TaskPlayAnim(spawnedped, v.animDict, v.anim, 8.0, 0, -1, v.flag or 1, 0, 0, 0, 0)
+      end
+
+      if v.scenario then
+        TaskStartScenarioInPlace(spawnedped, v.scenario, 0, true)
+      end
+
+      if v.target then
+        AddTargetModel(v.model, {
+          options = v.target.options,
+          distance = v.target.distance
+        })
+      end
+
+      Config.Peds[k].currentpednumber = spawnedped
+    end
+  end
+  PedsReady = true
+
     if next(Config.CircleZones) then
         for k, v in pairs(Config.CircleZones) do
             exports['lrp-target']:AddCircleZone(v.name, v.coords, v.radius, {
@@ -1407,59 +1482,17 @@ CreateThread(function()
         end
     end
 
-    for k, v in pairs(Config.Peds) do
-      if not v.currentpednumber or v.currentpednumber == 0 then
-        local spawnedped = 0
-        RequestModel(v.model)
-        while not HasModelLoaded(v.model) do
-          Wait(0)
-        end
-  
-        if type(v.model) == 'string' then v.model = GetHashKey(v.model) end
-  
-        if v.minusOne then
-          spawnedped = CreatePed(0, v.model, v.coords.x, v.coords.y, v.coords.z - 1.0, v.coords.w, v.networked or false, false)
-        else
-          spawnedped = CreatePed(0, v.model, v.coords.x, v.coords.y, v.coords.z, v.coords.w, v.networked or false, false)
-        end
-  
-        if v.freeze then
-          FreezeEntityPosition(spawnedped, true)
-        end
-  
-        if v.invincible then
-          SetEntityInvincible(spawnedped, true)
-        end
-  
-        if v.blockevents then
-          SetBlockingOfNonTemporaryEvents(spawnedped, true)
-        end
-  
-        if v.animDict and v.anim then
-          RequestAnimDict(v.animDict)
-          while not HasAnimDictLoaded(v.animDict) do
-            Wait(0)
-          end
-  
-          TaskPlayAnim(spawnedped, v.animDict, v.anim, 8.0, 0, -1, v.flag or 1, 0, 0, 0, 0)
-        end
-  
-        if v.scenario then
-          TaskStartScenarioInPlace(spawnedped, v.scenario, 0, true)
-        end
-  
-        if v.target then
-          AddTargetModel(v.model, {
+    if next(Config.Peds) then 
+      for k, v in pairs(Config.Peds) do
+        if (v.target) then
+          exports['lrp-target']:AddTargetModel(v.model, {
             options = v.target.options,
-            distance = v.target.distance
+            distance = v.distance
           })
         end
-  
-        Config.Peds[k].currentpednumber = spawnedped
       end
     end
-    PedsReady = true
-
+      
     if next(Config.GlobalPedOptions) then
         exports['lrp-target']: AddGlobalPed(Config.GlobalPedOptions)
     end
