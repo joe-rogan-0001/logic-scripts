@@ -1,18 +1,12 @@
-fx_version "bodacious"
+name "Jim-Mining"
+author "Jimathy"
+version "v2.4"
+description "Mining Script By Jimathy"
+fx_version "cerulean"
 game "gta5"
 
--- Define the resource metadata
-name "OSM-MINING"
-author "OSMIUM | discord.io/osmfx"
+shared_scripts { 'config.lua', 'shared/*.lua', 'locales/*.lua' }
+server_script { 'server.lua' }
+client_scripts { 'client.lua' }
 
-description "Explosive and Realistic Mining"
-
-client_scripts {
-	'config.lua',
-    'client/client.lua'
-}
-
-server_scripts {
-    'config.lua',
-	'server/server.lua'
-}
+lua54 'yes'
