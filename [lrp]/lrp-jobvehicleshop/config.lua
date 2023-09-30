@@ -33,8 +33,8 @@ Config.Shops = {
             [1] = {         
                 coords = vector4(462.98, -1016.99, 20.09, 178.08), -- where the vehicle will spawn on display
                 maxZ = 30.63,
-                defaultVehicle = 'npolvic', -- Default display vehicle
-                chosenVehicle = 'npolvic', -- Same as default but is dynamically changed when swapping vehicles
+                defaultVehicle = 'polvic', -- Default display vehicle
+                chosenVehicle = 'polvic', -- Same as default but is dynamically changed when swapping vehicles
             },
         },
     },
