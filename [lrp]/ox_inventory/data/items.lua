@@ -52,6 +52,12 @@ return {
 		consume = 0.3
 	},
 
+	['mdtcitation'] 				 = {
+		label = 'Citation', 			
+		weight = 10, 						
+	},
+
+
 	['bandage']                    = {
 		label = 'Bandage',
 		weight = 115,
