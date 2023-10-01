@@ -17,49 +17,67 @@ RegisterNetEvent('qb-cityhall:server:requestId', function(data)
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.gender = Player.PlayerData.charinfo.gender
+        exports.ox_inventory:AddItem(src, 'id_card', 1, {description = 'Citizen Id:  ' ..info.citizenid..' \n\n First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n Gender:  ' ..info.gender .. ' '})
+
         --info.nationality = Player.PlayerData.charinfo.nationality
     elseif identityData.item == "driver_license" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Class C Driver License"
+        exports.ox_inventory:AddItem(src, 'driver_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
+
     elseif identityData.item == "cdl_license" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Class A Driver License"
+        exports.ox_inventory:AddItem(src, 'cdl_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
+
     elseif identityData.item == "weaponlicense" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
+        exports.ox_inventory:AddItem(src, 'weaponlicense', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..' '})
+
     elseif identityData.item == "permit" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Drivers Permit"
+        exports.ox_inventory:AddItem(src, 'permit', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
+
     elseif identityData.item == "huntinglicense" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Hunting License"
+        exports.ox_inventory:AddItem(src, 'huntinglicense', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..' '})
+
     elseif identityData.item == "fishinglicense" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Fishing License"
+        exports.ox_inventory:AddItem(src, 'fishinglicense', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..' '})
+
     elseif identityData.item == "pilot_license" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Pilot License"
+        exports.ox_inventory:AddItem(src, 'pilot_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..' '})
+
     elseif identityData.item == "boating_license" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Boating License"
+        exports.ox_inventory:AddItem(src, 'boating_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..' '})
+
     end
 
-    Player.Functions.AddItem(identityData.item, 1, nil, info)
+    --Player.Functions.AddItem(identityData.item, 1, nil, info)
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[identityData.item], 'add')
     Player.Functions.RemoveMoney("cash", 50)
 end)

@@ -5,14 +5,15 @@ local handle, board, board_scaleform, overlay, ped, pedcoords, x, y, z, r, suspe
 local MugShots = {}
 
 -- Mugshot location  ( Position is the default QBCore Prison Interior )
-	x = 1828.69
-    y = 2581.72
-    z = 46.3
-    r = {x = 0.0, y = 0.0, z = 92.23}
-    suspectheading = 265.00
-    suspectx = 1827.63
-    suspecty = 2581.7
-    suspectz = 44.89
+ 
+	x = 473.0
+    y = -1012.59
+    z = 26.86
+    r = {x = 0.0, y = 0.0, z = 359.71}
+    suspectheading = 178.98
+    suspectx = 473.0
+    suspecty = -1011.39
+    suspectz = 25.27
 	
 -- Mugshot functions
 
@@ -28,10 +29,10 @@ end
 local function PhotoProcess(ped)
     local rotation = suspectheading
     for photo = 1, Config.MugPhotos, 1 do
-        Wait(200)
+        Wait(1500)
         TakeMugShot()
         PlaySoundFromCoord(-1, "SHUTTER_FLASH", x, y, z, "CAMERA_FLASH_SOUNDSET", true, 5, 0)
-        Wait(200)
+        Wait(1500)
         rotation = rotation - 90.0
         SetEntityHeading(ped, rotation)
     end

@@ -19,12 +19,16 @@ AddEventHandler('qb-dmv:theorypaymentpassed', function()
         local _source = source
         local Player = QBCore.Functions.GetPlayer(_source)
         local licenseTable = Player.PlayerData.metadata['licences']
+        info.firstname = Player.PlayerData.charinfo.firstname
+        info.lastname = Player.PlayerData.charinfo.lastname
+        info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Drivers Permit"
         licenseTable['permit'] = true
         Player.Functions.SetMetaData('licences', licenseTable)
         Player.Functions.RemoveMoney(Config.PaymentType, Config.Amount['theoretical'])
         if Config.GiveItem then
-            Player.Functions.AddItem('permit', 1, nil, info)
+
+            exports.ox_inventory:AddItem(src, 'permit', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
             TriggerClientEvent('QBCore:Notify', "You passed and got your Permit", "success")
             TriggerClientEvent('inventory:client:ItemBox', _source, QBCore.Shared.Items['driver_license'], 'add')
         else
@@ -41,7 +45,7 @@ AddEventHandler('qb-dmv:theorypaymentpassed', function()
         Player.Functions.SetMetaData('licences', licenseTable)
         Player.Functions.RemoveMoney(Config.PaymentType, Config.Amount['driving'])
         if Config.GiveItem then
-            Player.Functions.AddItem('driver_license', 1, nil, info)
+            exports.ox_inventory:AddItem(src, 'driver_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
             TriggerClientEvent('QBCore:Notify', "You passed and got your Drivers License", "success")
             TriggerClientEvent('inventory:client:ItemBox', _source, QBCore.Shared.Items['driver_license'], 'add')
         else
@@ -69,7 +73,7 @@ AddEventHandler('qb-dmv:driverpaymentpassed', function ()
         Player.Functions.SetMetaData('licences', licenseTable)
         Player.Functions.RemoveMoney(Config.PaymentType, Config.Amount['driving'])
         if Config.GiveItem == true then
-            Player.Functions.AddItem('driver_license', 1, nil, info)
+            exports.ox_inventory:AddItem(src, 'driver_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
             TriggerClientEvent('QBCore:Notify', "You passed the Drivers Test and got your Drivers License", "success")
             TriggerClientEvent('inventory:client:ItemBox', _source, QBCore.Shared.Items['driver_license'], 'add')
         else
@@ -98,7 +102,7 @@ AddEventHandler('qb-dmv:cdlpaymentpassed', function ()
         Player.Functions.SetMetaData('licences', licenseTable)
         Player.Functions.RemoveMoney(Config.PaymentType, Config.Amount['cdl'])
         if Config.GiveItem == true then
-            Player.Functions.AddItem('cdl_license', 1, nil, info)
+            exports.ox_inventory:AddItem(src, 'cdl_license', 1, {description = 'First Name:  ' ..info.firstname..'\n\n Last Name:  '..info.lastname..'\n\n Birth Date:  '..info.birthdate..'\n\n License Type:  ' ..info.type .. ' '})
             TriggerClientEvent('QBCore:Notify', "You passed the Drivers Test and got your CDL License", "success")
             TriggerClientEvent('inventory:client:ItemBox', _source, QBCore.Shared.Items['cdl_license'], 'add')
         else

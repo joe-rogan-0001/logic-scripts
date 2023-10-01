@@ -33,6 +33,9 @@ local function displayMetadata(metadata, value)
 	})
 end
 exports('displayMetadata', displayMetadata)
+RegisterNetEvent("ox_inventory:client:displayMetadata", function ()
+    displayMetadata(info)
+end)
 
 ---@param _ table?
 ---@param name string?

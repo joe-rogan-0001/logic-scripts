@@ -1856,17 +1856,11 @@ local function giveCitationItem(src, citizenId, fine, incidentId)
 	local OfficerFullName = '(' .. Officer.PlayerData.metadata.callsign .. ') ' .. Officer.PlayerData.charinfo.firstname .. ' ' .. Officer.PlayerData.charinfo.lastname
 
 	local date = os.date("%Y-%m-%d %H:%M")
-	local info = {
-		citizenId = citizenId,
-		fine = "$"..fine,
-		date = date,
-		incidentId = "#"..incidentId,
-		officer = OfficerFullName,
-		
-	}
 
 
-	Player.Functions.AddItem('mdtcitation', 1, nil, info)
+	exports.ox_inventory:AddItem(source, 'mdtcitation', 1, {description = 'Citizen Id:  ' ..citizenId..' \n\n Fine:  $' ..fine..'\n\n Date:  '..date..'\n\n Incident Id:  #'..incidentId..'\n\n Officer:  ' ..OfficerFullName .. ' '})
+
+	
 	TriggerClientEvent('QBCore:Notify', src, PlayerName.." (" ..citizenId.. ") received a citation!")
 	if Config.QBManagementUse then 
 		exports['qb-management']:AddMoney(Officer.PlayerData.job.name, fine) 
