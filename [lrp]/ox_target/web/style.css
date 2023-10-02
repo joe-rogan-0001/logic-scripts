@@ -36,13 +36,13 @@ p {
   filter: drop-shadow(0px 0px 1rem rgba(255, 255, 255));
   border-radius: 50%;
   display: block;
-  height: 1.5vh;
-  width: 1.5vh;
+  height: 1.0vh;
+  width: 1.0vh;
 }
 
 .eye-hover {
-  border: 3px solid #E5283E !important;
-  filter: drop-shadow(0px 0px 1rem #E5283E) !important;
+  border: 3px solid #239ecf !important;
+  filter: drop-shadow(0px 0px 1rem #239ecf) !important;
 }
 
 #options-wrapper {
@@ -110,11 +110,11 @@ p {
 .option-label:hover {
   color: #FFFFFF;
   background: none;
-  background-image: linear-gradient(0deg, #E5283E, #E5283E), linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255));
+  background-image: linear-gradient(0deg, #239ecf, #239ecf), linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255));
 }
 
 .option-icon {
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 22pt;
   width: 14pt;
   margin: 5pt;
