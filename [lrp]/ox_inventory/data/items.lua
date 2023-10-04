@@ -5275,4 +5275,527 @@ return {
 		combinable = nil,
 		description = "An empty can, good for recycling"
 	},
+	-- mechanic script
+	["mechanic_tools"] = {
+		label = "Mechanic tools",
+		weight = 0,
+		close = true,
+		description = "Needed for vehicle repairs",
+		client = {
+			image = "mechanic_tools.png"
+		}
+	},
+	
+	["toolbox"] = {
+		label = "Toolbox",
+		weight = 0,
+		close = true,
+		description = "Needed for Performance part removal",
+		client = {
+			image = "toolbox.png"
+		}
+	},
+	
+	["ducttape"] = {
+		label = "Duct Tape",
+		weight = 0,
+		close = true,
+		description = "Good for quick fixes",
+		client = {
+			image = "bodyrepair.png"
+		}
+	},
+	
+	["mechboard"] = {
+		label = "Mechanic Sheet",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "mechboard.png"
+		}
+	},
+	
+	-- Performance
+	["turbo"] = {
+		label = "Supercharger Turbo",
+		weight = 0,
+		close = true,
+		description = "Who doesn't need a 65mm Turbo??",
+		client = {
+			image = "turbo.png"
+		}
+	},
+	
+	["car_armor"] = {
+		label = "Vehicle Armor",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "armour.png"
+		}
+	},
+	
+	["nos"] = {
+		label = "NOS Bottle",
+		weight = 0,
+		close = true,
+		description = "A full bottle of NOS",
+		client = {
+			image = "nos.png"
+		}
+	},
+	
+	["noscan"] = {
+		label = "Empty NOS Bottle",
+		weight = 0,
+		close = true,
+		description = "An Empty bottle of NOS",
+		client = {
+			image = "noscan.png"
+		}
+	},
+	
+	["noscolour"] = {
+		label = "NOS Colour Injector",
+		weight = 0,
+		close = true,
+		description = "Make that purge spray",
+		client = {
+			image = "noscolour.png"
+		}
+	},
+	
+	["engine1"] = {
+		label = "Tier 1 Engine",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "engine1.png"
+		}
+	},
+	
+	["engine2"] = {
+		label = "Tier 2 Engine",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "engine2.png"
+		}
+	},
+	
+	["engine3"] = {
+		label = "Tier 3 Engine",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "engine3.png"
+		}
+	},
+	
+	["engine4"] = {
+		label = "Tier 4 Engine",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "engine4.png"
+		}
+	},
+	
+	["engine5"] = {
+		label = "Tier 5 Engine",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "engine5.png"
+		}
+	},
+	
+	["transmission1"] = {
+		label = "Tier 1 Transmission",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "transmission1.png"
+		}
+	},
+	
+	["transmission2"] = {
+		label = "Tier 2 Transmission",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "transmission2.png"
+		}
+	},
+	
+	["transmission3"] = {
+		label = "Tier 3 Transmission",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "transmission3.png"
+		}
+	},
+	
+	["transmission4"] = {
+		label = "Tier 4 Transmission",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "transmission4.png"
+		}
+	},
+	
+	["brakes1"] = {
+		label = "Tier 1 Brakes",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "brakes1.png"
+		}
+	},
+	
+	["brakes2"] = {
+		label = "Tier 2 Brakes",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "brakes2.png"
+		}
+	},
+	
+	["brakes3"] = {
+		label = "Tier 3 Brakes",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "brakes3.png"
+		}
+	},
+	
+	["suspension1"] = {
+		label = "Tier 1 Suspension",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "suspension1.png"
+		}
+	},
+	
+	["suspension2"] = {
+		label = "Tier 2 Suspension",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "suspension2.png"
+		}
+	},
+	
+	["suspension3"] = {
+		label = "Tier 3 Suspension",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "suspension3.png"
+		}
+	},
+	
+	["suspension4"] = {
+		label = "Tier 4 Suspension",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "suspension4.png"
+		}
+	},
+	
+	["suspension5"] = {
+		label = "Tier 5 Suspension",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "suspension5.png"
+		}
+	},
+	
+	["bprooftires"] = {
+		label = "Bulletproof Tires",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "bprooftires.png"
+		}
+	},
+	
+	["drifttires"] = {
+		label = "Drift Tires",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "drifttires.png"
+		}
+	},
+	
+	-- Cosmetics
+	["underglow_controller"] = {
+		label = "Neon Controller",
+		weight = 0,
+		close = true,
+		description = "RGB LED Vehicle Remote",
+		client = {
+			image = "underglow_controller.png"
+		}
+	},
+	
+	["headlights"] = {
+		label = "Xenon Headlights",
+		weight = 0,
+		close = true,
+		description = "8k HID headlights",
+		client = {
+			image = "headlights.png"
+		}
+	},
+	
+	["tint_supplies"] = {
+		label = "Tint Supplies",
+		weight = 0,
+		close = true,
+		description = "Supplies for window tinting",
+		client = {
+			image = "tint_supplies.png"
+		}
+	},
+	
+	["customplate"] = {
+		label = "Customized Plates",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "plate.png"
+		}
+	},
+	
+	["hood"] = {
+		label = "Vehicle Hood",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "hood.png"
+		}
+	},
+	
+	["roof"] = {
+		label = "Vehicle Roof",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "roof.png"
+		}
+	},
+	
+	["spoiler"] = {
+		label = "Vehicle Spoiler",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "spoiler.png"
+		}
+	},
+	
+	["bumper"] = {
+		label = "Vehicle Bumper",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "bumper.png"
+		}
+	},
+	
+	["skirts"] = {
+		label = "Vehicle Skirts",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "skirts.png"
+		}
+	},
+	
+	["exhaust"] = {
+		label = "Vehicle Exhaust",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "exhaust.png"
+		}
+	},
+	
+	["seat"] = {
+		label = "Seat Cosmetics",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "seat.png"
+		}
+	},
+	
+	["rollcage"] = {
+		label = "Roll Cage",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "rollcage.png"
+		}
+	},
+	
+	["rims"] = {
+		label = "Custom Wheel Rims",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "rims.png"
+		}
+	},
+	
+	["livery"] = {
+		label = "Livery Roll",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "livery.png"
+		}
+	},
+	
+	["paintcan"] = {
+		label = "Vehicle Spray Can",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "spraycan.png"
+		}
+	},
+	
+	["tires"] = {
+		label = "Drift Smoke Tires",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "tires.png"
+		}
+	},
+	
+	["horn"] = {
+		label = "Custom Vehicle Horn",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "horn.png"
+		}
+	},
+	
+	["internals"] = {
+		label = "Internal Cosmetics",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "internals.png"
+		}
+	},
+	
+	["externals"] = {
+		label = "Exterior Cosmetics",
+		weight = 0,
+		close = true,
+		description = "",
+		client = {
+			image = "mirror.png"
+		}
+	},
+	
+	-- Repair Parts
+	["newoil"] = {
+		label = "Car Oil",
+		weight = 0,
+		close = false,
+		description = "",
+		client = {
+			image = "caroil.png"
+		}
+	},
+	
+	["sparkplugs"] = {
+		label = "Spark Plugs",
+		weight = 0,
+		close = false,
+		description = "",
+		client = {
+			image = "sparkplugs.png"
+		}
+	},
+	
+	["carbattery"] = {
+		label = "Car Battery",
+		weight = 0,
+		close = false,
+		description = "",
+		client = {
+			image = "carbattery.png"
+		}
+	},
+	
+	["axleparts"] = {
+		label = "Axle Parts",
+		weight = 0,
+		close = false,
+		description = "",
+		client = {
+			image = "axleparts.png"
+		}
+	},
+	
+	["sparetire"] = {
+		label = "Spare Tire",
+		weight = 0,
+		close = false,
+		description = "",
+		client = {
+			image = "sparetire.png"
+		}
+	},	
 }
