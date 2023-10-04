@@ -77,7 +77,7 @@ local function hasHarness()
     if not IsPedInAnyVehicle(ped, false) then return end
 
     local _harness = false
-    local hasHarness = exports['qb-smallresources']:HasHarness()
+    local hasHarness = exports['lrp-scripts']:HasHarness()
     if hasHarness then
         _harness = true
     else
