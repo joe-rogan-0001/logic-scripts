@@ -528,8 +528,26 @@ Config.Peds = {
     },
    },
    { 
+    model = 's_m_y_garbage', 
+    coords = vector4(-322.25, -1545.78, 30.02, 270.41), 
+    gender = 'male',
+    freeze = true,
+    invincible = true,
+    blockevents = true, 
+    target = { 
+      options = { 
+        {
+          event = 'Renewed-Garbage:client:OpenMainMenu',
+          icon = 'fa-solid fa-cubes',
+          label = 'Talk to Eddie'
+      }
+      },
+      distance = 3,
+    },
+   },
+   { 
     model = 'a_m_m_indian_01', 
-    coords = vector4(901.34, -170.06, 72.08, 228.81), 
+    coords = vector4(901.34, -170.06, 73.08, 228.81), 
     gender = 'male',
     freeze = true,
     invincible = true,
