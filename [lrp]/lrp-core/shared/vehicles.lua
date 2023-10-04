@@ -3903,67 +3903,67 @@ QBShared.Vehicles = {
 		['shop'] = 'pdm',
 	},
 	-- Police Vehicles / EMS Speedo
-	['polblazer'] = {
+	['npolblazer'] = {
 		['name'] = 'Police Blazer',
 		['brand'] = 'Police',
-		['model'] = 'polblazer',
+		['model'] = 'npolblazer',
 		['price'] = 25000,
 		['category'] = 'policecars',
-		['hash'] = `polblazer`,
+		['hash'] = `npolblazer`,
 		['shop'] = 'police',
 	},
-	['polvic'] = {
+	['npolvic'] = {
 		['name'] = 'Police CVPI',
 		['brand'] = 'Ford',
-		['model'] = 'polvic',
+		['model'] = 'npolvic',
 		['price'] = 35000,
 		['category'] = 'policecars',
-		['hash'] = `polvic`,
+		['hash'] = `npolvic`,
 		['shop'] = 'police',
 	},
-	['polmm'] = {
+	['npolmm'] = {
 		['name'] = 'Police Motorcycle',
 		['brand'] = '-',
-		['model'] = 'polmm',
+		['model'] = 'npolmm',
 		['price'] = 25000,
 		['category'] = 'policecars',
-		['hash'] = `polmm`,
+		['hash'] = `npolmm`,
 		['shop'] = 'police',
 	},
-	['polvette'] = {
+	['npolvette'] = {
 		['name'] = 'Corvette Interceptor',
 		['brand'] = 'Chevrolet',
-		['model'] = 'polvette',
+		['model'] = 'npolvette',
 		['price'] = 65000,
 		['category'] = 'policecars',
-		['hash'] = `polvette`,
+		['hash'] = `npolvette`,
 		['shop'] = 'police',
 	},
-	['polchal'] = {
+	['npolchal'] = {
 		['name'] = 'Challenger Interceptor',
 		['brand'] = 'Dodge',
-		['model'] = 'polchal',
+		['model'] = 'npolchal',
 		['price'] = 65000,
 		['category'] = 'policecars',
-		['hash'] = `polchal`,
+		['hash'] = `npolchal`,
 		['shop'] = 'police',
 	},
-	['polstang'] = {
+	['npolstang'] = {
 		['name'] = 'Mustang Interceptor',
 		['brand'] = 'Ford',
-		['model'] = 'polstang',
+		['model'] = 'npolstang',
 		['price'] = 65000,
 		['category'] = 'policecars',
-		['hash'] = `polstang`,
+		['hash'] = `npolstang`,
 		['shop'] = 'police',
 	},
-	['polcoach'] = {
+	['npolcoach'] = {
 		['name'] = 'Police Bus',
 		['brand'] = '-',
-		['model'] = 'polcoach',
+		['model'] = 'npolcoach',
 		['price'] = 55000,
 		['category'] = 'policecars',
-		['hash'] = `polcoach`,
+		['hash'] = `npolcoach`,
 		['shop'] = 'police',
 	},
 	['bcat'] = {
@@ -5315,22 +5315,22 @@ QBShared.Vehicles = {
 		['hash'] = `an225`,
 		['shop'] = 'pdm',
 	},
-		['polexp'] = {
+		['npolexp'] = {
 		['name'] = 'Explorer Cruiser',
 		['brand'] = 'Ford',
-		['model'] = 'polexp',
+		['model'] = 'npolexp',
 		['price'] = 45000,
 		['category'] = 'policecars',
-		['hash'] = `polexp`,
+		['hash'] = `npolexp`,
 		['shop'] = 'police',
 	},
-	['polchar'] = {
+	['npolchar'] = {
 		['name'] = 'Charger Interceptor',
 		['brand'] = 'Dodge',
-		['model'] = 'polchar',
+		['model'] = 'npolchar',
 		['price'] = 65000,
 		['category'] = 'policecars',
-		['hash'] = `polchar`,
+		['hash'] = `npolchar`,
 		['shop'] = 'police',
 	},
 	['lc500'] = {
