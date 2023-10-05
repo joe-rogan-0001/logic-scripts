@@ -826,6 +826,11 @@ return {
 			durability = 0.03,
 			ammoname = 'AMMO_TAZER'
 		},
+		['WEAPON_KATANAS'] = {
+			label = 'Katana',
+			weight = 11340,
+			durability = 0.1,
+		},
 	},
 
 	Components = {
