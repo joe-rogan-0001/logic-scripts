@@ -342,6 +342,11 @@ function PaycheckInterval()
     SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckInterval)
 end
 
+RegisterNetEvent('qb-banking:server:sendPaycheck', function(payment, source)
+    local Player = QBCore.Functions.GetPlayer(source)
+    Player.Functions.AddMoney('cash', payment, 'paycheck')
+end)
+
 -- Callback Functions --
 
 ---Trigger Client Callback
