@@ -38,8 +38,8 @@ QBShared.Jobs = {
             },
         },
 	},
-    ['bestbuds'] = {
-		label = 'Best Buds',
+    ['whitewidow'] = {
+		label = 'White Widow',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -187,8 +187,8 @@ QBShared.Jobs = {
             },
         },
 	},
-    ['tunershop'] = {
-		label = 'Tuner-Shop',
+    ['hayes'] = {
+		label = 'Hayes Autos',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -209,7 +209,39 @@ QBShared.Jobs = {
                 payment = 0
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Chief',
+                payment = 0
+            },
+			['5'] = {
+                name = 'CEO',
+				isboss = true,
+                payment = 0
+            },
+        },
+	},
+    ['wotc'] = {
+		label = 'Wide Open Throttle Customs',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 0
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 0
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 0
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 0
+            },
+			['4'] = {
+                name = 'Chief',
                 payment = 0
             },
 			['5'] = {

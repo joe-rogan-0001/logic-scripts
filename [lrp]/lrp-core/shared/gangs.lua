@@ -8,113 +8,82 @@ QBShared.Gangs = {
             },
         },
 	},
-    ['cerberus'] = {
-		label = 'Cerberus',
+    ['yakuza'] = {
+		label = 'Yakuza',
 		grades = {
             ['0'] = {
-                name = 'Staff'
+                name = 'Shatei'
             },
 			['1'] = {
-                name = 'Management'
+                name = 'Kyoudai'
             },
 			['2'] = {
-                name = 'CEO'
+                name = 'Shateigashira'
             },
 			['3'] = {
-                name = 'Founder',
+                name = 'Wakagashira',
+            },
+            ['4'] = {
+                name = 'Oyabun',
 				isboss = true
             },
         },
 	},
-    ['uptr'] = {
-		label = 'Uptown Riders',
+    ['savagemc'] = {
+		label = 'Savage Ones MC',
 		grades = {
             ['0'] = {
-                name = 'Tuner'
+                name = 'Hang Around'
             },
 			['1'] = {
-                name = 'Racer'
+                name = 'Prospect'
             },
 			['2'] = {
-                name = 'Right Hand'
+                name = 'Probate'
             },
-			['3'] = {
-                name = 'Drift King',
-				isboss = true
-            },
-        },
-	},
-	['nbk'] = {
-		label = 'NBK',
-		grades = {
-            ['0'] = {
-                name = 'Recruit'
-            },
-			['1'] = {
-                name = 'UnderBoss'
-            },
-			['2'] = {
-                name = 'Boss',
-				isboss = true
-            },
-        },
-	},
-	['rod'] = {
-		label = 'Ravens Of Doom',
-		grades = {
-            ['0'] = {
-                name = 'Enforcer'
-            },
-            ['1'] = {
-                name = 'Roadcaptain'
-            },
-			['2'] = {
-                name = 'SGT'
-            },
-			['3'] = {
-                name = 'VP'
+            ['3'] = {
+                name = 'Member'
             },
 			['4'] = {
+                name = 'Enforcer'
+            },
+			['5'] = {
+                name = 'Treasurer'
+            },
+            ['6'] = {
+                name = 'Secretary'
+            },
+			['7'] = {
+                name = 'Sergeant At Arms'
+            },
+			['8'] = {
+                name = 'Vice-President',
+            },
+            ['9'] = {
                 name = 'President',
 				isboss = true
             },
         },
-    },
-    ['lph'] = {
-		label = 'Los Pollos Hermanos',
-		grades = {
-            ['0'] = {
-                name = 'El cartel'
-            },
-			['1'] = {
-                name = 'La Mano Derecha'
-            },
-			['2'] = {
-                name = 'Gran jefe',
-				isboss = true
-            },
-        },
-    },
-    ['ira'] = {
-		label = 'IRA',
+	},
+	['gambino'] = {
+		label = 'Gambino',
 		grades = {
             ['0'] = {
                 name = 'Recruit'
             },
 			['1'] = {
-                name = 'Sergeant'
+                name = 'Soldier'
             },
 			['2'] = {
-                name = 'Lieutenant '
+                name = 'Treasurer',
             },
             ['3'] = {
-                name = 'Right-Hand '
+                name = 'Right Hand',
             },
-			['4'] = {
+            ['4'] = {
                 name = 'Boss',
 				isboss = true
             },
         },
-	},
-	
+	},	
 }
