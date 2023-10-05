@@ -594,6 +594,12 @@ return {
 			durability = 0.5,
 			ammoname = 'ammo-sniper'
 		},
+		['WEAPON_SNIPERRIFLE2'] = {
+			label = 'Hunting Rifle',
+			weight = 50000,
+			durability = 0.5,
+			ammoname = 'ammo-sniper'
+		},
 
 		['WEAPON_SNOWBALL'] = {
 			label = 'Snow Ball',
