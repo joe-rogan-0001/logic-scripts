@@ -45,7 +45,7 @@ AddEventHandler('evidence:server:AddEvidenceToInventory', function(id,eType,othe
 
   local Player = QBCore.Functions.GetPlayer(src)
   if Player.Functions.RemoveItem("empty_evidence_bag", 1) then
-    if Player.Functions.AddItem("filled_evidence_bag", 1, false, info) then
+    if exports.ox_inventory:AddItem(src, 'filled_evidence_bag', 1, {description = info}) then
       TriggerClientEvent("inventory:client:ItemBox", src, QBCore.Shared.Items["filled_evidence_bag"], "add")
     end
   else
