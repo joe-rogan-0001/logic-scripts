@@ -173,7 +173,7 @@ AddEventHandler('lrp-rentals:spawncar', function(data)
     QBCore.Functions.TriggerCallback('lrp-rentals:server:checkbal', function(success)
         if success then
             QBCore.Functions.SpawnVehicle(model, function(vehicle)
-                SetEntityHeading(vehicle, 340.0)
+                SetEntityHeading(vehicle, 248.0)
                 TaskWarpPedIntoVehicle(player, vehicle, -1)
                 TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(vehicle))
                 SetVehicleEngineOn(vehicle, true, true)
@@ -181,7 +181,7 @@ AddEventHandler('lrp-rentals:spawncar', function(data)
                 SetNetworkIdExistsOnAllMachines(networkid, true)
                 SetNetworkIdCanMigrate(networkid, true)
                 SpawnVehicle = true
-            end, vector4(111.4223, -1081.24, 29.192,340.0), true)
+            end, vector4(-321.48, -997.42, 29.74, 248.52), true)
 
             Wait(1000)
 

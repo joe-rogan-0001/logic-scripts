@@ -1119,7 +1119,7 @@ blockevents = true,
     -- CAR RENTAL CITY
     {
       model = 'cs_paper',
-      coords = vector4(108.75, -1089.13, 28.3, 342.82),
+      coords = vector4(-313.36, -993.89, 29.26, 159.22),
       gender = 'male',
       freeze = true,
       invincible = true,
