@@ -504,7 +504,7 @@ Config.Locations = {
 		discordcolour = 2571775,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
 	},
-	{	job = "mechanic",
+	{	job = "hayes",
 		zones = {
 			vec2(490.57400512695, -1302.0946044922),
 			vec2(490.27529907227, -1305.3948974609),
