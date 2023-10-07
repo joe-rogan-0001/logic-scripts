@@ -122,8 +122,22 @@ LoadHouseData = function()
     TriggerClientEvent("qb-houses:client:setHouseConfig", -1, Houses)
 end
 
+
+local newChars = {}
+RegisterNetEvent('lrp-login:server:startReady', function(source)
+    local Player = QBCore.Functions.GetPlayer(source)
+    newChars.insert({
+        citizenid = Player.PlayerData.citizenid,
+        ready = true
+    })
+end)
+
+
 function GiveStarterItems(source)
     local Player = QBCore.Functions.GetPlayer(source)
+    while not newChars[Player.PlayerData.citizenid].ready do
+        Wait(1000)
+    end
     for k, v in pairs(QBCore.Shared.StarterItems) do
         local info = {}
         if v.item == "id_card" then

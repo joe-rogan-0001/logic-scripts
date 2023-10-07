@@ -8,6 +8,7 @@ function Login.characterSpawned()
   isNear = false
   TriggerServerEvent('QBCore:Server:OnPlayerLoaded')
   TriggerEvent('QBCore:Client:OnPlayerLoaded')
+  TriggerEvent('lrp-login:server:startReady')
   
   SetPedMaxHealth(PlayerPedId(), 200)
   SetPlayerMaxArmour(PlayerId(), 60)
