@@ -3903,7 +3903,7 @@ QBShared.Vehicles = {
 		['shop'] = 'pdm',
 	},
 	-- Police Vehicles / EMS Speedo
-	['npolblazer'] = {
+	['polblazer'] = {
 		['name'] = 'Police Blazer',
 		['brand'] = 'Police',
 		['model'] = 'npolblazer',
@@ -3912,7 +3912,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolblazer`,
 		['shop'] = 'police',
 	},
-	['npolvic'] = {
+	['polvic'] = {
 		['name'] = 'Police CVPI',
 		['brand'] = 'Ford',
 		['model'] = 'npolvic',
@@ -3921,7 +3921,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolvic`,
 		['shop'] = 'police',
 	},
-	['npolmm'] = {
+	['polmm'] = {
 		['name'] = 'Police Motorcycle',
 		['brand'] = '-',
 		['model'] = 'npolmm',
@@ -3930,7 +3930,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolmm`,
 		['shop'] = 'police',
 	},
-	['npolvette'] = {
+	['polvette'] = {
 		['name'] = 'Corvette Interceptor',
 		['brand'] = 'Chevrolet',
 		['model'] = 'npolvette',
@@ -3939,7 +3939,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolvette`,
 		['shop'] = 'police',
 	},
-	['npolchal'] = {
+	['polchal'] = {
 		['name'] = 'Challenger Interceptor',
 		['brand'] = 'Dodge',
 		['model'] = 'npolchal',
@@ -3948,7 +3948,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolchal`,
 		['shop'] = 'police',
 	},
-	['npolstang'] = {
+	['polstang'] = {
 		['name'] = 'Mustang Interceptor',
 		['brand'] = 'Ford',
 		['model'] = 'npolstang',
@@ -3957,7 +3957,7 @@ QBShared.Vehicles = {
 		['hash'] = `npolstang`,
 		['shop'] = 'police',
 	},
-	['npolcoach'] = {
+	['polcoach'] = {
 		['name'] = 'Police Bus',
 		['brand'] = '-',
 		['model'] = 'npolcoach',
