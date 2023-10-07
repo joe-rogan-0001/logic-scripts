@@ -11,6 +11,7 @@ return {
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'boombox', price = 750 },
+			{ name = 'burger', price = 10 },
 			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
@@ -49,6 +50,7 @@ return {
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'boombox', price = 750 },
+			{ name = 'sandwhich', price = 10 },
 			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
@@ -146,14 +148,14 @@ return {
 			id = 110, colour = 84, scale = 0.7
 		}, inventory = {
 			{ name = 'weapon_glockpd', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
-			{ name = 'weapon_taser', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
+			{ name = 'weapon_stungun', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
 			{ name = 'weapon_pumpshotgun_mk2pd', price = 1000, metadata = {registered = true, serial = 'POL'}, license = 'weapon', grade = 3 },
 			{ name = 'weapon_m4pd', price = 1000, metadata = {registered = true, serial = 'POL'}, license = 'weapon', grade = 3 },
 			{ name = 'weapon_nightstick', price = 0 },
-			{ name = 'pistol_ammo', price = 0 },
-			{ name = 'smg_ammo', price = 20 },
-			{ name = 'shotgun_ammo', price = 20 },
-			{ name = 'rifle_ammo', price = 20 },
+			{ name = 'ammo-9', price = 0 },
+			{ name = 'ammo-45', price = 20 },
+			{ name = 'ammo-shotgun', price = 20 },
+			{ name = 'ammo-rifle', price = 20 },
 			{ name = 'handcuffs', price = 0 },
 			{ name = 'weapon_flashlight', price = 0 },
 			{ name = 'empty_evidence_bag', price = 0 },
