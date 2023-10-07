@@ -19,7 +19,7 @@ div {
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: #EE7733;
+  background-color: #05036e;
   outline: 1px solid #313131;
   border-radius: 5px;
 }
@@ -39,12 +39,12 @@ input[type=number] {
     box-shadow: none !important;
 }
 input[type=number]:active {
-    border-bottom-color: #EE7733 !important;
+    border-bottom-color: #05036e !important;
 }
 
 button {
-    background-color: #EE7733 !important;
-    border-color: #EE7733 !important;
+    background-color: #05036e !important;
+    border-color: #05036e !important;
     color: #ffffff !important;
 }
 
@@ -97,7 +97,7 @@ button {
 }
 
 h6 {
-    color: #EE7733 !important;
+    color: #05036e !important;
 }
 
 .input-number {
@@ -135,10 +135,10 @@ h6 {
 }
 
 button.button-menu {
-    background-color: #EE7733 !important;
+    background-color: #05036e !important;
 }
 button.button-menu.active {
-    background-color: #EE7733 !important;
+    background-color: #05036e !important;
 }
 
 
@@ -167,7 +167,7 @@ button.button-menu.active {
     border-radius: 0px;
 }
 .collapsible-header {
-    background-color: #EE7733 !important;
+    background-color: #05036e !important;
     color: #e7e7e7 !important;
     border: rgb(60,60,60) solid !important;
 }
@@ -208,12 +208,12 @@ input[type="range" i] {
  */
 input:focus,
 input:active {
-    border-bottom-color: #EE7733 !important;
+    border-bottom-color: #05036e !important;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    background: #EE7733 !important;
+    background: #05036e !important;
     cursor: pointer;
     border-radius: 2px !important;
 }

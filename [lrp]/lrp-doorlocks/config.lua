@@ -9,7 +9,7 @@ Config.AdminAccess = {
 	enabled = false,
 	permission = 'admin' -- Needs to be admin or god
 }
-Config.CommandPermission = 'god' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code
+--Config.CommandPermission = 'god' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code
 
 Config.Debug = false -- Prints the closest door data
 
@@ -2380,8 +2380,8 @@ Config.DoorList['mrpd bollards'] = {
     --showNUI = true
 }
 
--- koreatown front door created by hahaha
-Config.DoorList['koreatown front door'] = {
+-- yakuza front door created by hahaha
+Config.DoorList['yakuza front door'] = {
     garage = false,
     objHeading = 270.00588989258,
     slides = false,
@@ -2391,7 +2391,7 @@ Config.DoorList['koreatown front door'] = {
     objHash = -710818483,
     lockpick = false,
     fixText = false,
-    authorizedGangs = { ['koreatown']=0 },
+    authorizedGangs = { ['yakuza']=0 },
     objCoords = vec3(-716.802002, -865.318176, 23.354815),
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
@@ -2401,8 +2401,8 @@ Config.DoorList['koreatown front door'] = {
     --showNUI = true
 }
 
--- koreatown door 2 created by hahaha
-Config.DoorList['koreatown door 2'] = {
+-- yakuza door 2 created by hahaha
+Config.DoorList['yakuza door 2'] = {
     garage = false,
     objHeading = 180.19499206543,
     slides = false,
@@ -2412,7 +2412,7 @@ Config.DoorList['koreatown door 2'] = {
     objHash = -1083130717,
     lockpick = false,
     fixText = false,
-    authorizedGangs = { ['koreatown']=0 },
+    authorizedGangs = { ['yakuza']=0 },
     objCoords = vec3(-723.856995, -863.004395, 23.356379),
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
@@ -2422,8 +2422,8 @@ Config.DoorList['koreatown door 2'] = {
     --showNUI = true
 }
 
--- koreatown door 3 created by hahaha
-Config.DoorList['koreatown door 3'] = {
+-- yakuza door 3 created by hahaha
+Config.DoorList['yakuza door 3'] = {
     garage = false,
     objHeading = 180.19499206543,
     slides = false,
@@ -2433,7 +2433,7 @@ Config.DoorList['koreatown door 3'] = {
     objHash = -1083130717,
     lockpick = false,
     fixText = false,
-    authorizedGangs = { ['koreatown']=0 },
+    authorizedGangs = { ['yakuza']=0 },
     objCoords = vec3(-726.887817, -865.857361, 23.358059),
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
@@ -2443,8 +2443,8 @@ Config.DoorList['koreatown door 3'] = {
     --showNUI = true
 }
 
--- koreatown door 4 created by hahaha
-Config.DoorList['koreatown door 4'] = {
+-- yakuza door 4 created by hahaha
+Config.DoorList['yakuza door 4'] = {
     garage = false,
     objHeading = 270.00588989258,
     slides = false,
@@ -2454,7 +2454,7 @@ Config.DoorList['koreatown door 4'] = {
     objHash = -1083130717,
     lockpick = false,
     fixText = false,
-    authorizedGangs = { ['koreatown']=0 },
+    authorizedGangs = { ['yakuza']=0 },
     objCoords = vec3(-722.311340, -862.317200, 26.926243),
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
@@ -2658,7 +2658,7 @@ Config.DoorList['casino doubledoor'] = {
     locked = false,
     slides = false,
     audioRemote = false,
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     authorizedJobs = { ['casino']=0 },
     --oldMethod = true,
@@ -2681,7 +2681,7 @@ Config.DoorList['casino door'] = {
     fixText = false,
     slides = false,
     maxDistance = 2.0,
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     objHeading = 238.03240966797,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
@@ -2694,7 +2694,7 @@ Config.DoorList['casino door'] = {
 -- casino tablegames created by yeatt
 Config.DoorList['casino tablegames'] = {
     authorizedJobs = { ['casino']=0 },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     audioRemote = false,
     doors = {
         {objHash = -389557955, objHeading = 103.22945404053, objCoords = vec3(1000.850708, 43.757137, 70.666504)},
@@ -2735,7 +2735,7 @@ Config.DoorList['room 524'] = {
 
 -- staff only created by yeatt
 Config.DoorList['staff only'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     locked = true,
     maxDistance = 2.5,
     lockpick = false,
@@ -2756,7 +2756,7 @@ Config.DoorList['staff only'] = {
 
 -- staff only created by yeatt
 Config.DoorList['staff only'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     locked = true,
     maxDistance = 2.5,
     lockpick = false,
@@ -2777,7 +2777,7 @@ Config.DoorList['staff only'] = {
 
 -- staff only created by yeatt
 Config.DoorList['staff only'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     locked = true,
     maxDistance = 2.5,
     lockpick = false,
@@ -2798,7 +2798,7 @@ Config.DoorList['staff only'] = {
 
 -- staff only 1 created by yeatt
 Config.DoorList['staff only 1'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     slides = false,
     lockpick = false,
     authorizedJobs = { ['casino']=0 },
@@ -2819,7 +2819,7 @@ Config.DoorList['staff only 1'] = {
 
 -- staff only 2 created by yeatt
 Config.DoorList['staff only 2'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     slides = false,
     lockpick = false,
     authorizedJobs = { ['casino']=0 },
@@ -2848,7 +2848,7 @@ Config.DoorList['staff 12312'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(994.513306, 25.085358, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 328.15661621094,
     objHash = 1278063852,
@@ -2870,7 +2870,7 @@ Config.DoorList['staff behind counter'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(995.433228, 31.163610, 71.608078),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 238.3182220459,
     objHash = 401003935,
@@ -2891,7 +2891,7 @@ Config.DoorList['staff broken elevator'] = {
         {objHash = -1240156945, objHeading = 148.15661621094, objCoords = vec3(1013.533813, 27.289812, 70.460556)},
         {objHash = -1240156945, objHeading = 328.15661621094, objCoords = vec3(1012.259888, 28.081015, 70.460556)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 6.0,
     slides = true,
     locked = true,
@@ -2912,7 +2912,7 @@ Config.DoorList['staff bj couble door'] = {
         {objHash = 680601509, objHeading = 148.1089630127, objCoords = vec3(1026.787109, 32.432533, 70.012947)},
         {objHash = 680601509, objHeading = 328.15661621094, objCoords = vec3(1025.090332, 33.490280, 70.012947)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     slides = false,
     locked = true,
@@ -2934,7 +2934,7 @@ Config.DoorList['staff behind bj double'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(1021.192261, 20.666773, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 148.15661621094,
     objHash = 1226684428,
@@ -2956,7 +2956,7 @@ Config.DoorList['wash locker'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(996.611572, 4.338697, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 328.15661621094,
     objHash = -35610440,
@@ -2978,7 +2978,7 @@ Config.DoorList['wash locker 2'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(1005.197266, -0.993656, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 328.15661621094,
     objHash = -35610440,
@@ -2999,7 +2999,7 @@ Config.DoorList['wash locker dbl 2'] = {
         {objHash = -267451115, objHeading = 328.15661621094, objCoords = vec3(1011.449890, 0.008102, 71.611694)},
         {objHash = -267451115, objHeading = 148.15661621094, objCoords = vec3(1013.148865, -1.047096, 71.611694)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     slides = false,
     locked = true,
@@ -3020,7 +3020,7 @@ Config.DoorList['wash locker dbl 3'] = {
         {objHash = -267451115, objHeading = 148.15661621094, objCoords = vec3(1021.517395, -6.244555, 71.611694)},
         {objHash = -267451115, objHeading = 328.15661621094, objCoords = vec3(1019.818542, -5.189483, 71.611694)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     slides = false,
     locked = true,
@@ -3041,7 +3041,7 @@ Config.DoorList['wash locker dbl 3'] = {
         {objHash = -267451115, objHeading = 148.15661621094, objCoords = vec3(1018.428650, -9.211340, 71.611694)},
         {objHash = -267451115, objHeading = 328.15661621094, objCoords = vec3(1016.729675, -8.156136, 71.611694)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     slides = false,
     locked = true,
@@ -3063,7 +3063,7 @@ Config.DoorList['wash locker dbl 4'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(1013.620300, -6.225018, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 148.15661621094,
     objHash = -35610440,
@@ -3085,7 +3085,7 @@ Config.DoorList['wash locker dbl 5'] = {
     garage = false,
     fixText = false,
     objCoords = vec3(1009.470825, -3.647877, 71.611694),
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.0,
     objHeading = 148.15661621094,
     objHash = -35610440,
@@ -3106,7 +3106,7 @@ Config.DoorList['wash locker dbl 6'] = {
         {objHash = -267451115, objHeading = 328.15661621094, objCoords = vec3(1016.729675, -8.156136, 71.611694)},
         {objHash = -267451115, objHeading = 148.15661621094, objCoords = vec3(1018.428650, -9.211340, 71.611694)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     slides = false,
     locked = true,
@@ -3124,7 +3124,7 @@ Config.DoorList['da2dadawd'] = {
         {objHash = -267451115, objHeading = 328.15661621094, objCoords = vec3(1019.818542, -5.189483, 71.611694)},
         {objHash = -267451115, objHeading = 148.15661621094, objCoords = vec3(1021.517395, -6.244555, 71.611694)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     locked = true,
     authorizedJobs = { ['casino']=0 },
@@ -3145,7 +3145,7 @@ Config.DoorList['office double'] = {
         {objHash = -643593781, objHeading = 148.15661621094, objCoords = vec3(1002.307251, 60.316097, 75.210083)},
         {objHash = -643593781, objHeading = 328.15661621094, objCoords = vec3(1000.608459, 61.371151, 75.210083)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     locked = true,
     authorizedJobs = { ['casino']=0 },
@@ -3162,7 +3162,7 @@ Config.DoorList['office double'] = {
 
 -- offices created by yeatt
 Config.DoorList['offices'] = {
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     objCoords = vec3(1013.781372, 60.430008, 75.215614),
     slides = false,
     fixText = false,
@@ -3188,7 +3188,7 @@ Config.DoorList['offices dpuble'] = {
         {objHash = -1747430008, objHeading = 148.15661621094, objCoords = vec3(1010.978821, 39.265533, 75.211693)},
         {objHash = -1747430008, objHeading = 328.15661621094, objCoords = vec3(1009.279846, 40.320744, 75.211693)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     locked = true,
     authorizedJobs = { ['casino']=0 },
@@ -3209,7 +3209,7 @@ Config.DoorList['bj management'] = {
         {objHash = 680601509, objHeading = 238.15664672852, objCoords = vec3(1018.692322, 67.176483, 70.010086)},
         {objHash = 680601509, objHeading = 58.156597137451, objCoords = vec3(1017.637268, 65.477730, 70.010086)}
     },
-    authorizedGangs = { ['cerberus']=0, ['koreatown']=0 },
+    authorizedGangs = { ['cerberus']=0, ['yakuza']=0 },
     maxDistance = 2.5,
     locked = true,
     authorizedJobs = { ['casino']=0 },
@@ -3306,982 +3306,6 @@ Config.DoorList['bob staffroom'] = {
     --showNUI = true
 }
 
--- Gambino Front Double Door created by PADDYDOX
-Config.DoorList['Gambino Front Double Door'] = {
-    audioRemote = false,
-    authorizedGangs = { ['gambino']=0 },
-    lockpick = false,
-    maxDistance = 2.5,
-    doors = {
-        {objHash = -1627599682, objHeading = 270.0, objCoords = vec3(-325.324188, -1285.519287, 31.803431)},
-        {objHash = 1099436502, objHeading = 270.0, objCoords = vec3(-325.324188, -1282.923096, 31.803431)}
-    },
-    slides = false,
-    locked = true,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino Front single Door 1 created by PADDYDOX
-Config.DoorList['Gambino Front single Door 1'] = {
-    garage = false,
-    objHeading = 1.5481607988477e-05,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-315.011841, -1278.629761, 31.801443),
-    audioRemote = false,
-    objHash = -2127395996,
-    slides = false,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino Front single Door 2 created by PADDYDOX
-Config.DoorList['Gambino Front single Door 2'] = {
-    garage = false,
-    objHeading = 180.00001525879,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-315.014374, -1290.348145, 31.803028),
-    audioRemote = false,
-    objHash = 507264345,
-    slides = false,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino double Door 1 created by PADDYDOX
-Config.DoorList['Gambino double Door 1'] = {
-    audioRemote = false,
-    authorizedGangs = { ['gambino']=0 },
-    lockpick = false,
-    maxDistance = 2.5,
-    doors = {
-        {objHash = -2127395996, objHeading = 180.00001525879, objCoords = vec3(-308.143921, -1294.272339, 31.803028)},
-        {objHash = 507264345, objHeading = 180.00001525879, objCoords = vec3(-310.742065, -1294.272339, 31.803028)}
-    },
-    slides = false,
-    locked = true,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino double locker 1 created by PADDYDOX
-Config.DoorList['Gambino double locker 1'] = {
-    audioRemote = false,
-    authorizedGangs = { ['gambino']=0 },
-    lockpick = false,
-    maxDistance = 2.5,
-    doors = {
-        {objHash = -2049942520, objHeading = 180.00001525879, objCoords = vec3(-307.866302, -1312.516235, 30.718958)},
-        {objHash = -1988209294, objHeading = 180.00001525879, objCoords = vec3(-309.188873, -1312.516235, 30.718958)}
-    },
-    slides = false,
-    locked = true,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino sliding locker 1 created by PADDYDOX
-Config.DoorList['Gambino sliding locker 1'] = {
-    garage = false,
-    objHeading = 180.00001525879,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-313.857880, -1311.655518, 31.732601),
-    audioRemote = false,
-    objHash = -1065092946,
-    slides = true,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- Gambino sliding hatch 1 created by PADDYDOX
-Config.DoorList['Gambino sliding hatch 1'] = {
-    garage = false,
-    objHeading = 12.117479324341,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-305.182068, -1314.666382, 30.586472),
-    audioRemote = false,
-    objHash = 1417255277,
-    slides = true,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- Gambino sliding hatch 2 created by PADDYDOX
-Config.DoorList['Gambino sliding hatch 2'] = {
-    garage = false,
-    objHeading = 46.054706573486,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-233.592056, -1294.882690, 30.480459),
-    audioRemote = false,
-    objHash = 1616832291,
-    slides = true,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- Gambino single outside door 1 created by PADDYDOX
-Config.DoorList['Gambino single outside door 1'] = {
-    garage = false,
-    objHeading = 89.999977111816,
-    fixText = false,
-    locked = true,
-    lockpick = false,
-    authorizedGangs = { ['gambino']=0 },
-    objCoords = vec3(-230.577820, -1294.614624, 31.670729),
-    audioRemote = false,
-    objHash = -1627599682,
-    slides = false,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- Gambino cell door created by PADDYDOX
-Config.DoorList['Gambino cell door'] = {
-    objHeading = 90.000022888184,
-    lockpick = false,
-    objCoords = vec3(-310.000427, -1314.272827, 31.805017),
-    objHash = -1193804876,
-    garage = false,
-    slides = false,
-    audioRemote = false,
-    maxDistance = 2.0,
-    fixText = false,
-    locked = true,
-    authorizedGangs = { ['gambino']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
-
-
-
--- IRA garage door created by PADDYDOX
-Config.DoorList['IRA garage door'] = {
-    locked = true,
-    maxDistance = 6.0,
-    objCoords = vec3(829.218445, -2333.972900, 31.811111),
-    authorizedGangs = { ['ira']=0 },
-    slides = true,
-    audioRemote = false,
-    objHeading = 85.443710327148,
-    fixText = false,
-    garage = true,
-    objHash = -1007367639,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 1 created by PADDYDOX
-Config.DoorList['IRA door 1'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(822.165100, -2338.251953, 30.770161),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 354.99990844727,
-    fixText = false,
-    garage = false,
-    objHash = -1046695423,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 2 created by PADDYDOX
-Config.DoorList['IRA door 2'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(818.793457, -2349.521484, 30.533590),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 85.008583068848,
-    fixText = false,
-    garage = false,
-    objHash = -733653166,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 3 created by PADDYDOX
-Config.DoorList['IRA door 3'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(815.925476, -2344.731689, 30.414391),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 264.73211669922,
-    fixText = false,
-    garage = false,
-    objHash = -5479653,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- IRA door 4 created by PADDYDOX
-Config.DoorList['IRA door 4'] = {
-    slides = false,
-    locked = true,
-    audioRemote = false,
-    maxDistance = 2.5,
-    doors = {
-        {objHash = -1259801187, objHeading = 174.50323486328, objCoords = vec3(814.945129, -2321.452881, 30.556480)},
-        {objHash = -1563799200, objHeading = 354.8952331543, objCoords = vec3(817.532776, -2321.693115, 30.556419)}
-    },
-    lockpick = false,
-    authorizedGangs = { ['ira']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- IRA door 5 created by PADDYDOX
-Config.DoorList['IRA door 5'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(810.046021, -2319.183350, 30.614740),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 264.21411132812,
-    fixText = false,
-    garage = false,
-    objHash = -995467546,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 6 created by PADDYDOX
-Config.DoorList['IRA door 6'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(820.300415, -2317.154297, 30.617540),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 354.47503662109,
-    fixText = false,
-    garage = false,
-    objHash = -1128607325,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 7 created by PADDYDOX
-Config.DoorList['IRA door 7'] = {
-    slides = false,
-    locked = true,
-    audioRemote = false,
-    maxDistance = 2.5,
-    doors = {
-        {objHash = -274493186, objHeading = 265.0, objCoords = vec3(830.412537, -2319.170166, 30.613331)},
-        {objHash = 47003473, objHeading = 264.99990844727, objCoords = vec3(830.185791, -2321.760254, 30.613331)}
-    },
-    lockpick = false,
-    authorizedGangs = { ['ira']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- IRA door 8 created by PADDYDOX
-Config.DoorList['IRA door 8'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(830.532104, -2317.436768, 30.617741),
-    authorizedGangs = { ['ira']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 84.999603271484,
-    fixText = false,
-    garage = false,
-    objHash = -274493186,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- koreatown garage  created by widepeepoHappy
-Config.DoorList['koreatown garage '] = {
-    locked = true,
-    maxDistance = 6.0,
-    objCoords = vec3(-675.330994, -878.722168, 25.238443),
-    authorizedGangs = { ['koreatown']=0 },
-    slides = true,
-    audioRemote = false,
-    objHeading = 270.00003051758,
-    fixText = false,
-    garage = true,
-    objHash = 245838764,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- koreatown secret door created by widepeepoHappy
-Config.DoorList['koreatown secret door'] = {
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-684.085266, -875.748169, 24.764751),
-    authorizedGangs = { ['koreatown']=0 },
-    slides = false,
-    audioRemote = false,
-    objHeading = 0.12990370392799,
-    fixText = false,
-    garage = false,
-    objHash = 1413187371,
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso1 created by vesku
-Config.DoorList['bcso1'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 733214349, objHeading = 134.99996948242, objCoords = vec3(-437.171692, 6012.947266, 32.288513)},
-        {objHash = 965382714, objHeading = 314.99981689453, objCoords = vec3(-438.586548, 6014.361816, 32.288513)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso2 created by vesku
-Config.DoorList['bcso2'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1857649811, objHeading = 314.99981689453, objCoords = vec3(-448.071289, 6004.868164, 32.288513)},
-        {objHash = 1362051455, objHeading = 134.99996948242, objCoords = vec3(-446.656403, 6003.453125, 32.288513)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso3 created by vesku
-Config.DoorList['bcso3'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1362051455, objHeading = 44.999935150146, objCoords = vec3(-451.424713, 6003.420410, 32.288513)},
-        {objHash = 1857649811, objHeading = 224.99992370605, objCoords = vec3(-450.009827, 6004.835449, 32.288513)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso4 created by vesku
-Config.DoorList['bcso4'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 733214349, objHeading = 314.99981689453, objCoords = vec3(-454.901672, 5998.051758, 32.288513)},
-        {objHash = 965382714, objHeading = 134.99992370605, objCoords = vec3(-453.486755, 5996.637207, 32.288513)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso5 created by vesku
-Config.DoorList['bcso5'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1857649811, objHeading = 224.99992370605, objCoords = vec3(-450.009827, 6004.835449, 27.581215)},
-        {objHash = 1362051455, objHeading = 44.999923706055, objCoords = vec3(-451.424713, 6003.420410, 27.581215)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso6 created by vesku
-Config.DoorList['bcso6'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1362051455, objHeading = 224.99992370605, objCoords = vec3(-446.583923, 6001.399902, 27.581215)},
-        {objHash = 1857649811, objHeading = 44.99987411499, objCoords = vec3(-447.998840, 5999.984863, 27.581215)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso7 created by vesku
-Config.DoorList['bcso7'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 1.0,
-    objCoords = vec3(-443.061218, 5999.874023, 27.581215),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso8 created by vesku
-Config.DoorList['bcso8'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 314.99984741211,
-    locked = true,
-    maxDistance = 1.0,
-    objCoords = vec3(-441.941559, 5998.754395, 27.581215),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso9 created by vesku
-Config.DoorList['bcso9'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 314.99984741211,
-    locked = true,
-    maxDistance = 1.0,
-    objCoords = vec3(-445.353577, 5995.342285, 27.581215),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso10 created by vesku
-Config.DoorList['bcso10'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 1.0,
-    objCoords = vec3(-446.479950, 5996.468750, 27.581215),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso11 created by vesku
-Config.DoorList['bcso11'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 314.99984741211,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-443.640503, 6006.972656, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso12 created by vesku
-Config.DoorList['bcso12'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-448.916046, 6015.851074, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso13 created by vesku
-Config.DoorList['bcso13'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-445.945679, 6012.880371, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso14 created by vesku
-Config.DoorList['bcso14'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-443.390076, 6015.436035, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso15 created by vesku
-Config.DoorList['bcso15'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99992370605,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-446.360443, 6018.406738, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso16 created by vesku
-Config.DoorList['bcso16'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -594854737,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 44.999942779541,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-442.243347, 6012.619629, 27.731001),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso17 created by vesku
-Config.DoorList['bcso17'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99996948242,
-    locked = true,
-    maxDistance = 1.0,
-    objCoords = vec3(-449.508789, 5999.468262, 27.581215),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso18 created by vesku
-Config.DoorList['bcso18'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1362051455, objHeading = 44.999923706055, objCoords = vec3(-451.424713, 6003.420410, 36.995815)},
-        {objHash = 1857649811, objHeading = 224.99992370605, objCoords = vec3(-450.009827, 6004.835449, 36.995815)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso19 created by vesku
-Config.DoorList['bcso19'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 899779172, objHeading = 224.99990844727, objCoords = vec3(-446.922455, 6001.234375, 37.296593)},
-        {objHash = 1127654798, objHeading = 224.99992370605, objCoords = vec3(-448.615845, 5999.541016, 37.340187)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso20 created by vesku
-Config.DoorList['bcso20'] = {
-    slides = false,
-    lockpick = false,
-    audioRemote = false,
-    doors = {
-        {objHash = 1127654798, objHeading = 224.99990844727, objCoords = vec3(-445.645660, 6002.511230, 37.340187)},
-        {objHash = 899779172, objHeading = 224.99990844727, objCoords = vec3(-443.952301, 6004.204590, 37.296593)}
-    },
-    locked = true,
-    maxDistance = 2.5,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso21 created by vesku
-Config.DoorList['bcso21'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 134.99993896484,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-449.678375, 5999.344727, 36.995815),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso22 created by vesku
-Config.DoorList['bcso22'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 314.99984741211,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-441.672607, 6009.143555, 36.995815),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso23 created by vesku
-Config.DoorList['bcso23'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 44.999935150146,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-447.444489, 6011.512207, 36.995815),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso24 created by vesku
-Config.DoorList['bcso24'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = 1362051455,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 224.99992370605,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-443.959991, 6017.162109, 32.288513),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso24 created by vesku
-Config.DoorList['bcso24'] = {
-    slides = true,
-    fixText = false,
-    garage = false,
-    objHash = -470936668,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 44.84627532959,
-    locked = true,
-    maxDistance = 7.0,
-    objCoords = vec3(-456.473358, 6031.135742, 31.135477),
-    --oldMethod = true,
-    audioLock = {['file'] = 'GarageClose.ogg', ['volume'] = 0.8},
-    audioUnlock = {['file'] = 'GarageOpen.ogg', ['volume'] = 0.8},
-    autoLock = 2000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- bcso25 created by vesku
-Config.DoorList['bcso25'] = {
-    slides = false,
-    fixText = false,
-    garage = false,
-    objHash = -1156020871,
-    lockpick = false,
-    audioRemote = false,
-    authorizedJobs = { ['police']=0, ['offpolice']=0 },
-    objHeading = 135.0,
-    locked = true,
-    maxDistance = 2.0,
-    objCoords = vec3(-449.691406, 6024.354980, 32.157413),
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
 -- noodle_exchange created by vesku
 Config.DoorList['noodle_exchange'] = {
     lockpick = false,
@@ -4323,493 +3347,149 @@ Config.DoorList['TROLL'] = {
     --showNUI = true
 }
 
--- lph created by vesku
-Config.DoorList['lph'] = {
-    authorizedGangs = { ['lph']=0 },
-    lockpick = false,
-    slides = false,
-    doors = {
-        {objHash = -52575179, objHeading = 270.00003051758, objCoords = vec3(1390.477905, 1161.237915, 114.483200)},
-        {objHash = -1032171637, objHeading = 270.00003051758, objCoords = vec3(1390.477905, 1163.437866, 114.483200)}
-    },
-    maxDistance = 2.0,
-    audioRemote = false,
-    locked = true,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
 
--- lphstash created by vesku
-Config.DoorList['lphstash'] = {
+-- hayes1 created by 444pril
+Config.DoorList['hayes1'] = {
+    objHeading = 31.999959945679,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1414.868896, -436.367523, 34.903519),
+    objHash = 1715394473,
     slides = true,
-    maxDistance = 2.0,
-    objCoords = vec3(1396.954346, 1161.551270, 114.486259),
-    authorizedGangs = { ['lph']=0 },
-    garage = false,
-    lockpick = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- hayes2 created by 444pril
+Config.DoorList['hayes2'] = {
+    objHeading = 31.999959945679,
     locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
     fixText = false,
-    objHeading = 269.99691772461,
-    audioRemote = false,
-    objHash = 1961165613,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- lph2 created by vesku
-Config.DoorList['lph2'] = {
-    slides = false,
-    maxDistance = 2.0,
-    objCoords = vec3(1397.062378, 1164.739746, 114.483452),
-    authorizedGangs = { ['lph']=0 },
-    garage = false,
-    lockpick = false,
-    locked = true,
-    fixText = false,
-    objHeading = 270.00003051758,
-    audioRemote = false,
-    objHash = 736699661,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph3 created by vesku
-Config.DoorList['lph3'] = {
-    slides = false,
-    maxDistance = 2.0,
-    objCoords = vec3(1400.996216, 1158.950562, 114.483452),
-    authorizedGangs = { ['lph']=0 },
-    garage = false,
-    lockpick = false,
-    locked = true,
-    fixText = false,
-    objHeading = 89.999961853027,
-    audioRemote = false,
-    objHash = 736699661,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph4 created by vesku
-Config.DoorList['lph4'] = {
-    objHeading = 89.999961853027,
-    audioRemote = false,
-    maxDistance = 2.0,
-    authorizedGangs = { ['lph']=0 },
-    garage = false,
-    locked = true,
-    slides = false,
-    objCoords = vec3(1397.957031, 1156.271484, 114.483452),
-    fixText = false,
-    lockpick = false,
-    objHash = 736699661,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph5 created by vesku
-Config.DoorList['lph5'] = {
-    objHeading = 270.00030517578,
-    audioRemote = false,
-    maxDistance = 2.0,
-    authorizedGangs = { ['lph']=0 },
-    garage = false,
-    locked = true,
-    slides = false,
-    objCoords = vec3(1395.828491, 1151.658813, 114.483353),
-    fixText = false,
-    lockpick = false,
-    objHash = -52575179,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- lph6 created by vesku
-Config.DoorList['lph6'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -1032171637, objHeading = 89.999961853027, objCoords = vec3(1409.292114, 1146.254150, 114.486916)},
-        {objHash = -52575179, objHeading = 89.999961853027, objCoords = vec3(1409.292236, 1148.454346, 114.486916)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph7 created by vesku
-Config.DoorList['lph7'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -52575179, objHeading = 89.999961853027, objCoords = vec3(1409.292236, 1150.654297, 114.486916)},
-        {objHash = -1032171637, objHeading = 89.999961853027, objCoords = vec3(1409.292114, 1148.454102, 114.486916)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph8 created by vesku
-Config.DoorList['lph8'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -1032171637, objHeading = 89.999961853027, objCoords = vec3(1409.292114, 1144.054199, 114.486916)},
-        {objHash = -52575179, objHeading = 89.999961853027, objCoords = vec3(1409.292236, 1146.254272, 114.486916)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph9 created by vesku
-Config.DoorList['lph9'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -1032171637, objHeading = 269.98272705078, objCoords = vec3(1408.581177, 1161.164795, 114.483299)},
-        {objHash = -52575179, objHeading = 269.98272705078, objCoords = vec3(1408.581177, 1158.965088, 114.483299)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph10 created by vesku
-Config.DoorList['lph10'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -1032171637, objHeading = 269.98272705078, objCoords = vec3(1408.581177, 1165.833862, 114.483299)},
-        {objHash = -52575179, objHeading = 269.98272705078, objCoords = vec3(1408.581177, 1163.634155, 114.483299)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph11 created by vesku
-Config.DoorList['lph11'] = {
-    locked = true,
-    garage = false,
-    audioRemote = false,
-    objCoords = vec3(1404.603760, 1137.465698, 114.589188),
-    maxDistance = 2.0,
-    fixText = false,
-    objHeading = 90.000022888184,
-    authorizedGangs = { ['lph']=0 },
-    lockpick = false,
-    objHash = -1170718279,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- lph12 created by vesku
-Config.DoorList['lph12'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -52575179, objHeading = 179.99998474121, objCoords = vec3(1398.288696, 1128.314209, 114.483597)},
-        {objHash = -1032171637, objHeading = 179.99998474121, objCoords = vec3(1400.488892, 1128.314209, 114.483597)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph12 created by vesku
-Config.DoorList['lph12'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -52575179, objHeading = 179.99998474121, objCoords = vec3(1400.488159, 1128.314209, 114.483597)},
-        {objHash = -1032171637, objHeading = 179.99998474121, objCoords = vec3(1402.688232, 1128.314209, 114.483597)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph13 created by vesku
-Config.DoorList['lph13'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -1032171637, objHeading = 89.999961853027, objCoords = vec3(1390.665771, 1131.117065, 114.480843)},
-        {objHash = -52575179, objHeading = 89.999961853027, objCoords = vec3(1390.665771, 1133.317261, 114.480843)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph14 created by vesku
-Config.DoorList['lph14'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = -52575179, objHeading = 179.99998474121, objCoords = vec3(1400.488159, 1128.314209, 114.483597)},
-        {objHash = -1032171637, objHeading = 179.99998474121, objCoords = vec3(1402.688232, 1128.314209, 114.483597)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph15 created by vesku
-Config.DoorList['lph15'] = {
-    locked = true,
-    garage = false,
-    audioRemote = false,
-    objCoords = vec3(1395.944580, 1137.435547, 114.480247),
-    maxDistance = 2.0,
-    fixText = false,
-    objHeading = 89.999961853027,
-    authorizedGangs = { ['lph']=0 },
-    lockpick = false,
-    objHash = 736699661,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph16 created by vesku
-Config.DoorList['lph16'] = {
-    locked = true,
-    authorizedGangs = { ['lph']=0 },
-    doors = {
-        {objHash = 262671971, objHeading = 89.999961853027, objCoords = vec3(1395.919922, 1140.704590, 114.790207)},
-        {objHash = 1504256620, objHeading = 270.00003051758, objCoords = vec3(1395.920288, 1142.904053, 114.790207)}
-    },
-    audioRemote = false,
-    lockpick = false,
-    maxDistance = 2.5,
-    slides = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lph16 created by vesku
-Config.DoorList['lph16'] = {
-    doors = {
-        {objHash = -1032171637, objHeading = 179.99998474121, objCoords = vec3(1400.488892, 1128.314209, 114.483597)},
-        {objHash = -52575179, objHeading = 179.99998474121, objCoords = vec3(1398.288696, 1128.314209, 114.483597)}
-    },
-    lockpick = false,
-    authorizedGangs = { ['lph']=0 },
-    slides = false,
-    maxDistance = 2.5,
-    locked = true,
-    audioRemote = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- lphfront created by vesku
-Config.DoorList['lphfront'] = {
-    slides = false,
-    maxDistance = 2.5,
-    audioRemote = false,
-    authorizedGangs = { ['lph']=0 },
-    locked = true,
-    doors = {
-        {objHash = 262671971, objHeading = 89.999961853027, objCoords = vec3(1395.919922, 1140.704590, 114.790207)},
-        {objHash = 1504256620, objHeading = 270.00003051758, objCoords = vec3(1395.920288, 1142.904053, 114.790207)}
-    },
-    lockpick = false,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    --showNUI = true
-}
-
--- hiddenstash1 created by vesku
-Config.DoorList['hiddenstash1'] = {
-    locked = true,
-    audioRemote = false,
-    lockpick = false,
-    garage = false,
-    slides = false,
-    objHash = -1626044509,
-    authorizedGangs = { ['lph']=0 },
-    fixText = false,
-    objCoords = vec3(1390.727051, 1141.911255, 110.870026),
-    objHeading = 270.00003051758,
-    maxDistance = 2.0,
-    --oldMethod = true,
-    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    --autoLock = 1000,
-    --doorRate = 1.0,
-    showNUI = false
-}
-
--- lphstash2 created by vesku
-Config.DoorList['lphstash2'] = {
-    locked = true,
-    audioRemote = false,
-    authorizedGangs = { ['lph']=0 },
-    lockpick = false,
-    garage = false,
+    objCoords = vec3(-1427.326050, -444.151581, 34.903519),
+    objHash = 1715394473,
     slides = true,
-    objHash = -1497650016,
-    fixText = false,
-    objCoords = vec3(1404.489624, 1146.074829, 109.721840),
-    objHeading = 269.99719238281,
-    maxDistance = 2.0,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    showNUI = false
+    --showNUI = true
 }
 
--- lphdoor232 created by vesku
-Config.DoorList['lphdoor232'] = {
+-- hayes3 created by 444pril
+Config.DoorList['hayes3'] = {
+    objHeading = 31.999959945679,
     locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
     audioRemote = false,
-    authorizedGangs = { ['lph']=0 },
     lockpick = false,
-    garage = false,
-    slides = false,
-    objHash = 736699661,
     fixText = false,
-    objCoords = vec3(1403.788086, 1158.537476, 114.484932),
-    objHeading = 180.00001525879,
-    maxDistance = 2.0,
+    objCoords = vec3(-1421.117554, -440.272064, 34.903519),
+    objHash = 1715394473,
+    slides = true,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    showNUI = false
+    --showNUI = true
 }
 
--- lphinsidestash created by vesku
-Config.DoorList['lphinsidestash'] = {
-    slides = false,
-    authorizedGangs = { ['lph']=0 },
-    objHeading = 180.00001525879,
-    lockpick = false,
+-- hayes5 created by 444pril
+Config.DoorList['hayes5'] = {
+    objHeading = 31.999956130981,
     locked = true,
-    audioRemote = false,
     garage = false,
-    objCoords = vec3(1408.206421, 1143.397583, 110.880508),
     maxDistance = 2.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
     fixText = false,
-    objHash = -122922994,
+    objCoords = vec3(-1434.155029, -448.586090, 36.059235),
+    objHash = -634936098,
+    slides = false,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    showNUI = false
+    --showNUI = true
+}
+
+-- hayesstaff created by 444pril
+Config.DoorList['hayesstaff'] = {
+    objHeading = 302.0,
+    locked = true,
+    garage = false,
+    maxDistance = 2.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1427.525146, -455.680450, 36.059563),
+    objHash = 1289778077,
+    slides = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- whitewidowfront created by 444pril
+Config.DoorList['whitewidowfront'] = {
+    lockpick = false,
+    audioRemote = false,
+    locked = true,
+    doors = {
+        {objHash = -1226987899, objHeading = 295.0, objCoords = vec3(200.584976, -238.315170, 54.235588)},
+        {objHash = -1226987899, objHeading = 114.99998474121, objCoords = vec3(201.687973, -240.668671, 54.235588)}
+    },
+    maxDistance = 2.5,
+    slides = false,
+    authorizedJobs = { ['whitewidow']=0 },
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- whitewidowgarage created by 444pril
+Config.DoorList['whitewidowgarage'] = {
+    objHeading = 70.000007629395,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['whitewidow']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(194.575684, -267.622894, 50.617069),
+    objHash = 81325078,
+    slides = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
 }
