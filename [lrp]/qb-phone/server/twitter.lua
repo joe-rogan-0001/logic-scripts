@@ -27,8 +27,7 @@ end)
 RegisterNetEvent('qb-phone:server:UpdateTweets', function(TweetData)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local HasVPN = Player.Functions.GetItemByName(Config.VPNItem)
-
+    local HasVPN = false
     if (TweetData.showAnonymous and HasVPN) then
         TweetData.firstName = "Anonymous"
         TweetData.lastName = ""
