@@ -54,6 +54,7 @@ local function EnterApartment(house, apartmentId, new)
     TriggerServerEvent("InteractSound_SV:PlayOnSource", "houses_door_open", 0.1)
     openHouseAnim()
     Wait(250)
+    exports['Renewed-Weaponscarry']:toggleProps()
     QBCore.Functions.TriggerCallback('apartments:GetApartmentOffset', function(offset)
         if offset == nil or offset == 0 then
             QBCore.Functions.TriggerCallback('apartments:GetApartmentOffsetNewOffset', function(newoffset)
@@ -112,6 +113,7 @@ local function EnterApartment(house, apartmentId, new)
 end
 
 local function LeaveApartment(house)
+    exports['Renewed-Weaponscarry']:toggleProps()
     TriggerServerEvent("InteractSound_SV:PlayOnSource", "houses_door_open", 0.1)
     openHouseAnim()
     TriggerServerEvent("qb-apartments:returnBucket")
