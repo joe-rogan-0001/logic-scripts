@@ -37,6 +37,21 @@ return {
 		}
 	},
 
+	Leisure = {
+		name = 'Leisure Shop',
+		blip = {
+			id = 59, colour = 0, scale = 0.7
+		}, inventory = {
+			{ name = 'parachute', price = 10000 },
+			{ name = 'binoculars', price = 1500 },
+			{ name = 'diving_gear', price = 6500 },
+		}, locations = {
+			vec3(-1505.35, 1511.76, 115.29),
+		}, targets = {
+			{ loc = vec3(-1505.35, 1511.76, 115.29), length = 2.5, width = 2.5, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
+		}
+	},
+
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
