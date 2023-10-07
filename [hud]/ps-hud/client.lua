@@ -737,7 +737,7 @@ RegisterCommand('+engine', function()
     SetVehicleEngineOn(vehicle, not GetIsVehicleEngineRunning(vehicle), false, true)
 end)
 
-RegisterKeyMapping('+engine', Lang:t('info.toggle_engine'), 'keyboard', 'G')
+RegisterKeyMapping('+engine', Lang:t('info.toggle_engine'), 'keyboard', '')
 
 local function IsWhitelistedWeaponArmed(weapon)
     if weapon then

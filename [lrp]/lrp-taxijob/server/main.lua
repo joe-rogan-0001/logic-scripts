@@ -11,6 +11,12 @@ function NearTaxi(src)
     end
 end
 
+RegisterNetEvent('qb-taxi:server:setjobTaxi', function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    Player.Functions.SetJob("taxi", 0)
+end)
+
 RegisterNetEvent('qb-taxi:server:NpcPay', function(Payment)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)

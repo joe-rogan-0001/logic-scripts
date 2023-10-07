@@ -539,7 +539,7 @@ body {
 .logo {
   width: 100%;
   height: 100%;
-  background-image: url(images/logo.png);
+  background-image: url('https://cdn.discordapp.com/attachments/832246407289241620/1158841743169564764/logo_font.png?ex=652eda79&is=651c6579&hm=b2120d7d9d5a9e61cae3df2fb7b7dd7ad83824d26313b506beac0847e30af880&');
   background-size: 15%;
   background-position: center;
   background-repeat: no-repeat;
