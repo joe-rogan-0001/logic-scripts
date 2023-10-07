@@ -9,7 +9,7 @@ Config.AdminAccess = {
 	enabled = false,
 	permission = 'admin' -- Needs to be admin or god
 }
-Config.CommandPermission = 'god' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code
+--Config.CommandPermission = 'god' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code
 
 Config.Debug = false -- Prints the closest door data
 
@@ -3339,6 +3339,153 @@ Config.DoorList['TROLL'] = {
     objHeading = 179.99998474121,
     authorizedJobs = { ['casino']=0 },
     audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+
+-- hayes1 created by 444pril
+Config.DoorList['hayes1'] = {
+    objHeading = 31.999959945679,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1414.868896, -436.367523, 34.903519),
+    objHash = 1715394473,
+    slides = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- hayes2 created by 444pril
+Config.DoorList['hayes2'] = {
+    objHeading = 31.999959945679,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1427.326050, -444.151581, 34.903519),
+    objHash = 1715394473,
+    slides = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- hayes3 created by 444pril
+Config.DoorList['hayes3'] = {
+    objHeading = 31.999959945679,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1421.117554, -440.272064, 34.903519),
+    objHash = 1715394473,
+    slides = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- hayes5 created by 444pril
+Config.DoorList['hayes5'] = {
+    objHeading = 31.999956130981,
+    locked = true,
+    garage = false,
+    maxDistance = 2.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1434.155029, -448.586090, 36.059235),
+    objHash = -634936098,
+    slides = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- hayesstaff created by 444pril
+Config.DoorList['hayesstaff'] = {
+    objHeading = 302.0,
+    locked = true,
+    garage = false,
+    maxDistance = 2.0,
+    authorizedJobs = { ['hayes']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(-1427.525146, -455.680450, 36.059563),
+    objHash = 1289778077,
+    slides = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- whitewidowfront created by 444pril
+Config.DoorList['whitewidowfront'] = {
+    lockpick = false,
+    audioRemote = false,
+    locked = true,
+    doors = {
+        {objHash = -1226987899, objHeading = 295.0, objCoords = vec3(200.584976, -238.315170, 54.235588)},
+        {objHash = -1226987899, objHeading = 114.99998474121, objCoords = vec3(201.687973, -240.668671, 54.235588)}
+    },
+    maxDistance = 2.5,
+    slides = false,
+    authorizedJobs = { ['whitewidow']=0 },
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- whitewidowgarage created by 444pril
+Config.DoorList['whitewidowgarage'] = {
+    objHeading = 70.000007629395,
+    locked = true,
+    garage = true,
+    maxDistance = 6.0,
+    authorizedJobs = { ['whitewidow']=0 },
+    audioRemote = false,
+    lockpick = false,
+    fixText = false,
+    objCoords = vec3(194.575684, -267.622894, 50.617069),
+    objHash = 81325078,
+    slides = true,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
