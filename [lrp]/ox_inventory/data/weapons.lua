@@ -778,12 +778,7 @@ return {
 			durability = 0.03,
 			ammoname = 'ammo-sniper'
 		},
-		['WEAPON_SNIPERRIFLE2'] = {
-			label = 'Hunting Rifle',
-			weight = 45000,
-			durability = 0.03,
-			ammoname = 'ammo-hunting'
-		},
+
 		['WEAPON_ENFIELD'] = {
 			label = 'Enfield',
 			weight = 45000,

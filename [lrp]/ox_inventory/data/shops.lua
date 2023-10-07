@@ -37,21 +37,6 @@ return {
 		}
 	},
 
-	Leisure = {
-		name = 'Leisure Shop',
-		blip = {
-			id = 59, colour = 0, scale = 0.7
-		}, inventory = {
-			{ name = 'parachute', price = 10000 },
-			{ name = 'binoculars', price = 1500 },
-			{ name = 'diving_gear', price = 6500 },
-		}, locations = {
-			vec3(-1505.35, 1511.76, 115.29),
-		}, targets = {
-			{ loc = vec3(-1505.35, 1511.76, 115.29), length = 2.5, width = 2.5, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
-		}
-	},
-
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
@@ -218,7 +203,7 @@ return {
 		},
 		inventory = {
 			{ name = 'huntingknife', price = 350 },
-			{ name = 'weapon_sniperrifle2', price = 1500 },
+			{ name = 'ammo-sniper', price = 1500 },
 			{ name = 'hunting_ammo', price = 250 },
 			{ name = 'huntingbait', price = 20 },	
 		},
@@ -227,6 +212,21 @@ return {
 		},
 		targets = {
 			{ loc = vec3(-678.97, 5837.91, 17.33), length = 1, width = 3.0, heading = 270.0, minZ = 15.5, maxZ = 19.0, distance = 6 }
+		}
+	},
+
+	Leisure = {
+		name = 'Leisure Shop',
+		blip = {
+			id = 59, colour = 0, scale = 0.7
+		}, inventory = {
+			{ name = 'parachute', price = 10000 },
+			{ name = 'binoculars', price = 1500 },
+			{ name = 'diving_gear', price = 6500 },
+		}, locations = {
+			vec3(-1505.35, 1511.76, 115.29),
+		}, targets = {
+			{ loc = vec3(-1505.35, 1511.76, 115.29), length = 2.5, width = 2.5, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 6 },
 		}
 	},
 	

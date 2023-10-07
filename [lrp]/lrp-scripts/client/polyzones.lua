@@ -94,6 +94,7 @@ Config.TargetModels = {
 		},
 		distance = 2.0,
 	},
+  --[[
   ["HuntingShop"] = {
 		models = {
 			"cs_hunter",
@@ -108,6 +109,7 @@ Config.TargetModels = {
 		},
 		distance = 2.5,
 	},
+  ]]--
   ["Processing"] = {
 		models = {
 			"mp_m_counterfeit_01",
