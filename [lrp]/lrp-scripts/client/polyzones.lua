@@ -327,6 +327,7 @@ Config.TargetModels = {
     },
     distance = 4.0
   },
+  --[[
   ["24/7-SHOPS"] = {
     models = {
       "mp_m_shopkeep_01",
@@ -439,6 +440,7 @@ Config.TargetModels = {
   },
   distance = 1.0,
 },
+]]--
 }
 
 Config.GlobalPedOptions = {

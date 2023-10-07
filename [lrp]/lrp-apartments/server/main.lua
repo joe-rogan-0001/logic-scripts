@@ -70,6 +70,7 @@ RegisterNetEvent('apartments:server:CreateApartment', function(type, label)
         label,
         Player.PlayerData.citizenid
     })
+    exports.ox_inventory:RegisterStash(apartmentId, 'Apartment Stash', 50, 5000000, Player.PlayerData.citizenid)
     --TriggerClientEvent('QBCore:Notify', src, Lang:t('success.receive_apart').." ("..label..")")
     TriggerClientEvent("apartments:client:SpawnInApartment", src, apartmentId, type)
     TriggerClientEvent("apartments:client:SetHomeBlip", src, type)
