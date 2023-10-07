@@ -225,6 +225,8 @@ end
 
 exports('InjuriedPerson', InjuriedPerson)
 
+RegisterNetEvent('un-dispatch:persondown', InjuriedPerson)
+
 local function DeceasedPerson()
     local currentPos = GetEntityCoords(PlayerPedId())
     local locationInfo = getStreetandZone(currentPos)
