@@ -39,9 +39,9 @@ Butchered = 'Animal butchered'
 }
 
 Config.payout = {
-    boarskin = math.random(300, 450),
-    deerskin = math.random(300, 450),
-    coyotefur = math.random(200, 400),
+    boarskin = math.random(1750, 2500),
+    deerskin = math.random(2000, 2750),
+    coyotefur = math.random(2250, 3000),
 }
 
 

@@ -536,6 +536,7 @@ CreateThread(function()
 
                         if entertext then
                             entertext = false
+                            TriggerEvent('apartments:client:UpdateApartment')
                             exports['textUi']:DrawTextUi('show', "[E] Enter Apartment | [G] Ring Doorbell")  
                         end
 
@@ -590,7 +591,8 @@ CreateThread(function()
 
                 if inRange and not shownHeader then
                     shownHeader = true
-                    exports['lrp-menu']:showHeader(headerMenu)
+                    TriggerEvent('apartments:client:UpdateApartment')
+                    --exports['lrp-menu']:showHeader(headerMenu)
                     exports['textUi']:HideTextUi('hide')
                     TriggerEvent("iconic-clothingmenu:enable", false)
 
@@ -600,7 +602,7 @@ CreateThread(function()
                 if not inRange and shownHeader then
                     shownHeader = false
                     exports['lrp-menu']:closeMenu()
-
+                    TriggerEvent('apartments:client:UpdateApartment')
                     exports['textUi']:HideTextUi('hide')
                     TriggerEvent("iconic-clothingmenu:enable", false)
                     entertext = true

@@ -79,7 +79,7 @@ RegisterNetEvent('apartments:server:UpdateApartment', function(type, label)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     MySQL.Async.execute('UPDATE apartments SET type = ?, label = ? WHERE citizenid = ?', { type, label, Player.PlayerData.citizenid })
-    TriggerClientEvent('QBCore:Notify', src, Lang:t('success.changed_apart'))
+    --TriggerClientEvent('QBCore:Notify', src, Lang:t('success.changed_apart'))
     TriggerClientEvent("apartments:client:SetHomeBlip", src, type)
 end)
 
