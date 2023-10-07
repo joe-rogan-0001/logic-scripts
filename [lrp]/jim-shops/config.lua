@@ -132,6 +132,7 @@ Config.SellCasinoChips = {
 }
 
 Config.Locations = {
+	--[[
     -- 24/7 Locations
     ["247supermarket"] = {
         ["label"] = "24/7 Supermarket",
@@ -410,6 +411,7 @@ Config.Locations = {
 		["products"] = Config.Products["coffeeplace"], -- example using coffeplace info
 		["hideblip"] = true,
 	},
+	]]--
 }
 
 --if Gabz locations are enabled, override their coords with these
