@@ -82,13 +82,13 @@ Config = {
 -- NOS STUFF
 	NosRefillCharge = 1000, -- amount in dollars required to refill a nos can
 
-	NosTopSpeed = 55.0, -- Enabling this adds a multiplier to the top speed of the vehicle
+	NosTopSpeed = 30.0, -- Enabling this adds a multiplier to the top speed of the vehicle
 						-- Set this to "-1.0" to disable this
 						-- This doesn't affect the boost acceleration
 	NosBoostPower = { -- NOS boost acceleration power
-		10.0, -- Level 1
-		30.0, -- Level 2
-		50.0, -- Level 3
+		5.0, -- Level 1
+		12.0, -- Level 2
+		25.0, -- Level 3
 	},
 
 	NitrousUseRate = 0.4, -- How fast the nitrous drains (halved for level1, doubled for level3)
