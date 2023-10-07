@@ -435,7 +435,7 @@ end)
 
 Config.Locations = {
 	-- ALTA STREET BENNYS --
-	{	job = "mechanic",
+--[[	{	job = "mechanic",
 		zones = {
 			vec2(-189.07, -1311.31),
 			vec2(-188.36, -1343.46),
@@ -503,7 +503,7 @@ Config.Locations = {
 		discordlink = "",
 		discordcolour = 2571775,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
-	},
+	},]]
 	{	job = "hayes",
 		zones = {
 			vec2(490.57400512695, -1302.0946044922),
@@ -533,7 +533,7 @@ Config.Locations = {
 		discordcolour = 39135,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/0/0c/HayesAutoBodyShop-GTAV-Logo.png",
 	},
-	-- LS CUSTOMS ROUTE 68 --
+--[[	-- LS CUSTOMS ROUTE 68 --
 	{	job = "mechanic",
 		zones = {
 			vec2(1190.58, 2645.39),
@@ -782,7 +782,7 @@ Config.Locations = {
 		discordlink = "",
 		discordcolour = 2571775,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
-	},
+	},]]
 }
 
 AddEventHandler('onResourceStop', function(r) if r ~= GetCurrentResourceName() then return end
