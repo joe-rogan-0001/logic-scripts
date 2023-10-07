@@ -503,7 +503,8 @@ Config.Locations = {
 		discordlink = "",
 		discordcolour = 2571775,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
-	},]]
+	},
+	--
 	{	job = "hayes",
 		zones = {
 			vec2(490.57400512695, -1302.0946044922),
@@ -533,7 +534,7 @@ Config.Locations = {
 		discordcolour = 39135,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/0/0c/HayesAutoBodyShop-GTAV-Logo.png",
 	},
---[[	-- LS CUSTOMS ROUTE 68 --
+	-- LS CUSTOMS ROUTE 68 --
 	{	job = "mechanic",
 		zones = {
 			vec2(1190.58, 2645.39),
@@ -718,8 +719,9 @@ Config.Locations = {
 		discordcolour = 16711680,
 		discordimg = "https://i.imgur.com/74UVnCb.jpeg",
 	},
+	]]--
 	-- HAYES AUTOS --
-	{   job = "mechanic",
+	{   job = "hayes",
 		zones = {
 			vec2(-1439.9047851563, -443.4548034668),
 			vec2(-1426.0206298828, -466.5227355957),
@@ -748,6 +750,7 @@ Config.Locations = {
 		discordcolour = 39135,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/0/0c/HayesAutoBodyShop-GTAV-Logo.png",
 	},
+	--[[
 	-- GABZ LS TUNER SHOP --
 	{	job = "mechanic",
 		zones = {
@@ -782,7 +785,8 @@ Config.Locations = {
 		discordlink = "",
 		discordcolour = 2571775,
 		discordimg = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
-	},]]
+	},
+	]]--
 }
 
 AddEventHandler('onResourceStop', function(r) if r ~= GetCurrentResourceName() then return end
