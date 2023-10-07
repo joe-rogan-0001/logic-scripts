@@ -1269,11 +1269,13 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 	})
 
 	PlayerData.loaded = true
-
+	
 	lib.notify({ description = locale('inventory_setup') })
 	Shops.refreshShops()
 	Inventory.Stashes()
 	Inventory.Evidence()
+
+	TriggerServerEvent('lrp-login:server:startReady')
 
 	if registerCommands then registerCommands() end
 
