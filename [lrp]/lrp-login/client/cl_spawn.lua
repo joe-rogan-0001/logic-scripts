@@ -82,6 +82,7 @@ function Login.Init()
 	end)
 end
 
+
 function Login.HidePlayer(toggle)
 
 	CreateThread(function()

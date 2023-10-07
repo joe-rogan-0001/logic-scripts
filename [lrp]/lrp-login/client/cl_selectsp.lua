@@ -67,7 +67,8 @@ AddEventHandler('spawn:clientSpawnData', function(spawnData)
 			TriggerServerEvent("apartments:server:CreateApartment", appaYeet, labelthing)
 			Spawn.isNew = true
 			Spawn.selectedSpawn('Apartments 1')
-			Wait(500)
+			Wait(10000)
+			print('done this')
 			TriggerServerEvent('lrp-login:server:starteritem')
 		end
 		return
