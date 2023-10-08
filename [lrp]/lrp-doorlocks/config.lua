@@ -3493,3 +3493,24 @@ Config.DoorList['whitewidowgarage'] = {
     --doorRate = 1.0,
     --showNUI = true
 }
+
+-- yakuza created by 123
+Config.DoorList['yakuza'] = {
+    maxDistance = 2.0,
+    objHash = 1742849246,
+    authorizedGangs = { ['yakuza']=0 },
+    audioRemote = false,
+    lockpick = false,
+    objHeading = 180.00001525879,
+    fixText = false,
+    garage = false,
+    locked = true,
+    slides = false,
+    objCoords = vec3(2571.232910, 1252.370239, 43.741783),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
