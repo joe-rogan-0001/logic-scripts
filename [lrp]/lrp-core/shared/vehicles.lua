@@ -5743,5 +5743,14 @@ QBShared.Vehicles = {
 		['hash'] = `corolla`,
 		['shop'] = 'pdm',
 	},
+	['zl1'] = {
+		['name'] = 'PD Camaro ZL1',
+		['brand'] = 'Chevrolet',
+		['model'] = 'zl1',
+		['price'] = 65000,
+		['category'] = 'police',
+		['hash'] = `zl1`,
+		['shop'] = 'police',
+	},
 }
 

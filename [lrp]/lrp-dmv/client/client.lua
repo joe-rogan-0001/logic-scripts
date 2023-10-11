@@ -487,23 +487,28 @@ function dmvmenu()
 
   QBCore.Functions.TriggerCallback('qb-dmv:server:menu', function (permit)
     if permit == false then
-
+      print('0')
         QBCore.Functions.TriggerCallback('qb-dmv:server:menu2', function (license)
+          print(json.encode(license))
             if license == 0 then
+              print('0x')
               if drive then
                 QBCore.Functions.Notify("You\'ve already taken all the Drivers Test, Go to the city hall to buy drivers licence")
               end
             elseif license == 1 then
+              print('30')
                 if drive then
                     Wait(10)
                     OpenMenu2()
                 end
             elseif license == 2 then
+              print('04')
                   if drive then
                       Wait(10)
                       OpenMenuCDL()
                   end
             elseif license == 3 then
+              print('60')
                   if drive then
                       Wait(10)
                       OpenMenuDriving()
