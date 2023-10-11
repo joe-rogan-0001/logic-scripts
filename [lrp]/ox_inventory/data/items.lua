@@ -509,11 +509,11 @@ return {
 	},
 
 	["laptop_red"]                 = {
-		label = "Laptop",
+		label = "Red Laptop",
 		weight = 2500,
 		stack = false,
 		close = true,
-		description = "A laptop that you got from Plague",
+		description = "Red Laptop (marked for police seizure)",
 		client = {
 			image = "laptop_red.png",
 		}
@@ -2220,11 +2220,11 @@ return {
 	},
 
 	["laptop_blue"]                = {
-		label = "Laptop",
+		label = "Blue Laptop",
 		weight = 2500,
 		stack = false,
 		close = true,
-		description = "A laptop that you got from Ramsay",
+		description = "Blue Laptop (marked for police seizure)",
 		client = {
 			image = "laptop_blue.png",
 		}
@@ -2254,11 +2254,11 @@ return {
 	},
 
 	["laptop_gold"]                = {
-		label = "Laptop",
+		label = "Gold Laptop",
 		weight = 2500,
 		stack = false,
 		close = true,
-		description = "A laptop that you got from Trinity",
+		description = "Sketchy laptop marked for police seizure",
 		client = {
 			image = "laptop_gold.png",
 		}
@@ -2635,7 +2635,7 @@ return {
 		weight = 2500,
 		stack = false,
 		close = true,
-		description = "A laptop that you got from Ph03nix",
+		description = "Green Laptop (marked for police seizure)",
 		client = {
 			image = "laptop_green.png",
 		}

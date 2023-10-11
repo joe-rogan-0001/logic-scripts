@@ -12,6 +12,8 @@ return {
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'boombox', price = 750 },
 			{ name = 'burger', price = 10 },
+			{ name = 'water', price = 10 },
+			{ name = 'sandwich', price = 10 },
 			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
@@ -50,7 +52,12 @@ return {
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'boombox', price = 750 },
-			{ name = 'sandwhich', price = 10 },
+			{ name = 'burger', price = 10 },
+			{ name = 'water', price = 10 },
+			{ name = 'sandwich', price = 10 },
+			{ name = 'twerks_candy', price = 10 },
+			{ name = 'snikkel_candy', price = 10 },
+			{ name = 'sandwich', price = 10 },
 			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
@@ -100,7 +107,8 @@ return {
 			{ name = 'limewater', price = 10 },
 			{ name = 'campfire', price = 500 },
 			{ name = 'pestle', price = 250 },
-			{ name = 'advancedlockpick', price = 2500 },
+			{ name = 'advancedlockpick', price = 1200 },
+			{ name = 'cleaningkit', price = 1500 },
 		}, locations = {
 			vec3(2748.0, 3473.0, 55.67),
 			vec3(342.99, -1298.26, 32.51)
@@ -234,17 +242,35 @@ return {
 	
 
 	BlackMarketArms = {
-		name = 'Black Market (Arms)',
+		name = 'Sketchy Plug',
 		inventory = {
-			{ name = 'WEAPON_DAGGER', price = 5000, metadata = { registered = false	}, currency = 'black_money' },
-			{ name = 'WEAPON_CERAMICPISTOL', price = 50000, metadata = { registered = false }, currency = 'black_money' },
-			{ name = 'at_suppressor_light', price = 50000, currency = 'black_money' },
-			{ name = 'ammo-rifle', price = 1000, currency = 'black_money' },
-			{ name = 'ammo-rifle2', price = 1000, currency = 'black_money' }
+			{ name = 'WEAPON_MICROSMG2', price = 20000, metadata = { registered = false	}},
+			{ name = 'WEAPON_PISTOL50', price = 15000, metadata = { registered = false }},
+			{ name = 'WEAPON_SAWNOFFSHOTGUN', price = 7500, metadata = { registered = false }},
+			{ name = 'WEAPON_DBSHOTGUN', price = 7500, metadata = { registered = false }},
+			{ name = 'at_suppressor_light', price = 5000},
+			{ name = 'ammo-9', price = 10},
+			{ name = 'ammo-45', price = 20},
+			{ name = 'radioscanner', price = 8500},
+			{ name = 'gatecrack', price = 5000},
 		}, locations = {
-			vec3(309.09, -913.75, 56.46)
+			vec3(1444.49, 6333.76, 23.86)
 		}, targets = {
+			{ loc = vec3(1445.09, 6333.87, 21.36), length = 1.0, width = 1.0, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
+		}
+	},
 
+	BlackMarketArms2 = {
+		name = 'Larry the laptop guy',
+		inventory = {
+			{ name = 'heistlaptop3', price = 1, currency = 'greendongle' },
+			{ name = 'laptop_blue', price = 1, currency = 'usb_blue' },
+			{ name = 'laptop_red', price = 1, currency = 'usb_red' },
+			{ name = 'laptop_gold', price = 1, currency = 'usb_gold' },
+		}, locations = {
+			vector3(-444.6, 1598.3, 358.47)
+		}, targets = {
+			{ loc = vector3(-444.6, 1598.3, 355.67), length = 1.0, width = 1.0, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
 		}
 	},
 
@@ -253,6 +279,8 @@ return {
 		inventory = {
 			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },
+			{ name = 'twerks_candy', price = 10 },
+			{ name = 'snikkel_candy', price = 10 },
 		},
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
