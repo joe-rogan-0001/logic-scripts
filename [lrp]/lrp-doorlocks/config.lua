@@ -9,7 +9,7 @@ Config.AdminAccess = {
 	enabled = false,
 	permission = 'admin' -- Needs to be admin or god
 }
-Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code
+Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code--
 
 Config.Debug = false -- Prints the closest door data
 
@@ -3718,7 +3718,7 @@ Config.DoorList['vv2secretslidingdoor'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2churchdouble 
@@ -3779,7 +3779,7 @@ Config.DoorList['vv2downstairs1'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2downstairs2 
@@ -3800,7 +3800,7 @@ Config.DoorList['vv2downstairs2'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2downstairs3 
@@ -3821,7 +3821,7 @@ Config.DoorList['vv2downstairs3'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2downescape1 
@@ -3842,7 +3842,7 @@ Config.DoorList['vv2downescape1'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2downescapemain 
@@ -3863,7 +3863,7 @@ Config.DoorList['vv2downescapemain'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
-    --showNUI = true
+    showNUI = false
 }
 
 -- vv2cell 
@@ -3884,5 +3884,202 @@ Config.DoorList['vv2cell'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000,
     --doorRate = 1.0,
+    showNUI = false
+}
+
+-- wotcgarage created by 123
+Config.DoorList['wotcgarage'] = {
+    locked = true,
+    objHash = -1212944997,
+    authorizedJobs = { ['wotc']=0 },
+    garage = true,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 90.000022888184,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = true,
+    maxDistance = 6.0,
+    objCoords = vec3(780.593445, -1308.125977, 27.257408),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
     --showNUI = true
+}
+
+-- wotcgaragedoor1 created by 123
+Config.DoorList['wotcgaragedoor1'] = {
+    locked = true,
+    objHash = -311575617,
+    authorizedJobs = { ['wotc']=0 },
+    garage = false,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 89.999961853027,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = false,
+    maxDistance = 2.0,
+    objCoords = vec3(762.904907, -1307.105347, 26.379091),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcdoor2 created by 123
+Config.DoorList['wotcdoor2'] = {
+    locked = true,
+    objHash = -311575617,
+    authorizedJobs = { ['wotc']=0 },
+    garage = false,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 180.00001525879,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = false,
+    maxDistance = 2.0,
+    objCoords = vec3(755.226868, -1304.734741, 26.353170),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcdoor3 created by 123
+Config.DoorList['wotcdoor3'] = {
+    locked = true,
+    objHash = -311575617,
+    authorizedJobs = { ['wotc']=0 },
+    garage = false,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 0.0,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = false,
+    maxDistance = 2.0,
+    objCoords = vec3(759.579468, -1288.947510, 26.345993),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcfront created by 123
+Config.DoorList['wotcfront'] = {
+    locked = true,
+    objHash = -740313786,
+    authorizedJobs = { ['wotc']=0 },
+    garage = false,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 270.00003051758,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = true,
+    maxDistance = 6.0,
+    objCoords = vec3(734.470642, -1293.401123, 25.302288),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcbar created by 123
+Config.DoorList['wotcbar'] = {
+    locked = true,
+    objHash = -311575617,
+    authorizedJobs = { ['wotc']=0 },
+    garage = false,
+    fixText = false,
+    lockpick = false,
+    audioRemote = false,
+    objHeading = 179.99998474121,
+    authorizedGangs = { ['savagemc']=0 },
+    slides = false,
+    maxDistance = 2.0,
+    objCoords = vec3(754.045044, -1284.689697, 26.371662),
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcoffice created by 123
+Config.DoorList['wotcoffice'] = {
+    authorizedJobs = { ['wotc']=0 },
+    authorizedGangs = { ['savagemc']=0 },
+    fixText = false,
+    garage = false,
+    objHeading = 180.00001525879,
+    maxDistance = 2.0,
+    lockpick = false,
+    slides = false,
+    audioRemote = false,
+    objCoords = vec3(760.852600, -1297.043091, 29.964167),
+    objHash = -311575617,
+    locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcdownstairs created by 123
+Config.DoorList['wotcdownstairs'] = {
+    authorizedJobs = { ['wotc']=0 },
+    authorizedGangs = { ['savagemc']=0 },
+    fixText = false,
+    garage = false,
+    objHeading = 0.0,
+    maxDistance = 2.0,
+    lockpick = false,
+    slides = false,
+    audioRemote = false,
+    objCoords = vec3(759.588989, -1272.718018, 26.348675),
+    objHash = -311575617,
+    locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- wotcdownstairsguns created by 123
+Config.DoorList['wotcdownstairsguns'] = {
+    authorizedJobs = { ['wotc']=0 },
+    authorizedGangs = { ['savagemc']=0 },
+    maxDistance = 3.0,
+    slides = true,
+    doors = {
+        {objHash = 2048491963, objHeading = 270.00003051758, objCoords = vec3(777.173462, -1282.914917, 16.238558)},
+        {objHash = -1371280881, objHeading = 89.999969482422, objCoords = vec3(777.151245, -1271.934570, 16.238558)}
+    },
+    audioRemote = false,
+    lockpick = false,
+    locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
 }

@@ -20,7 +20,7 @@ Spawn.gang = {
 	[1] = { ["pos"] = vector4(-303.14, -1308.11, 31.65, 132.32), ['info'] = ' Gambino Gang'},
 	[2] = { ["pos"] = vector4(-720.6, -867.23, 26.78, 266.71), ['info'] = ' Korea Town Gang'},
 	[3] = { ["pos"] = vector4(112.15, -1964.5, 21.33, 141.93), ['info'] = ' Grove Street Families Gang'},
-	[4] = { ["pos"] = vector4(807.94, -2326.45, 30.46, 166.89), ['info'] = ' IRA Gang'},
+	[4] = { ["pos"] = vector4(-1179.4, -1184.29, 11.84, 98.28), ['info'] = ' Savage Ones MC'},
 }
 
 -- aint now way i am doing it this way
@@ -251,11 +251,11 @@ function Spawn.getGangSpawn()
 
 	if gangname == "gambino" then
 		spawn = Spawn.gang[1]
-	elseif gangname == "koreatown" then
+	elseif gangname == "yakuza" then
 		spawn = Spawn.gang[2]
 	elseif gangname == "grove" then
 		spawn = Spawn.gang[3]
-	elseif gangname == "ira" then
+	elseif gangname == "savagemc" then
 		spawn = Spawn.gang[4]
 	end
 
