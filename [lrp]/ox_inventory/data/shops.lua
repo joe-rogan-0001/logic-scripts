@@ -242,21 +242,18 @@ return {
 	
 
 	BlackMarketArms = {
-		name = 'Sketchy Plug',
+		name = 'Abraham the arms dealer',
 		inventory = {
-			{ name = 'WEAPON_MICROSMG2', price = 20000, metadata = { registered = false	}},
-			{ name = 'WEAPON_PISTOL50', price = 15000, metadata = { registered = false }},
-			{ name = 'WEAPON_SAWNOFFSHOTGUN', price = 7500, metadata = { registered = false }},
-			{ name = 'WEAPON_DBSHOTGUN', price = 7500, metadata = { registered = false }},
-			{ name = 'at_suppressor_light', price = 5000},
-			{ name = 'ammo-9', price = 10},
-			{ name = 'ammo-45', price = 20},
+			{ name = 'WEAPON_MICROSMG3', price = 25000, metadata = { registered = false	}},
+			{ name = 'WEAPON_BROWNING', price = 10500, metadata = { registered = false }},
+			{ name = 'WEAPON_DBSHOTGUN', price = 10500, metadata = { registered = false }},
+			{ name = 'WEAPON_PISTOL_MK2', price = 10500, metadata = { registered = false }},
 			{ name = 'radioscanner', price = 8500},
 			{ name = 'gatecrack', price = 5000},
 		}, locations = {
-			vec3(1444.49, 6333.76, 23.86)
+			vec3(1025.95, -1852.88, 30.89)
 		}, targets = {
-			{ loc = vec3(1445.09, 6333.87, 21.36), length = 1.0, width = 1.0, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
+			{ loc = vec3(1025.95, -1852.88, 30.89), length = 1.0, width = 1.0, heading = 0.0, minZ = 30.0, maxZ = 32.0, distance = 1.5 },
 		}
 	},
 
@@ -268,9 +265,23 @@ return {
 			{ name = 'laptop_red', price = 1, currency = 'usb_red' },
 			{ name = 'laptop_gold', price = 1, currency = 'usb_gold' },
 		}, locations = {
-			vector3(-444.6, 1598.3, 358.47)
+			vec(-444.6, 1598.3, 358.47)
 		}, targets = {
-			{ loc = vector3(-444.6, 1598.3, 355.67), length = 1.0, width = 1.0, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
+			{ loc = vec3(-444.6, 1598.3, 355.67), length = 1.0, width = 1.0, heading = 0.0, minZ = 113.5, maxZ = 118.9, distance = 1.5 },
+		}
+	},
+	BlackMarketArms3 = {
+		name = 'Pierre the Plug',
+		inventory = {
+			{ name = 'ammo-9', price = 10},
+			{ name = 'ammo-45', price = 20},
+			{ name = 'ammo-shotgun', price = 20},
+			{ name = 'ammo-rifle', price = 50},
+			{ name = 'ammo-rifle2', price = 50},
+		}, locations = {
+			vec3(-1639.18, -1017.1, 6.31)
+		}, targets = {
+			{ loc = vec3(-1639.18, -1017.1, 6.31), length = 1.0, width = 1.0, heading = 0.0, minZ = 5.0, maxZ = 7.0, distance = 1.5 },
 		}
 	},
 

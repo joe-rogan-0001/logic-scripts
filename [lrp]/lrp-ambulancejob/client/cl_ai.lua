@@ -10,7 +10,7 @@ local onDuty = false
 -- Commands
 
 RegisterNetEvent('qb-medical:client:requestai', function()
-	if (QBCore.Functions.GetPlayerData().metadata["isdead"]) or (QBCore.Functions.GetPlayerData().metadata["isunconscious"]) and spam then
+	if (QBCore.Functions.GetPlayerData().metadata["isdead"]) or (QBCore.Functions.GetPlayerData().metadata["inlaststand"]) and spam then
 		QBCore.Functions.TriggerCallback('qb-medical:docOnline', function(EMSOnline, hasEnoughMoney)
 			if EMSOnline <= Config.MinimalEMS and hasEnoughMoney and spam then
 				SpawnVehicle(GetEntityCoords(PlayerPedId()))

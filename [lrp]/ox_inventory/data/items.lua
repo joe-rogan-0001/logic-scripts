@@ -7,7 +7,7 @@ return {
 			status = { hunger = 200000 },
 			anim = 'eating',
 			prop = 'burger',
-			usetime = 2500,
+			usetime = 7500,
 			export = 'ox_inventory_examples.testburger'
 		},
 		server = {
@@ -63,9 +63,9 @@ return {
 		weight = 115,
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = { move = true, car = true, combat = true },
-			usetime = 2500,
+--			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = {combat = true },
+			usetime = 7500,
 		}
 	},
 
@@ -80,7 +80,7 @@ return {
 			status = { hunger = 200000 },
 			anim = 'eating',
 			prop = 'burger',
-			usetime = 2500,
+			usetime = 7500,
 			notification = 'You ate a delicious burger'
 		},
 	},
@@ -92,7 +92,7 @@ return {
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
+			usetime = 7500,
 			notification = 'You quenched your thirst with cola'
 		}
 	},
@@ -131,7 +131,7 @@ return {
 			status = { thirst = -100000, stress = -25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_cs_panties_02`, pos = vec3(0.03, 0.0, 0.02), rot = vec3(0.0, -13.5, -1.5) },
-			usetime = 2500,
+			usetime = 7500,
 		}
 	},
 
@@ -171,7 +171,7 @@ return {
 			status = { hunger = 25000, thirst = 25000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
-			usetime = 2500,
+			usetime = 7500,
 			notification = 'You.. drank mustard'
 		}
 	},
@@ -183,7 +183,7 @@ return {
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
-			usetime = 2500,
+			usetime = 7500,
 			cancel = true,
 			notification = 'You drank some refreshing water'
 		}
@@ -202,7 +202,7 @@ return {
 		stack = false,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
-			usetime = 3500
+			usetime = 7500
 		}
 	},
 
@@ -1541,7 +1541,10 @@ return {
 		close = true,
 		description = "Government (PD/EMS/DOC) Issued Equipment",
 		client = {
-			image = "ifak.png",
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+--			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = {combat = true },
+			usetime = 7500,
 		}
 	},
 
@@ -2072,8 +2075,13 @@ return {
 		close = true,
 		description = "Some delicious candy :O",
 		client = {
+			status = { hunger = 200000 },
+			anim = 'eating',
+			prop = 'candy',
+			usetime = 7500,
+			notification = 'You ate a delicious treat',
 			image = "snikkel_candy.png",
-		}
+		},
 	},
 
 	["cannabis"]                   = {
@@ -2589,12 +2597,18 @@ return {
 	["twerks_candy"]               = {
 		label = "Twerks",
 		weight = 500,
+		status = { hunger = 200000 },
 		stack = true,
 		close = true,
 		description = "Some delicious candy :O",
 		client = {
+			status = { hunger = 200000 },
+			anim = 'eating',
+			prop = 'candy',
+			usetime = 7500,
+			notification = 'You ate a delicious treat',
 			image = "twerks_candy.png",
-		}
+		},
 	},
 
 	["hydrochloricacid"]           = {
@@ -3482,8 +3496,13 @@ return {
 		close = true,
 		description = "Nice bread for your stomach",
 		client = {
+			status = { hunger = 200000 },
+			anim = 'eating',
+			prop = 'sandwich',
+			usetime = 7500,
+			notification = 'You ate a delicious sandwich',
 			image = "sandwich.png",
-		}
+		},
 	},
 
 	["lighter"]                    = {
@@ -3879,10 +3898,15 @@ return {
 		weight = 600,
 		stack = true,
 		close = true,
-		description = "Nice to eat",
+		description = "Yummy Sandwich",
 		client = {
+			status = { hunger = 200000 },
+			anim = 'eating',
+			prop = 'sandwich',
+			usetime = 7500,
+			notification = 'You ate a delicious grilled cheese',
 			image = "tosti.png",
-		}
+		},
 	},
 
 	["copper"]                     = {

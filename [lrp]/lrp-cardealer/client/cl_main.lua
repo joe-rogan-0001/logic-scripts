@@ -29,7 +29,7 @@ function TakeOutVehicle(vehicle, plate)
       --TaskWarpPedIntoVehicle(PlayerPedId(), vehicle, -1)
       exports['lj-fuel']:SetFuel(vehicle, 100)
       SetVehicleNumberPlateText(vehicle, plate)
-      SetEntityHeading(vehicle, vector4(-31.72, -1091.39, 26.42, 337.32).w)
+      SetEntityHeading(vehicle, vector4(-27.81, -1081.75, 26.01, 70.97).w)
       SetEntityAsMissionEntity(vehicle, true, true)
       TriggerEvent("vehiclekeys:client:SetOwner", plate)
       --TriggerServerEvent('vehiclekeys:server:GiveVehicleKeys', plate, GetPlayerServerId(PlayerPedId()))
@@ -38,7 +38,7 @@ function TakeOutVehicle(vehicle, plate)
       SetNetworkIdExistsOnAllMachines(networkid, true)
       SetNetworkIdCanMigrate(networkid, true)
       WSCore.Functions.Notify("Your vehicle in the garage!")
-    end, vector4(-31.72, -1091.39, 26.42, 337.32), true)
+    end, vector4(-27.81, -1081.75, 26.01, 70.97), true)
 end
 
 --[[

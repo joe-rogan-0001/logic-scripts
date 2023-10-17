@@ -4,5 +4,8 @@ return {
 	},
 	prop = {
 		['burger'] = { model = `prop_cs_burger_01`, pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+		['candy'] = { model = `prop_choc_ego`, pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+		['sandwich'] = { model = `prop_sandwich_01`, pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+
 	}
 }

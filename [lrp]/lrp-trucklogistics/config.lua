@@ -41,8 +41,8 @@ Config.empresas = {
 Config.contratos = {
 	['cancel_contrato'] = 167,					-- Key to cancel the active job (167 = F6) [Hold key 2 seconds]
 	['cooldown'] = 10, 							-- Cooldown time (in minutes) to generate a new contract
-	['preco_por_km_min'] = 300,				-- Minimum price per kilometer of the contract
-	['preco_por_km_max'] = 500,				-- Maximum price per kilometer of the contract
+	['preco_por_km_min'] = 800,				-- Minimum price per kilometer of the contract
+	['preco_por_km_max'] = 1200,				-- Maximum price per kilometer of the contract
 	['multiplicador_frete'] = 1.15,				-- Multiplier applied when generating FREIGHT loads
 	['probabilidade_ser_carga_urgente'] = 10,	-- The urgent load is generated randomly, here you can configure the probability (%)
 	['max_contratos_ativos'] = 50,				-- Maximum of contracts that can be active, this means that when generating a contact that exceeds this number, the oldest contract will be deleted

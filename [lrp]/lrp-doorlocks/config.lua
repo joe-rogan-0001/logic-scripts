@@ -9,7 +9,7 @@ Config.AdminAccess = {
 	enabled = false,
 	permission = 'admin' -- Needs to be admin or god
 }
-Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code--
+--Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code--
 
 Config.Debug = false -- Prints the closest door data
 
@@ -4076,6 +4076,216 @@ Config.DoorList['wotcdownstairsguns'] = {
     audioRemote = false,
     lockpick = false,
     locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole created by 123
+Config.DoorList['shneakyhole'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1005.180786, -1573.286987, 31.364994),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 1742849246,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole2 created by 123
+Config.DoorList['shneakyhole2'] = {
+    locked = true,
+    garage = false,
+    objHeading = 270.00003051758,
+    objCoords = vec3(998.257690, -1574.069702, 31.345957),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 1928054658,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole3 created by 123
+Config.DoorList['shneakyhole3'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1013.325806, -1586.265747, 25.381344),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 1909719175,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole4 created by 123
+Config.DoorList['shneakyhole4'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1013.326477, -1593.900757, 25.381344),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 1909719175,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole5 created by 123
+Config.DoorList['shneakyhole5'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1013.326172, -1600.831665, 25.381344),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 1909719175,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole6 created by 123
+Config.DoorList['shneakyhole6'] = {
+    locked = true,
+    garage = false,
+    objHeading = 89.999977111816,
+    objCoords = vec3(1012.312866, -1596.714966, 25.351706),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 327949372,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole7 created by 123
+Config.DoorList['shneakyhole7'] = {
+    locked = true,
+    garage = false,
+    objHeading = 179.99998474121,
+    objCoords = vec3(1003.142883, -1600.876953, 25.277105),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = -1452278537,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole8 created by 123
+Config.DoorList['shneakyhole8'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1008.259644, -1603.365723, 25.317455),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 608097726,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole9 created by 123
+Config.DoorList['shneakyhole9'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1011.589355, -1603.365723, 25.317455),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 608097726,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- shneakyhole10 created by 123
+Config.DoorList['shneakyhole10'] = {
+    locked = true,
+    garage = false,
+    objHeading = 0.0,
+    objCoords = vec3(1015.168518, -1603.365723, 25.317455),
+    slides = false,
+    lockpick = false,
+    authorizedGangs = { ['savagemc']=0 },
+    objHash = 608097726,
+    maxDistance = 2.0,
+    fixText = false,
+    audioRemote = false,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},

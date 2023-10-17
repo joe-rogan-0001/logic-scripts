@@ -35,6 +35,7 @@ cars = [
     { model: "a6", label: "Audi A6", price: 775000, onStock: 1, category: 0 },
     { model: "w221s500", label: "W221 S500", price: 675000, onStock: 1, category: 0 },
     { model: "750il", label: "BMW 750i", price: 675000, onStock: 1, category: 0 },
+    { model: "tractorcv8", label: "V8 Tractor", price: 100000, onStock: 1, category: 0 },
     { model: "asbo2", label: "Asbo (5 Seater)", price: 35000, onStock: 1, category: 1 },
     { model: "blista", label: "Blista", price: 55000, onStock: 1, category: 1 },
     { model: "blista2", label: "Blista Compact", price: 35000, onStock: 1, category: 1 },

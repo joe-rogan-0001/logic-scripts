@@ -49,12 +49,9 @@ RegisterNetEvent('hospital:client:UseBandage', function()
         StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
         TriggerServerEvent("QBCore:Server:RemoveItem", "bandage", 1)
         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["bandage"], "remove")
-        SetEntityHealth(ped, GetEntityHealth(ped) + 10)
-        if math.random(1, 100) < 50 then
-            RemoveBleed(1)
-        end
-        if math.random(1, 100) < 7 then
-            ResetPartial()
+        SetEntityHealth(ped, GetEntityHealth(ped) + 25)
+        if math.random(1, 100) < 100 then
+            RemoveBleed(100)
         end
     end, function() -- Cancel
         StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
@@ -78,7 +75,7 @@ RegisterNetEvent('hospital:client:UseIfaks', function()
         TriggerServerEvent("QBCore:Server:RemoveItem", "IFAK", 1)
         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["ifak"], "remove")
         TriggerServerEvent('hud:server:RelieveStress', math.random(12, 24))
-        SetEntityHealth(ped, GetEntityHealth(ped) + 10)
+        SetEntityHealth(ped, GetEntityHealth(ped) + 25)
         onPainKillers = true
         if painkillerAmount < 3 then
             painkillerAmount = painkillerAmount + 1

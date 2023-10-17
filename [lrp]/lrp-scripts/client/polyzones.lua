@@ -1260,7 +1260,7 @@ blockevents = true,
     blockevents = true,
 	},
     --weaponsdealer1
-    {
+--[[    {
       model = `s_m_y_blackops_01`,
       coords = vector4(605.89, -3091.66, 5.05, 179.59),
       gender = 'male', 
@@ -1295,7 +1295,7 @@ blockevents = true,
       freeze = true,
       invincible = true,
       blockevents = true,
-    },
+    },]]--
 
 
 
@@ -1351,7 +1351,7 @@ blockevents = true,
     },
     {
       model = `s_m_y_dealer_01`,
-      coords = vector4(1444.98, 6333.87, 22.85, 88.69),
+      coords = vector4(1025.95, -1852.88, 30.89, 329.14),
       gender = 'male', 
       animDict = 'anim@amb@business@bgen@bgen_no_work@',
       animName = 'sit_phone_phoneputdown_idle_nowork',
@@ -1360,8 +1360,18 @@ blockevents = true,
       blockevents = true,
     },
     {
-      model = `s_m_y_dealer_01`,
+      model = `cs_lestercrest`,
       coords = vector4(-444.62, 1598.33, 357.18, 55.39),
+      gender = 'male', 
+      animDict = 'anim@amb@business@bgen@bgen_no_work@',
+      animName = 'sit_phone_phoneputdown_idle_nowork',
+      freeze = true,
+      invincible = true,
+      blockevents = true,
+    },
+    {
+      model = `s_m_m_marine_01`,
+      coords = vector4(-1639.18, -1017.1, 6.31, 99.52),
       gender = 'male', 
       animDict = 'anim@amb@business@bgen@bgen_no_work@',
       animName = 'sit_phone_phoneputdown_idle_nowork',

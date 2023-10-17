@@ -471,7 +471,7 @@ return {
 			label = 'Pistol .50',
 			weight = 20000,
 			durability = 0.1,
-			ammoname = 'ammo-50'
+			ammoname = 'ammo-9'
 		},
 
 		['WEAPON_PISTOL_MK2'] = {

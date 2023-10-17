@@ -180,25 +180,29 @@ GangGarages = {
         label = "Uptown Riders",
         gang = "uptr"
     },
-    ["rod"] = {
+    ["savagemc"] = {
         ["parking"] = {
-            [1] = vector4(-97.64, 6495.81, 31.08, 225.02),
+            [1] = vector4(-1155.98, -1180.29, 5.02, 105.48)
         },
         ["width"] = {
-            [1] = vector2(8.5, 4.0),
+            [1] = vector2(8.5, 8.5),
         },
-        label = "Ravens Of Doom",
-        gang = "rod"
+        label = "Savage Ones MC",
+        gang = "savagemc",
+        blip = vector3(-1155.98, -1180.29, 5.02),
+        showBlip = false
     },
-    ["littleangels"] = {
+    ["yakuza"] = {
         ["parking"] = {
-            [1] = vector4(-1792.08, 458.89, 127.9, 99.28),
+            [1] = vector4(-678.78, -885.12, 23.87, 104.73)
         },
         ["width"] = {
-            [1] = vector2(8.5, 6.0),
+            [1] = vector2(6.5, 4.0),
         },
-        label = "Little Angels",
-        gang = "littleangels"
+        label = "Yakuza",
+        gang = "yakuza",
+        blip = vector3(-678.78, -885.12, 23.87),
+        showBlip = false
     },
 }
 
@@ -263,6 +267,20 @@ JobGarages = {
         },
         label = "ambulance",
         job = "ambulance"
+    },
+    ["wotc"] = {
+        ["parking"] = {
+            [1] = vector4(719.6, -1310.24, 25.6, 36.02),
+            [2] = vector4(722.78, -1310.18, 25.69, 36.6),
+            [3] = vector4(726.24, -1310.28, 25.7, 35.67),
+        },
+        ["width"] = {
+            [1] = vector2(6.5, 4.0),
+            [2] = vector2(6.5, 4.0),
+            [3] = vector2(6.5, 4.0),
+        },
+        label = "Wotc",
+        job = "wotc"
     },
 }
 

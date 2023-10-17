@@ -2,9 +2,9 @@ Config = Config or {}
 
 Config.RenewedBanking = true
 Config.PriceBrackets = {
-    ["small"] = 5000,
-    ["medium"] = 10000,
-    ["large"] = 15000,
+    ["small"] = 3500,
+    ["medium"] = 7500,
+    ["large"] = 12000,
 }
 
 Config.MaxMembers = 3 -- How many people can be in a group during the runs?
