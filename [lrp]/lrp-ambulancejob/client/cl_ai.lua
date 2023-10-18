@@ -11,17 +11,15 @@ local onDuty = false
 
 RegisterNetEvent('qb-medical:client:requestai', function()
 	if (QBCore.Functions.GetPlayerData().metadata["isdead"]) or (QBCore.Functions.GetPlayerData().metadata["inlaststand"]) and spam then
-		QBCore.Functions.TriggerCallback('qb-medical:docOnline', function(EMSOnline, hasEnoughMoney)
-			if EMSOnline <= Config.MinimalEMS and hasEnoughMoney and spam then
+		QBCore.Functions.TriggerCallback('qb-medical:docOnline', function(EMSOnline)
+			if EMSOnline <= Config.MinimalEMS and spam then
 				SpawnVehicle(GetEntityCoords(PlayerPedId()))
-				Notify("Medic is arriving", "primary")
+				Notify("Local Medic is being dispatch to your location")
 			else
 				if EMSOnline > Config.MinimalEMS then
-					Notify("There is too many medics online", "error")
-				elseif not hasEnoughMoney then
-					Notify("Not Enough Money", "error")
+					Notify("There is too many medics online")
 				else
-					Notify("Wait Paramadic is on its Way", "primary")
+					Notify("Wait Paramadic is on its Way")
 				end
 			end
 		end)
@@ -52,6 +50,27 @@ CreateThread(function()
 				end
             end
         end
+    end
+end)
+
+CreateThread(function()
+	local totalTime = 0
+
+    while true do
+      Wait(1000)
+		if Active then
+			if (totalTime >= 300) then
+				TriggerEvent("qb-ambulancejob:job:checkin")
+				StopScreenEffect('DeathFailOut')
+				TriggerServerEvent('qb-medical:server:GetCharge')
+				Notify("Your treatment is done, you were charged: "..Config.AIPrice)
+
+				Active = false
+				totalTime = 0
+			else 
+				totalTime += 1;
+			end
+		end
     end
 end)
 
@@ -108,7 +127,7 @@ function DoctorNPC()
 	TriggerEvent("qb-ambulancejob:job:checkin")
 	StopScreenEffect('DeathFailOut')
 	TriggerServerEvent('qb-medical:server:GetCharge')
-	Notify("Your treatment is done, you were charged: "..Config.AIPrice, "success")
+	Notify("Your treatment is done, you were charged: "..Config.AIPrice)
 	local loc = GetEntityCoords(mechVeh)
 	TaskEnterVehicle(mechPed, mechVeh, 1000, -1, 1.0, 1)
 	Wait(2500)
@@ -119,8 +138,8 @@ function DoctorNPC()
 	spam = true
 end
 
-function Notify(msg, state)
-    QBCore.Functions.Notify(msg, state)
+function Notify(msg)
+   QBCore.Functions.Notify(msg)
 end
 
 RegisterNetEvent('qb-medical:client:callAI', function()

@@ -262,18 +262,9 @@ QBCore.Functions.CreateCallback('hospital:GetPlayerBleeding', function(source, c
 end)
 
 QBCore.Functions.CreateCallback('qb-medical:docOnline', function(source, cb)
-	local src = source
-	local Player = QBCore.Functions.GetPlayer(src)
 	local Players = QBCore.Functions.GetPlayers()
 	local doctor = 0
-	local canpay = false
-	if Player.PlayerData.money["cash"] >= Config.AIPrice then
-		canpay = true
-	else
-		if Player.PlayerData.money["bank"] >= Config.AIPrice then
-			canpay = true
-		end
-	end
+
 
 	for i=1, #Players, 1 do
 		local Player = QBCore.Functions.GetPlayer(Players[i])
@@ -282,7 +273,7 @@ QBCore.Functions.CreateCallback('qb-medical:docOnline', function(source, cb)
 		end
 	end
 
-	cb(doctor, canpay)
+	cb(doctor)
 end)
 
 -- Commands
