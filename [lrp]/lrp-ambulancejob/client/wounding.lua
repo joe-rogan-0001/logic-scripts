@@ -48,9 +48,11 @@ RegisterNetEvent('hospital:client:UseBandage', function()
     }, {}, {}, function() -- Done
         StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
         TriggerServerEvent("QBCore:Server:RemoveItem", "bandage", 1)
+
         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["bandage"], "remove")
         SetEntityHealth(ped, GetEntityHealth(ped) + 25)
-        if math.random(1, 100) < 100 then
+        if math.random(1, 100) < 50 then
+            TriggerEvent("hospital:client:HealInjuries")
             RemoveBleed(100)
         end
     end, function() -- Cancel
