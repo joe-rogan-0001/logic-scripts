@@ -145,31 +145,3 @@ Config.PedList = {                                              -- Peds that wil
         scenario = "WORLD_HUMAN_CLIPBOARD"
 	},
 }
-
-
-Config.Products = {
-	[1] = {
-		name = "fishbait",
-		price = 2,
-		amount = 500,
-		info = {},
-		type = "item",
-		slot = 1,
-	},
-	[2] = {
-		name = "fishingrod",
-		price = 50,
-		amount = 50,
-		info = {},
-		type = "item",
-		slot = 2,
-	},
-	[3] = {
-		name = "anchor",
-		price = 5,
-		amount = 500,
-		info = {},
-		type = "item",
-		slot = 3,
-	},
-}

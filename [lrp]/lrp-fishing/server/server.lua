@@ -391,3 +391,25 @@ QBCore.Functions.CreateCallback('fishing:server:checkMoney', function(source, cb
         cb(false)
     end
 end)
+
+local currentChestNumber = 0
+
+QBCore.Functions.CreateCallback('fishing:server:createNewTeasureChest', function(source, cb)
+    local src = source
+    local pData = QBCore.Functions.GetPlayer(src)
+
+	
+	exports.ox_inventory:RegisterStash('treasureChestFishing'..currentChestNumber, 'Treasure Chest', 50, 50000, pData.PlayerData.citizenid)
+
+	Wait(500)
+
+	local inventory = exports.ox_inventory:GetInventory({id = 'teasureChestFishing'..currentChestNumber, owner = pData.PlayerData.citizenid})
+
+    for _, chestItem in pairs(Config.Items.items) do
+		exports.ox_inventory:AddItem(inventory.id, chestItem, 1)
+    end
+
+	currentChestNumber = currentChestNumber + 1;
+
+	cb('teasureChestFishing'..currentChestNumber, pData.PlayerData.citizenid)
+end)

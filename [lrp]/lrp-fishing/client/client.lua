@@ -631,24 +631,9 @@ openedTreasureChest = function()
 	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["fishinglootbig"], "remove", 1)
 	QBCore.Functions.Notify("Treasure chest opened! Be sure to collect all of your loot!!", "success", 7500)
 
-    local authorizedItems = {
-        label = "Treasure Chest",
-        slots = 30,
-        items = {}
-    }
-
-    local index = 1
-    for _, armoryItem in pairs(Config.Items.items) do
-        --for i=1, #armoryItem.authorizedJobGrades do
-            --if armoryItem.authorizedJobGrades[i] == PlayerJob.grade.level then
-                authorizedItems.items[index] = armoryItem
-                authorizedItems.items[index].slot = index
-                index = index + 1
-            --end
-        --end
-    end
-
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", authorizedItems)
+	QBCore.Functions.TriggerCallback('fishing:server:createNewTeasureChest', function(stashName, citizenId)
+		exports.ox_inventory:openInventory('stash', { id = stashName, owner = citizenId })
+	end)
 end
 
 function dump(o)
@@ -701,3 +686,7 @@ nearPed = function(model, coords, heading, gender, animDict, animName, scenario)
 
 	return ped
 end
+
+RegisterNetEvent('lrp-shops:marketshop', function()
+	exports.ox_inventory:openInventory('shop', { type = 'Fishing'})
+end)
