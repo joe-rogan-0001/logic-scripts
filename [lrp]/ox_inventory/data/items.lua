@@ -5822,4 +5822,118 @@ return {
 			image = "sparetire.png"
 		}
 	},	
+
+	-- av laptop
+	['laptopav'] = {
+		label = 'Laptop',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = ''
+	},
+	['decrypter'] = {
+		label = 'Decrypter',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
+	['black_usb'] = {
+		label = 'Black USB',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
+	['meth_table'] = {
+		label = 'Table',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = 'A Table'
+	},
+	['lab_key'] = {
+		label = 'Key',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = 'A Key'
+	},
+	['meth_batch'] = {
+		label = 'Meth Batch',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = 'Meth Batch'
+	},
+	['meth_tray'] = {
+		label = 'Meth Tray',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = nil
+	},
+	['baggies'] = {
+		label = 'Baggies',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = nil
+	},
+	['meth1g'] = {
+		label = '1g Meth',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = nil
+	},
+	['cd'] = {
+		label = 'CD',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = 'Support your local artist!'
+	},
+	['spray'] = {
+		label = 'Spray',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
+	['spray_remover'] = {
+		label = 'Spray Remover',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
+	['dongle'] = {
+		label = 'USB Dongle',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = ''
+	},
+	['vpn'] = {
+		label = 'VPN',
+		weight = 1,
+		stack = true,
+		close = false,
+		description = ''
+	},
+	['transponder'] = {
+		label = 'Transponder',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
+	['hacking_device'] = {
+		label = 'Hacking Device',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ''
+	},
 }
