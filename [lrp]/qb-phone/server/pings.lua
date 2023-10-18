@@ -1,5 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
-
 RegisterNetEvent("qb-phone:server:sendPing", function(id)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)

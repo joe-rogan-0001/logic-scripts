@@ -1,5 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
-
 -- Functions
 
 local function escape_str(s)

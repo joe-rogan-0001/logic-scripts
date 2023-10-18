@@ -1,4 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
 Adverts = {}
 
 local function GetAdvertFromNumb(src)

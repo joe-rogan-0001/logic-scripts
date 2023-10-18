@@ -4,20 +4,26 @@ Config = Config or {}
 
 Config.RenewedBanking = true -- Either put this to true or false if you use Renewed Banking or not
 Config.RenewedFinances = false -- Either put this to true or false if you use Renewed Finances or not
-Config.RenewedCameras = false -- Either put this to true or false if you use Renewed Cameras or not
+
+-- Configs for GoPro Script
+Config.BrazzersCameras = false -- Either put this to true or false if you use Renewed Cameras or not
 
 Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
     mechanic = 0.10
 }
 
 -- Web hook for camera ( NOT GO PRO )
-Config.Webhook = ''
+Config.Webhook = 'https://discord.com/api/webhooks/923630356714889268/gHTc1lTnPWa4nYrM6vSHpu3kcGQ0iIm1sQsOdU6Ue8VwYGfroPU9vBga6KpC6bDIkhXb'
 
 -- Item name for pings app ( Having a VPN sends an anonymous ping, else sends the players name)
 Config.VPNItem = 'vpn'
 
 -- The garage the vehicle goes to when you sell a car to a player
 Config.SellGarage = 'altastreet'
+
+-- NEW --
+Config.Garage = 'qbcore'  -- Use 'jdev' if using JDev's QB Garage Script
+                        -- Use 'qbcore' if using base QBCore Garage Script
 
 -- How Long Does The Player Have To Accept The Ping - This Is In Seconds
 Config.Timeout = 30
@@ -71,7 +77,7 @@ Config.PhoneApplications = {
         color = "#51da80",
         color2 = "#009436",
         icon = "fas fa-phone-volume",
-        tooltipText = "Phone",
+        tooltipText = "Calls",
         tooltipPos = "top",
         style = "font-size: 3.3vh";
         job = false,
@@ -97,7 +103,7 @@ Config.PhoneApplications = {
         color = "#6d10f5",
         color2 = "#4b67ef",
         icon = "fas fa-map-marker-alt",
-        tooltipText = "Ping",
+        tooltipText = "Ping!",
         tooltipPos = "top",
         style = "font-size: 3.3vh";
         job = false,
@@ -110,7 +116,7 @@ Config.PhoneApplications = {
         color = "#009ee5",
         color2 = "#87d9e7",
         icon = "fas fa-envelope",
-        tooltipText = "Mail",
+        tooltipText = "System Mail",
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
@@ -122,7 +128,7 @@ Config.PhoneApplications = {
         color = "#ffc900",
         color2 = "#f7c816",
         icon = "fas fa-bullhorn",
-        tooltipText = "Advertisements",
+        tooltipText = "Yellow Pages",
         style = "font-size: 2vh";
         job = false,
         blockedjobs = {},
@@ -159,7 +165,7 @@ Config.PhoneApplications = {
         color = "#fdfeff",
         color2 = "#d5e6fa",
         icon = "fas fa-ad",
-        tooltipText = "Debt",
+        tooltipText = "Loans & Debt",
         job = false,
         blockedjobs = {},
         slot = 10,
@@ -193,13 +199,14 @@ Config.PhoneApplications = {
         color = "#42a042",
         color2 = "#3f9e4a",
         icon = "fas fa-house-user",
-        tooltipText = "Houses",
+        tooltipText = "Housing",
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 13,
         Alerts = 0,
     },
+    --[[
     ["crypto"] = {
         app = "crypto",
         color = "#000000",
@@ -212,12 +219,25 @@ Config.PhoneApplications = {
         slot = 14,
         Alerts = 0,
     },
+    ]]--
+    ["job"] = {
+        app = "job",
+        color = "#151515",
+        color2 = "#161616",
+        icon = "fas fa-id-badge",
+        tooltipText = "Job Center",
+        style = "color: #78bdfd; font-size: 2.7vh";
+        job = false,
+        blockedjobs = {},
+        slot = 14,
+        Alerts = 0,
+    },
     ["jobcenter"] = {
         app = "jobcenter",
         color = "#151515",
         color2 = "#161616",
         icon = "fas fa-id-badge",
-        tooltipText = "Job Center",
+        tooltipText = "Group",
         style = "color: #78bdfd; font-size: 2.7vh";
         job = false,
         blockedjobs = {},
@@ -226,13 +246,13 @@ Config.PhoneApplications = {
     },
     ["employment"] = {
         app = "employment",
-        color = "#151515",
-        color2 = "#161616",
-        icon = "fas fa-ad",
+        color = "#009ee5",
+        color2 = "#87d9e7",
+        icon = "fas fa-briefcase",
         tooltipText = "Employment",
         job = false,
         blockedjobs = {},
-        slot = 15,
+        slot = 16,
         Alerts = 0,
     },
     ["lsbn"] = {
@@ -243,7 +263,7 @@ Config.PhoneApplications = {
         tooltipText = "LSBN",
         job = false,
         blockedjobs = {},
-        slot = 16,
+        slot = 17,
         Alerts = 0,
     },
     ["taxi"] = {
@@ -256,7 +276,7 @@ Config.PhoneApplications = {
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
-        slot = 17,
+        slot = 18,
         Alerts = 0,
     },
     ["casino"] = {
@@ -264,12 +284,12 @@ Config.PhoneApplications = {
         color = "#000100",
         color2 = "#000100",
         icon = "fas fa-gem",
-        tooltipText = "Betting",
+        tooltipText = "Diamond Sports Book",
         tooltipPos = "bottom",
         style = "font-size: 2.7vh";
         job = false,
         blockedjobs = {},
-        slot = 18,
+        slot = 19,
         Alerts = 0,
     },
     ["calculator"] = {
@@ -282,7 +302,7 @@ Config.PhoneApplications = {
         style = "font-size: 2.5vh";
         job = false,
         blockedjobs = {},
-        slot = 19,
+        slot = 20,
         Alerts = 0,
     },
     ["gallery"] = {
@@ -293,18 +313,6 @@ Config.PhoneApplications = {
         tooltipText = "Gallery",
         tooltipPos = "bottom",
         style = "font-size: 2.7vh";
-        job = false,
-        blockedjobs = {},
-        slot = 20,
-        Alerts = 0,
-    },
-    ["racing"] = {
-        app = "racing",
-        color = "#353b48",
-        color2 = "#242830",
-        icon = "fas fa-flag-checkered",
-        tooltipText = "Racing",
-        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 21,
@@ -327,7 +335,7 @@ Config.PhoneApplications = {
         color = "#008FFF",
         color2 = "#008FFF",
         icon = "fas fa-camera",
-        tooltipText = "camera",
+        tooltipText = "GoPro",
         tooltipPos = "top",
         style = "padding-right: .08vh; font-size: 3.3vh";
         job = false,
@@ -348,61 +356,40 @@ Config.PhoneApplications = {
         slot = 24,
         Alerts = 0,
     },
-    ["realjobcenter"] = {
-        app = "realjobcenter",
-        color = "#7289da",
-        color2 = "#7289da",
-        icon = "fab fa-discord",
-        tooltipText = "real job center",
-        tooltipPos = "top",
-        style = "padding-right: .08vh; font-size: 3.3vh";
-        job = false,
-        blockedjobs = {},
-        slot = 25,
-        Alerts = 0,
-    },
-    --[[
-    ["meos"] = {
-        app = "meos",
-        color = "#004682",
-        color2 = "#00325c",
-        icon = "fas fa-ad",
-        tooltipText = "MDT",
-        job = "police",
-        blockedjobs = {},
-        slot = 25,
-        Alerts = 0,
-    },
-    ]]--
 }
 
 Config.MaxSlots = 28
 
 Config.JobCenter = {
     [1] = {
-        job = "garbage",
+        vpn = false,
+        icon = 'fas fa-trash',
         label = "Garbage",
-        Coords = {-321.77, -1545.84},
+        event = "jobcenter:waypoint:garbage",
     },
     [2] = {
-        job = "taxi",
+        vpn = false,
+        icon = 'fas fa-taxi',
         label = "Taxi Driver",
-        Coords = {907.84, -174.8},
+        event = "jobcenter:waypoint:taxi",
     },
     [3] = {
-        job = "trucker",
+        vpn = false,
+        icon = 'fas fa-truck',
         label = "Truck Driver",
-        Coords = {1204.15, -3109.78},
+        event = "jobcenter:waypoint:trucker",
     },
     [4] = {
-        job = "lumberjack",
+        vpn = false,
+        icon = 'fas fa-tree',
         label = "Logger",
-        Coords = {1167.73, -1347.27},
+        event = "jobcenter:waypoint:logger",
     },
     [5] = {
-        job = "helicopter",
+        vpn = false,
+        icon = 'fas fa-helicopter',
         label = "Helicopter",
-        Coords = {1167.73, -1347.27},
+        event = "jobcenter:waypoint:helicopter",
     },
 }
 

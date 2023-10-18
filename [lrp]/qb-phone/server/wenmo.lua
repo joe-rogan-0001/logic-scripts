@@ -1,5 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
-
 RegisterNetEvent('qb-phone:server:wenmo_givemoney_toID', function(data)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)

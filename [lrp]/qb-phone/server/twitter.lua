@@ -1,5 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
-
 Tweets = {}
 
 -- Events

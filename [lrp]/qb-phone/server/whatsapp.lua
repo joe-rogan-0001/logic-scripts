@@ -1,6 +1,3 @@
-local QBCore = exports['lrp-core']:GetCoreObject()
-
-
 RegisterNetEvent('qb-phone:server:UpdateMessages', function(ChatMessages, ChatNumber)
     if not ChatNumber or not ChatMessages then return end
 

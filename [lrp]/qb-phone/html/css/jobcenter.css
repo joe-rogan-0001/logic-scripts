@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.realjobcenter-app {
+.job-app {
     display: none;
     height: 100%;
     width: 100%;
@@ -8,7 +8,7 @@
     background: #242833;
 }
 
-.realjobcenter-header {
+.job-header {
     position: absolute;
     width: 90%;
     height: 10%;
@@ -16,27 +16,28 @@
     left: 0;
     right: 0;
     color: white;
-    /* font-family: 'Poppins', sans-serif; */
-    font-size: 1.8vh;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.5vh;
     /* margin: 0 auto; */
 }
 
-.realjobcenter-header > p {
+.job-header > p {
+    text-align: center;
     line-height: 12vh;
     text-indent: 2vh;
-    margin: 0 0 0 9vh;
+  /*   margin: 0 0 0 9vh; */
 }
 
-.realjobcenter-header > span {
+.job-header > span {
     position: absolute;
     top: 8vh;
-    left: 9vh;
+    left: 5vh;
     font-size: 1.2vh;
     height: 2vh;
     color: white;
 }
 
-.realjobcenter-list {
+.job-list {
     position: absolute;
     width: 90%;
     height: 80%;
@@ -48,11 +49,11 @@
     overflow-y: scroll;
 }
 
-.realjobcenter-list::-webkit-scrollbar {
+.job-list::-webkit-scrollbar {
     display: none;
 }
 
-.realjobcenter-class-body-job{
+.job-class-body-job{
     color: whitesmoke;
     background: #2c465f;
     transition: 0.2s;
@@ -63,25 +64,35 @@
     border-radius: 4px;
     /* box-shadow: 0rem 0rem 0.2rem 0.02rem #000000a6; */
 }
-.realjobcenter-class-body-job:hover{
+.job-class-body-job:hover{
     background: #0d1218c0;
 }
 
-.realjobcenter-showitems-other{
+.job-showitems-other{
     margin-left: 35%;
     position: absolute;
     display: initial;
     visibility: hidden;
 }
 
-#realjobcenter-icon-class{
+.job-title {
+    font-size: 14px;
+}
+
+#job-icon-class2{
+    margin-left: 30%;
+    font-size: 275%;
+}
+
+#job-icon-class{
     padding-left: 1.3vh;
     font-size: 140%;
 }
-.realjobcenter-class-body-job:hover .jobcenter-showitems-other{
+
+.job-class-body-job:hover .job-showitems-other{
     visibility: visible;
 }
 
-#realjobcenter-icon-class:hover{
+#job-icon-class:hover{
     color: #8ee074;
 }
