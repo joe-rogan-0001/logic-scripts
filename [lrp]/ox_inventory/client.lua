@@ -255,6 +255,7 @@ function client.openInventory(inv, data)
 			currentInventory = right or defaultInventory
 			left.items = PlayerData.inventory
 			left.groups = PlayerData.groups
+			TriggerServerEvent('rep-weed:server:checkDry', left, currentInventory)
 
 			SendNUIMessage({
 				action = 'setupInventory',
@@ -971,7 +972,7 @@ end)
 local function nearbyDrop(point)
 	if not point.instance or point.instance == currentInstance then
 		---@diagnostic disable-next-line: param-type-mismatch
-		DrawMarker(2, point.coords.x, point.coords.y, point.coords.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2, 0.15, 150, 30, 30, 222, false, false, 0, true, false, false, false)
+		DrawMarker(27, point.coords.x, point.coords.y, point.coords.z - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.32, 0.32, 0.15, 0, 100, 255, 222, false, false, 0, true, false, false, false)
 	end
 end
 

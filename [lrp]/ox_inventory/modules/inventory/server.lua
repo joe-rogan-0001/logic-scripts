@@ -617,6 +617,22 @@ function Inventory.Remove(inv)
 	end
 end
 
+RegisterNetEvent('rep-weed:server:updateDry', function (id, slot, item)
+    inv = Inventory(id)
+    inv.weight -= Inventory(id).items[slot].weight
+    Inventory(id).items[slot] = item
+    inv.weight += Inventory(id).items[slot].weight
+    inv:syncSlotsWithClients({
+        {
+            item = item,
+            inventory = inv.id
+        }
+    }, true)
+    if inv.player and server.syncInventory then
+        server.syncInventory(inv)
+    end
+end)
+
 exports('RemoveInventory', Inventory.Remove)
 
 ---Update the internal reference to vehicle stashes. Does not trigger a save or update the database.

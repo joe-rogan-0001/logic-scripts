@@ -27,23 +27,23 @@ return {
 			vec3(2557.94, 382.05, 108.62),
 			vec3(373.55, 325.56, 103.56),
 		}, targets = {
-			{ loc = vec3(25.06, -1347.32, 29.5), length = 0.7, width = 0.5, heading = 0.0, minZ = 29.5, maxZ = 29.9, distance = 1.5 },
-			{ loc = vec3(-3039.18, 585.13, 7.91), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
-			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 0.6, width = 0.6, heading = 175.0, minZ = 12.83, maxZ = 13.23, distance = 1.5 },
-			{ loc = vec3(1728.39, 6414.95, 35.04), length = 0.6, width = 0.6, heading = 65.0, minZ = 35.04, maxZ = 35.44, distance = 1.5 },
-			{ loc = vec3(1698.37, 4923.43, 42.06), length = 0.5, width = 0.5, heading = 235.0, minZ = 42.06, maxZ = 42.46, distance = 1.5 },
-			{ loc = vec3(1960.54, 3740.28, 32.34), length = 0.6, width = 0.5, heading = 120.0, minZ = 32.34, maxZ = 32.74, distance = 1.5 },
-			{ loc = vec3(548.5, 2671.25, 42.16), length = 0.6, width = 0.5, heading = 10.0, minZ = 42.16, maxZ = 42.56, distance = 1.5 },
-			{ loc = vec3(2678.29, 3279.94, 55.24), length = 0.6, width = 0.5, heading = 330.0, minZ = 55.24, maxZ = 55.64, distance = 1.5 },
-			{ loc = vec3(2557.19, 381.4, 108.62), length = 0.6, width = 0.5, heading = 0.0, minZ = 108.62, maxZ = 109.02, distance = 1.5 },
-			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
+			{ loc = vector3(-3242.23, 999.97, 11.85), length = 0.7, width = 0.5, heading = 0.0, minZ = 10.5, maxZ = 13.9, distance = 1.75 },
+			{ loc = vector3(24.5, -1346.63, 28.60), length = 0.6, width = 0.5, heading = 15.0, minZ = 27.91, maxZ = 30.31, distance = 1.75 },
+			{ loc = vector3(-47.18, -1758.46, 28.45), length = 0.6, width = 0.6, heading = 175.0, minZ = 27.83, maxZ = 30.23, distance = 1.75 },
+			{ loc = vector3(-706.02, -913.9, 18.35), length = 0.6, width = 0.6, heading = 65.0, minZ = 17.04, maxZ = 20.44, distance = 1.75 },
+			{ loc = vector3(-1486.75, -377.57, 39.20), length = 0.5, width = 0.5, heading = 235.0, minZ = 38.06, maxZ = 41.46, distance = 1.75 },
+			{ loc = vector3(-1221.30, -907.82, 11.40), length = 0.6, width = 0.5, heading = 120.0, minZ = 10.34, maxZ = 13.74, distance = 1.75 },
+			{ loc = vector3(-1819.96, 794.04, 137.10), length = 0.6, width = 0.5, heading = 10.0, minZ = 136.16, maxZ = 139.56, distance = 1.75 },
+			{ loc = vector3(-3039.89, 584.21, 6.90), length = 0.6, width = 0.5, heading = 330.0, minZ = 5.24, maxZ = 8.64, distance = 1.75 },
+			{ loc = vector3(-2966.41, 391.62, 14.05), length = 0.6, width = 0.5, heading = 0.0, minZ = 13.62, maxZ = 16.02, distance = 1.75 },
+			{ loc = vector3(1164.72, -323.04, 68.25), length = 0.6, width = 0.5, heading = 345.0, minZ = 67.57, maxZ = 70.97, distance = 1.75 },
 		}
 	},
 
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
-			id = 93, colour = 0, scale = 0.7
+			id = 59, colour = 0, scale = 0.7
 		}, inventory = {
 			{ name = 'beer', price = 7 },
 			{ name = 'whiskey', price = 10 },
@@ -68,19 +68,19 @@ return {
 			vec3(1392.562, 3604.684, 34.980),
 			vec3(-1393.409, -606.624, 30.319)
 		}, targets = {
-			{ loc = vec3(1134.9, -982.34, 46.41), length = 0.5, width = 0.5, heading = 96.0, minZ = 46.4, maxZ = 46.8, distance = 1.5 },
-			{ loc = vec3(-1222.33, -907.82, 12.43), length = 0.6, width = 0.5, heading = 32.7, minZ = 12.3, maxZ = 12.7, distance = 1.5 },
-			{ loc = vec3(-1486.67, -378.46, 40.26), length = 0.6, width = 0.5, heading = 133.77, minZ = 40.1, maxZ = 40.5, distance = 1.5 },
-			{ loc = vec3(-2967.0, 390.9, 15.14), length = 0.7, width = 0.5, heading = 85.23, minZ = 15.0, maxZ = 15.4, distance = 1.5 },
-			{ loc = vec3(1165.95, 2710.20, 38.26), length = 0.6, width = 0.5, heading = 178.84, minZ = 38.1, maxZ = 38.5, distance = 1.5 },
-			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
+			{ loc = vector3(1134.32, -983.25, 45.45), length = 0.5, width = 0.5, heading = 96.0, minZ = 43.4, maxZ = 45.8, distance = 1.75 },
+			{ loc = vector3(549.24, 2670.37, 41.25), length = 0.6, width = 0.5, heading = 32.7, minZ = 39.3, maxZ = 41.7, distance = 1.75 },
+			{ loc = vector3(1959.72, 3740.68, 31.40), length = 0.6, width = 0.5, heading = 133.77, minZ = 29.1, maxZ = 31.5, distance = 1.75 },
+			{ loc = vector3(1165.25, 2710.80, 37.16), length = 0.7, width = 0.5, heading = 85.23, minZ = 35.0, maxZ = 37.4, distance = 1.75 },
+			{ loc = vector3(1697.8, 4923.14, 41.10), length = 0.6, width = 0.5, heading = 178.84, minZ = 40.1, maxZ = 43.5, distance = 1.75 },
+			{ loc = vector3(1728.33, 6416.21, 34.04), length = 0.6, width = 0.6, heading = 200.0, minZ = 32.0, maxZ = 34.4, distance = 1.75 }
 		}
 	},
 
 	YouTool = {
 		name = 'YouTool',
 		blip = {
-			id = 402, colour = 0, scale = 0.7
+			id = 402, colour = 0, scale = 0.9
 		}, inventory = {
 			{ name = 'lockpick', price = 200 },
 			{ name = 'weapon_wrench', price = 250 },
@@ -110,10 +110,13 @@ return {
 			{ name = 'advancedlockpick', price = 1200 },
 			{ name = 'cleaningkit', price = 1500 },
 		}, locations = {
-			vec3(2748.0, 3473.0, 55.67),
-			vec3(342.99, -1298.26, 32.51)
+			vec3(45.48, -1748.85, 28.55),
+			vec3(2747.29, 3473.07, 54.67),
+			vec3(-422.36, 6136.68, 30.88)
 		}, targets = {
-			{ loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
+			{ loc = vector3(45.48, -1748.85, 28.55), length = 0.6, width = 3.0, heading = 65.0, minZ = 27.0, maxZ = 29.8, distance = 3.0 },
+			{ loc = vector3(2747.29, 3473.07, 54.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 53.0, maxZ = 55.8, distance = 3.0 },
+			{ loc = vector3(-422.36, 6136.68, 30.88), length = 0.6, width = 3.0, heading = 65.0, minZ = 29.0, maxZ = 31.8, distance = 3.0 },
 		}
 	},
 
@@ -282,6 +285,23 @@ return {
 			vec3(-1639.18, -1017.1, 6.31)
 		}, targets = {
 			{ loc = vec3(-1639.18, -1017.1, 6.31), length = 1.0, width = 1.0, heading = 0.0, minZ = 5.0, maxZ = 7.0, distance = 1.5 },
+		}
+	},
+	WeedMarket = {
+		name = 'Fresher Thanever',
+		inventory = {
+			{ name = 'femaleseed', price = 250},
+			{ name = 'maleseed', price = 250},
+			{ name = 'wateringcan', price = 50},
+			{ name = 'fertilizer', price = 50},
+			{ name = 'qualityscales', price = 500},
+			{ name = 'smallscales', price = 250},
+			{ name = 'emptybaggies', price = 5},
+			{ name = 'rollingpaper', price = 5},
+		}, locations = {
+			vec3(2510.4, 3731.21, 39.73)
+		}, targets = {
+			{ loc = vec3(2510.4, 3731.21, 39.73), length = 1.0, width = 1.0, heading = 0.0, minZ = 39.0, maxZ = 41.0, distance = 1.5 },
 		}
 	},
 
