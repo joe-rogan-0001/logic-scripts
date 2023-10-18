@@ -137,6 +137,7 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
     PlayerData.metadata['walletid'] = PlayerData.metadata['walletid'] or QBCore.Player.CreateWalletId()
     PlayerData.metadata['delivery'] = PlayerData.metadata['delivery'] or 0
     PlayerData.metadata['garbage'] = PlayerData.metadata['garbage'] or 0
+    PlayerData.metadata['weed-rep'] = PlayerData.metadata['weed-rep'] or 0
     PlayerData.metadata['criminalrecord'] = PlayerData.metadata['criminalrecord'] or {
         ['hasRecord'] = false,
         ['date'] = nil
