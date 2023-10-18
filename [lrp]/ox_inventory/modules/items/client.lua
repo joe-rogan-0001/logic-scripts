@@ -74,7 +74,7 @@ local ox_inventory = exports[shared.resource]
 -----------------------------------------------------------------------------------------------
 -- Clientside item use functions
 -----------------------------------------------------------------------------------------------
-
+--[[
 Item('bandage', function(data, slot)
 	local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
@@ -96,6 +96,7 @@ Item('armour', function(data, slot)
 		end)
 	end
 end)
+]]--
 
 client.parachute = false
 Item('parachute', function(data, slot)
@@ -116,6 +117,7 @@ Item('parachute', function(data, slot)
 	end
 end)
 
+--[[
 Item('phone', function(data, slot)
 	local success, result = pcall(function()
 		return exports.npwd:isPhoneVisible()
@@ -125,6 +127,7 @@ Item('phone', function(data, slot)
 		exports.npwd:setPhoneVisible(not result)
 	end
 end)
+]]--
 
 Item('clothing', function(data, slot)
 	local metadata = slot.metadata
