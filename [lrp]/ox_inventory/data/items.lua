@@ -5822,118 +5822,226 @@ return {
 			image = "sparetire.png"
 		}
 	},	
-
-	-- av laptop
-	['laptopav'] = {
-		label = 'Laptop',
-		weight = 1,
+	['femaleseed'] = {
+		label = 'Female Marijuana Seed',
+		weight = 1000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = ''
+		server = {
+			export = 'rep-weed.femaleseed',
+		},
+		description = 'Surely I can just plant this, right?',
+		client = {
+			image = "weed-seed.png"
+		}
 	},
-	['decrypter'] = {
-		label = 'Decrypter',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
-	},
-	['black_usb'] = {
-		label = 'Black USB',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
-	},
-	['meth_table'] = {
-		label = 'Table',
-		weight = 1,
+	['maleseed'] = {
+		label = 'Male Marijuana Seed',
+		weight = 1000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = 'A Table'
+		description = 'Add this to a planted female seed to make it pregnant? You are pretty sure this seed has a penis.',
+		client = {
+			image = "weed-seed.png"
+		}
 	},
-	['lab_key'] = {
-		label = 'Key',
-		weight = 1,
+	['wateringcan'] = {
+		label = 'Watering Can',
+		weight = 7000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = 'A Key'
+		server = {
+			export = 'rep-weed.wateringcan',
+		},
+		description = 'Fill this at a river or lake.'
 	},
-	['meth_batch'] = {
-		label = 'Meth Batch',
-		weight = 1,
+	['fertilizer'] = {
+		label = 'Fertilizer',
+		weight = 1000,
+		consume = 0,
+		description = 'Cool'
+	},
+	['wetbud'] = {
+		label = 'Wet Bud (100 grams)',
+		weight = 35000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = 'Meth Batch'
+		description = 'THIS CANT BE DRIED WITHOUT STRAIN... Needs to be stored somewhere dry.'
 	},
-	['meth_tray'] = {
-		label = 'Meth Tray',
-		weight = 1,
+	['driedbud'] = {
+		label = 'Dried Bud (100 Grams)',
+		weight = 10000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = nil
+		server = {
+			export = 'rep-weed.driedbud',
+		},
+		description = 'Pack It?'
 	},
-	['baggies'] = {
-		label = 'Baggies',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = nil
-	},
-	['meth1g'] = {
-		label = '1g Meth',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = nil
-	},
-	['cd'] = {
-		label = 'CD',
-		weight = 1,
+	['weedpackage'] = {
+		label = 'Suspicious Package',
+		weight = 25000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = 'Support your local artist!'
+		server = {
+			export = 'rep-weed.weedpackage',
+		},
+		description = 'Marked for Police Seizure'
 	},
-	['spray'] = {
-		label = 'Spray',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
-	},
-	['spray_remover'] = {
-		label = 'Spray Remover',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
-	},
-	['dongle'] = {
-		label = 'USB Dongle',
-		weight = 1,
+	['qualityscales'] = {
+		label = 'Quality Scales',
+		weight = 2000,
+		consume = 0,
 		stack = false,
-		close = true,
-		description = ''
+		description = 'Weighs Baggies with no loss'
 	},
-	['vpn'] = {
-		label = 'VPN',
-		weight = 1,
-		stack = true,
-		close = false,
-		description = ''
+	['smallscales'] = {
+		label = 'Small Scales',
+		weight = 1000,
+		stack = false,
+		description = 'Weighs Baggies with minimal loss'
 	},
-	['transponder'] = {
-		label = 'Transponder',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
+	['joint'] = {
+		label = '2g Joint',
+		weight = 1000,
+		stack = false,
+		consume = 0,
+		server = {
+			export = 'rep-weed.joint',
+		},
+		description = 'Its a Joint, man.'
 	},
-	['hacking_device'] = {
-		label = 'Hacking Device',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = ''
+	['emptybaggies'] = {
+		label = 'Empty Baggies',
+		weight = 1000,
+		description = 'Empty Baggies'
 	},
+	['weedbaggie'] = {
+		label = 'Baggie (7g)',
+		weight = 1000,
+		stack = false,
+		consume = 0,
+		server = {
+			export = 'rep-weed.weedbaggie',
+		},
+		description = 'Sold on the streets'
+	},
+	['rollingpaper'] = {
+		label = 'Rolling Paper',
+		weight = 200,
+		description = 'Required to roll joints!'
+	},
+		-- av laptop
+		['laptopav'] = {
+			label = 'Laptop',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = ''
+		},
+		['decrypter'] = {
+			label = 'Decrypter',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
+		['black_usb'] = {
+			label = 'Black USB',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
+		['meth_table'] = {
+			label = 'Table',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = 'A Table'
+		},
+		['lab_key'] = {
+			label = 'Key',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = 'A Key'
+		},
+		['meth_batch'] = {
+			label = 'Meth Batch',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = 'Meth Batch'
+		},
+		['meth_tray'] = {
+			label = 'Meth Tray',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = nil
+		},
+		['baggies'] = {
+			label = 'Baggies',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = nil
+		},
+		['meth1g'] = {
+			label = '1g Meth',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = nil
+		},
+		['cd'] = {
+			label = 'CD',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = 'Support your local artist!'
+		},
+		['spray'] = {
+			label = 'Spray',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
+		['spray_remover'] = {
+			label = 'Spray Remover',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
+		['dongle'] = {
+			label = 'USB Dongle',
+			weight = 1,
+			stack = false,
+			close = true,
+			description = ''
+		},
+		['vpn'] = {
+			label = 'VPN',
+			weight = 1,
+			stack = true,
+			close = false,
+			description = ''
+		},
+		['transponder'] = {
+			label = 'Transponder',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
+		['hacking_device'] = {
+			label = 'Hacking Device',
+			weight = 1,
+			stack = true,
+			close = true,
+			description = ''
+		},
 }
