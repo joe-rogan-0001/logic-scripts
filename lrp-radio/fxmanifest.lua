@@ -1,20 +1,38 @@
 fx_version 'cerulean'
-game 'gta5'
+game "gta5"
 
-description 'QB-Radio'
-version '1.0.0'
-
-shared_script 'config.lua'
-
-client_scripts {
-  'client.lua',
-  'animation.lua'
-}
-
-server_script 'server.lua'
-
-ui_page('html/ui.html')
-
-files {'html/ui.html', 'html/js/script.js', 'html/css/style.css', 'html/img/cursor.png', 'html/img/radio.png'}
+author "Master Mind"
+version '1.4'
 
 lua54 'yes'
+
+
+ui_page 'html/index.html'
+-- ui_page 'http://localhost:3000/' --for dev
+
+shared_script {
+  '@ox_lib/init.lua',
+  "shared/**",
+}
+
+client_script {
+  'client/interface.lua',
+  'client/function.lua',
+  'client/bridge/*.lua',
+  'client/event.lua',
+  'client/nui.lua'
+}
+
+server_script {
+  "server/**",
+}
+
+
+files {
+  'html/**',
+}
+
+dependencies {
+  'pma-voice',
+  'ox_lib'
+}

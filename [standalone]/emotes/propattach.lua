@@ -203,36 +203,6 @@ AddEventHandler('attachPropPoliceIdBoard', function(attachModelSent,boneNumberSe
     AttachEntityToEntity(attachedProp, PlayerPedId(), bone, x, y, z, xR, yR, zR, 1, 1, 0, 0, 2, 1)
 end)
 
--- Radio
-attachedPropRadio = 0
-function removeAttachedPropRadio()
-	if DoesEntityExist(attachedPropRadio) then
-		DeleteEntity(attachedPropRadio)
-		attachedPropRadio = 0
-	end
-end
-
-RegisterNetEvent('destroyPropRadio')
-AddEventHandler('destroyPropRadio', function()
-	removeAttachedPropRadio()
-end)
-
-RegisterNetEvent('attachPropRadio')
-AddEventHandler('attachPropRadio', function(attachModelSent,boneNumberSent,x,y,z,xR,yR,zR)
-	removeAttachedPropRadio()
-	attachModelRadio = GetHashKey(attachModelSent)
-	boneNumber = boneNumberSent
-	SetCurrentPedWeapon(PlayerPedId(), 0xA2719263)
-	local bone = GetPedBoneIndex(PlayerPedId(), boneNumberSent)
-	--local x,y,z = table.unpack(GetEntityCoords(PlayerPedId(), true))
-	RequestModel(attachModelRadio)
-	while not HasModelLoaded(attachModelRadio) do
-		Citizen.Wait(100)
-	end
-	attachedPropRadio = CreateObject(attachModelRadio, 1.0, 1.0, 1.0, 1, 1, 0)
-	AttachEntityToEntity(attachedPropRadio, PlayerPedId(), bone, x, y, z, xR, yR, zR, 1, 0, 0, 0, 2, 1)
-end)
-
 
 attachedProp69 = 0
 function removeAttachedProp69()
@@ -326,17 +296,12 @@ attachPropList = {
 		["model"] = "prop_player_phone_01", ["bone"] = 57005, ["x"] = 0.14,["y"] = 0.01,["z"] = -0.02,["xR"] = 110.0,["yR"] = 120.0, ["zR"] = -15.0
 	},
 
-	["radio01"] = {
-		["model"] = "prop_cs_hand_radio", ["bone"] = 57005, ["x"] = 0.14,["y"] = 0.01,["z"] = -0.02,["xR"] = 110.0,["yR"] = 120.0, ["zR"] = -15.0
-	},
-
 	["clipboard01"] = {
 		["model"] = "p_amb_clipboard_01", ["bone"] = 60309, ["x"] = -0.01,["y"] = -0.015,["z"] = 0.005,["xR"] = 0.0,["yR"] = 0.0, ["zR"] = -10.0
 	},
 	["clipboard02"] = {
 		["model"] = "p_amb_clipboard_01", ["bone"] = 60309, ["x"] = 0.1,["y"] = -0.01,["z"] = 0.005,["xR"] = -95.0,["yR"] = 20.0, ["zR"] = -20.0
 	},
-
 
 	["tablet01"] = {
 		["model"] = "prop_cs_tablet", ["bone"] = 60309, ["x"] = 0.02,["y"] = -0.01,["z"] = -0.03,["xR"] = 0.0,["yR"] = 0.0, ["zR"] = -10.0
@@ -1323,10 +1288,6 @@ AddEventHandler('attachItemPhone', function(item)
 	TriggerEvent("attachPropPhone",attachPropList[item]["model"], attachPropList[item]["bone"], attachPropList[item]["x"], attachPropList[item]["y"], attachPropList[item]["z"], attachPropList[item]["xR"], attachPropList[item]["yR"], attachPropList[item]["zR"])
 end)
 
-RegisterNetEvent('attachItemRadio')
-AddEventHandler('attachItemRadio', function(item)
-	TriggerEvent("attachPropRadio",attachPropList[item]["model"], attachPropList[item]["bone"], attachPropList[item]["x"], attachPropList[item]["y"], attachPropList[item]["z"], attachPropList[item]["xR"], attachPropList[item]["yR"], attachPropList[item]["zR"])
-end)
 
 RegisterNetEvent('attachItemClipboard')
 AddEventHandler('attachItemClipboard', function(item)
