@@ -320,10 +320,18 @@ end)
 
 RegisterNetEvent('apartments:client:OpenStash', function()
     if CurrentApartment ~= nil then
-        exports['ox_inventory']:openInventory('stash', CurrentApartment)
-        --TriggerServerEvent("inventory:server:OpenInventory", "stash", CurrentApartment)
-        TriggerServerEvent("InteractSound_SV:PlayOnSource", "StashOpen", 0.4)
-        TriggerEvent("inventory:client:SetCurrentStash", CurrentApartment)
+        QBCore.Functions.TriggerCallback('apartments:checkStashExists', function(createdStash)
+            while (not createdStash) do
+                Wait(500)
+            end
+
+            print(CurrentApartment)
+
+            exports['ox_inventory']:openInventory('stash', CurrentApartment)
+            --TriggerServerEvent("inventory:server:OpenInventory", "stash", CurrentApartment)
+            TriggerServerEvent("InteractSound_SV:PlayOnSource", "StashOpen", 0.4)
+            TriggerEvent("inventory:client:SetCurrentStash", CurrentApartment)
+        end)
     end
 end)
 

@@ -71,7 +71,6 @@ RegisterNetEvent('apartments:server:CreateApartment', function(type, label)
         Player.PlayerData.citizenid
     })
     exports.ox_inventory:RegisterStash(apartmentId, 'Apartment Stash', 50, 5000000, Player.PlayerData.citizenid)
-    --TriggerClientEvent('QBCore:Notify', src, Lang:t('success.receive_apart').." ("..label..")")
     TriggerClientEvent("apartments:client:SpawnInApartment", src, apartmentId, type)
     TriggerClientEvent("apartments:client:SetHomeBlip", src, type)
 end)
@@ -204,6 +203,24 @@ QBCore.Functions.CreateCallback('apartments:IsOwner', function(source, cb, apart
             cb(false)
         end
     end
+end)
+
+QBCore.Functions.CreateCallback('apartments:checkStashExists', function(source, cb)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if Player ~= nil then
+        local result = MySQL.Sync.fetchAll('SELECT * FROM apartments WHERE citizenid = ?', { Player.PlayerData.citizenid })
+
+        local apartmentId = result[1].name
+
+        if (not exports.ox_inventory:GetInventory(apartmentId,  Player.PlayerData.citizenid)) then
+            print('Player missing apartment stash, creating stash...')
+
+            exports.ox_inventory:RegisterStash(apartmentId, 'Apartment Stash', 50, 5000000, Player.PlayerData.citizenid)
+        end
+    end
+
+    cb(true)
 end)
 
 
