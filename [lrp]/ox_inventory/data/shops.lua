@@ -10,11 +10,9 @@ return {
 			{ name = 'bandage', price = 100 },
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
-			{ name = 'boombox', price = 750 },
 			{ name = 'burger', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'sandwich', price = 10 },
-			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -51,14 +49,12 @@ return {
 			{ name = 'bandage', price = 100 },
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
-			{ name = 'boombox', price = 750 },
 			{ name = 'burger', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'sandwich', price = 10 },
 			{ name = 'twerks_candy', price = 10 },
 			{ name = 'snikkel_candy', price = 10 },
 			{ name = 'sandwich', price = 10 },
-			{ name = 'phone', price = 350 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -87,8 +83,6 @@ return {
 			{ name = 'weapon_hammer', price = 250 },
 			{ name = 'repairkit', price = 250 },
 			{ name = 'screwdriverset', price = 320 },
-			{ name = 'phone', price = 350 },
-			{ name = 'radio', price = 250 },
 			{ name = 'binoculars', price = 50 },
 			{ name = 'firework1', price = 50 },
 			{ name = 'firework2', price = 50 },
@@ -304,7 +298,20 @@ return {
 			{ loc = vec3(2510.4, 3731.21, 39.73), length = 1.0, width = 1.0, heading = 0.0, minZ = 39.0, maxZ = 41.0, distance = 1.5 },
 		}
 	},
-
+	DigitalDen = {
+		name = 'Digital Den',
+		blip = {
+			id = 521, colour = 14, scale = 0.9
+		}, inventory = {
+			{ name = 'phone', price = 350 },
+			{ name = 'boombox', price = 250},
+			{ name = 'radio', price = 500},
+		}, locations = {
+			vector3(-660.8, -859.28, 24.52)
+		}, targets = {
+			{ loc = vec3(-660.55, -857.24, 23.54), length = 1.0, width = 1.0, heading = 0.0, minZ = 22.0, maxZ = 24.0, distance = 1.5 },
+		}
+	},
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
