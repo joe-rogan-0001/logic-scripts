@@ -15,8 +15,8 @@ Config.Categories = {
             return true
         end,
         items = {
-            {name = "dongle", label = "Dongle", stock = 20, price = 50, account = "cosmo", accountLabel = "Cosmo"},
-            {name = "hacking_device", label = "Hacking Device", stock = 99, price = 100, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "dongle", label = "Dongle", stock = 20, price = 120, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "hacking_device", label = "Hacking Device", stock = 99, price = 300, account = "cosmo", accountLabel = "Cosmo"},
         }
     }, 
     ["drugs"] = { 
