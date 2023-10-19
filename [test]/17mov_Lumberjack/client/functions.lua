@@ -23,7 +23,7 @@ CreateThread(function()
     end
 end)
 
-TriggerEvent("__cfx_export_qb-core_GetCoreObject", function(getCore)
+TriggerEvent("__cfx_export_lrp-core_GetCoreObject", function(getCore)
     Core = getCore()
     Config.Framework = "QBCore"
 end)
