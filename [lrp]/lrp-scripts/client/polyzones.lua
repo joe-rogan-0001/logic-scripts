@@ -550,7 +550,7 @@ Config.Peds = {
     },
    },
    { 
-    model = 'a_m_m_indian_01', 
+    model = 'a_f_o_indian_01', 
     coords = vector4(901.34, -170.06, 73.08, 228.81), 
     gender = 'male',
     freeze = true,
