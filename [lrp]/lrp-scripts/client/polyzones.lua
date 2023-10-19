@@ -1389,6 +1389,16 @@ blockevents = true,
       invincible = true,
       blockevents = true,
     },
+    {
+      model = `u_m_o_dean`,
+      coords = vector4(-660.55, -857.24, 23.54, 273.3),
+      gender = 'male', 
+      animDict = 'anim@heists@prison_heiststation@cop_reactions',
+      animName = 'cop_b_idle',
+      freeze = true,
+      invincible = true,
+      blockevents = true,
+    },
 }
 
 local function AddTargetModel(models, parameters)

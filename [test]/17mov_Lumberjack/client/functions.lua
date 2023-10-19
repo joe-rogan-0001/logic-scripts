@@ -23,7 +23,7 @@ CreateThread(function()
     end
 end)
 
-TriggerEvent("__cfx_export_qb-core_GetCoreObject", function(getCore)
+TriggerEvent("__cfx_export_lrp-core_GetCoreObject", function(getCore)
     Core = getCore()
     Config.Framework = "QBCore"
 end)
@@ -84,7 +84,7 @@ function SetVehicle(vehicle)
     -- Setup here your vehicle keys, fuel etc..
 
     if Config.Framework == "QBCore" then
-        exports['LegacyFuel']:SetFuel(vehicle, 100.0)
+        exports['lj-fuel']:SetFuel(vehicle, 100.0)
         TriggerEvent("vehiclekeys:client:SetOwner", Core.Functions.GetPlate(vehicle))
     elseif Config.Framework == "ESX" then
 
