@@ -1734,7 +1734,6 @@ return {
 			image = "tent.png",
 		}
 	},
-
 	["saltandpepperchicken"]       = {
 		label = "S & P Chicken",
 		weight = 500,
@@ -5886,7 +5885,7 @@ return {
 		server = {
 			export = 'rep-weed.weedpackage',
 		},
-		description = 'Marked for Police Seizure'
+		description = 'Funny smelling package (Marked for Police Seizure)'
 	},
 	['qualityscales'] = {
 		label = 'Quality Scales',

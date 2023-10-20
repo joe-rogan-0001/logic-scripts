@@ -295,7 +295,7 @@ function SpawnSupplier()
     local SupplierHash = Config.SupplierPeds[math.random(#Config.SupplierPeds)]
     QBCore.Functions.LoadModel(SupplierHash)
     Supplier = CreatePed(0, SupplierHash, loc.x, loc.y, loc.z-1.0, loc.w, false, true)
-	pedprop = CreateObject(`prop_cs_cardbox_01`, 0, 0, 0, false, true, true)
+	pedprop = CreateObject(`hei_prop_hei_drug_pack_01b`, 0, 0, 0, false, true, true)
     FreezeEntityPosition(Supplier, true)
     SetEntityInvincible(Supplier, true)
 	SetPedKeepTask(Supplier, true)
