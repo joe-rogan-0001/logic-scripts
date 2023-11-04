@@ -6,8 +6,8 @@ Config.MinimumPolice = 0
 Config.CallCopsChance = 50 -- %Chance to alert police
 Config.RunCost = 500
 
-Config.EnableCooldown = false
-Config.Cooldown = 600 -- Seconds * Recommended to have some form of cooldown!
+Config.EnableCooldown = true
+Config.Cooldown = 1800 -- Seconds * Recommended to have some form of cooldown!
 
 Config.SendEmail = false -- The E-Mail received upon taking on a job
 Config.EnableAnimation = true -- Animation that plays upon talking to the boss
@@ -26,10 +26,10 @@ Config.BlipLocation = {
 -- Blip Settings for Supplier/Routes
 
 Config.OxySupplierColour = 11 -- This is the color or the marking that shows from your location to the location
-Config.OxySupplierRoute = true -- true/false to turn of the route markings and only show blips
+Config.OxySupplierRoute = false -- true/false to turn of the route markings and only show blips
 
 Config.OxyRouteColour = 11 -- This is the color or the marking that shows from your location to the location
-Config.OxyRouteGPS = true -- true/false to turn of the route markings and only show blips
+Config.OxyRouteGPS = false -- true/false to turn of the route markings and only show blips
 
 -- Ped Spawns
 
@@ -71,7 +71,7 @@ Config.MaxItemReward = 3
 Config.MinItemReward = 1
 
 Config.SpecialRewardChance = 5
-Config.SpecialItem = "green_usb"
+Config.SpecialItem = "greendongle"
 Config.MaxSpecialReward = 1
 Config.MinSpecialReward = 1
 
@@ -95,7 +95,7 @@ Config.RollChance = 20
 Config.DriveStyle = 39 -- THIS CAN BE CHANGED AT https://www.vespura.com/fivem/drivingstyle/
 Config.MaxDeliveries = 6
 Config.MinDeliveries = 4 
-Config.Cars = {"glendale", "ingot", "buccaneer2"} 
+Config.Cars = {"glendale", "ingot", "buccaneer2","bison", "sultan", "ellie"} 
 Config.MaxTimeBetweenCars = 30 
 Config.MinTimeBetweenCars = 15 
 Config.DriverPed = "s_m_m_gentransport" 

@@ -67,6 +67,13 @@ RegisterNetEvent('ps-adminmenu:client:ChangePlate', function(data, selectedData)
     end
 
     if cache.vehicle then
+        local AlreadyPlate = lib.callback.await("ps-adminmenu:callback:CheckAlreadyPlate", false, plate)
+    
+        if AlreadyPlate then
+            QBCore.Functions.Notify(locale("already_plate"), "error", 5000)
+            return
+        end
+            
         local currentPlate = GetVehicleNumberPlateText( cache.vehicle)
         TriggerServerEvent('ps-adminmenu:server:ChangePlate', plate, currentPlate)
         Wait(100)
@@ -170,4 +177,24 @@ RegisterNetEvent("ps-adminmenu:client:SpawnPersonalvehicle", function(data, sele
         exports[Config.Fuel]:SetFuel(veh, 100.0)
         TriggerEvent("vehiclekeys:client:SetOwner", plate)
     end, vehicle, coords, true)
+end)
+
+
+-- Get Vehicle Data
+lib.callback.register("ps-adminmenu:client:getvehData", function (vehicle)
+    lib.requestModel(vehicle)
+    
+    local coords = vec(GetOffsetFromEntityInWorldCoords(cache.ped, 0.0, 2.0, 0.5), GetEntityHeading(cache.ped)+90)
+    local veh = CreateVehicle(vehicle, coords, false, false)
+
+    local prop = {}
+    if DoesEntityExist(veh) then
+        SetEntityCollision(veh, false, false)
+        FreezeEntityPosition(veh, true)
+        prop = QBCore.Functions.GetVehicleProperties(veh)
+        Wait(500)
+        DeleteVehicle(veh)
+    end
+
+    return prop
 end)

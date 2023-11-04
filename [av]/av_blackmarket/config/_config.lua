@@ -15,8 +15,9 @@ Config.Categories = {
             return true
         end,
         items = {
-            {name = "dongle", label = "Dongle", stock = 20, price = 120, account = "cosmo", accountLabel = "Cosmo"},
-            {name = "hacking_device", label = "Hacking Device", stock = 99, price = 300, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "dongle", label = "Dongle", stock = 10, price = 120, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "hacking_device", label = "Hacking Device", stock = 10, price = 200, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "transponder", label = "Transponder", stock = 10, price = 200, account = "cosmo", accountLabel = "Cosmo"},
         }
     }, 
     ["drugs"] = { 
@@ -35,7 +36,7 @@ Config.Categories = {
             return false
         end,
         items = {
-            {name = "water", label = "Water", category = "drugs", stock = 50, price = 1, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "ammonia", label = "Ammonia", category = "drugs", stock = 50, price = 20, account = "cosmo", accountLabel = "Cosmo"},
         }
     },
     ["weapons"] = { 
@@ -48,7 +49,7 @@ Config.Categories = {
                 return false
             end
             local gang = exports['av_gangs']:getGang()
-            if gang and gang['name'] == "ballas" then -- If is member of Ballas gang can access
+            if gang and gang['name'] == "yakuza" then -- If is member of Ballas gang can access
                 return true
             end
             return false

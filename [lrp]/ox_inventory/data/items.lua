@@ -69,7 +69,7 @@ return {
 		}
 	},
 
-	['black_money']                = {
+	['blackmoney']                = {
 		label = 'Dirty Money',
 	},
 
@@ -576,7 +576,7 @@ return {
 
 	["rubber"]                     = {
 		label = "Rubber",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "Rubber, I believe you can make your own rubber ducky with it :D",
@@ -1860,7 +1860,7 @@ return {
 
 	["metalscrap"]                 = {
 		label = "Metal Scrap",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "You can probably make something nice out of this",
@@ -2405,7 +2405,7 @@ return {
 
 	["iron"]                       = {
 		label = "Iron",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "Handy piece of metal that you can probably use for something",
@@ -2449,7 +2449,7 @@ return {
 
 	["steel"]                      = {
 		label = "Steel",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "Nice piece of metal that you can probably use for something",
@@ -2868,7 +2868,7 @@ return {
 
 	["aluminum"]                   = {
 		label = "Aluminium",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "Nice piece of metal that you can probably use for something",
@@ -3072,7 +3072,7 @@ return {
 
 	["glass"]                      = {
 		label = "Glass",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "It is very fragile, watch out",
@@ -3910,7 +3910,7 @@ return {
 
 	["copper"]                     = {
 		label = "Copper",
-		weight = 500,
+		weight = 100,
 		stack = true,
 		close = false,
 		description = "Nice piece of metal that you can probably use for something",

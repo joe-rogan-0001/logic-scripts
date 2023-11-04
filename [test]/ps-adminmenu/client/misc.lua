@@ -79,23 +79,89 @@ end)
 
 -- Toggle coords
 local showCoords = false
-RegisterNetEvent('ps-adminmenu:client:ToggleCoords', function(data)
-	if not CheckPerms(data.perms) then return end
+local function showCoordsMenu()
+    while showCoords do
+        Wait(50)
+        local coords = GetEntityCoords(PlayerPedId())
+        local heading = GetEntityHeading(PlayerPedId())
+        SendNUIMessage({
+            action = "showCoordsMenu",
+            data = {
+                show = showCoords,
+                x = QBCore.Shared.Round(coords.x, 2),
+                y = QBCore.Shared.Round(coords.y, 2),
+                z = QBCore.Shared.Round(coords.z, 2),
+                heading = QBCore.Shared.Round(heading, 2)
+            }
+        })
+    end
+end
 
-    local x = 0.4
-    local y = 0.025
+RegisterNetEvent('ps-adminmenu:client:ToggleCoords', function(data)
+    if not CheckPerms(data.perms) then return end
+
     showCoords = not showCoords
-    CreateThread(function()
-        while showCoords do
-            local coords = GetEntityCoords(PlayerPedId())
-            local heading = GetEntityHeading(PlayerPedId())
-            local c = {}
-            c.x = QBCore.Shared.Round(coords.x, 2)
-            c.y = QBCore.Shared.Round(coords.y, 2)
-            c.z = QBCore.Shared.Round(coords.z, 2)
-            heading = QBCore.Shared.Round(heading, 2)
-            Wait(1)
-            --(string.format('~w~'..locale("ped_coords") .. '~b~ vector4(~w~%s~b~, ~w~%s~b~, ~w~%s~b~, ~w~%s~b~)', c.x, c.y, c.z, heading), 4, {66, 182, 245}, 0.4, x + 0.0, y + 0.0)
-        end
-    end)
+
+    if showCoords then
+        CreateThread(showCoordsMenu)
+    end
+end)
+
+-- Set Ammo
+RegisterNetEvent('ps-adminmenu:client:SetAmmo', function(data, selectedData)
+    if not CheckPerms(data.perms) then return end
+
+    local ammo = selectedData["Ammo Ammount"].value
+    local weapon = GetSelectedPedWeapon(cache.ped)
+
+    if weapon ~= nil then
+        SetPedAmmo(cache.ped, weapon, ammo)
+        QBCore.Functions.Notify(locale("set_wepaon_ammo", tostring(ammo)), 'success')
+    else
+        QBCore.Functions.Notify(locale("no_weapon"), 'error')
+    end
+end)
+
+--Toggle Dev
+local ToggleDev = false
+
+RegisterNetEvent('ps-adminmenu:client:ToggleDev', function(data)
+    if not CheckPerms(data.perms) then return end
+
+    ToggleDev = not ToggleDev
+
+    TriggerEvent("qb-admin:client:ToggleDevmode") -- toggle dev mode (ps-hud/qb-hud)
+    TriggerEvent('ps-adminmenu:client:ToggleCoords', data)    -- toggle Coords
+    TriggerEvent('ps-adminmenu:client:ToggleGodmode', data)   -- Godmode
+
+    QBCore.Functions.Notify(locale("toggle_dev"), 'success')
+end)
+
+-- Key Bindings
+local toogleAdmin = lib.addKeybind({ name = 'toogleAdmin', description = locale("command_admin_desc"), defaultKey = Config.AdminKey,
+    onPressed = function(self)
+	ExecuteCommand('admin')
+    end
+})
+
+local toogleNoclip = lib.addKeybind({ name = 'toogleNoclip', description = locale("command_noclip_desc"), defaultKey = Config.NoclipKey,
+    onPressed = function(self)
+	TriggerEvent(Config.Actions["noclip"].event, Config.Actions["noclip"])
+    end
+})
+
+if Config.Keybindings then
+	toogleAdmin:disable(false)
+	toogleNoclip:disable(false)
+else
+	toogleAdmin:disable(true)
+	toogleNoclip:disable(true)
+end
+
+-- Set Ped
+RegisterNetEvent("ps-adminmenu:client:setPed", function ( pedModels )
+    lib.requestModel(pedModels, 1500)
+    SetPlayerModel(cache.playerId, pedModels)
+    SetPedDefaultComponentVariation(cache.ped)
+    SetModelAsNoLongerNeeded(pedModels)
 end)

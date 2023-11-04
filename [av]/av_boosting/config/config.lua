@@ -28,8 +28,8 @@ Config.DeliveryBlip = {
     scale = 0.8
 }
 Config.MinSpeedHack = 30 -- Min speed needed to start hacking the vehicle (in miles)
-Config.MaxSContracts = 5 -- Max S contracts per server restart (for all users)
-Config.MaxSPlusContracts = 2 -- Max S+ contracts per server restart (for all users)
+Config.MaxSContracts = 1 -- Max S contracts per server restart (for all users)
+Config.MaxSPlusContracts = 1 -- Max S+ contracts per server restart (for all users)
 Config.GuardModels = {`g_m_importexport_01`, `g_m_m_chicold_01`, `g_m_y_armgoon_02`, `s_m_y_dealer_01`, `s_m_y_robber_01`}
 Config.GuardSpawn = {-15,15} -- Distance for guards spawn, -15 mts behind - 15 mts in front of player ped, the guard will spawn inside that range
 Config.RemoveVinMoneyAtBeginning = false -- True if you want to remove the vin money at the beginning of the contract, false it will remove money right before the player scratches the vin
@@ -38,13 +38,13 @@ Config.AuctionTime = 30 -- (in minutes) Auction time
 Config.AuctionExtraTime = 60 -- (in minutes) After the auction ends and we get a winner, this time will be set to the contract expiration
 Config.Classes = {
     ["D"] = {
-        ["Prices"] = {normal = {min = 1, max = 2}, vinscratch = {min = 20, max = 30}, payout = 10},
+        ["Prices"] = {normal = {min = 20, max = 30}, vinscratch = {min = 100, max = 120}, payout = 10},
         ['Cops'] = { -- Min cops needed to start the contract
             ['normal'] = 0,
-            ['vin'] = 0,
+            ['vin'] = 5,
         },
-        ["EXP"] = {driver = {min = 5, max = 10}, hacker = {min = 5, max = 10}},
-        ["FailEXP"] = {min = 2, max = 5}, -- If the DeliveryTime expires, we will remove EXP from the driver (doesn't affect hacker)
+        ["EXP"] = {driver = {min = 2, max = 4}, hacker = {min = 2, max = 4}},
+        ["FailEXP"] = {min = 2, max = 4}, -- If the DeliveryTime expires, we will remove EXP from the driver (doesn't affect hacker)
         ['ContractTime'] = 2, -- (in hours) Time to start a contract before it expires
         ["Hacks"] = false,
         ["NextClass"] = "C",
@@ -52,10 +52,10 @@ Config.Classes = {
         ["Weapons"] = {"WEAPON_BAT", "WEAPON_KNUCKLE"}
     },
     ["C"] = {
-        ["Prices"] = {normal = {min = 2, max = 4}, vinscratch = {min = 30, max = 40}, payout = 20},
+        ["Prices"] = {normal = {min = 20, max = 40}, vinscratch = {min = 110, max = 130}, payout = 20},
         ['Cops'] = { -- Min cops needed to start the contract
-            ['normal'] = 2,
-            ['vin'] = 2,
+            ['normal'] = 1,
+            ['vin'] = 5,
         },
         ["EXP"] = {driver = {min = 5, max = 10}, hacker = {min = 5, max = 10}},
         ["FailEXP"] = {min = 3, max = 5},
@@ -66,7 +66,7 @@ Config.Classes = {
         ["Weapons"] = {"WEAPON_BAT", "WEAPON_CROWBAR"}
     },
     ["B"] = {
-        ["Prices"] = {normal = {min = 3, max = 5}, vinscratch = {min = 40, max = 60}, payout = 30},
+        ["Prices"] = {normal = {min = 30, max = 50}, vinscratch = {min = 150, max = 160}, payout = 30},
         ['Cops'] = { -- Min cops needed to start the contract
             ['normal'] = 2,
             ['vin'] = 2,
@@ -80,10 +80,10 @@ Config.Classes = {
         ["Weapons"] = {"WEAPON_MACHETE", "WEAPON_BATTLEAXE"}
     },
     ["A"] = {
-        ["Prices"] = {normal = {min = 5, max = 8}, vinscratch = {min = 60, max = 80}, payout = 40},
+        ["Prices"] = {normal = {min = 50, max = 80}, vinscratch = {min = 180, max = 220}, payout = 40},
         ['Cops'] = { -- Min cops needed to start the contract
-            ['normal'] = 0,
-            ['vin'] = 2,
+            ['normal'] = 3,
+            ['vin'] = 3,
         },
         ["EXP"] = {driver = {min = 10, max = 20}, hacker = {min = 10, max = 15}},
         ["FailEXP"] = {min = 6, max = 10},
@@ -94,38 +94,38 @@ Config.Classes = {
         ["Weapons"] = {"WEAPON_PISTOL", "WEAPON_SAWNOFFSHOTGUN"}
     },
     ["A+"] = {
-        ["Prices"] = {normal = {min = 10, max = 20}, vinscratch = {min = 80, max = 100}, payout = 50},
+        ["Prices"] = {normal = {min = 55, max = 85}, vinscratch = {min = 180, max = 230}, payout = 50},
         ['Cops'] = { -- Min cops needed to start the contract
-            ['normal'] = 2,
-            ['vin'] = 2,
+            ['normal'] = 3,
+            ['vin'] = 3,
         },
         ["EXP"] = {driver = {min = 15, max = 25}, hacker = {min = 10, max = 20}},
         ["FailEXP"] = {min = 10, max = 15},
         ['ContractTime'] = 2,
-        ["Hacks"] = {min = 5, max = 7},
+        ["Hacks"] = {min = 6, max = 8},
         ["NextClass"] = "S",
         ["Guards"] = {min = 3, max = 4},
         ["Weapons"] = {"WEAPON_SAWNOFFSHOTGUN", "WEAPON_PISTOL50"}
     },
     ["S"] = {
-        ["Prices"] = {normal = {min = 15, max = 30}, vinscratch = {min = 100, max = 120}, payout = 60},
+        ["Prices"] = {normal = {min = 150, max = 200}, vinscratch = {min = 400, max = 600}, payout = 60},
         ['Cops'] = { -- Min cops needed to start the contract
-            ['normal'] = 2,
-            ['vin'] = 2,
+            ['normal'] = 4,
+            ['vin'] = 4,
         },
         ["EXP"] = {driver = {min = 20, max = 30}, hacker = {min = 10, max = 25}},
         ["FailEXP"] = {min = 15, max = 20},
         ['ContractTime'] = 2,
-        ["Hacks"] = {min = 8, max = 10},
+        ["Hacks"] = {min = 9, max = 13},
         ["NextClass"] = "S+",
         ["Guards"] = {min = 4, max = 5},
         ["Weapons"] = {"WEAPON_MICROSMG", "WEAPON_COMBATPDW", "WEAPON_MINISMG", "WEAPON_COMPACTRIFLE"}
     },
     ["S+"] = {
-        ["Prices"] = {normal = {min = 40, max = 50}, vinscratch = {min = 120, max = 150}, payout = 70},
+        ["Prices"] = {normal = {min = 150, max = 220}, vinscratch = {min = 500, max = 750}, payout = 70},
         ['Cops'] = { -- Min cops needed to start the contract
-            ['normal'] = 0,
-            ['vin'] = 2,
+            ['normal'] = 4,
+            ['vin'] = 4,
         },
         ["EXP"] = {driver = {min = 25, max = 40}, hacker = {min = 15, max = 30}},
         ["FailEXP"] = {min = 20, max = 30},

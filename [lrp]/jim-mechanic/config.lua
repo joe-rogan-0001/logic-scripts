@@ -91,9 +91,9 @@ Config = {
 		25.0, -- Level 3
 	},
 
-	NitrousUseRate = 0.4, -- How fast the nitrous drains (halved for level1, doubled for level3)
+	NitrousUseRate = 0.5, -- How fast the nitrous drains (halved for level1, doubled for level3)
 
-	NitrousCoolDown = 7, -- 7 Seconds, set to 0 to disable
+	NitrousCoolDown = 15, -- 7 Seconds, set to 0 to disable
 	CooldownConfirm = true, -- Will play a confirmation beep when cooldown is done
 
 	nosDamage = true, -- This enables NOS causing damage to engine while boosting
@@ -101,10 +101,10 @@ Config = {
 
 	-- Effects
 	EnableFlame = true, -- True adds exhaut flame effects while boosting
-	EnableTrails = true, -- True adds taillight effects while boosting
-	EnableScreen = true, -- True adds screen effects while boosting
+	EnableTrails = false, -- True adds taillight effects while boosting
+	EnableScreen = false, -- True adds screen effects while boosting
 
-	skillcheck = "qb-lock", -- When adding Nos to a vehicle there are three script options available
+	skillcheck = "ps-ui", -- When adding Nos to a vehicle there are three script options available
 								-- "qb-skillbar" "qb-lock" "ps-ui"
 
 	explosiveFail = true, 		-- Better not fail that skill check. (1 in 10 chance of explosion)
@@ -120,10 +120,10 @@ Config = {
 
 --Extra Vehicle Repair Costs
 	RepairEngine = "iron",			---Engine repair item and its MAX cost
-	RepairEngineCost = 8,
+	RepairEngineCost = 50,
 
 	RepairBody = "plastic",			---Body Repair item and its cost
-	RepairBodyCost = 8,
+	RepairBodyCost = 50,
 
 	RepairRadiator = "newoil",		---Radiator Repair item and its cost
 	RepairRadiatorCost = 1,
@@ -138,7 +138,7 @@ Config = {
 	RepairClutchCost = 1,
 
 	RepairFuel = "steel",			---Fuel Repair item and its cost
-	RepairFuelCost = 8,
+	RepairFuelCost = 50,
 
 --DuctTape Controllers
 	DuctSimpleMode = true, -- This will repair the engine to the max (set below)

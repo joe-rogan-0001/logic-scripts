@@ -64,7 +64,7 @@
   "cannot_use": "Unable to use %s",
   "shop_nostock": "Item is out of stock",
   "identification": "Sex: %s  \nDate of birth: %s",
-  "search_dumpster": "Search Dumpster",
+  "search_dumpster": "Open Dumpster",
   "open_label": "Open %s",
   "purchased_for": "Purchased %s %s for %s%s",
   "unable_stack_items": "You're unable to stack these items",

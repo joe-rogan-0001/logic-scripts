@@ -194,14 +194,16 @@ GangGarages = {
     },
     ["yakuza"] = {
         ["parking"] = {
-            [1] = vector4(-678.78, -885.12, 23.87, 104.73)
+            [1] = vector4(-659.10, -869.71, 23.90, 178.51),
+            [2] = vector4(-663.39, -869.87, 23.90, 179.23),
         },
         ["width"] = {
             [1] = vector2(6.5, 4.0),
+            [2] = vector2(6.5, 4.0),
         },
         label = "Yakuza",
         gang = "yakuza",
-        blip = vector3(-678.78, -885.12, 23.87),
+        blip = vector3(-661.20, -869.37, 24.51),
         showBlip = false
     },
 }

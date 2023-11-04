@@ -972,7 +972,7 @@ end)
 local function nearbyDrop(point)
 	if not point.instance or point.instance == currentInstance then
 		---@diagnostic disable-next-line: param-type-mismatch
-		DrawMarker(27, point.coords.x, point.coords.y, point.coords.z - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.32, 0.32, 0.15, 0, 100, 255, 222, false, false, 0, true, false, false, false)
+		DrawMarker(27, point.coords.x, point.coords.y, point.coords.z - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.30, 0.30, 0.17, 0, 100, 255, 222, false, false, 0, true, false, false, false)
 	end
 end
 

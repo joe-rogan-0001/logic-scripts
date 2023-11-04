@@ -98,5 +98,6 @@ for k, v in pairs(data 'items') do
 end
 
 ItemList.cash = ItemList.money
+ItemList.blackmoney = ItemList.blackmoney
 
 return ItemList

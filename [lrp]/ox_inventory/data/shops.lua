@@ -2,7 +2,7 @@ return {
 	General = {
 		name = 'Shop',
 		blip = {
-			id = 59, colour = 0, scale = 0.7
+			id = 59, colour = 3, scale = 0.7
 		}, inventory = {
 			{ name = 'beer', price = 7 },
 			{ name = 'whiskey', price = 10 },
@@ -13,6 +13,7 @@ return {
 			{ name = 'burger', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'sandwich', price = 10 },
+			{ name = 'cola', price = 10 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -41,7 +42,7 @@ return {
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
-			id = 59, colour = 0, scale = 0.7
+			id = 59, colour = 3, scale = 0.7
 		}, inventory = {
 			{ name = 'beer', price = 7 },
 			{ name = 'whiskey', price = 10 },
@@ -55,6 +56,7 @@ return {
 			{ name = 'twerks_candy', price = 10 },
 			{ name = 'snikkel_candy', price = 10 },
 			{ name = 'sandwich', price = 10 },
+			{ name = 'cola', price = 10 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -76,7 +78,7 @@ return {
 	YouTool = {
 		name = 'YouTool',
 		blip = {
-			id = 402, colour = 0, scale = 0.9
+			id = 402, colour = 3, scale = 0.9
 		}, inventory = {
 			{ name = 'lockpick', price = 200 },
 			{ name = 'weapon_wrench', price = 250 },
@@ -90,14 +92,14 @@ return {
 			{ name = 'firework4', price = 50 },
 			{ name = 'cleaningkit', price = 100 },
 			{ name = 'advancedrepairkit', price = 500 },
-			{ name = 'tent', price = 1000 },
-			{ name = 'table', price = 500 },
-			{ name = 'barrel', price = 200 },
-			{ name = 'cement', price = 300 },
-			{ name = 'hydrochloricacid', price = 1200 },
-			{ name = 'hydratedlime', price = 300 },
-			{ name = 'ammonia', price = 1500 },
-			{ name = 'empty_weed_bag', price = 5 },
+--			{ name = 'tent', price = 1000 },
+--			{ name = 'table', price = 500 },
+--			{ name = 'barrel', price = 200 },
+--			{ name = 'cement', price = 300 },
+--			{ name = 'hydrochloricacid', price = 1200 },
+--			{ name = 'hydratedlime', price = 300 },
+--			{ name = 'ammonia', price = 1500 },
+--			{ name = 'empty_weed_bag', price = 5 },
 			{ name = 'limewater', price = 10 },
 			{ name = 'campfire', price = 500 },
 			{ name = 'pestle', price = 250 },
@@ -117,11 +119,13 @@ return {
 	Ammunation = {
 		name = 'Ammunation',
 		blip = {
-			id = 110, colour = 0, scale = 0.7
+			id = 110, colour = 3, scale = 0.7
 		}, inventory = {
-			{ name = 'ammo-9', price = 5, },
+			{ name = 'ammo-9', price = 5, metadata = { registered = true }, license = 'weapon'  },
 			{ name = 'WEAPON_KNIFE', price = 200 },
-			{ name = 'WEAPON_BAT', price = 100 },
+			{ name = 'WEAPON_BAT', price = 200 },
+			{ name = 'WEAPON_HATCHET', price = 200 },
+			{ name = 'WEAPON_SWITCHBLADE', price = 200 },
 			{ name = 'WEAPON_PISTOL', price = 1000, metadata = { registered = true }, license = 'weapon' }
 		}, locations = {
 			vec3(-662.180, -934.961, 21.829),
@@ -173,7 +177,7 @@ return {
 			{ name = 'weapon_scarhpd', price = 1000 },
 			{ name = 'ifak', price = 0 },
 			{ name = 'tazer_cartilage', price = 0 },
-			{ name = 'weapon_railgun', price = 2500 },
+			{ name = 'weapon_railgun', price = 2500, metadata = {registered = true, serial = 'POL', attachments = {}}, license = 'weapon', grade = 4 },
 			{ name = 'emp_cartilage', price = 500 },
 			{ name = 'weapon_ltl', price = 750 },
 			{ name = 'rubberslug', price = 20 },
@@ -206,7 +210,7 @@ return {
 	HuntingShop = {
 		name = 'Hunting Shop',
 		blip = {
-			id = 93, colour = 0, scale = 0.7
+			id = 463, colour = 3, scale = 0.8
 		},
 		inventory = {
 			{ name = 'huntingknife', price = 350 },
@@ -225,7 +229,7 @@ return {
 	Leisure = {
 		name = 'Leisure Shop',
 		blip = {
-			id = 59, colour = 0, scale = 0.7
+			id = 59, colour = 3, scale = 0.8
 		}, inventory = {
 			{ name = 'parachute', price = 10000 },
 			{ name = 'binoculars', price = 1500 },
@@ -241,16 +245,16 @@ return {
 	BlackMarketArms = {
 		name = 'Abraham the arms dealer',
 		inventory = {
-			{ name = 'WEAPON_MICROSMG3', price = 25000, metadata = { registered = false	}},
-			{ name = 'WEAPON_BROWNING', price = 10500, metadata = { registered = false }},
-			{ name = 'WEAPON_DBSHOTGUN', price = 10500, metadata = { registered = false }},
-			{ name = 'WEAPON_PISTOL_MK2', price = 10500, metadata = { registered = false }},
-			{ name = 'radioscanner', price = 8500},
-			{ name = 'gatecrack', price = 5000},
+			{ name = 'WEAPON_MICROSMG3', price = 35000, metadata = { registered = false	}},
+			{ name = 'WEAPON_BROWNING', price = 12500, metadata = { registered = false }},
+			{ name = 'WEAPON_DBSHOTGUN', price = 12500, metadata = { registered = false }},
+			{ name = 'WEAPON_PISTOL_MK2', price = 12500, metadata = { registered = false }},
+			{ name = 'radioscanner', price = 9500},
+			{ name = 'gatecrack', price = 7000},
 		}, locations = {
-			vec3(1025.95, -1852.88, 30.89)
+			vec3(1025.95, -1852.88, 29.89)
 		}, targets = {
-			{ loc = vec3(1025.95, -1852.88, 30.89), length = 1.0, width = 1.0, heading = 0.0, minZ = 30.0, maxZ = 32.0, distance = 1.5 },
+			{ loc = vec3(1025.95, -1852.88, 30.89), length = 1.0, width = 1.0, heading = 0.0, minZ = 29.0, maxZ = 31.0, distance = 1.5 },
 		}
 	},
 
@@ -298,6 +302,16 @@ return {
 			{ loc = vec3(2510.4, 3731.21, 39.73), length = 1.0, width = 1.0, heading = 0.0, minZ = 39.0, maxZ = 41.0, distance = 1.5 },
 		}
 	},
+	VPN = {
+		name = 'Vee Pienne',
+		inventory = {
+			{ name = 'vpn', price = 10000},
+		}, locations = {
+			vec3(859.03, 2877.59, 56.98),
+		}, targets = {
+			{ loc = vec3(859.03, 2877.59, 56.98), length = 1.0, width = 1.0, heading = 0.0, minZ = 55.0, maxZ = 57.0, distance = 1.5 },
+		}
+	},
 	DigitalDen = {
 		name = 'Digital Den',
 		blip = {
@@ -306,6 +320,7 @@ return {
 			{ name = 'phone', price = 350 },
 			{ name = 'boombox', price = 250},
 			{ name = 'radio', price = 500},
+			{ name = 'laptopav', price = 15000},
 		}, locations = {
 			vector3(-660.8, -859.28, 24.52)
 		}, targets = {

@@ -9,7 +9,7 @@ Config.AdminAccess = {
 	enabled = false,
 	permission = 'admin' -- Needs to be admin or god
 }
---Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code--
+Config.CommandPermission = 'admin' -- Needs to be admin or god, if you want no permission on it you'd have to remove some code--
 
 Config.Debug = false -- Prints the closest door data
 
@@ -4286,6 +4286,92 @@ Config.DoorList['shneakyhole10'] = {
     maxDistance = 2.0,
     fixText = false,
     audioRemote = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- yakuzagaragedoor created by cody jinks
+Config.DoorList['yakuzagaragedoor'] = {
+    objCoords = vec3(-675.330994, -878.722168, 25.238443),
+    lockpick = false,
+    maxDistance = 6.0,
+    fixText = false,
+    authorizedGangs = { ['yakuza']=0 },
+    objHeading = 270.00003051758,
+    audioRemote = false,
+    garage = true,
+    slides = true,
+    objHash = 245838764,
+    locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+-- yakuzagate created by cody jinks
+Config.DoorList['yakuzagate'] = {
+    objCoords = vec3(-666.879028, -889.523010, 23.531740),
+    lockpick = false,
+    maxDistance = 6.0,
+    fixText = false,
+    authorizedGangs = { ['yakuza']=0 },
+    objHeading = 90.08406829834,
+    audioRemote = false,
+    garage = false,
+    slides = true,
+    objHash = -1603817716,
+    locked = true,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    --showNUI = true
+}
+
+
+
+-- yakuzadd created by cody jinks
+Config.DoorList['yakuzadd'] = {
+    slides = false,
+    objHeading = 179.99998474121,
+    garage = false,
+    locked = true,
+    objCoords = vec3(-661.865295, -854.626465, 24.688690),
+    objHash = -645206502,
+    lockpick = false,
+    audioRemote = false,
+    authorizedGangs = { ['yakuza']=0 },
+    maxDistance = 1.0,
+    fixText = false,
+    --oldMethod = true,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+    --doorRate = 1.0,
+    showNUI = false
+}
+
+-- yakuzadd2 created by cody jinks
+Config.DoorList['yakuzadd2'] = {
+    slides = false,
+    objHeading = 270.06823730469,
+    garage = false,
+    locked = true,
+    objCoords = vec3(-661.604248, -856.170227, 24.672630),
+    objHash = 335605589,
+    lockpick = false,
+    audioRemote = false,
+    authorizedGangs = { ['yakuza']=0 },
+    maxDistance = 1.0,
+    fixText = false,
     --oldMethod = true,
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},

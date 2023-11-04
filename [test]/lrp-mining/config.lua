@@ -9,9 +9,9 @@ Config = {
 	JimShops = false, 		-- Set this to true if using jim-shops
 
 	Inv = "ox",				--"qb" or "ox"
-	Menu = "qb",			--"qb" or "ox"
-	ProgressBar = "qb",		--"qb" or "ox"
-	Notify = "qb",			--"qb" or "ox"
+	Menu = "ox",			--"qb" or "ox"
+	ProgressBar = "ox",		--"qb" or "ox"
+	Notify = "ox",			--"qb" or "ox"
 
 	DrillSound = true,		-- disable drill sounds
 

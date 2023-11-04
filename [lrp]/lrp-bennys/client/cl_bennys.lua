@@ -27,107 +27,16 @@ local isPurchaseSuccessful = false
 local bennyLocation
 
 local bennysLocations = {
-    ["bennys"] = {
-        pos = vector3(-211.55, -1324.55, 30.90),
-        heading = 320.0
-    },
-    ["bennystuner"] = {
-        pos = vector3(145.01, -3030.59, 7.04),
-        employed = true,
-        heading = 180.0,
-    },
-    ["bennystunercatalog"] = {
-        pos = vector3(135.88, -3030.43, 7.04),
-        employed = true,
-        heading = 0,
-    },
-    ["bennystunercatalog_2"] = {
-        pos = vector3(124.54, -3047.26, 7.04),
-        heading = 90.0,
-        access = 'tuner',
-        preview = true,
-    },
-    ["bennysimport"] = {
-        pos = vector3(-772.92,-234.92,37.08),
-        heading = 204.0,
-        access = 'fastlane'
-    },
-    ["bennysbridge"] = {
-        pos = vector3(727.74, -1088.95, 22.17),
-        heading = 270.0
-    },
     ["bennysmrpd"] = {
         pos = vector3(451.84, -975.96, 25.51),
         heading = 90.0,
         access = 'police'
-    },
-    ["bennysvbpd"] = {
-      pos = vector3(-1117.81, -826.58, 3.75),
-      heading = 36.0,
-      access = 'police'
-    },
-    ["bennysprpd"] = {
-      pos = vector3(372.83, 787.11, 186.73),
-      heading = 348.88,
-      access = 'police'
-    },
-    ["bennyspaletopd"] = {
-      pos = vector3(-458.6, 5980.71, 31.33),
-      heading = 313.0,
-      access = 'police'
     },
     ["bennyspillbox"] = {
         pos = vector3(340.39, -570.6, 28.8),
         heading = 160.0,
         access = 'police'
     },
-    ["bennyspaleto"] = {
-        pos = vector3(110.8, 6626.46, 32.0),
-        heading = 44.0,
-        repairOnly = true
-    },
-    ["bennysboats"] = {
-        pos = vector3(-809.83, -1507.21, 14.4),
-        heading = 130.63,
-    },
-    ["bennysplanes"] = {
-        pos = vector3(-1652.52, -3143.0, 13.99),
-        heading = 240,
-    },
-    ["bennysrex"] = {
-        pos = vector3(2522.64, 2621.78, 37.96),
-        heading = 267.62,
-    },
-    ["bennyshubrepairs"] = {
-        pos = vector3(-32.93, -1054.76, 27.72),
-        heading = 25.0,
-        repairOnly = true
-    },
-    ["bennysflightschool"] = {
-        pos = vector3(-1816.93,2966.99,32.82),
-        heading = 57.17,
-    },
-    ["bennyssandypd"] = {
-        pos = vector3(1866.27,3697.53,33.63),
-        heading = 25.87,
-        access = 'police'
-    },
-    ["bennyspdm"] = {
-        pos = vector3(-46.0,-1081.82,26.76),
-        heading = 250.0,
-        access = 'pdm',
-        preview = true,
-    },
-    ["bennysbogbikes"] = {
-        pos = vector3(-1114.66, -1686.83, 4.37),
-        heading = 304.37,
-        access = 'bogg_bikes',
-    },
-    ["bennysdavispd"] = {
-        pos = vector3(380.23, -1625.57, 29.3),
-        heading = 319.19,
-        access = 'police',
-    }
 }
 
 --Blips

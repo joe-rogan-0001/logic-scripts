@@ -91,6 +91,7 @@ local function UpdateBlipsAndNames(players)
             if not DoesBlipExist(Blip) then
                 Blip = AddBlipForEntity(ped)
                 ShowHeadingIndicatorOnBlip(Blip, true)
+                SetBlipCategory(Blip, 7)
             else
                 local veh = GetVehiclePedIsIn(ped, false)
                 local classveh = GetVehicleClass(veh)
@@ -151,6 +152,14 @@ RegisterNetEvent('ps-adminmenu:client:toggleNames', function(data)
     ToggleBlipsAndNames(false)
 end)
 
+-- Mute Player
+RegisterNetEvent("ps-adminmenu:client:MutePlayer", function (data, selectedData)
+    if not CheckPerms(data.perms) then return end
+    local playerId = selectedData["Player"].value
+    if not playerId then return end
+    exports["pma-voice"]:toggleMutePlayer(playerId)
+end)
+
 -- Main loop to check for updates
 CreateThread(function()
     while true do
@@ -159,4 +168,9 @@ CreateThread(function()
             UpdateBlipsAndNames(currentPlayers)
         end
     end
+end)
+
+-- Remove Stress
+RegisterNetEvent('ps-adminmenu:client:removeStress', function(data)
+    TriggerServerEvent('hud:server:RelieveStress', 100)
 end)
