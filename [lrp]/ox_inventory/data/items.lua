@@ -6043,4 +6043,148 @@ return {
 			close = true,
 			description = ''
 		},
+
+
+
+	
+
+	["prisonslushie"] = {
+		label = "Slushie",
+		weight = 1000,
+		close = true,
+		description = "Slushie",
+		client = {
+			image = "prisonslushie.png"
+		}
+	},
+	
+	["prisonspoon"] = {
+		label = "Spoon",
+		weight = 1000,
+		close = false,
+		description = "Cafeteria spoon",
+		client = {
+			image = "prisonspoon.png"
+		}
+	},
+	
+	["prisonrock"] = {
+		label = "Coarse Rock",
+		weight = 1000,
+		close = false,
+		description = "A very big coarse rock",
+		client = {
+			image = "prisonrock.png"
+		}
+	},
+	
+	["prisonfruit"] = {
+		label = "Fruit Mix",
+		weight = 1000,
+		close = false,
+		description = "A mix of random fruits",
+		client = {
+			image = "prisonfruit.png"
+		}
+	},
+	
+	["prisonwine"] = {
+		label = "Pruno Mix",
+		weight = 1000,
+		close = false,
+		description = "You should ferment this to get a good buzz",
+		client = {
+			image = "prisonwine.png"
+		}
+	},
+	
+	["prisonwine_fermented"] = {
+		label = "Pruno",
+		weight = 1000,
+		close = true,
+		description = "This should give you a good buzz",
+		client = {
+			image = "prisonwine_fermented.png"
+		}
+	},
+	
+	["prisonsugar"] = {
+		label = "Sugar Pack",
+		weight = 1000,
+		close = false,
+		description = "Plain old sugar",
+		client = {
+			image = "prisonsugar.png"
+		}
+	},
+	
+	["prisonmeth"] = {
+		label = "Crank",
+		weight = 1000,
+		close = true,
+		description = "Prison made meth of low quality.",
+		client = {
+			image = "prisonmeth.png"
+		}
+	},
+	
+	["prisonbag"] = {
+		label = "Plastic Bag",
+		weight = 1000,
+		close = false,
+		description = "A plastic bag",
+		client = {
+			image = "prisonbag.png"
+		}
+	},
+	
+	["prisonjuice"] = {
+		label = "Orange Juice",
+		weight = 1000,
+		close = false,
+		description = "Regular Orange Juice",
+		client = {
+			image = "prisonjuice.png"
+		}
+	},
+	
+	["prisonchemicals"] = {
+		label = "Chemicals",
+		weight = 1000,
+		close = false,
+		description = "Some random chemicals",
+		client = {
+			image = "prisonchemicals.png"
+		}
+	},
+	
+	["prisonwateringcan"] = {
+		label = "Watering Can",
+		weight = 1000,
+		close = false,
+		description = "Watering can with a Bolingbroke Penitentiary label.",
+		client = {
+			image = "prisonwateringcan.png"
+		}
+	},
+	
+	["prisonfarmseeds"] = {
+		label = "Plant Seeds",
+		weight = 1000,
+		close = false,
+		description = "Seeds, water, nutrition and love make happy plants",
+		client = {
+			image = "prisonfarmseeds.png"
+		}
+	},
+	
+	["prisonfarmnutrition"] = {
+		label = "Plant Nutrition",
+		weight = 1000,
+		close = false,
+		description = "Plant nutrition with a Bolingbroke Penitentiary label",
+		client = {
+			image = "prisonfarmnutrition.png"
+		}
+	}
 }

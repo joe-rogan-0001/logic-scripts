@@ -354,6 +354,8 @@ local function CallContact(CallData, AnonymousCall)
 end
 exports('CallContact', CallContact)
 
+exports('CallContact', CallContact)
+
 local function AnswerCall()
     if (PhoneData.CallData.CallType == "incoming" or PhoneData.CallData.CallType == "outgoing") and PhoneData.CallData.InCall and not PhoneData.CallData.AnsweredCall then
         PhoneData.CallData.CallType = "ongoing"

@@ -512,6 +512,55 @@ Config.GlobalPlayerOptions = {
 }
 
 Config.Peds = {
+  --prison
+    -- Infirmary ped
+  { 
+    model = 's_f_y_scrubs_01', 
+    coords = vector4(1769.91, 2571.81, 45.73, 130.19), 
+    minusOne = true,
+    gender = 'male',
+    freeze = true,
+    invincible = true,
+    blockevents = true,
+    scenario = 'WORLD_HUMAN_CLIPBOARD',
+    target = {
+      options = {
+        {
+          type = 'client',
+          icon = 'fa fa-clipboard',
+          event = 'qb-jail:client:PrisonRevive',
+          label = 'Check In',
+        }
+      },
+      distance = 2.5
+    },
+  },
+    -- Reception ped
+  { 
+    model = 's_m_m_prisguard_01', 
+    coords = vector4(1840.35, 2577.71, 46.01, 358.01), 
+    minusOne = true,
+    gender = 'male',
+    freeze = true,
+    invincible = true,
+    blockevents = true,
+    scenario = 'WORLD_HUMAN_CLIPBOARD',
+    target = {
+      options = {
+        {
+          type = 'client',
+          icon = 'fa fa-clipboard',
+          event = 'qb-jail:client:CheckInmates',
+          label = 'Check Inmates',
+        }
+      },
+      distance = 2.5
+    },
+  },
+
+
+
+
   --bowling
   { 
     model = 'a_m_o_salton_01', 
