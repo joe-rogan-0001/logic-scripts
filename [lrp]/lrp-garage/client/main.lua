@@ -435,7 +435,11 @@ RegisterNetEvent("qb-garages:client:HouseGarage", function(house)
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
                 curGarage = HouseGarages[house].label
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
 
                 if v.state == 0 then
                     v.state = "Out"
@@ -486,7 +490,11 @@ RegisterNetEvent("qb-garages:client:DepotList", function()
                 enginePercent = round(v.engine / 10, 0)
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
 
                 if v.state == 0 then
                     v.state = "Impound"
@@ -530,7 +538,12 @@ RegisterNetEvent("qb-garages:client:VehicleList", function()
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
                 curGarage = Garages[v.garage].label
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
+                
 
                 if v.state == 0 then
                     v.state = "Out"
@@ -579,7 +592,11 @@ RegisterNetEvent("qb-garages:client:GangVehicleList", function()
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
                 curGarage = GangGarages[v.garage].label
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
                
                 if v.state == 0 then
                     v.state = "Out"
@@ -734,7 +751,11 @@ RegisterNetEvent("qb-garages:client:PersonalJobVehicleList", function()
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
                 curGarage = JobGarages[v.garage].label
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
                 if v.jobstate == 0 then
                     v.jobstate = "Out"
                 elseif v.jobstate == 1 then
@@ -783,7 +804,11 @@ RegisterNetEvent("qb-garages:client:JobVehicleList", function()
                 bodyPercent = round(v.body / 10, 0)
                 currentFuel = v.fuel
                 curGarage = JobGarages[v.garage].label
-                vname = QBCore.Shared.Vehicles[v.vehicle].name
+                if QBCore.Shared.Vehicles[v.vehicle] then
+                    vname = QBCore.Shared.Vehicles[v.vehicle].name  
+                else 
+                    vname = 'Vehicle not in shared, please report to dev! Vehicle = '..v.vehicle
+                end
                 if v.jobstate == 0 then
                     v.jobstate = "Out"
                 elseif v.jobstate == 1 then
