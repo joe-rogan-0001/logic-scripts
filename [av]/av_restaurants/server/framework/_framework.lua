@@ -104,13 +104,10 @@ function hasItem(src,name)
     return false
 end
 
-function AddItem(src,name,amount,type)
+function AddItem(src,name,amount,info)
     if Config.Framework == 'QBCore' then
         local Player = QBCore.Functions.GetPlayer(src)
-        local info = {}
-        info.type = type
         if Config.Inventory == 'ox_inventory' then
-            print(src,name,amount,type)
             if exports.ox_inventory:CanCarryItem(src, name, amount) then
                 exports.ox_inventory:AddItem(src, name, amount, info)
             end
@@ -125,12 +122,12 @@ function AddItem(src,name,amount,type)
 		    xPlayer.addInventoryItem(name, amount)
         elseif Config.Inventory == 'ox_inventory' then
             if exports.ox_inventory:CanCarryItem(src, name, amount) then
-                exports.ox_inventory:AddItem(src, name, amount)
+                exports.ox_inventory:AddItem(src, name, amount, info)
             end
 		elseif Config.Inventory == 'mf-inventory' then
             xPlayer.addInventoryItem(name,amount,100)
         elseif Config.Inventory == 'qs-inventory' then
-            exports['qs-inventory']:AddItem(src, name, amount)
+            exports['qs-inventory']:AddItem(src, name, amount, info)
         end
 		return true
     end
@@ -141,24 +138,49 @@ function RegisterItem(name,type)
     if Config.Framework == 'QBCore' then
         QBCore = exports['lrp-core']:GetCoreObject()
         if type ~= "others" then
-            QBCore.Functions.CreateUseableItem(name, function(source, item)
-                local Player = QBCore.Functions.GetPlayer(source)
-                if Player.Functions.RemoveItem(item.name,1) then
-                    if Config.Inventory == "ox_inventory" then
-                        TriggerClientEvent('av_restaurant:useItem',source,item['metadata']['type'])
-                    else
-                        TriggerClientEvent('av_restaurant:useItem',source,item['info']['type'])
+            if type ~= "box" then
+                QBCore.Functions.CreateUseableItem(name, function(source, item)
+                    local Player = QBCore.Functions.GetPlayer(source)
+                    if Player.Functions.RemoveItem(item.name,1) then
+                        if Config.Inventory == "ox_inventory" then
+                            TriggerClientEvent('av_restaurant:useItem',source,item['metadata'])
+                        else
+                            TriggerClientEvent('av_restaurant:useItem',source,item['info'])
+                        end
                     end
-                end
-            end)
+                end)
+            else
+                QBCore.Functions.CreateUseableItem(name, function(source, item)
+                    local metadata, slot = exports['av_laptop']:getMetadata(item,item)
+                    if metadata and metadata.serial then
+                        if Config.Inventory == "ox_inventory" then
+                            exports.ox_inventory:RegisterStash(metadata.serial, metadata.serial, Config.Boxes['slots'], Config.Boxes['weight'])
+                        end
+                        TriggerClientEvent("av_restaurants:openBox",source,metadata.serial)
+                    end
+                end)
+            end
         end
     elseif Config.Framework == 'ESX' then
 		if type ~= "others" then
-			ESX.RegisterUsableItem(name, function(source)
-				local xPlayer = ESX.GetPlayerFromId(source)
-                xPlayer.removeInventoryItem(name, 1)
-                TriggerClientEvent('av_restaurant:useItem',source,ESXItems[name]['type'])
-			end)
+            if type ~= "box" then
+                ESX.RegisterUsableItem(name, function(source,item,info)
+                    local metadata, slot = exports['av_laptop']:getMetadata(item,info)
+                    local xPlayer = ESX.GetPlayerFromId(source)
+                    xPlayer.removeInventoryItem(name, 1)
+                    TriggerClientEvent('av_restaurant:useItem',source,metadata)
+                end)
+            else
+                ESX.RegisterUsableItem(name, function(source,item,info)
+                    local metadata, slot = exports['av_laptop']:getMetadata(item,info)
+                    if metadata and metadata.serial then
+                        if Config.Inventory == "ox_inventory" then
+                            exports.ox_inventory:RegisterStash(metadata.serial, metadata.serial, Config.Boxes['slots'], Config.Boxes['weight'])
+                        end
+                        TriggerClientEvent("av_restaurants:openBox",source,metadata.serial)
+                    end
+                end)
+            end
 		end
     end
 end
@@ -288,6 +310,24 @@ function getMoney(src, account)
     elseif Config.Framework == "ESX" then
         local xPlayer = ESX.GetPlayerFromId(src)
         return xPlayer.getAccount(account).money
+    end
+end
+
+function getRanks(job)
+    if Config.Framework == "QBCore" then
+        local jobData = QBCore.Shared.Jobs[job]['grades']
+        local data = {}
+        for k, v in pairs(jobData) do
+            data[#data+1] = {grade = k, gradeLabel = v['name']}
+        end
+        return data
+    elseif Config.Framework == "ESX" then
+        local res = MySQL.query.await('SELECT * FROM job_grades WHERE job_name = ?', {job})
+        local data = {}
+        for k, v in pairs(res) do
+            data[#data+1] = {grade = v['grade'], gradeLabel = v['label']}
+        end
+        return data
     end
 end
 

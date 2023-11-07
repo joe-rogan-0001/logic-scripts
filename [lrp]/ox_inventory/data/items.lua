@@ -6186,5 +6186,20 @@ return {
 		client = {
 			image = "prisonfarmnutrition.png"
 		}
+	},
+	['gopro'] = {
+		label = 'GoPro Camera',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Small Action camera, hm wonder what you could use it for'
+		},
+
+	['cam_jammer'] = {
+	label = 'Camera Jammer',
+	weight = 1,
+	stack = true,
+	close = true,
+	description = 'Camera Jammer, disrupts video'
 	}
 }

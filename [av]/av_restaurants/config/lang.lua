@@ -57,5 +57,5 @@ Lang = {
     ['application_email'] = "Your email",
     ['application_submited'] = "Application submited!",
     ['application_log'] = "New Application",
-
+    ['box'] = "Boxes",
 }

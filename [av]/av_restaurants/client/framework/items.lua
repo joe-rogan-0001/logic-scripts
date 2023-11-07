@@ -1,6 +1,8 @@
 RegisterNetEvent('av_restaurant:useItem')
-AddEventHandler('av_restaurant:useItem', function(type)
+AddEventHandler('av_restaurant:useItem', function(metadata)
     local ped = PlayerPedId()
+    local type = metadata['type']
+    local ingredients = metadata['ingredients']
     if type == 'drink' then
         loadAnimDict("mp_player_intdrink")
         TaskPlayAnim(ped, "mp_player_intdrink", "loop_bottle", 1.0, 1.0, -1, 51, 0, 0, 0, 0)
@@ -29,4 +31,7 @@ AddEventHandler('av_restaurant:useItem', function(type)
         end
     end
     EatDrink(type)
+    if ingredients then
+        triggerBuff(ingredients)
+    end
 end)

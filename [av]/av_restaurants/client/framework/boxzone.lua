@@ -3,7 +3,7 @@ AddEventHandler('av_restaurant:init', function(data)
     for k, v in pairs(data) do
         if v['type'] ~= "boss" then
             if v['type'] == "cashier" then
-                exports['lrp-target']:AddBoxZone(v['name'], vector3(v['coords']['x'], v['coords']['y'], v['coords']['z']), v['height'], v['width'], {
+                exports[Config.TargetSystem]:AddBoxZone(v['name'], vector3(v['coords']['x'], v['coords']['y'], v['coords']['z']), v['height'], v['width'], {
                     name = v['name'],
                     heading = v['heading'],
                     debugPoly = false,
@@ -34,7 +34,7 @@ AddEventHandler('av_restaurant:init', function(data)
                 if v['type'] == "rate" or v['type'] == "tray" or v['type'] == "applications" then
                     job = false
                 end
-                exports['lrp-target']:AddBoxZone(v['name'], vector3(v['coords']['x'], v['coords']['y'], v['coords']['z']), v['height'], v['width'], {
+                exports[Config.TargetSystem]:AddBoxZone(v['name'], vector3(v['coords']['x'], v['coords']['y'], v['coords']['z']), v['height'], v['width'], {
                     name = v['name'],
                     heading = v['heading'],
                     debugPoly = false,
@@ -62,7 +62,7 @@ end)
 RegisterNetEvent('av_restaurant:newBoxZone')
 AddEventHandler('av_restaurant:newBoxZone', function(data)
 	if data['type'] == "cashier" then
-		exports['lrp-target']:AddBoxZone(data['name'], vector3(data['coords']['x'], data['coords']['y'], data['coords']['z']), data['height'], data['width'], {
+		exports[Config.TargetSystem]:AddBoxZone(data['name'], vector3(data['coords']['x'], data['coords']['y'], data['coords']['z']), data['height'], data['width'], {
 			name = data['name'],
 			heading = data['heading'],
 			debugPoly = false,
@@ -93,7 +93,7 @@ AddEventHandler('av_restaurant:newBoxZone', function(data)
         if data['type'] == "rate" or data['type'] == "tray" or data['type'] == "applications" then
             job = false
         end
-		exports['lrp-target']:AddBoxZone(data['name'], vector3(data['coords']['x'], data['coords']['y'], data['coords']['z']), data['height'], data['width'], {
+		exports[Config.TargetSystem]:AddBoxZone(data['name'], vector3(data['coords']['x'], data['coords']['y'], data['coords']['z']), data['height'], data['width'], {
 			name = data['name'],
 			heading = data['heading'],
 			debugPoly = false,
@@ -119,5 +119,5 @@ end)
 
 RegisterNetEvent('av_restaurant:removeZone')
 AddEventHandler('av_restaurant:removeZone', function(name)
-	exports['lrp-target']:RemoveZone(name)
+	exports[Config.TargetSystem]:RemoveZone(name)
 end)
