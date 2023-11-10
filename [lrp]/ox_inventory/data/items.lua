@@ -446,7 +446,7 @@ return {
 		label = "Hunting Bait",
 		weight = 2000,
 		stack = true,
-		close = false,
+		close = true,
 		description = "Bait for hunting animals, works best up north.",
 		client = {
 			image = "huntingbait.png",
@@ -6187,19 +6187,36 @@ return {
 			image = "prisonfarmnutrition.png"
 		}
 	},
+
 	['gopro'] = {
 		label = 'GoPro Camera',
-		weight = 1,
+		weight = 10000,
 		stack = true,
 		close = true,
 		description = 'Small Action camera, hm wonder what you could use it for'
-		},
+	},
 
 	['cam_jammer'] = {
 	label = 'Camera Jammer',
-	weight = 1,
+	weight = 10000,
 	stack = true,
 	close = true,
 	description = 'Camera Jammer, disrupts video'
-	}
+	},
+
+	['towingrope'] = {
+		label = 'Rope',
+		weight = 10000,
+		stack = true,
+		close = true,
+		description = 'Rope to pull stuff'
+	},
+
+	['atmobject'] = {
+		label = 'ATM',
+		weight = 50000,
+		stack = true,
+		close = true,
+		description = 'Stolen ATM, marked for police seizure'
+	},
 }

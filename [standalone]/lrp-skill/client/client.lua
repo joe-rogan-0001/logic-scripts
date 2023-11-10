@@ -2,14 +2,19 @@ local QBCore = exports['lrp-core']:GetCoreObject()
 local Result = nil
 local NUI_status = false
 
+local UseInteractSound = false
+local debug = true
+
 RegisterNetEvent('kwk-lockpick:client:openLockpick', function(callback, circles)
     lockpickCallback = callback
-    exports['qb-lock']:StartLockPickCircle(total,circles) 
+    exports['lrp-skill']:StartLockPickCircle(total,circles) 
 end)
 
 function StartLockPickCircle(circles, seconds, callback)
     Result = nil
-	print(circles, "This be the lock")
+    if debug then
+        print(circles, "This be the lock")
+    end
     NUI_status = true
     SendNUIMessage({
         action = 'start',
@@ -27,11 +32,18 @@ function StartLockPickCircle(circles, seconds, callback)
 end
 
 RegisterNUICallback('fail', function()
-        ClearPedTasks(PlayerPedId())
-        Result = false
-        Wait(100)
-        NUI_status = false
-        --print('fail')
+    ClearPedTasks(PlayerPedId())
+    Result = false
+    Wait(100)
+    NUI_status = false
+    if debug then
+        print('fail')
+     end
+     if UseInteractSound then
+        TriggerServerEvent("InteractSound_SV:PlayOnSource", 'lockpickfail', 1.0)
+    else
+        PlaySoundFrontend(-1, "CANCEL", "HUD_MINI_GAME_SOUNDSET", 1 )
+    end
 end)
 
 RegisterNUICallback('success', function()
@@ -39,6 +51,29 @@ RegisterNUICallback('success', function()
 	Wait(100)
 	NUI_status = false
     SetNuiFocus(false, false)
-    print(Result)
+    if debug then
+        print(Result)
+     end
+    if UseInteractSound then
+        TriggerServerEvent("InteractSound_SV:PlayOnSource", 'lockpicksuccess', 1.5)
+    else
+        PlaySoundFrontend(-1, "select", "HUD_MINI_GAME_SOUNDSET", 1 )
+    end
     return Result
 end)
+
+
+
+if debug then
+    RegisterCommand("lpgame", function()
+	    local time = math.random(7,10)
+	    local circles =  math.random(3,5)
+	    local success = exports['lrp-skill']:StartLockPickCircle(circles, time, success)
+	    print(success)
+	    if success then
+		    print("WIN")
+	    else
+		    print("FAIL")
+	    end
+    end)
+end

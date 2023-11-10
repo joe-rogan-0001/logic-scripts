@@ -1328,7 +1328,7 @@ blockevents = true,
       freeze = true,
       invincible = true,
       blockevents = true,
-    },
+    },]]--
     {
       model = 'cs_russiandrunk',
       coords = vector4(2554.13, 4667.93, 33.03, 28.61), 
@@ -1344,7 +1344,7 @@ blockevents = true,
       freeze = true,
       invincible = true,
       blockevents = true,
-    },]]--
+    },
 
 
 

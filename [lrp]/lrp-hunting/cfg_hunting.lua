@@ -3,7 +3,7 @@ Config = {}
 
 AOD.HuntAnimals = {'a_c_deer', 'a_c_coyote', 'a_c_boar'}
 AOD.SpawnDistanceRadius = math.random(40,50) --disance animal spawns from bait
-AOD.HuntingZones = {'CMSW','CANNY'} --add valid zones here
+AOD.HuntingZones = {'CMSW','CANNY','CCREAK'} --add valid zones here
 AOD.SpawnChance = 1.0 -- 10 percent chance use values .01 - 1.0
 AOD.DistanceFromBait = 25.0 -- distance from player to spawn bait
 AOD.DistanceTooCloseToAnimal = 15.0
@@ -13,12 +13,12 @@ AOD.UseBlip = true -- set to true for the animal to have a blip on the map
 AOD.BlipText = 'Prey'
 
 --Rewards for butchering animals
-AOD.BoarMeat = math.random(3) -- amount of meat to receive from Boars
-AOD.Boarskin = math.random(3)
-AOD.DeerSkin = math.random(3)
-AOD.DeerMeat = math.random(3)
-AOD.CoyoteFur = math.random(3)
-AOD.CoyoteMeat = math.random(3)
+AOD.BoarMeat = math.random(1,3) -- amount of meat to receive from Boars
+AOD.Boarskin = math.random(1,3)
+AOD.DeerSkin = math.random(1,3)
+AOD.DeerMeat = math.random(1,3)
+AOD.CoyoteFur = math.random(1,3)
+AOD.CoyoteMeat = math.random(1,3)
 
 AOD.Strings = {
 QBClient = 'QBCore:GetObject',

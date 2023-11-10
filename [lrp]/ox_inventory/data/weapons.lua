@@ -598,7 +598,7 @@ return {
 			label = 'Hunting Rifle',
 			weight = 50000,
 			durability = 0.5,
-			ammoname = 'ammo-sniper'
+			ammoname = 'ammo-hunting'
 		},
 
 		['WEAPON_SNOWBALL'] = {
@@ -825,7 +825,7 @@ return {
 			label = 'Police Issued Tazer',
 			weight = 5000,
 			durability = 0.03,
-			ammoname = 'AMMO_TAZER'
+			ammoname = 'ammo-taser'
 		},
 		['WEAPON_KATANAS'] = {
 			label = 'Katana',
@@ -1859,6 +1859,14 @@ return {
 		['ammo-emp'] = {
 			label = 'EMP round',
 			weight = 400,
+		},
+		['ammo-taser'] = {
+			label = 'Taser Cartridge',
+			weight = 15,
+		},
+		['ammo-hunting'] = {
+			label = 'Hunting Rifle Round',
+			weight = 15,
 		},
 	}
 }
