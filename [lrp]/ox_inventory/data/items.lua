@@ -6191,7 +6191,7 @@ return {
 	['gopro'] = {
 		label = 'GoPro Camera',
 		weight = 10000,
-		stack = true,
+		stack = false,
 		close = true,
 		description = 'Small Action camera, hm wonder what you could use it for'
 	},
@@ -6204,19 +6204,43 @@ return {
 	description = 'Camera Jammer, disrupts video'
 	},
 
-	['towingrope'] = {
-		label = 'Rope',
+	['drone'] = {
+		label = 'Drone',
 		weight = 10000,
-		stack = true,
+		stack = false,
 		close = true,
-		description = 'Rope to pull stuff'
+		description = 'What do you need this for you weirdo?'
 	},
 
-	['atmobject'] = {
-		label = 'ATM',
-		weight = 50000,
+	["Drone"] = {
+		label = "Empty Can",
+		weight = 10,
 		stack = true,
-		close = true,
-		description = 'Stolen ATM, marked for police seizure'
+		close = false,
+		description = "An empty can, good for recycling",
+		client = {
+			image = "can.png",
+		}
+	},
+	['trackeritem'] = {
+		label = 'Tracker Disabler',
+		weight = 160,
+	},
+	
+	['chop_wheel'] = {
+		label = 'Car Wheel',
+		weight = 400,
+	},
+	['chop_door'] = {
+		label = 'Car Door',
+		weight = 400,
+	},
+	['chop_hood'] = {
+		label = 'Car Hood',
+		weight = 400,
+	},
+	['chop_trunk'] = {
+		label = 'Car Trunk',
+		weight = 400,
 	},
 }
