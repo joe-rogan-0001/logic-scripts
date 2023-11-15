@@ -750,29 +750,6 @@ exports['lrp-target']:AddBoxZone("Gangmenu", vector3(-1213.62, -1321.21, 6.38), 
     distance = 2.5
 })
 
-
-exports['lrp-target']:AddBoxZone("Gangstorage1", vector3(-1213.61, -1321.03, -0.85), 1.5, 3.5, {
-    name="Gangmenu uptr",
-    heading = 19.33,
-    debugPoly=false,
-    minZ = -1.85,
-    maxZ = 2.5,
-    }, 
-    {
-    options = {
-        {
-            type = "client",
-            event = "lrp-gangmenu:client:OpenInventory",
-            icon = "fas fa-bars",
-            label = "Open Storage",
-            gang = "uptr"
-        },
-    },
-    distance = 2.5
-})
-
-
-
 --IRA--
 
 exports['lrp-target']:AddBoxZone("Gangmenu3", vector3(-1192.97, -1179.98, 11.25), 0.5, 0.5, {
@@ -795,45 +772,6 @@ exports['lrp-target']:AddBoxZone("Gangmenu3", vector3(-1192.97, -1179.98, 11.25)
     distance = 2.5
 })
 
-exports['lrp-target']:AddBoxZone("Gangstorage3", vector3(-1193.75, -1184.26, 11.84), 1.0, 1.0, {
-    name="Stash SOMC",
-    heading = 191.75,
-    debugPoly=false,
-    minZ = 11.40,
-    maxZ = 12.5,
-    }, 
-    {
-    options = {
-        {
-            type = "client",
-            event = "lrp-gangmenu:client:OpenInventory",
-            icon = "fas fa-bars",
-            label = "Open Storage",
-            gang = "savagemc"
-        },
-    },
-    distance = 2.5
-})
-
-exports['lrp-target']:AddBoxZone("Gangstorage4", vector3(808.81, -2310.86, 30.46), 2.5, 2.5, {
-    name="Gangmenu IRA",
-    heading = 357.41,
-    debugPoly=false,
-    minZ = 30.40,
-    maxZ = 33.5,
-    }, 
-    {
-    options = {
-        {
-            type = "client",
-            event = "lrp-gangmenu:client:OpenInventory",
-            icon = "fas fa-bars",
-            label = "Open Storage",
-            gang = "ira"
-        },
-    },
-    distance = 2.5
-})
 
 --########--
 
