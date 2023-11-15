@@ -6243,4 +6243,14 @@ return {
 		label = 'Car Trunk',
 		weight = 400,
 	},
+	["jerrycan"]                  = {
+		label = "Jerrycan",
+		weight = 20000,
+		stack = true,
+		close = true,
+		description = "Highly Flammable",
+		client = {
+			image = "jerrycan.png",
+		}
+	},
 }
