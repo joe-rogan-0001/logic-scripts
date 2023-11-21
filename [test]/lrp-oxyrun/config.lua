@@ -9,7 +9,7 @@ Config.RunCost = 500
 Config.EnableCooldown = true
 Config.Cooldown = 1800 -- Seconds * Recommended to have some form of cooldown!
 
-Config.SendEmail = false -- The E-Mail received upon taking on a job
+Config.SendEmail = true -- The E-Mail received upon taking on a job
 Config.EnableAnimation = true -- Animation that plays upon talking to the boss
 Config.Animation = "argue" -- Full list of emotes from dpEmotes can be found on the forum release page.
 
