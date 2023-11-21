@@ -511,7 +511,7 @@ CreateThread(function()
 
                 if inRange and not shownHeader then
                     shownHeader = true
-                    exports['lrp-menu']:showHeader(headerMenu)
+                    --exports['lrp-menu']:showHeader(headerMenu)
 
                     exports['textUi']:HideTextUi('hide')
                     TriggerEvent("iconic-clothingmenu:enable", false)

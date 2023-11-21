@@ -279,7 +279,7 @@ CreateThread(function()
 											"Class: "..getClass(veh)..
 											"<br>"..Loc[Config.Lan]["check"].plate..plate.."]"..
 											"<br>Dist: "..tostring(odotext or "")..
-											"<br>Fuel: "..nosBar(math.floor(exports['LegacyFuel']:GetFuel(veh) or 0)).." "..math.floor(exports['LegacyFuel']:GetFuel(veh) or 0).."%"
+											"<br>Fuel: "..nosBar(math.floor(exports['cdn-fuel']:GetFuel(veh) or 0)).." "..math.floor(exports['cdn-fuel']:GetFuel(veh) or 0).."%"
 											if VehicleNitrous[plate] then
 												odotext = odotext.."<br>NOS: "..nosBar((VehicleNitrous[plate].level)).." "..tostring((VehicleNitrous[plate].level)).."%"
 											end

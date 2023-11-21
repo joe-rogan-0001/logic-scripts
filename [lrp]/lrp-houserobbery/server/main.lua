@@ -69,7 +69,7 @@ RegisterNetEvent('qb-houserobbery:server:searchCabin', function(cabin, house)
                 Player.Functions.AddItem(randomItem, 2)
                 TriggerClientEvent('inventory:client:ItemBox', src, itemInfo, "add")
             elseif math.random(1, 100) == 35 then
-                    randomItem = "weed_og-kush_seed"
+                    randomItem = "advancedlockpick"
                     itemInfo = QBCore.Shared.Items[randomItem]
                     Player.Functions.AddItem(randomItem, 1)
                     TriggerClientEvent('inventory:client:ItemBox', src, itemInfo, "add")
@@ -77,13 +77,13 @@ RegisterNetEvent('qb-houserobbery:server:searchCabin', function(cabin, house)
                 if not itemInfo["unique"] then
                     local itemAmount = math.random(1, 3)
                     if randomItem == "plastic" then
-                        itemAmount = math.random(5, 10)
+                        itemAmount = math.random(5, 15)
                     elseif randomItem == "goldchain" then
                         itemAmount = math.random(1, 4)
-                    elseif randomItem == "pistol_ammo" then
+                    elseif randomItem == "ammo-9" then
                         itemAmount = math.random(1, 3)
-                    elseif randomItem == "joint" then
-                        itemAmount = math.random(1, 6)
+                    elseif randomItem == "rubber" then
+                        itemAmount = math.random(5, 15)
                     --elseif randomItem == "cryptostick" then
                         --itemAmount = math.random(1, 2)
                     end
@@ -95,7 +95,7 @@ RegisterNetEvent('qb-houserobbery:server:searchCabin', function(cabin, house)
                 TriggerClientEvent('inventory:client:ItemBox', src, itemInfo, "add")
             end
             Wait(500)
-            -- local weaponChance = math.random(1, 100)
+            local weaponChance = math.random(1, 100)
         end
     else
         TriggerClientEvent('QBCore:Notify', src, Lang:t("error.emty_box"), 'error')

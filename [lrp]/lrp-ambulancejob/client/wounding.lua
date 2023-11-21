@@ -78,6 +78,7 @@ RegisterNetEvent('hospital:client:UseIfaks', function()
         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["ifak"], "remove")
         TriggerServerEvent('hud:server:RelieveStress', math.random(12, 24))
         SetEntityHealth(ped, GetEntityHealth(ped) + 25)
+        print('hi')
         onPainKillers = true
         if painkillerAmount < 3 then
             painkillerAmount = painkillerAmount + 1

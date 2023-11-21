@@ -21,18 +21,18 @@ Cupcake.AvailableCryptos = {
         sellAccountLabel = "USD" -- The account label
     },
     -- This is just an example for a different crypto
-    -- {
-    --     name = "gne", -- How your account is named in your framework
-    --     label = "GNE", -- How the player will see the account in app
-    --     buy = 20, -- Price 1x crypto = 20 of buyAccount money
-    --     sell = 15, -- Price 1x crypto = 15 of buyAccount money
-    --     canBuy = false, -- Can players buy it from cupcake app?
-    --     canTransfer = true, -- Can players transfer it using cupcake app?
-    --     canSell = true, -- Can players sell it using cupcake app?
-    --     buyAccount = "cosmo", -- Account used to buy crypto
-    --     buyAccountLabel = "Cosmo", -- The account label
-    --     sellAccount = "btc", -- Account used to receive your funds after selling this crypto
-    --     sellAccountLabel = "BTC" -- The account label
-    -- },
+     {
+         name = "gne", -- How your account is named in your framework
+         label = "GNE", -- How the player will see the account in app
+         buy = 110, -- Price 1x crypto = 20 of buyAccount money
+         sell = 55, -- Price 1x crypto = 15 of buyAccount money
+         canBuy = false, -- Can players buy it from cupcake app?
+         canTransfer = false, -- Can players transfer it using cupcake app?
+         canSell = false, -- Can players sell it using cupcake app?
+         buyAccount = "cosmo", -- Account used to buy crypto
+         buyAccountLabel = "Cosmo", -- The account label
+         sellAccount = "btc", -- Account used to receive your funds after selling this crypto
+         sellAccountLabel = "BTC" -- The account label
+     },
     
 }

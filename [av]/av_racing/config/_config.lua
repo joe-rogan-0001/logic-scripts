@@ -19,6 +19,7 @@ Config.Blips = { -- https://docs.fivem.net/docs/game-references/blips/#blip-colo
     Next = { Size = 1.3, Color = 47 },
     Passed = { Size = 0.6, Color = 62 }
 }
+Config.PositionsUpdateTime = 1 -- In seconds, how often it will sync the race leaderboard (never use 0 it will crash)
 Config.FlareTime = 10 -- In seconds
 Config.StartAndFinishModel = `prop_offroad_tyres02`
 Config.CheckpointPileModel = `xm_prop_base_tripod_lampa`
@@ -39,6 +40,7 @@ Config.WinnersPrizes = { -- Divide the prize pot with the 1st, 2nd and 3rd place
     [3] = {percentage = 10, moneyAccount = "cosmo", label = "cosmo"}, --% Percentage for 3rd place - account where the winner will receive his prize 
     -- The total from all places can't be more than 100%, otherwise the script will ignore your values and give the 100% to 1st place and 0 to all other places
 }
+Config.WaypointsToRender = 3 -- Amount of checkpoint waypoints to render during a race
 Config.MinRacersRecord = 10 -- In order to update a player record, the race needs at least X racers competing, otherwise no records (races / wins) will be updated for anyone in race
 Config.TheUnderground = true -- Enable/Disable The Underground button
 Config.EditorKeys = {

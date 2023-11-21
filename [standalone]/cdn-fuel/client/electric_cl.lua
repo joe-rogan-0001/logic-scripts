@@ -729,7 +729,7 @@ if Config.ElectricVehicleCharging then
     -- Target
     local TargetResource = Config.TargetResource
     if Config.TargetResource == 'ox_target' then
-        TargetResource = 'qb-target'
+        TargetResource = 'lrp-target'
     end
 
     exports[TargetResource]:AddTargetModel('electric_charger', {

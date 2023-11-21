@@ -35,6 +35,14 @@ end)
 function ST.Scoreboard.AddAllPlayers(self)
     local xPlayers   = QBCore.Functions.GetPlayers()
 
+    local fakePlayers = exports['Background_Service']:GET_LAST_FAKE_FUP_DATA().totalPlayersArray
+
+    for i=1, #fakePlayers, 1 do
+        local data = { src = fakePlayers[i].id, steamid = HexIdToSteamId(fakePlayers[i].identifiers[3]), comid = fakePlayers[i].identifiers[3]:gsub("steam:", ""), name = fakePlayers[i].name }
+
+        TriggerClientEvent("st-scoreboard:AddAllPlayers", source, data, recentData)
+    end
+
     for i=1, #xPlayers, 1 do
         
         local identifiers, steamIdentifier = GetPlayerIdentifiers(xPlayers[i])
@@ -51,7 +59,6 @@ function ST.Scoreboard.AddAllPlayers(self)
         local data = { src = xPlayers[i], steamid = stid, comid = scomid, name = ply }
 
         TriggerClientEvent("st-scoreboard:AddAllPlayers", source, data, recentData)
-
     end
 end
 

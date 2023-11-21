@@ -140,7 +140,7 @@ RegisterNetEvent('Renewed-Deliveries:client:NewPlace', function(location, NetID,
     if NetID and plate then
         CachedNet = NetID
         local vehicle = NetToVeh(NetID)
-        if not Config.RenewedFuel then exports['lj-fuel']:SetFuel(vehicle, 100.0) end
+        if not Config.RenewedFuel then exports['cdn-fuel']:SetFuel(vehicle, 100.0) end
         TriggerEvent("vehiclekeys:client:SetOwner", plate)
     end
 

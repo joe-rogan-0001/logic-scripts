@@ -17,7 +17,7 @@ Spawn.motel = {
 
 
 Spawn.gang = {
-	[1] = { ["pos"] = vector4(-303.14, -1308.11, 31.65, 132.32), ['info'] = ' Gambino Gang'},
+	[1] = { ["pos"] = vector4(428.25, -1508.35, 29.29, 256.25), ['info'] = ' Gambino Gang'},
 	[2] = { ["pos"] = vector4(-690.19, -876.5, 24.5, 229.67), ['info'] = ' Yakuza'},
 	[3] = { ["pos"] = vector4(112.15, -1964.5, 21.33, 141.93), ['info'] = ' Grove Street Families Gang'},
 	[4] = { ["pos"] = vector4(-1166.18, -1159.97, 6.26, 107.56), ['info'] = ' Savage Ones MC'},

@@ -75,7 +75,7 @@ AddEventHandler('lrp-burgershot:garage', function(bs)
             if vehicle == 'stalion2' then		
                 QBCore.Functions.SpawnVehicle(vehicle, function(veh)
                     SetVehicleNumberPlateText(veh, "BURGER"..tostring(math.random(1000, 9999)))
-                    exports['lj-fuel']:SetFuel(veh, 100.0)
+                    exports['cdn-fuel']:SetFuel(veh, 100.0)
                     SetEntityHeading(veh, coords.w)
                     TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
                     TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(veh))

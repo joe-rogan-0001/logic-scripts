@@ -11,7 +11,7 @@ Config.Inventory = 'ox_inventory' -- (available options: qb-inventory, lj-invent
 Config.CashAccountName = "money" -- How the cash money account is named in your Framework
 Config.UnemployedJobName = "unemployed" -- How your unemployed job is named
 Config.UsingCCLaundering = false -- true if using CC-Laundering: https://ccdev.tebex.io/package/5729384
-Config.UsingRenewedBanking = false -- true if you want to use renewed banking for business accounts
+Config.UsingRenewedBanking = true -- true if you want to use renewed banking for business accounts
 
 -- Item types
 Config.ItemTypes = { -- Used for Create Item in Laptop APP
@@ -89,6 +89,10 @@ Config.NotRestaurant = { -- This jobs can't access the Menu tab in Laptop
     ['taxi'] = true,
     ['judge'] = true,
     ['mechanic'] = true,
+    ['wotc'] = true,
+    ['hayes'] = true,
+    ['realestate'] = true,
+
 }
 
 Config.UsingBuffs = false -- True if using ps-buffs

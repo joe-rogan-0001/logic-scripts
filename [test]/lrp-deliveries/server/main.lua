@@ -35,7 +35,7 @@ local function SpawnVehicle(carType, location, group, coords)
         Wait(25)
     end
 
-   -- if Config.RenewedFuel then exports['lj-fuel']:SetFuel(car, 100.0) end
+   -- if Config.RenewedFuel then exports['cdn-fuel']:SetFuel(car, 100.0) end
     local NetID = NetworkGetNetworkIdFromEntity(car)
     local plate = RandomPlate()
 

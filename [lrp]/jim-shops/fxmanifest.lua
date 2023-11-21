@@ -5,7 +5,6 @@ description "Shop Script By Jimathy"
 fx_version "cerulean"
 game "gta5"
 
-dependencies { 'lrp-input', 'lrp-menu', 'lrp-target' }
 
 client_scripts { 'client.lua' }
 

@@ -109,7 +109,11 @@ WeaponDamageList = {
 -- Functions
 
 local function GetAvailableBed(bedId)
+    DoScreenFadeIn(200000)
     local pos = GetEntityCoords(PlayerPedId())
+
+    SetEntityCoords(PlayerPedId(), 303.30, -571.13, 43.28, false, true, false, false)
+
     local retval = nil
     if bedId == nil then
         for k, v in pairs(Config.Locations["beds"]) do
@@ -1073,12 +1077,12 @@ exports['lrp-target']:AddCircleZone("pillboxheli", vector3(351.71, -588.41, 74.1
 })
 
 
-exports['lrp-target']:AddBoxZone("pillbox4", vector3(312.43, -592.88, 43.28), 2.0, 2.0, {
+exports['lrp-target']:AddBoxZone("pillbox4", vector3(312.43, -593.38, 42.28), 2.0, 1.0, {
     name = "pillbox4",
     heading = 250,
     debugPoly = false,
-    minZ = 41.28,
-    maxZ = 44.59,
+    minZ = 40.28,
+    maxZ = 42.29,
     }, 
     { 
     options = {
@@ -1099,12 +1103,12 @@ exports['lrp-target']:AddBoxZone("pillbox4", vector3(312.43, -592.88, 43.28), 2.
     distance = 10
 })
 
-exports['lrp-target']:AddBoxZone("pillbox5", vector3(307.05, -595.2, 43.28), 2.0, 2.0, {
+exports['lrp-target']:AddBoxZone("pillbox5", vector3(307.45, -595.2, 42.28), 1.0, 2.0, {
     name = "pillbox5",
     heading = 250,
     debugPoly = false,
-    minZ = 41.28,
-    maxZ = 44.59,
+    minZ = 40.28,
+    maxZ = 42.29,
     }, 
     { 
     options = {

@@ -5,7 +5,7 @@ Config.RenewedFuel = false
 
 Config.CoreName = "lrp-core"
 
-Config.Menu = "ps-ui" -- Change this to whatever you use, some use qb-menu, others use ps-ui etc. just make sure they are compatible with qb-menu
+Config.Menu = "lrp-menu" -- Change this to whatever you use, some use qb-menu, others use ps-ui etc. just make sure they are compatible with qb-menu
 
 Config.GarbageVehicle = "trash2"
 
@@ -26,10 +26,10 @@ Config.Trade = {
     ["metalscrap"] = 25, -- Name of the material, the amount of materials the player will get for 1 ticket
     ["steel"] = 25,
     ["glass"] = 25,
-    ["rubber"] = 25
-    ["aluminium"] = 25
-    ["iron"] = 25
-    ["copper"] = 25
+    ["rubber"] = 25,
+    ["aluminium"] = 25,
+    ["iron"] = 25,
+    ["copper"] = 25,
 }
 
 Config.PedLocation = vector4(-322.25, -1545.78, 31.02, 270.41)

@@ -1,4 +1,4 @@
-local webhook = "YOUR_DISCORD_WEBHOOK_GOES_HERE"
+local webhook = "https://discord.com/api/webhooks/1173694814068424744/IOAEBrXzlcfl4vqZcJSZZB7UL06VaEpSGWSNsBvPtNDtv6LjhnfExm9dcmydQ_AhAnGi"
 CreateThread(function()
     if webhook == "YOUR_DISCORD_WEBHOOK_GOES_HERE" then
         print("Script can't work if you don't provide a valid webhook (server/framework/_framework.lua line 1)")

@@ -72,9 +72,9 @@ Add the item to your **qb-core/shared/item.lua**
 ```
 For images move the images from the img folder to your inventory image folder **qb-inventory/html/images**
 
-If you are using lj-fuel or a different fuel system
+If you are using cdn-fuel or a different fuel system
 
-Change LegacyFuel to whatever fuel system in **tr-lumberjack/client/main.lua Line 263**
+Change cdn-fuel to whatever fuel system in **tr-lumberjack/client/main.lua Line 263**
 
 ## Preview Pictures
 - [Youtube Video](https://youtu.be/DpmRvZUhPAo)

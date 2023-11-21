@@ -90,4 +90,22 @@ return {
 		weight = 2000000,
 		groups = {['hayes'] = 0}
 	},
+	{
+		coords = vec3(418.9, -1504.92, 33.83),
+		target = {
+			loc = vec3(418.9, -1504.92, 32.83),
+			length = 1.0,
+			width = 6.0,
+			heading = 210.0,
+			minZ = 32.91,
+			maxZ = 34.91,
+			label = 'Open Gang Stash'
+		},
+		name = 'gambinogangstash',
+		label = 'Gang Stash',
+		owner = false,
+		slots = 200,
+		weight = 2000000,
+		groups = {['gambino'] = 0}
+	},
 }

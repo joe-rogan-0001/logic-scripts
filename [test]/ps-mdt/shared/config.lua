@@ -21,8 +21,8 @@ Config.QBManagementUse = true
 -- However, if you're using a different inventory system, please refer to the "Inventory Edit | Automatic Add Weapons with images" section in ps-mdt's README.
 Config.InventoryForWeaponsImages = "ox-inventory"
 
--- "LegacyFuel", "lj-fuel", "ps-fuel"
-Config.Fuel = "lj-fuel"
+-- "cdn-fuel", "cdn-fuel", "cdn-fuel"
+Config.Fuel = "cdn-fuel"
 
 -- Google Docs Link
 Config.sopLink = {

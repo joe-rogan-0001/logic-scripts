@@ -76,7 +76,7 @@ Next, we're going to drag the sounds from the *cdn-fuel/assets/sounds* folder in
 
 ### Step 3:
 
-Next, we're going to open our entire resources folder in whichever IDE you use, (we will be using Visual Studio Code for this example) and replace all of your current exports titled "cdn-fuel", "ps-fuel" or "cdn-fuel", with "cdn-fuel". Then you want to ensure cdn-fuel in your server's config file. 
+Next, we're going to open our entire resources folder in whichever IDE you use, (we will be using Visual Studio Code for this example) and replace all of your current exports titled "cdn-fuel", "cdn-fuel" or "cdn-fuel", with "cdn-fuel". Then you want to ensure cdn-fuel in your server's config file. 
 <br> <br>
 ![step 3](https://i.imgur.com/VZnQpcS.gif)
 

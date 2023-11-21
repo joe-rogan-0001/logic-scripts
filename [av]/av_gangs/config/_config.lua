@@ -27,8 +27,8 @@ Config.SprayMultiplier = 1.50 -- Multiplier for spray price (SprayPrice * SprayM
 Config.SprayRemoverPrice = 50000
 Config.ShopAccount = "bank" -- Account used to buy spray/spray_remover
 Config.SprayDistance = 7 -- How far from wall you can spray / remove a graffiti using remover item
-Config.MinMembersForSpray = 1 -- Min members online to place a graffiti
-Config.MinMembersForRemover = 1 -- Min members online to remove their graffiti
+Config.MinMembersForSpray = 2 -- Min members online to place a graffiti
+Config.MinMembersForRemover = 5 -- Min members online to remove their graffiti
 Config.ShowBlips = "gang:blips" -- Command to show/remove spray blips on map
 Config.ZoneRadius = 109.0 -- Gang zone radius created around the spray, applies for both zone and blip.
 Config.SprayGivesEXP = 25 -- Gang receives EXP when creating a graffiti or false, each 100 points is 1 level for Gangs, Max 5 levels (500 points)
@@ -41,4 +41,19 @@ Config.Sprays = { -- Only registered gangs will be able to use spray and spray r
         blipColor = 6, -- https://docs.fivem.net/docs/game-references/blips/#blip-colors
         ped = {"a_m_m_ktown_01", "a_m_o_ktown_01", "a_m_y_ktown_01"} -- https://docs.fivem.net/docs/game-references/ped-models/
     },
+    ["saints"] = { -- Gang name
+        Grafiti = "spray_saints", -- Graffiti model name (without .ydr)
+        blipColor = 7, -- https://docs.fivem.net/docs/game-references/blips/#blip-colors
+        ped = {"g_m_y_ballaeast_01", "g_m_y_ballasout_01", "g_f_y_ballas_01"} -- https://docs.fivem.net/docs/game-references/ped-models/
+    },
+    ["gambino"] = { -- Gang name
+        Grafiti = "spray_gambino", -- Graffiti model name (without .ydr)
+        blipColor = 49, -- https://docs.fivem.net/docs/game-references/blips/#blip-colors
+        ped = {"s_m_m_highsec_01", "s_m_m_highsec_02", "s_m_m_highsec_01"} -- https://docs.fivem.net/docs/game-references/ped-models/
+    },
+    ["savagemc"] = { -- Gang name
+    Grafiti = "spray_savagemc", -- Graffiti model name (without .ydr)
+    blipColor = 43, -- https://docs.fivem.net/docs/game-references/blips/#blip-colors
+    ped = {"g_m_y_lost_03", "g_m_y_lost_02", "g_m_y_lost_01"} -- https://docs.fivem.net/docs/game-references/ped-models/
+},
 }

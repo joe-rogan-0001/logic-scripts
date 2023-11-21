@@ -10,7 +10,7 @@ Config.UseKeyfob = false -- you can set this true if you dont need ui
 Config.RemoveLockpickNormal = 0.5 -- Chance to remove lockpick on fail
 Config.RemoveLockpickAdvanced = 0.2 -- Chance to remove advanced lockpick on fail
 Config.LockPickDoorEvent = function() -- This function is called when a player attempts to lock pick a vehicle
-    local seconds = math.random(3,20)
+    local seconds = math.random(5,15)
     local circles = math.random(3,5)
     local success = exports['lrp-skill']:StartLockPickCircle(circles, seconds, success)
 

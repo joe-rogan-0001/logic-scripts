@@ -84,7 +84,7 @@ function SetVehicle(vehicle)
     -- Setup here your vehicle keys, fuel etc..
 
     if Config.Framework == "QBCore" then
-        exports['lj-fuel']:SetFuel(vehicle, 100.0)
+        exports['cdn-fuel']:SetFuel(vehicle, 100.0)
         TriggerEvent("vehiclekeys:client:SetOwner", Core.Functions.GetPlate(vehicle))
     elseif Config.Framework == "ESX" then
 

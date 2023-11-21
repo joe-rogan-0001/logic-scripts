@@ -86,4 +86,28 @@ QBShared.Gangs = {
             },
         },
 	},	
+    ['saints'] = {
+		label = 'Saints',
+		grades = {
+            ['0'] = {
+                name = 'Hang Around'
+            },
+			['1'] = {
+                name = 'Slinger'
+            },
+			['2'] = {
+                name = 'Member',
+            },
+            ['3'] = {
+                name = 'Soldier',
+            },
+            ['4'] = {
+                name = 'OG',
+            },
+            ['5'] = {
+                name = 'Leader',
+				isboss = true
+            },
+        },
+	},
 }

@@ -27,7 +27,7 @@ end);
 function TakeOutVehicle(vehicle, plate)
     WSCore.Functions.SpawnVehicle(vehicle, function(vehicle)
       --TaskWarpPedIntoVehicle(PlayerPedId(), vehicle, -1)
-      exports['lj-fuel']:SetFuel(vehicle, 100)
+      exports['cdn-fuel']:SetFuel(vehicle, 100)
       SetVehicleNumberPlateText(vehicle, plate)
       SetEntityHeading(vehicle, vector4(-27.81, -1081.75, 26.01, 70.97).w)
       SetEntityAsMissionEntity(vehicle, true, true)

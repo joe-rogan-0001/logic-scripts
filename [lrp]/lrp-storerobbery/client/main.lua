@@ -1,5 +1,5 @@
 local QBCore = exports['lrp-core']:GetCoreObject()
-local CurrentCops = 0
+local CurrentCops = 1
 
 RegisterNetEvent('police:SetCopCount', function(amount)
     CurrentCops = amount
@@ -47,19 +47,10 @@ RegisterNetEvent('qb-storerobbery:client:cracksafe', function(data)
     local resultarrived = false
     local isCooldown = false
 
-    local haslockpick = true
+    local haslockpick = exports.ox_inventory:GetItemCount('advancedlockpick', nil, nil)
     local waitingforitemcheck = false
 
-    QBCore.Functions.TriggerCallback('QBCore:HasItem', function(result)
-        haslockpick = result
-        waitingforitemcheck = true
-    end, "advancedlockpick")
-
-    while not waitingforitemcheck do
-        Wait(5)
-    end
-
-    if not haslockpick then QBCore.Functions.Notify("What are you trying to crack the safe with?.", "error") return end
+    if not (haslockpick >= 1) then QBCore.Functions.Notify("What are you trying to crack the safe with?.", "error") return end
     
     local waitingforcooldown = false
     QBCore.Functions.TriggerCallback('qb-storerobbery:server:checkcooldown', function(result)
@@ -87,7 +78,7 @@ RegisterNetEvent('qb-storerobbery:client:cracksafe', function(data)
         return 
     end    
 
-    if not (CurrentCops >= 2) then QBCore.Functions.Notify("Not enough Police", "error") return end
+    if not (CurrentCops >= 1) then QBCore.Functions.Notify("Not enough Police", "error") return end
 
     exports["lrp-memorygame"]:thermiteminigame(10, 3, 5, 19,
 
@@ -105,8 +96,9 @@ RegisterNetEvent('qb-storerobbery:client:cracksafe', function(data)
         
         TriggerServerEvent("qb-storerobbery:server:startcooldown")
         TriggerServerEvent("qb-storerobbery:server:emptysafe", SafeID)
-        Citizen.Wait(150000) -- 2.5 minutes
+        Citizen.Wait(Config.Timer) -- 2.5 minutes
         CanOpenSafe = true
+        TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 10, 'shopsafe', 0.5)
     end,
     function()
         QBCore.Functions.Notify("Crack failed.", "error")

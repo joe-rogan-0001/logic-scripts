@@ -15,9 +15,11 @@ Config.Categories = {
             return true
         end,
         items = {
-            {name = "dongle", label = "Dongle", stock = 10, price = 120, account = "cosmo", accountLabel = "Cosmo"},
-            {name = "hacking_device", label = "Hacking Device", stock = 10, price = 200, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "dongle", label = "Dongle", stock = 10, price = 220, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "hacking_device", label = "Hacking Device", stock = 10, price = 400, account = "cosmo", accountLabel = "Cosmo"},
             {name = "transponder", label = "Transponder", stock = 10, price = 200, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "gopro", label = "GoPro Camera", stock = 10, price = 750, account = "cosmo", accountLabel = "Cosmo"},
+            {name = "cam_jammer", label = "Camera Jammer", stock = 10, price = 750, account = "cosmo", accountLabel = "Cosmo"},
         }
     }, 
     ["drugs"] = { 

@@ -1,4 +1,4 @@
-local service = GetConvar('ox:logger', 'datadog')
+local service = 'loki'
 local buffer
 local bufferSize = 0
 

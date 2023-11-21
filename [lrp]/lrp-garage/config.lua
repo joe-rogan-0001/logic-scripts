@@ -206,6 +206,24 @@ GangGarages = {
         blip = vector3(-661.20, -869.37, 24.51),
         showBlip = false
     },
+    ["saints"] = {
+        ["parking"] = {
+            [1] = vector4(525.68, -1751.27, 28.68, 148.95),
+            [2] = vector4(528.34, -1752.95, 28.70, 150.79),
+            [3] = vector4(531.07, -1754.35, 28.76, 149.55),
+            [4] = vector4(533.91, -1756.00, 28.80, 149.36),
+        },
+        ["width"] = {
+            [1] = vector2(6.5, 4.0),
+            [2] = vector2(6.5, 4.0),
+            [3] = vector2(6.5, 4.0),
+            [4] = vector2(6.5, 4.0),
+        },
+        label = "Saints",
+        gang = "saints",
+        blip = vector3(-661.20, -869.37, 24.51),
+        showBlip = false
+    },
 }
 
 

@@ -161,7 +161,7 @@ RegisterNetEvent('gl-garbage:getJob',function()
         vehicle = CreateVehicle(hash, -333.72, -1565.95, 24.95, 239.27,true,false)
         TriggerEvent('vehiclekeys:client:SetOwner', QBCore.Functions.GetPlate(vehicle))
 
-        exports['lj-fuel']:SetFuel(vehicle, 100)
+        exports['cdn-fuel']:SetFuel(vehicle, 100)
 
         SetEntityAsMissionEntity(vehicle, true, true)
 

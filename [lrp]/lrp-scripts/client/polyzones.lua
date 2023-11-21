@@ -476,7 +476,7 @@ Config.GlobalVehicleOptions = {
   --[[
   {
     type = "client",
-    event = "lj-fuel:client:SendMenuToServer",
+    event = "cdn-fuel:client:SendMenuToServer",
     icon = "fas fa-gas-pump",
     label = "Refuel Vehicle",
     canInteract = function(entity)
@@ -1450,7 +1450,7 @@ blockevents = true,
     },
     {
       model = `mp_m_waremech_01`,
-      coords = vector4(859.03, 2877.59, 56.98, 186.85),
+      coords = vector4(859.03, 2877.59, 55.98, 186.85),
       gender = 'male', 
       animDict = 'anim@amb@business@bgen@bgen_no_work@',
       animName = 'sit_phone_phoneputdown_idle_nowork',

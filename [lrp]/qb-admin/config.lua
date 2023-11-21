@@ -32,7 +32,7 @@ Config.DB.BansTable                         = "bans"
 Config.AnnounceBan                          = false          -- Whether to announce bans in chat or not
 Config.TagEveryone                          = false         -- Enable to tag everyone in the discord log on ban
 
-Config.FuelScript                           = 'lj-fuel'
+Config.FuelScript                           = 'cdn-fuel'
 Config.CoreExport                           = exports["lrp-core"]:GetCoreObject()
 
 Config.Permissions = {

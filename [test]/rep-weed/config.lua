@@ -2,8 +2,8 @@ Config = {}
 
 -- Webhook for logs of plants activity including (plant, harvest, destroy)
 Config.Webhook = {
-    link = "",
-    tag = true,
+    link = "https://discord.com/api/webhooks/1164307617691217960/Q5FDKQ0TwYuuliHFB8h7od5MxFEBre3DBrWRH9kooKFadCyrxBliQOB0lCsXrOmUDiJX",
+    tag = false,
     img = '',
     color = 14423100 -- https://www.spycolor.com/
 }
@@ -18,7 +18,7 @@ Config.TimeLoop = 600       -- Time Loop to update plant (we suggest to keep thi
 Config.Boss = {             -- you can add more boss location here, he automatically switch locations every restart
     [1] = {
         ped = 'a_m_y_soucent_02',
-        pos = vector4(88.58, -1434.18, 29.31, 142.83)
+        pos = vector4(800.77, -756.25, 26.85, 239.16)
     },
     -- [2] = {
     --     ped = 'g_m_m_chigoon_01',

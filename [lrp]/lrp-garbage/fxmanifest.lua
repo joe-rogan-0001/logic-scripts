@@ -10,7 +10,6 @@ server_script 'server.lua'
 
 dependencies {
     'lrp-target',
-    'lrp-input'
 }
 
 lua54 'yes'
