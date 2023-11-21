@@ -34,3 +34,18 @@ AddEventHandler('av_restaurant:notification', function(msg)
         type = 'inform'
     })
 end)
+
+AddEventHandler('onResourceStart', function(resourceName)
+    if (GetCurrentResourceName() == resourceName) then
+        if Config.Framework == 'QBCore' then
+            for k, v in pairs(QBCore.Shared.Jobs) do
+                jobList[#jobList+1] = k
+            end
+        elseif Config.Framework == 'ESX' then
+            local data = lib.callback.await('av_restaurant:GetESXJobs', 1000)
+            for k, v in pairs(data) do
+                jobList[#jobList+1] = k
+            end
+        end
+    end
+end)

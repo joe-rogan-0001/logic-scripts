@@ -433,32 +433,91 @@ end, true)
 
 
 lib.addCommand({'additem', 'giveitem'}, {
-	help = 'Gives an item to a player with the given id',
-	params = {
-		{ name = 'target', type = 'playerId', help = 'The player to receive the item' },
-		{ name = 'item', type = 'string', help = 'The name of the item' },
-		{ name = 'count', type = 'number', help = 'The amount of the item to give', optional = true },
-		{ name = 'type', help = 'Sets the "type" metadata to the value', optional = true },
-	},
-	restricted = 'group.admin',
+    help = 'Gives an item to a player with the given id',
+    params = {
+        { name = 'target', type = 'playerId', help = 'The player to receive the item' },
+        { name = 'item', type = 'string', help = 'The name of the item' },
+        { name = 'count', type = 'number', help = 'The amount of the item to give', optional = true },
+        { name = 'type', help = 'Sets the "type" metadata to the value', optional = true },
+    },
+    restricted = 'group.admin',
 }, function(source, args)
-	local item = Items(args.item)
+    local item = Items(args.item)
 
-	if item then
-		local inventory = Inventory(args.target) --[[@as OxInventory]]
-		local count = args.count or 1
-		local success, response = Inventory.AddItem(inventory, item.name, count, args.type and { type = tonumber(args.type) or args.type })
+    if item then
+        local inventory = Inventory(args.target) --[[@as OxInventory]]
+        local count = args.count or 1
+        local metadata = args.type and { type = tonumber(args.type) or args.type}
+        if args.item == "femaleseed" then
+            if not metadata then
+                metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+        elseif args.item == "driedbud" then
+            if not metadata then
+                metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+            metadata.remainweight = 100
+        elseif args.item == "weedpackage" then
+            if not metadata then
+                    metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+            metadata.remainweight = 100
+        elseif args.item == "weedbaggie" then
+            if not metadata then
+                    metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+        elseif args.item == "wetbud" then
+            if not metadata then
+                    metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+            metadata.dry = 0
+        elseif args.item == "joint" then
+            if not metadata then
+                    metadata = {}
+            end
+            metadata.strain = "Unknown"
+            metadata.dry = 0
+            metadata.n = 0
+            metadata.p = 0
+            metadata.k = 0
+        elseif args.item == "wateringcan" then
+            if not metadata then
+                metadata = {}
+            end
+            metadata.water = 0
+        end
+        local success, response = Inventory.AddItem(inventory, item.name, count, metadata)
 
-		if not success then
-			return Citizen.Trace(('Failed to give %sx %s to player %s (%s)'):format(count, item.name, args.target, response))
-		end
+        if not success then
+            return Citizen.Trace(('Failed to give %sx %s to player %s (%s)'):format(count, item.name, args.target, response))
+        end
 
-		source = Inventory(source) or { label = 'console', owner = 'console' }
+        source = Inventory(source) or { label = 'console', owner = 'console' }
 
-		if server.loglevel > 0 then
-			lib.logger(source.owner, 'admin', ('"%s" gave %sx %s to "%s"'):format(source.label, count, item.name, inventory.label))
-		end
-	end
+        if server.loglevel > 0 then
+            lib.logger(source.owner, 'admin', ('"%s" gave %sx %s to "%s"'):format(source.label, count, item.name, inventory.label))
+        end
+    end
 end)
 
 lib.addCommand('removeitem', {

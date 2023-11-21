@@ -255,14 +255,14 @@ RegisterNetEvent('lrp-hunting:PeltMenu', function()
             header = "Processed Coyote Pelt",
             txt = "[2x] Limewater, [1x] Coyote Pelt",
             params = {
-                event = "lrp-hunting:DeerProcess"
+                event = "lrp-hunting:CoyoteProcess"
             }
         },
         {
             header = "Processed Deer Pelt",
             txt = "[3x] Limewater, [1x] Deer Pelt",
             params = {
-                event = "lrp-hunting:CoyoteProcess"
+                event = "lrp-hunting:DeerProcess"
             }
         },
     })

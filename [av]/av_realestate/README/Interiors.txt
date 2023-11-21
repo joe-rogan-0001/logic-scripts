@@ -1,0 +1,3 @@
+ESX: Download and install k4mb1 free shells: https://www.k4mb1maps.com/package/5015840
+
+QBCore: Don't download the k4mb1 shells, just update your qb-interior (shells are included there): https://github.com/qbcore-framework/qb-interior

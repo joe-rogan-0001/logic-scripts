@@ -57,6 +57,13 @@ RegisterServerEvent('av_restaurant:craftEnd')
 AddEventHandler('av_restaurant:craftEnd', function(job,item,type,ingredients,image,label)
     local src = source
     local job = GetJob(src)
+    local info = {
+        type = type,
+        ingredients = ingredients
+    }
+    if type == "box" then
+        info['serial'] = randomString(10)
+    end
     if item and job then
         if Config.UseIngredients and ingredients then
             local hasIngredients = 0
@@ -76,13 +83,26 @@ AddEventHandler('av_restaurant:craftEnd', function(job,item,type,ingredients,ima
         end
         if Config.Framework == 'ESX' then
             if ESXItems[item] then
-                AddItem(src,item,1,type)
+                AddItem(src,item,1,info)
             else
                 TriggerClientEvent('av_restaurant:notification',src,Lang['ESX_Restart'])
             end
         else
-            AddItem(src,item,1,type)
+            AddItem(src,item,1,info)
         end
         addDish(job, item, image, label)
     end
 end)
+
+function randomString(length)
+    local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local randomString = ""
+    local charsetLength = string.len(charset)
+
+    for i = 1, length do
+        local randomIndex = math.random(1, charsetLength)
+        randomString = randomString .. string.sub(charset, randomIndex, randomIndex)
+    end
+
+    return randomString
+end

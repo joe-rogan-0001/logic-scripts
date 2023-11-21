@@ -1,0 +1,76 @@
+.blocks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    width: 100vh;
+}
+
+
+.blocks {
+    position: fixed;
+    background-color: rgba(7, 8, 10, 0.83);
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hud-text {
+    text-align: right;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Michroma',
+        sans-serif;
+    font-size: 1.15vh;
+    color: white;
+    text-shadow: 2px 2px 2px #3b3b3b;
+    font-weight: 600;
+}
+
+.leftAligned {
+    text-align: left;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big {
+    font-size: 2vh;
+}
+
+#racer-positions {
+    display: flex;
+    text-align: right;
+    gap: 5px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.15vh;
+    color: white;
+    text-shadow: 2px 2px 2px #3b3b3b;
+    font-weight: 600;
+}
+
+#racer-position-number {
+    padding: 10px;
+    text-align: center;
+    width: 5%;
+    flex-grow: 1;
+    background-color: #0000004e;
+}
+
+#racer-position-name {
+    padding: 10px;
+    flex-grow: 9;
+    background-color: #1e2a404e;
+}

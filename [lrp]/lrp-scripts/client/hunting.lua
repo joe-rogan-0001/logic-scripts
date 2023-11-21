@@ -42,7 +42,7 @@ local function blockShooting()
 end
 
 Citizen.CreateThread(function()
-    local huntingRifleHash = `weapon_sniperrifle2`
+    local huntingRifleHash = `WEAPON_SNIPERRIFLE2`
     while true do
         if GetSelectedPedWeapon(PlayerPedId()) == huntingRifleHash then
             hasHuntingRifle = true

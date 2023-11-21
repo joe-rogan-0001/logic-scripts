@@ -19,7 +19,7 @@ Config = {
 	LocationBlips = true, -- Enable to grab the blip locations from locations.lua
 	CosmeticsJob = false, -- Do vehicle cosmetics require a mechanic job role?
 
-	ShowStash = true, -- If true, it will show the locations job stash if `StashRepair` or `StashCraft` is enabled or not
+	ShowStash = false, -- If true, it will show the locations job stash if `StashRepair` or `StashCraft` is enabled or not
 
 	FreeRepair = false,  -- Are repairs free? True means yes
 	StashRepair = false, -- Enable for repair materials to be removed from a job stash (disabled if RequiresJob = false)

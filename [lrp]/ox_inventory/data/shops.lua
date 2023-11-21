@@ -214,15 +214,15 @@ return {
 		},
 		inventory = {
 			{ name = 'huntingknife', price = 350 },
-			{ name = 'ammo-sniper', price = 1500 },
-			{ name = 'hunting_ammo', price = 250 },
+			{ name = 'WEAPON_SNIPERRIFLE2', price = 15000, metadata = { registered = true }, license = 'weapon', 'hunting' },
+			{ name = 'ammo-hunting', price = 20, metadata = { registered = true }, license = 'weapon', 'hunting' },
 			{ name = 'huntingbait', price = 20 },	
 		},
 		locations = {
-			vec3(-678.97, 5837.91, 17.33)
+			vec3(-679.87, 5838.73, 16.33)
 		},
 		targets = {
-			{ loc = vec3(-678.97, 5837.91, 17.33), length = 1, width = 3.0, heading = 270.0, minZ = 15.5, maxZ = 19.0, distance = 6 }
+			{ loc = vec3(-679.87, 5838.73, 16.33), length = 1, width = 3.0, heading = 270.0, minZ = 15.5, maxZ = 17.0, distance = 2 }
 		}
 	},
 

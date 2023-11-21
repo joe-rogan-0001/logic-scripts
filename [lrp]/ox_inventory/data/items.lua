@@ -446,7 +446,7 @@ return {
 		label = "Hunting Bait",
 		weight = 2000,
 		stack = true,
-		close = false,
+		close = true,
 		description = "Bait for hunting animals, works best up north.",
 		client = {
 			image = "huntingbait.png",
@@ -6186,5 +6186,71 @@ return {
 		client = {
 			image = "prisonfarmnutrition.png"
 		}
-	}
+	},
+
+	['gopro'] = {
+		label = 'GoPro Camera',
+		weight = 10000,
+		stack = false,
+		close = true,
+		description = 'Small Action camera, hm wonder what you could use it for'
+	},
+
+	['cam_jammer'] = {
+	label = 'Camera Jammer',
+	weight = 10000,
+	stack = true,
+	close = true,
+	description = 'Camera Jammer, disrupts video'
+	},
+
+	['drone'] = {
+		label = 'Drone',
+		weight = 10000,
+		stack = false,
+		close = true,
+		description = 'What do you need this for you weirdo?'
+	},
+
+	["Drone"] = {
+		label = "Empty Can",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "An empty can, good for recycling",
+		client = {
+			image = "can.png",
+		}
+	},
+	['trackeritem'] = {
+		label = 'Tracker Disabler',
+		weight = 160,
+	},
+	
+	['chop_wheel'] = {
+		label = 'Car Wheel',
+		weight = 400,
+	},
+	['chop_door'] = {
+		label = 'Car Door',
+		weight = 400,
+	},
+	['chop_hood'] = {
+		label = 'Car Hood',
+		weight = 400,
+	},
+	['chop_trunk'] = {
+		label = 'Car Trunk',
+		weight = 400,
+	},
+	["jerrycan"]                  = {
+		label = "Jerrycan",
+		weight = 20000,
+		stack = true,
+		close = true,
+		description = "Highly Flammable",
+		client = {
+			image = "jerrycan.png",
+		}
+	},
 }

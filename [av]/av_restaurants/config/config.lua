@@ -7,7 +7,7 @@
 
 Config = {}
 Config.Framework = "QBCore" -- QBCore or ESX... For latest ESX versions make sure to uncomment the import in fxmanifest.lua
-Config.Inventory = 'ox_inventory' -- Available options: "ox_inventory", "qs-inventory", "qb-inventory", "lj-inventory"
+Config.Inventory = 'ox_inventory' -- (available options: qb-inventory, lj-inventory, ox_inventory, ps-inventory, origen_inventory and qs-inventory)
 Config.CashAccountName = "money" -- How the cash money account is named in your Framework
 Config.UnemployedJobName = "unemployed" -- How your unemployed job is named
 Config.UsingCCLaundering = false -- true if using CC-Laundering: https://ccdev.tebex.io/package/5729384
@@ -19,16 +19,18 @@ Config.ItemTypes = { -- Used for Create Item in Laptop APP
     {value = "food", label = "Food"},
     {value = "joint", label = "Joint"},
     {value = "others", label = "Others"},
+    {value = "box", label = "Boxes"},
 }
 
 -- Ingredients Config
 Config.UseIngredients = true -- true/false if you want food to require ingredients to be crafted
 Config.Ingredients = { -- You need to register this items in your Framework/Inventory
-    -- value = item name, label = item label
-    {value = "water", label = "Water"},
-    {value = "sugar", label = "Sugar"},
-    {value = "chocolate", label = "Chocolate"},
-    {value = "milk", label = "Milk"},
+    -- value = item name, label = item label, jobs = table with allowed jobs to use this ingredient
+    -- if jobs = false it will make the ingredients available for everyone
+    {value = "water", label = "Water", jobs = {"uwucafe", "burgershot"}},
+    {value = "sugar", label = "Sugar", jobs = {"uwucafe", "burgershot"}},
+    {value = "chocolate", label = "Chocolate", jobs = false},
+    {value = "milk", label = "Milk", jobs = false},
 }
 Config.TargetSystem = "qb-target" -- qb-target, bt-target, qtarget
 Config.Command = "restaurant" -- Used to create new zones
@@ -52,6 +54,7 @@ Config.Events = { -- Used to create zones
     ['rate'] = {label = "Rate", event = "av_restaurant:rate", icon = "fas fa-star"},
     ['duty'] = {label = "Duty", event = "av_restaurant:duty", icon = "fa-solid fa-briefcase"},
     ['applications'] = {label = "Applications", event = "av_restaurant:applications", icon = "fa-solid fa-briefcase"},
+    ['box'] = {label = "Boxes", event = "av_restaurant:box", icon = "fa-solid fa-box"},
 }
 
 -- Items, Stash and Tray Weights
@@ -80,10 +83,28 @@ Config.EatValue = 50 -- How many hunger points will the food add to player
 Config.DrinkValue = 50 -- How many thirst points will the food add to player
 Config.JointValue = 50 -- How many stress points will the joint remove from player
 
-Config.NotRestaurant = { -- This jobs can't access the Register Product tab in Laptop
+Config.NotRestaurant = { -- This jobs can't access the Menu tab in Laptop
     ['police'] = true,
     ['ambulance'] = true,
     ['taxi'] = true,
     ['judge'] = true,
     ['mechanic'] = true,
+}
+
+Config.UsingBuffs = false -- True if using ps-buffs
+Config.Buffs = { -- You need ps-buffs for this
+    ['milk'] = function() -- ingredient name
+        exports['ps-buffs']:AddStressBuff(30000, 10) -- the buff to trigger
+    end,
+    ['chocolate'] = function() -- ingredient name
+        exports['ps-buffs']:AddHealthBuff(10000, 10) -- the buff to trigger
+    end,
+    ['water'] = function() -- ingredient name
+        exports['ps-buffs']:AddArmorBuff(30000, 10) -- the buff to trigger
+    end,
+}
+
+Config.Boxes = { -- Box stash config
+    slots = 5,
+    weight = 5000 -- 50kg
 }
