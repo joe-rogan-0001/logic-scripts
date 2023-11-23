@@ -14,6 +14,7 @@
   export let innerColor: string = "#212121";
   export let innerColorOpacity: number = 1;
   export let name: string = "";
+  export let iconOpacity: number = 0.3;
   export let outlineColor: string = "red";
   export let outlineColorOpacity: number = 0.4;
   export let progressColor: string = "red";
@@ -25,7 +26,7 @@
   export let width: number = 50;
   export let maxLengthDisplay: number = 100;
   export let maxProgressValue: number = 100;
-  export let showInnerBG: boolean = false;
+  export let showInnerBG: boolean = true;
   export let displayNumber: number = 0;
   export let text: string = "";
   
@@ -82,7 +83,7 @@
     { rotateDegree > 0 ? "rotate("+rotateDegree+" "+radius+" "+radius+")": ""}
     { "translate("+translateX+" "+translateY+")" }"
   >
-    {#if displayOutline}
+    <!-- {#if displayOutline}
       <circle
         opacity={outlineColorOpacity}
         fill="transparent"
@@ -95,32 +96,34 @@
         cy={radius}
         transform="rotate(-90, {radius}, {radius})"
       />
-    {/if}
+    {/if} -->
     {#if showInnerBG}
-    <circle
-      fill={innerColor}
-      fill-opacity={innerColorOpacity}
-      stroke="transparent"
-      stroke-dashoffset={0}
-      stroke-dasharray={circumference +' ' + circumference}
-      stroke-width={ringSize-0.6}
-      r={normalizedRadius - (ringSize/2) + 0.1}
-      cx={radius}
-      cy={radius}
-      transform="rotate(-90, {radius}, {radius})"
-    />
+      <circle
+        fill={innerColor}
+        fill-opacity={innerColorOpacity}
+        stroke="transparent"
+        stroke-dashoffset={0}
+        stroke-dasharray={circumference +' ' + circumference}
+        stroke-width={ringSize - 0.6}
+        r={normalizedRadius - (ringSize/2) + 5}
+        cx={radius}
+        cy={radius}
+        transform="rotate(-90, {radius}, {radius})"
+      />
     {/if}
-    <circle
-      stroke="{progressColor}"
-      fill="transparent"
-      stroke-dashoffset={strokeDashoffset}
-      stroke-dasharray={circumference + ' ' + circumference}
-      stroke-width={ringSize}
-      r={normalizedRadius}
-      cx={radius}
-      cy={radius}
-      transform="rotate(-90, {radius}, {radius})"
-    />
+    {#if text != "MPH" && text != "ALT"}
+      <circle
+        stroke="transparent"
+        fill="transparent"
+        stroke-dashoffset={strokeDashoffset}
+        stroke-dasharray={circumference + ' ' + circumference}
+        stroke-width={ringSize - 0.6}
+        r={normalizedRadius - (ringSize/2)}
+        cx={radius}
+        cy={radius}
+        transform="rotate(-90, {radius}, {radius})"
+      />
+    {/if}
   </g>
   {#if text}
   <text class="vehicle-number" fill="white" x="50%" y="45%" dominant-baseline="middle" text-anchor="middle">
@@ -132,8 +135,7 @@
   {/if}
   <g >
     {#if icon}
-    <Fa icon={icon} scale={iconScaling} translateX={iconTranslateX}
-    translateY={iconTranslateY} style="color:{iconColor}"/>
+      <Fa icon={icon} scale={iconScaling} translateX={iconTranslateX} translateY={iconTranslateY} style="color:{iconColor}; opacity:{iconOpacity}"/>
     {/if}
   </g>
 </svg>

@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import { faHeart, faShieldAlt, faHamburger, faTint, faBrain, faStream,
+import { faHeart, faShield, faDrumstickBite, faGlassWater, faBrain, faGasPump, faStream,
   faParachuteBox, faMeteor, faLungs, faOilCan, faUserSlash,
   faTachometerAltFast, faTerminal, faHeadset, faMicrophone,
 } from '@fortawesome/free-solid-svg-icons'
@@ -31,8 +31,8 @@ type playerHudUpdateMessageType = {
   dynamicHunger: boolean,
   dynamicThirst: boolean,
   dynamicStress: boolean,
+  dynamicFuel: boolean,
   dynamicOxygen: boolean,
-  dynamicEngine: boolean,
   dynamicNitro: boolean,
   health: number,
   playerDead: boolean,
@@ -41,6 +41,7 @@ type playerHudUpdateMessageType = {
   hunger: number,
   stress: number,
   voice: number,
+  fuel: number,
   radioChannel: number,
   radioTalking: boolean,
   talking: boolean,
@@ -53,7 +54,6 @@ type playerHudUpdateMessageType = {
   harness: boolean,
   hp: number,
   speed: number,
-  engine: number,
   cinematic: boolean,
   dev: boolean,
 }
@@ -81,28 +81,28 @@ const store = () => {
       icons: {
         voice: getLocalStorage("voice", defaultHudIcon("voice", true, faMicrophone)),
         health: getLocalStorage("health", defaultHudIcon("health", false, faHeart)),
-        armor: getLocalStorage("armor", defaultHudIcon("armor", false, faShieldAlt)),
-        hunger: getLocalStorage("hunger", defaultHudIcon("hunger", false, faHamburger)),
-        thirst: getLocalStorage("thirst", defaultHudIcon("thirst", false, faTint)),
+        armor: getLocalStorage("armor", defaultHudIcon("armor", false, faShield)),
+        hunger: getLocalStorage("hunger", defaultHudIcon("hunger", false, faDrumstickBite)),
+        thirst: getLocalStorage("thirst", defaultHudIcon("thirst", false, faGlassWater)),
         stress: getLocalStorage("stress", defaultHudIcon("stress", false, faBrain)),
+        fuel: getLocalStorage("fuel", defaultHudIcon("fuel", false, faGasPump)),
         oxygen: getLocalStorage("oxygen", defaultHudIcon("oxygen", false, faLungs)),
         armed: getLocalStorage("armed", defaultHudIcon("armed", false, faStream)),
         parachute: getLocalStorage("parachute", defaultHudIcon("parachute", false, faParachuteBox)),
-        engine: getLocalStorage("engine", defaultHudIcon("engine", false, faOilCan)),
         harness: getLocalStorage("harness", defaultHudIcon("harness", false, faUserSlash)),
         cruise: getLocalStorage("cruise", defaultHudIcon("cruise", false, faTachometerAltFast)),
         nitro: getLocalStorage("nitro", defaultHudIcon("nitro", false, faMeteor)),
         dev: getLocalStorage("dev", defaultHudIcon("dev", false, faTerminal)),
       },
       dynamicIcons: getLocalStorage("dynamicIcons", {
-        armor: false, engine: false, health: false,
+        armor: false,  health: false,
         hunger: false, nitro: false, oxygen: false,
-        stress: false, thirst: false,
+        stress: false, thirst: false, fuel: false,
       }),
       saveUIState: "ready",
       show: false,
-      showingOrder: ["voice", "health", "armor", "hunger", "thirst", "stress", "oxygen", "armed",
-        "parachute", "engine", "harness", "cruise", "nitro", "dev"],
+      showingOrder: ["health", "armor", "voice", "hunger", "thirst", "stress", "fuel", "oxygen", "armed",
+        "parachute", "harness", "cruise", "nitro", "dev"],
     }
   }
 
@@ -214,10 +214,6 @@ const store = () => {
             state.icons.armor.isShowing = methods.staticGenericZeroHandleShow(staticShow, state.icons.armor.progressValue);
             result = state.icons.armor.isShowing;
             break;
-          case "engine":
-            state.icons.engine.isShowing = methods.staticEngineHandleShow(staticShow, state.icons.engine.progressValue);
-            result = state.icons.engine.isShowing;
-            break;
           case "health":
             state.icons.health.isShowing = methods.staticGenericHundredHandleShow(staticShow, state.icons.health.progressValue);
             result = state.icons.health.isShowing;
@@ -227,7 +223,7 @@ const store = () => {
             result = state.icons.hunger.isShowing;
             break;
           case "nitro":
-            state.icons.nitro.isShowing = methods.staticNitroHandleShow(staticShow, state.icons.nitro.progressValue, state.icons.engine.progressValue);
+            state.icons.nitro.isShowing = methods.staticNitroHandleShow(staticShow, state.icons.nitro.progressValue);
             result = state.icons.nitro.isShowing;
             break;
           case "oxygen":
@@ -270,11 +266,11 @@ const store = () => {
         state.icons.thirst.progressValue = capAmountToHundred(data.thirst);
         state.icons.hunger.progressValue = capAmountToHundred(data.hunger);
         state.icons.stress.progressValue = capAmountToHundred(data.stress);
+        state.icons.fuel.progressValue = capAmountToHundred(data.fuel);
         // Should be 1.5, 3, 6 so * 16.6 to show progress
         state.icons.voice.progressValue = capAmountToHundred(data.voice * 16.6);
         state.icons.oxygen.progressValue = capAmountToHundred(data.oxygen);
         state.icons.parachute.progressValue = capAmountToHundred(data.parachute);
-        state.icons.engine.progressValue = capAmountToHundred(data.engine);
         // I am guessing harness hp max is 20?
         state.icons.harness.progressValue = capAmountToHundred(data.hp*5);
         state.icons.cruise.progressValue = capAmountToHundred(data.speed);
@@ -318,17 +314,17 @@ const store = () => {
 
         state.icons.oxygen.isShowing = methods.staticGenericHundredHandleShow(state.dynamicIcons.oxygen, state.icons.oxygen.progressValue);
 
-        state.icons.engine.isShowing = methods.staticEngineHandleShow(state.dynamicIcons.engine, state.icons.engine.progressValue);
+        state.icons.fuel.isShowing = methods.staticFuelHandleShow(state.dynamicIcons.fuel, state.icons.fuel.progressValue);
 
-        if (data.engine <= 45) {
-          ColorEffectStore.updateIconEffectStage("engine", 2);
-        } else if (data.engine <= 75 && data.engine >= 46 ) {
-          ColorEffectStore.updateIconEffectStage("engine", 1);
-        } else if(data.engine <= 100) {
-          ColorEffectStore.updateIconEffectStage("engine", 0);
+        if (data.fuel <= 20) {
+          ColorEffectStore.updateIconEffectStage("fuel", 2);
+        } else if (data.fuel <= 30) {
+          ColorEffectStore.updateIconEffectStage("fuel", 1);
+        } else {
+          ColorEffectStore.updateIconEffectStage("fuel", 0);
         } 
   
-        state.icons.nitro.isShowing = methods.staticNitroHandleShow(state.dynamicIcons.nitro, state.icons.nitro.progressValue, state.icons.engine.progressValue);
+        state.icons.nitro.isShowing = methods.staticNitroHandleShow(state.dynamicIcons.nitro, state.icons.nitro.progressValue);
 
         if (data.nitroActive) {
           ColorEffectStore.updateIconEffectStage("nitro", 1);
@@ -420,9 +416,8 @@ const store = () => {
       }
       return true;
     },
-    staticEngineHandleShow(staticSetting: boolean, currentValue: number): boolean {
-      // When in a car only show when less that 95% condition
-      // Engine will be below 0 when not in a car so hide icon
+    staticFuelHandleShow(staticSetting: boolean, currentValue: number): boolean {
+      // Fuel will be below 0 when not in a car so hide icon
       if (staticSetting) {
         if (currentValue < 0) {
           return false;
@@ -430,9 +425,7 @@ const store = () => {
           return true;
         }
       } else {
-        if (currentValue >= 95) {
-          return false; 
-        } else if (currentValue < 0){
+        if (currentValue < 0){
           return false;
         } else {
           return true;
@@ -448,19 +441,14 @@ const store = () => {
       }
       return true;
     },
-    staticNitroHandleShow(staticSetting: boolean, currentValue: number, engineValue: number): boolean {
+    staticNitroHandleShow(staticSetting: boolean, currentValue: number): boolean {
       if (staticSetting) {
-        if (engineValue > 0) {
-          return true
-        } else {
-          return false;
-        }
+        return true;
+      }
+      if (currentValue <= 0) {
+        return false;
       } else {
-        if (currentValue <= 0) {
-          return false;
-        } else {
-          return true;
-        }
+        return true;
       }
     }
   }

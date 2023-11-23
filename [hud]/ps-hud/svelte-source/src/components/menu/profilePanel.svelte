@@ -26,7 +26,7 @@
         {/if}
         <Button name="Save HUD to Profile" on:click={() => ProfileStore.saveHUDToProfile(i)}/>
         <Button name="Apply Profile to HUD" on:click={() => ProfileStore.applyProfileToHud(i)}/>
-        <Button name="Delete Profile" buttonClass="hover:bg-red-600" on:click={() => ProfileStore.deleteProfile(i)}/>
+        <Button name="Delete Profile" buttonClass="hover:bg-[#0275d8]" on:click={() => ProfileStore.deleteProfile(i)}/>
       </div>
     {/each}
     {#if $ProfileStore.length < 6}

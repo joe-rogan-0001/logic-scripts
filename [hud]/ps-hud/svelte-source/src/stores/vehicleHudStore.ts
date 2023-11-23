@@ -2,9 +2,9 @@ import { writable } from 'svelte/store'
 import { capAmountToHundred } from '../types/types'
 
 type vehicleStatusType = {
-  fuelColor: string,
+  engineColor: string,
   altitude: number,
-  fuel: number,
+  engine: number,
   speed: number,
   show: boolean,
   showAltitude: boolean,
@@ -14,6 +14,7 @@ type vehicleStatusType = {
   ShowCircle: boolean,
   showCircleBorder: boolean,
   seatbeltColor: string,
+  beltOpacity: number,
 }
 
 type vehicleHudUpdateMessageType = {
@@ -21,12 +22,13 @@ type vehicleHudUpdateMessageType = {
   isPaused: boolean,
   seatbelt: boolean,
   speed: number,
-  fuel: number,
+  engine: number,
   altitude: number,
   showAltitude: boolean,
   showSeatbelt: boolean,
   showSquareB: boolean,
   showCircleB: boolean, 
+  beltOpacity: number,
 }
 
 type vehicleHudShowMessage = {
@@ -34,13 +36,12 @@ type vehicleHudShowMessage = {
   seatbelt: boolean,
 }
 
-
 const store = () => {
 
   const vehicleStatusState: vehicleStatusType = {
-    fuelColor: "#FFFFFF",
+    engineColor: "#FFFFFF",
     altitude: 0,
-    fuel: 0,
+    engine: 0,
     speed: 0,
     show: false,
     showAltitude: false,
@@ -50,6 +51,7 @@ const store = () => {
     ShowCircle: false,
     showCircleBorder: false,
     seatbeltColor: "#e85b14",
+    beltOpacity: 0.8,
   }
 
   const { subscribe, set, update } = writable(vehicleStatusState);
@@ -67,7 +69,7 @@ const store = () => {
         state.show = data.show;
         state.speed = data.speed;
         state.altitude = data.altitude;
-        state.fuel = capAmountToHundred(data.fuel);
+        state.engine = capAmountToHundred(data.engine);
         state.showSeatBelt = data.showSeatbelt;
         state.showAltitude = data.showAltitude;
         state.showSquareBorder = data.showSquareB;
@@ -75,17 +77,19 @@ const store = () => {
 
         if (data.seatbelt) {
           state.showSeatBelt = false;
+          state.beltOpacity = 0.3
         } else {
           state.showSeatBelt = true;
+          state.beltOpacity = 0.8
         }
 
-        if (data.fuel <= 20) {
-          state.fuelColor = "#ff0000";
-        } else if (data.fuel <= 30) {
-          state.fuelColor = "#dd6e14";
-        } else {
-          state.fuelColor = "#FFFFFF";
-        }
+        if (data.engine <= 45) {
+          state.engineColor = "#ff0000";
+        } else if (data.engine <= 75 && data.engine >= 46 ) {
+          state.engineColor = "#dd6e14";
+        } else if(data.engine <= 100) {
+          state.engineColor = "#FFFFFF";
+        } 
 
         if (data.isPaused) {
           state.show = false;

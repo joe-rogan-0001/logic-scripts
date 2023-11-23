@@ -48,7 +48,7 @@
     </div>
     <div class="w-50">
       <p class="text-lg text-center mb-2">Icon Shape</p>
-      <Select valuesArray={shapes} bind:value={$PlayerHudUIStore.icons[singleIconName].shape}
+      <Select valuesArray={["circle-ring", "circle-square-fill"]} bind:value={$PlayerHudUIStore.icons[singleIconName].shape}
         handleSelectFunction={(shapeName) => {
           PlayerHudUIStore.updateIconShape(singleIconName, shapeName);
           ColorEffectStore.updateIconShapeEditableColor(singleIconName, shapeName);
@@ -204,27 +204,25 @@
         handleUpdateFunction={(dropAmount) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "iconDropShadowAmount", dropAmount)}
       />
     </div>
-
-    <div class="flex flex-col mx-auto">
-      <p class="text-base text-center mb-2">Outline Color</p>
-      <ColorPicker colorString={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineColor}
-        updateFunction={(hexColor) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineColor", hexColor)}
-      />
-    </div>
-    <div>
-      <p class="text-base text-center mb-2">Outline Contrast</p>
-      <NumberInput min={0} max={300} bind:value={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineContrast}
-        handleUpdateFunction={(contrastAmount) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineContrast", contrastAmount)}
-      />
-    </div>
-    <div>
-      <p class="text-base text-center mb-2">Outline Shadow</p>
-      <NumberInput min={0} max={20} bind:value={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineDropShadowAmount}
-        handleUpdateFunction={(dropAmount) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineDropShadowAmount", dropAmount)}
-      />
-    </div>
-
     {#if $ColorEffectStore.icons[singleIconName].editableColors.innerColor}
+      <!-- <div class="flex flex-col mx-auto">
+        <p class="text-base text-center mb-2">Outline Color</p>
+        <ColorPicker colorString={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineColor}
+          updateFunction={(hexColor) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineColor", hexColor)}
+        />
+      </div>
+      <div>
+        <p class="text-base text-center mb-2">Outline Contrast</p>
+        <NumberInput min={0} max={300} bind:value={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineContrast}
+          handleUpdateFunction={(contrastAmount) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineContrast", contrastAmount)}
+        />
+      </div>
+      <div>
+        <p class="text-base text-center mb-2">Outline Shadow</p>
+        <NumberInput min={0} max={20} bind:value={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].outlineDropShadowAmount}
+          handleUpdateFunction={(dropAmount) => ColorEffectStore.updateColorSetting(singleIconName, stageIndex, "outlineDropShadowAmount", dropAmount)}
+        />
+      </div> -->
       <div class="flex flex-col mx-auto">
         <p class="text-base text-center mb-2">Inner Color</p>
           <ColorPicker colorString={$ColorEffectStore.icons[singleIconName].colorEffects[stageIndex].innerColor}

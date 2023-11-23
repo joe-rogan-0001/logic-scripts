@@ -8,10 +8,11 @@
   export let iconColor: string = "red";
   export let iconContrast: number = 100;
   export let iconDropShadowAmount: number = 0;
-  export let iconScaling: number = 0.45;
+  export let iconScaling: number = 0.35;
   export let iconTranslateX: number = 0;
   export let iconTranslateY: number = 0;
   export let name: string = "";
+  export let innerColor: string = "#212121";
   export let outlineColor: string = "red";
   export let outlineContrast: number = 100;
   export let outlineDropShadowAmount: number = 0;
@@ -26,8 +27,9 @@
 
   let radius: number = 25;
   let stroke: number = 25;
+  let circleRadius: number = 22;
   let minimumAxis: number = height;
-  let normalizedRadius: number = radius - (stroke/2);
+  let normalizedRadius: number = radius - (circleRadius/2);
   let circumference = normalizedRadius * 2 * Math.PI;
   let strokeDashoffset: number = 0;
   
@@ -42,7 +44,7 @@
 
   $: {
     minimumAxis = height > width ? height : width;
-    radius = minimumAxis/2;
+    radius = minimumAxis / 2;
     stroke = radius;
     normalizedRadius = radius - (stroke/2);
     circumference = normalizedRadius * 2 * Math.PI;
@@ -63,7 +65,7 @@
     <clipPath id={name+"-cut-out-circle"}>
       <circle
         stroke-width={stroke}
-        r={radius}
+        r={circleRadius}
         cx={radius}
         cy={radius}
       />
@@ -75,7 +77,7 @@
     { "translate("+translateX+" "+translateY+")" }"
   >
   <circle
-    stroke={outlineColor}
+    stroke={innerColor}
     fill="transparent"
     stroke-width={stroke}
     r={normalizedRadius}

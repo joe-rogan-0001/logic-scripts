@@ -17,19 +17,19 @@
 
 <div class="text-sm flex flex-col text-[#e8e8e8]">
   <div class="mx-4 mb-5 mt-3">
-    <div class="float-right w-[25%]">
+    <!-- <div class="float-right w-[25%]">
       <PSLogo />
     </div>
     <div class="-mx-4 mb-4 text-2xl text-white">
       <p>Reset HUD </p>
-    </div>
+    </div> -->
   
-    <Button name="Reset Hud" buttonClass="whitespace-nowrap hover:bg-red-600" disable={$MenuStore.isRestarting} disableText={"Resetting Hud..."}
+    <Button name="Reset Hud" buttonClass="whitespace-nowrap hover:bg-[#0275d8]" disable={$MenuStore.isRestarting} disableText={"Resetting Hud..."}
       on:click={() => {fetchNui("restartHud"); $MenuStore.isRestarting = true;}}
     />
     <p class="text-base">If your hud is acting up, give it a good ol' reset! Or you can do /resethud</p>
 
-    <Button name="Reset Settings" buttonClass="hover:bg-red-600"
+    <Button name="Reset Settings" buttonClass="hover:bg-[#0275d8]"
       on:click={() => {
         MenuStore.resetHudMenuSetting();
         // Send updated menu settings to client lua
@@ -158,13 +158,13 @@
     <Checkbox bind:checked={$MenuStore.isToggleMapBordersChecked}
       primaryText={"Minimap Borders Enabled"} handleUpdateFunction={(checked) => fetchNui("ToggleMapBorders", {checked})}
     />
-    <Checkbox bind:checked={$PlayerHudStore.dynamicIcons.engine}
+    <!-- <Checkbox bind:checked={$PlayerHudStore.dynamicIcons.engine}
       primaryText={"Show Engine Always"}
       handleUpdateFunction={(checked) => {
         PlayerHudStore.updateShowingDynamicIcon("engine", checked);
         fetchNui("dynamicChange");
       }}
-    />
+    /> -->
     <Checkbox bind:checked={$PlayerHudStore.dynamicIcons.nitro}
       primaryText={"Show Nitro Always"}
       handleUpdateFunction={(checked) => {
@@ -203,7 +203,7 @@
     <Checkbox bind:checked={$MenuStore.isCineamticModeChecked}
       primaryText={"Show Cinematic Bars Enabled"} handleUpdateFunction={(checked) => fetchNui("cinematicMode", {checked})}
     />
-    <p class="self-center ml-auto opacity-05 select-none">{ String.fromCharCode(...absoluteMapDimensions)}</p>
+    <!-- <p class="self-center ml-auto opacity-05 select-none">{ String.fromCharCode(...absoluteMapDimensions)}</p> -->
   </div>
 </div>
 

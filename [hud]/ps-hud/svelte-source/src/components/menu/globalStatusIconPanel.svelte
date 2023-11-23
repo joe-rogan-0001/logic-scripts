@@ -17,7 +17,7 @@
   <div class="flex justify-center mb-8">
     <div class="w-50">
       <p class="text-lg text-center mb-2">Icon Shape</p>
-      <Select valuesArray={shapes} value={$PlayerHudUIStore.globalIconSettings.shape}
+      <Select valuesArray={["circle-ring", "circle-square-fill"]} value={$PlayerHudUIStore.globalIconSettings.shape}
         handleSelectFunction={(shapeName) => {
           PlayerHudUIStore.updateAllShapes(shapeName);
           ColorEffectStore.updateAllIconShapeEditableColor(shapeName);
@@ -162,27 +162,25 @@
         handleUpdateFunction={(dropAmount) => ColorEffectStore.updateAllDefaultEffectColorSetting("iconDropShadowAmount", dropAmount)}
       />
     </div>
-
-    <div class="flex flex-col mx-auto">
-      <p class="text-base text-center mb-2">Outline Color</p>
-      <ColorPicker colorString={$ColorEffectStore.globalColorSettings.outlineColor}
-        updateFunction={(hexColor) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineColor", hexColor)}
-      />
-    </div>
-    <div>
-      <p class="text-base text-center mb-2">Outline Contrast</p>
-      <NumberInput min={0} max={300} bind:value={$ColorEffectStore.globalColorSettings.outlineContrast}
-        handleUpdateFunction={(contrastAmount) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineContrast", contrastAmount)}
-      />
-    </div>
-    <div>
-      <p class="text-base text-center mb-2">Outline Shadow</p>
-      <NumberInput min={0} max={20} bind:value={$ColorEffectStore.globalColorSettings.outlineDropShadowAmount}
-        handleUpdateFunction={(dropAmount) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineDropShadowAmount", dropAmount)}
-      />
-    </div>
-
     {#if $ColorEffectStore.globalColorSettings.editableColors.innerColor}
+      <!-- <div class="flex flex-col mx-auto">
+        <p class="text-base text-center mb-2">Outline Color</p>
+        <ColorPicker colorString={$ColorEffectStore.globalColorSettings.outlineColor}
+          updateFunction={(hexColor) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineColor", hexColor)}
+        />
+      </div>
+      <div>
+        <p class="text-base text-center mb-2">Outline Contrast</p>
+        <NumberInput min={0} max={300} bind:value={$ColorEffectStore.globalColorSettings.outlineContrast}
+          handleUpdateFunction={(contrastAmount) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineContrast", contrastAmount)}
+        />
+      </div>
+      <div>
+        <p class="text-base text-center mb-2">Outline Shadow</p>
+        <NumberInput min={0} max={20} bind:value={$ColorEffectStore.globalColorSettings.outlineDropShadowAmount}
+          handleUpdateFunction={(dropAmount) => ColorEffectStore.updateAllDefaultEffectColorSetting("outlineDropShadowAmount", dropAmount)}
+        />
+      </div> -->
       <div class="flex flex-col mx-auto">
         <p class="text-base text-center mb-2">Inner Color</p>
           <ColorPicker colorString={$ColorEffectStore.globalColorSettings.innerColor}

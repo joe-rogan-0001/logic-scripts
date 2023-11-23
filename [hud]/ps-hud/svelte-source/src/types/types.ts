@@ -1,10 +1,10 @@
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 
-export const iconNames = ["voice", "health", "armor", "hunger", "thirst", "stress",
-  "oxygen", "armed", "parachute", "engine", "harness", "cruise", "nitro", "dev"] as const;
+export const iconNames = ["voice", "health", "armor", "hunger", "thirst", "stress", "fuel",
+  "oxygen", "armed", "parachute", "harness", "cruise", "nitro", "dev"] as const;
 export type iconNamesKind = typeof iconNames[number];
 
-export const dynamicOptionIconNames = ["armor", "engine", "health", "hunger", "nitro", "oxygen", "stress", "thirst"] as const;
+export const dynamicOptionIconNames = ["armor", "health", "hunger", "fuel", "nitro", "oxygen", "stress", "thirst"] as const;
 export type dynamicIconNamesKind = typeof dynamicOptionIconNames[number];
 
 export type playerHudIcons = {
@@ -23,12 +23,13 @@ export const layoutPresets = ["esx-hud-hard-to-let-go"]
 export type layoutPresetKind = typeof layoutPresets[number];
 
 export const shapes = [
-  "badge", "circle-ring", "circle-ring-whole", "circle-circle-fill", "circle-square-fill", "circle-whole", //"cylinder",
+  "circle-ring", "circle-square-fill", "badge",  "circle-ring-whole", "circle-circle-fill", "circle-whole", //"cylinder",
   "diamond-ring", "diamond-whole", "hexagon-ring", "hexagon-whole", "horizontal-bar", //"icon",
   "icon-percentage", "pill-ring", "pill-whole",
   "square-circular-fill", "square-ring", "square-whole", "star-ring", "triangle-ring", 
   // "vertical-bar",
 ] as const;
+
 export type shapekind = typeof shapes[number];
 
 export interface baseIconInfo {
@@ -92,7 +93,7 @@ export class baseIcon implements baseIconProps {
       case "circle-circle-fill":
       case "circle-square-fill":
       case "circle-whole":
-        this.iconScaling = 0.55;
+        this.iconScaling = 0.35;
         break;
       case "diamond-whole":
         this.height = 60;
@@ -243,7 +244,7 @@ export type optionalHudIconMetaShapeType = optionalHudIconType & Partial<colorNa
 
 export type optionalPlayerHudIconsType = Partial<{ [Property in keyof playerHudIcons]: optionalHudIconType }>;
 
-const DEFAULTICONSHAPE: shapekind = "circle-ring";
+const DEFAULTICONSHAPE: shapekind = "circle-square-fill";
 
 export function defaultHudIcon(name: string = "", showing: boolean = false, icon: object = null): any {
   return createShapeIcon(DEFAULTICONSHAPE, { isShowing: showing, icon: icon, name: name });

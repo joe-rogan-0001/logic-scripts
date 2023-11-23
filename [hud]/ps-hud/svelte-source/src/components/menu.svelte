@@ -12,18 +12,26 @@
   const screenWidth: number = screen.width;
   const screenHeight: number = screen.height;
 
-  let tabArray: Array<{name: string, icon: any, content: any, adminOnly: boolean}> = [
-    { name: "Hud Settings", icon: faSliders,     content: HudPanel, adminOnly: false },
-    { name: "Status Icons", icon: faCircleNotch, content: StatusIconsPanel, adminOnly: true },
+  let tabArray: Array<{name: string, icon: any, content: any, adminOnly: boolean, isActive: boolean}> = [
+    { name: "Hud", icon: faSliders, content: HudPanel, adminOnly: false, isActive: false },
+    { name: "Status", icon: faCircleNotch, content: StatusIconsPanel, adminOnly: true, isActive: false },
   ];
   let activeTab: {name: string, icon: any, content: any} = tabArray[0];
 
-  function handleTabClick(index: number) {
+  // function handleTabClick(index: number) {
+  //   activeTab = tabArray[index];
+  // }
+
+  function handleTabClick(index) {
+    tabArray = tabArray.map((tab, i) => ({
+      ...tab,
+      isActive: i === index
+    }));
     activeTab = tabArray[index];
   }
 </script>
 
-<section style="display: {$MenuStore.show ? 'flex' : 'none'};" class="w-[60vw] h-[60vh] flex-col bg-[#171717] rounded-t-2xl shadow-lg text-white"
+<section style="display: {$MenuStore.show ? 'flex' : 'none'};" class="w-[60vw] h-[60vh] flex-col bg-[#212121] rounded-t-2xl shadow-lg text-white"
   use:draggable={{ handle: menuHandle, bounds: 'body', gpuAcceleration: false, defaultPosition: {x: screenWidth/5, y:screenHeight/5} }}>
 
   <div class="drag-bar bg-dark-900 rounded-t-2xl" bind:this={menuHandle}>
@@ -35,11 +43,11 @@
     </svg>
   </div>
   <div class="flex font-semibold" style="height: calc(100% - 24px);">
-    <div class="flex flex-col w-1/6 bg-[#1e1e1e]">
+    <div class="flex flex-col w-1/6 bg-[#212121]">
       <!-- Tab item List -->
       {#each tabArray as tab, i}
         {#if !tab.adminOnly || !$MenuStore.adminOnly || ($MenuStore.adminOnly && $MenuStore.isAdmin) }
-          <div class="bg-[#171717] px-4 py-4 flex flex-row gap-3 cursor-pointer select-none" on:click={() => handleTabClick(i)}>
+          <div class="bg-[#212121] px-4 py-4 flex flex-row gap-3 cursor-pointer select-none" class:activeTab={tab.isActive} on:click={() => handleTabClick(i)}>
             <Fa icon={tab.icon} translateY={0.27}/>
             <span>{tab.name}</span>
           </div>
@@ -49,7 +57,7 @@
     <!-- Tab Window List -->
     {#each tabArray as tab}
       {#if !tab.adminOnly || !$MenuStore.adminOnly || ($MenuStore.adminOnly && $MenuStore.isAdmin) }
-        <div style="display: {activeTab.name == tab.name ? 'flex' : 'none'};" class="flex-col w-5/6 px-5 overflow-y-scroll bg-[#171717]">
+        <div style="display: {activeTab.name == tab.name ? 'flex' : 'none'};" class="flex-col w-5/6 px-5 overflow-y-scroll bg-[#212121]">
           <svelte:component this={tab.content}/>
         </div>
       {/if}
@@ -72,4 +80,7 @@
 	.drag-bar:hover svg {
 		opacity: 1;
 	}
+  .activeTab {
+    background-color: #171717; /* Change this to the color you want for the active tab */
+  }
 </style>

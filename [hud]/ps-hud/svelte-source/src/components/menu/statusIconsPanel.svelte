@@ -31,14 +31,14 @@
       <Switch center bind:checked={$PlayerHudStore.designMode}/>
     </div>
     <div class="flex flex-1 min-w-min justify-end">
-      <Button name="Reset Status Icon Settings" buttonClass="mr-5 hover:bg-red-600"
+      <Button name="Reset Status Icon Settings" buttonClass="mr-5 hover:bg-[#0275d8]"
         on:click={() => {
           PlayerHudStore.resetPlayerStatusIcons();
           ColorEffectStore.resetColorEffects();
           LayoutStore.resetLayout();
         }}/>
       {#if $MenuStore.adminOnly && $MenuStore.isAdmin}
-        <Button name="Save Changes To Server" buttonClass={"my-auto"} disable={$PlayerHudStore.saveUIState == "ready" ? false : true}
+        <Button name="Save Changes To Server" buttonClass={"my-auto hover:bg-[#0275d8]"} disable={$PlayerHudStore.saveUIState == "ready" ? false : true}
           on:click={() => { saveUIDataToServer(); $PlayerHudStore.saveUIState = "updating" }}
         />
       {/if}

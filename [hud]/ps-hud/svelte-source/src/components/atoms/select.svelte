@@ -53,7 +53,7 @@
     --listBackground: #292929;
     --itemIsActiveBG: var(--ps-hud-primary);
     --itemHoverBG: var(--ps-hud-primary-hover);
-    --border: #171717;
+    --border: #212121;
   }
   :global(.selectContainer > *) {
     cursor: pointer !important;

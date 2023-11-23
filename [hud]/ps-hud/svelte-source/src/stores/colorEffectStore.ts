@@ -45,7 +45,7 @@ const store = () => {
         voice: getLocalStorage("voice", {
           currentEffect: 0,
           colorEffects: [
-            defaultColorEffect("not-talking", "#FFFFFF"),
+            defaultColorEffect("not-talking", "#989898"),
             defaultColorEffect("talking", "#FFFF3E"),
             defaultColorEffect("radio-talking", "#D64763"),
           ],
@@ -88,6 +88,15 @@ const store = () => {
           colorEffects: [defaultColorEffect("normal", "#dc0606")],
           editableColors: defaultEditableColor(),
         }),
+        fuel: getLocalStorage("fuel", {
+          currentEffect: 0,
+          colorEffects: [
+            defaultColorEffect("full-tank", "#3FA554"),
+            defaultColorEffect("mid-tank", "#DD6E14"),
+            defaultColorEffect("no-fuel", "#FF0000"),
+          ],
+          editableColors: defaultEditableColor(),
+        }),
         oxygen: getLocalStorage("oxygen", {
           currentEffect: 0,
           colorEffects: [defaultColorEffect("normal", "#8aa8bd")],
@@ -101,15 +110,6 @@ const store = () => {
         parachute: getLocalStorage("parachute", {
           currentEffect: 0,
           colorEffects: [defaultColorEffect("normal", "#b9ff28")],
-          editableColors: defaultEditableColor(),
-        }),
-        engine: getLocalStorage("engine", {
-          currentEffect: 0,
-          colorEffects: [
-            defaultColorEffect("no-damage", "#3FA554"),
-            defaultColorEffect("minor-damage", "#dd6e14"),
-            defaultColorEffect("major-damage", "#ff0000"),
-          ],
           editableColors: defaultEditableColor(),
         }),
         harness: getLocalStorage("harness", {
