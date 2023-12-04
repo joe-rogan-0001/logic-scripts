@@ -1,5 +1,32 @@
 WSCore = exports['lrp-core']:GetCoreObject()
 
+
+CreateThread(function()
+  local hash = Config.PedProps['hash']
+  local coords = Config.PedProps['location']
+  WSCore.Functions.LoadModel(hash)
+  local buyerPed = CreatePed(0, hash, coords.x, coords.y, coords.z-1.0, coords.w, false, false)
+TaskStartScenarioInPlace(buyerPed, 'WORLD_HUMAN_HANG_OUT_STREET_CLUBHOUSE', true)
+FreezeEntityPosition(buyerPed, true)
+SetEntityInvincible(buyerPed, true)
+SetBlockingOfNonTemporaryEvents(buyerPed, true)
+
+exports.ox_target:addBoxZone({
+  coords = Config.Target.pos,
+  size = Config.Target.size,
+  rotation = Config.Target.heading,
+  debug = Config.Target.debug,
+  options = {
+      {
+          name = 'Cardealer',
+          event = 'lrp-cardealer:enterExperience',
+          icon = Config.Target.icon,
+          label = ("View Catalog"),
+      }
+  }
+})
+end)
+
 RegisterNUICallback("showroomPurchaseCurrentVehicle", function(data, cb)
   WSCore.Functions.TriggerCallback("lrp-cardealer:purchaseVehicle", function(success, model, plate)
 	if success then

@@ -51,7 +51,7 @@ return {
 		label = 'Gang Stash',
 		owner = false,
 		slots = 200,
-		weight = 2000000,
+		weight = 3000000,
 		groups = {['savagemc'] = 0}
 	},
 	{
@@ -69,7 +69,7 @@ return {
 		label = 'Storage',
 		owner = false,
 		slots = 200,
-		weight = 2000000,
+		weight = 5000000,
 		groups = {['wotc'] = 0}
 	},
 	{
@@ -87,7 +87,7 @@ return {
 		label = 'Storage',
 		owner = false,
 		slots = 200,
-		weight = 2000000,
+		weight = 5000000,
 		groups = {['hayes'] = 0}
 	},
 	{
@@ -105,7 +105,7 @@ return {
 		label = 'Gang Stash',
 		owner = false,
 		slots = 200,
-		weight = 2000000,
+		weight = 3000000,
 		groups = {['gambino'] = 0}
 	},
 }

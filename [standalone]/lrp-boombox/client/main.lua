@@ -29,7 +29,7 @@ RegisterNetEvent('qb-boombox:client:placeBoombox', function()
     local heading = GetEntityHeading(PlayerPedId())
     local forward = GetEntityForwardVector(PlayerPedId())
     local x, y, z = table.unpack(coords + forward * 0.5)
-    local object = CreateObject(GetHashKey('prop_boombox_01'), x, y, z, true, false, false)
+    local object = CreateObject(GetHashKey('xm3_prop_xm3_boombox_01a'), x, y, z, true, false, false)
     PlaceObjectOnGroundProperly(object)
     SetEntityHeading(object, heading)
     FreezeEntityPosition(object, true)
@@ -176,7 +176,7 @@ CreateThread(function()
         if LocalPlayer.state['isLoggedIn'] then
             local ped = PlayerPedId()
             local coords    = GetEntityCoords(ped)
-            local object = GetClosestObjectOfType(coords, 3.0, GetHashKey('prop_boombox_01'), false, false, false)
+            local object = GetClosestObjectOfType(coords, 3.0, GetHashKey('xm3_prop_xm3_boombox_01a'), false, false, false)
             if DoesEntityExist(object) or textuishown then
                 local objCoords = GetEntityCoords(object)
                 if #(coords - objCoords) < 4 then

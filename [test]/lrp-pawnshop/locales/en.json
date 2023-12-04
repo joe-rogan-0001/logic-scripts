@@ -1,0 +1,12 @@
+{
+    "target_label": "Open Pawnshop",
+    "menu1_title": "Pawn Shop",
+    "menu1_option1": "Buy items",
+    "menu1_option1_desc": "Buy some items",
+    "menu1_option2": "Sell items",
+    "menu1_option2_desc": "Sell your items",
+    "buymenu_title": "Buy items",
+    "sellmenu_title": "Sell items",    
+    "notify_not_enough_money": "You can't afford this",
+    "notify_not_enough_items": "You don't have enough items to sell"
+}
