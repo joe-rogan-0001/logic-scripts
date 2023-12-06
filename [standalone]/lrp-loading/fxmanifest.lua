@@ -1,19 +1,21 @@
 fx_version 'cerulean'
-games { 'gta5' }
-
-description 'lj-loading'
-version '1.3'
-author 'github.com/loljoshie'
-
--- Tell server we will close the loading screen resource ourselves
+author 'Haiku'
+description 'Logic Roleplay loading screen'
+version '1.0.0'
+loadscreen_cursor 'yes'
+game 'gta5'
+loadscreen 'html/index.html'
+lua54 'yes'
 loadscreen_manual_shutdown "yes"
 
 files {
-	'ui.html',
-	'html/*',
-	'assets/*',
+    'html/index.html',
+    'html/logo.png',
+    'html/index.css',
+    'html/index.js',
+    'html/img/bkg.png',
+    'html/song.mp3'
 }
 
-loadscreen {
-	'ui.html'
-}
+client_script 'client.lua'
+server_script 'server.lua'
