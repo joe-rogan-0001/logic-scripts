@@ -29,7 +29,7 @@ window.addEventListener('message', function (e) {
 
 type="text/javascript">
 window.addEventListener('DOMContentLoaded', () => {
-    console.log(`You are connecting to ${window.nuiHandoverData.serverAddress}`);
+    console.log(`You are connecting to Logic Roleplay`);
 
     document.querySelector('#namePlaceholder > span').innerText = window.nuiHandoverData.name;
 });
