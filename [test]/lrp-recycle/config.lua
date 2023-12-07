@@ -5,9 +5,9 @@ Config = {
 	img = "ox_inventory/web/images/", -- Set this to your inventory
 
 	Inv = "ox", -- set to "ox" if using OX Inventory
-	Menu = "qb",
+	Menu = "ox",
 	ProgressBar = "qb",
-	Notify = "qb",
+	Notify = "ox",
 
 	Overrides = {
 		ScrapyardSeraching = true,
@@ -148,8 +148,8 @@ Config = {
 	},
 	RecycleAmounts = {
 		["Recycle"] = {
-			Min = 10,
-			Max = 25,
+			Min = 2,
+			Max = 8,
 		},
 		["Trade"] = {
 			{ amount = 1, itemGive = 1, Min = 1, Max = 1, },

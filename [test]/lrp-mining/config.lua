@@ -10,7 +10,7 @@ Config = {
 
 	Inv = "ox",				--"qb" or "ox"
 	Menu = "ox",			--"qb" or "ox"
-	ProgressBar = "ox",		--"qb" or "ox"
+	ProgressBar = "qb",		--"qb" or "ox"
 	Notify = "ox",			--"qb" or "ox"
 
 	DrillSound = true,		-- disable drill sounds
