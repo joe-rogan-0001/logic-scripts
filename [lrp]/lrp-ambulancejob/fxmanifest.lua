@@ -4,7 +4,12 @@ game 'gta5'
 description 'QB-AmbulanceJob'
 version '1.0.0'
 
-shared_script 'config.lua'
+shared_scripts {
+	'@lrp-core/shared/locale.lua',
+	'locales/en.lua',
+	'locales/*.lua',
+	'config.lua'
+}
 
 client_scripts {
 	'client/main.lua',
@@ -12,12 +17,14 @@ client_scripts {
 	'client/laststand.lua',
 	'client/job.lua',
 	'client/dead.lua',
-	'client/cl_ai.lua'
+	'@PolyZone/client.lua',
+	'@PolyZone/BoxZone.lua',
+	'@PolyZone/ComboZone.lua'
 }
 
-server_script {
-	'server/main.lua',
-	'@oxmysql/lib/MySQL.lua'
+server_scripts {
+	'@oxmysql/lib/MySQL.lua',
+	'server/main.lua'
 }
 
 lua54 'yes'

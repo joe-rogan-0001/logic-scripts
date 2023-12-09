@@ -36,59 +36,59 @@ end
 
 RegisterNetEvent('hospital:client:UseBandage', function()
     local ped = PlayerPedId()
-    QBCore.Functions.Progressbar("use_bandage", "Using bandage..", 4000, false, true, {
+    QBCore.Functions.Progressbar('use_bandage', "Using bandage..", 4000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
-		disableMouse = false,
-		disableCombat = true,
+        disableMouse = false,
+        disableCombat = true,
     }, {
-		animDict = "anim@amb@business@weed@weed_inspecting_high_dry@",
-		anim = "weed_inspecting_high_base_inspector",
-		flags = 49,
+        animDict = 'anim@amb@business@weed@weed_inspecting_high_dry@',
+        anim = 'weed_inspecting_high_base_inspector',
+        flags = 49,
     }, {}, {}, function() -- Done
-        StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
-        TriggerServerEvent("QBCore:Server:RemoveItem", "bandage", 1)
-
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["bandage"], "remove")
-        SetEntityHealth(ped, GetEntityHealth(ped) + 25)
-        if math.random(1, 100) < 50 then
-            TriggerEvent("hospital:client:HealInjuries")
-            RemoveBleed(100)
+        StopAnimTask(ped, 'anim@amb@business@weed@weed_inspecting_high_dry@', 'weed_inspecting_high_base_inspector', 1.0)
+        TriggerServerEvent('hospital:server:removeBandage')
+        TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items['bandage'], 'remove')
+        SetEntityHealth(ped, GetEntityHealth(ped) + 10)
+        if math.random(1, 100) < 90 then
+            RemoveBleed()
+        end
+        if math.random(1, 100) < 7 then
+            ResetPartial()
         end
     end, function() -- Cancel
-        StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
-        QBCore.Functions.Notify("Failed", "error")
+        StopAnimTask(ped, 'anim@amb@business@weed@weed_inspecting_high_dry@', 'weed_inspecting_high_base_inspector', 1.0)
+        QBCore.Functions.Notify(Lang:t('error.canceled'), 'error')
     end)
 end)
 
 RegisterNetEvent('hospital:client:UseIfaks', function()
     local ped = PlayerPedId()
-    QBCore.Functions.Progressbar("use_bandage", "Taking IFAK", 3000, false, true, {
+    QBCore.Functions.Progressbar('use_bandage', "Using Ifak...", 3000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
-		disableMouse = false,
-		disableCombat = true,
+        disableMouse = false,
+        disableCombat = true,
     }, {
-		animDict = "anim@amb@business@weed@weed_inspecting_high_dry@",
-		anim = "weed_inspecting_high_base_inspector",
-		flags = 49,
+        animDict = 'anim@amb@business@weed@weed_inspecting_high_dry@',
+        anim = 'weed_inspecting_high_base_inspector',
+        flags = 49,
     }, {}, {}, function() -- Done
-        StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
-        TriggerServerEvent("QBCore:Server:RemoveItem", "IFAK", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["ifak"], "remove")
+        StopAnimTask(ped, 'mp_suicide', 'pill', 1.0)
+        TriggerServerEvent('hospital:server:removeIfaks')
+        TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items['ifak'], 'remove')
         TriggerServerEvent('hud:server:RelieveStress', math.random(12, 24))
-        SetEntityHealth(ped, GetEntityHealth(ped) + 25)
-        print('hi')
-        onPainKillers = true
+        SetEntityHealth(ped, GetEntityHealth(ped) + 10)
         if painkillerAmount < 3 then
             painkillerAmount = painkillerAmount + 1
         end
-        if math.random(1, 100) < 50 then
-            RemoveBleed(1)
+        PainKillerLoop()
+        if math.random(1, 100) < 90 then
+            RemoveBleed()
         end
     end, function() -- Cancel
-        StopAnimTask(ped, "anim@amb@business@weed@weed_inspecting_high_dry@", "weed_inspecting_high_base_inspector", 1.0)
-        QBCore.Functions.Notify("Failed", "error")
+        StopAnimTask(ped, 'anim@amb@business@weed@weed_inspecting_high_dry@', 'weed_inspecting_high_base_inspector', 1.0)
+        QBCore.Functions.Notify(Lang:t('error.canceled'), 'error')
     end)
 end)
 
@@ -120,21 +120,25 @@ end)
 
 -- Threads
 
-CreateThread(function()
-    while true do
-        Wait(1)
-        if onPainKillers then
+function PainKillerLoop(pkAmount)
+    if not onPainKillers then
+        if pkAmount then
+            painkillerAmount = pkAmount
+        end
+        onPainKillers = true
+        while onPainKillers do
+            Wait(1)
             painkillerAmount = painkillerAmount - 1
             Wait(Config.PainkillerInterval * 1000)
             if painkillerAmount <= 0 then
                 painkillerAmount = 0
                 onPainKillers = false
             end
-        else
-            Wait(3000)
         end
     end
-end)
+end
+
+exports('PainKillerLoop', PainKillerLoop)
 
 CreateThread(function()
 	while true do

@@ -62,10 +62,6 @@ return {
 		label = 'Bandage',
 		weight = 115,
 		client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
---			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = {combat = true },
-			usetime = 7500,
 		}
 	},
 
@@ -77,11 +73,6 @@ return {
 		label = 'Burger',
 		weight = 220,
 		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'burger',
-			usetime = 7500,
-			notification = 'You ate a delicious burger'
 		},
 	},
 
@@ -89,12 +80,7 @@ return {
 		label = 'eCola',
 		weight = 350,
 		client = {
-			status = { thirst = 200000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 7500,
-			notification = 'You quenched your thirst with cola'
-		}
+		},
 	},
 
 	['parachute']                  = {
@@ -128,16 +114,7 @@ return {
 		weight = 10,
 		consume = 0,
 		client = {
-			status = { thirst = -100000, stress = -25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_cs_panties_02`, pos = vec3(0.03, 0.0, 0.02), rot = vec3(0.0, -13.5, -1.5) },
-			usetime = 7500,
 		}
-	},
-
-	['lockpick']                   = {
-		label = 'Lockpick',
-		weight = 160,
 	},
 
 	['phone']                      = {
@@ -168,11 +145,6 @@ return {
 		label = 'Mustard',
 		weight = 500,
 		client = {
-			status = { hunger = 25000, thirst = 25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
-			usetime = 7500,
-			notification = 'You.. drank mustard'
 		}
 	},
 
@@ -180,12 +152,6 @@ return {
 		label = 'Water',
 		weight = 500,
 		client = {
-			status = { thirst = 200000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
-			usetime = 7500,
-			cancel = true,
-			notification = 'You drank some refreshing water'
 		}
 	},
 
@@ -1252,10 +1218,6 @@ return {
 		close = true,
 		description = "",
 		client = {
-			status = {
-				hunger = 48,
-			},
-			image = "friednoodles.png",
 		}
 	},
 
@@ -1541,10 +1503,6 @@ return {
 		close = true,
 		description = "Government (PD/EMS/DOC) Issued Equipment",
 		client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
---			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = {combat = true },
-			usetime = 7500,
 		}
 	},
 
@@ -1555,7 +1513,6 @@ return {
 		close = true,
 		description = "Pump 4 Caffeine",
 		client = {
-			image = "coffee.png",
 		}
 	},
 
@@ -1741,10 +1698,6 @@ return {
 		close = true,
 		description = "Whole Chicken",
 		client = {
-			status = {
-				hunger = 48,
-			},
-			image = "saltandpepperchicken.png",
 		}
 	},
 
@@ -2074,12 +2027,6 @@ return {
 		close = true,
 		description = "Some delicious candy :O",
 		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'candy',
-			usetime = 7500,
-			notification = 'You ate a delicious treat',
-			image = "snikkel_candy.png",
 		},
 	},
 
@@ -2575,10 +2522,6 @@ return {
 		close = true,
 		description = "",
 		client = {
-			status = {
-				hunger = 50,
-			},
-			image = "ramennoodles.png",
 		}
 	},
 
@@ -2596,17 +2539,10 @@ return {
 	["twerks_candy"]               = {
 		label = "Twerks",
 		weight = 500,
-		status = { hunger = 200000 },
 		stack = true,
 		close = true,
 		description = "Some delicious candy :O",
 		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'candy',
-			usetime = 7500,
-			notification = 'You ate a delicious treat',
-			image = "twerks_candy.png",
 		},
 	},
 
@@ -2683,10 +2619,6 @@ return {
 		close = true,
 		description = "A Spring Rolls",
 		client = {
-			status = {
-				hunger = 41,
-			},
-			image = "springrolls.png",
 		}
 	},
 
@@ -2895,10 +2827,6 @@ return {
 		close = true,
 		description = "",
 		client = {
-			status = {
-				thirst = 41,
-			},
-			image = "mochameow.png",
 		}
 	},
 
@@ -2953,10 +2881,6 @@ return {
 		close = true,
 		description = "",
 		client = {
-			status = {
-				thirst = 49,
-			},
-			image = "soju.png",
 		}
 	},
 
@@ -3495,12 +3419,6 @@ return {
 		close = true,
 		description = "Nice bread for your stomach",
 		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'sandwich',
-			usetime = 7500,
-			notification = 'You ate a delicious sandwich',
-			image = "sandwich.png",
 		},
 	},
 
@@ -3709,10 +3627,6 @@ return {
 		close = true,
 		description = "A Dragon Rolls",
 		client = {
-			status = {
-				hunger = 48,
-			},
-			image = "dragonrolls.png",
 		}
 	},
 
@@ -3899,12 +3813,6 @@ return {
 		close = true,
 		description = "Yummy Sandwich",
 		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'sandwich',
-			usetime = 7500,
-			notification = 'You ate a delicious grilled cheese',
-			image = "tosti.png",
 		},
 	},
 
@@ -6043,11 +5951,6 @@ return {
 			close = true,
 			description = ''
 		},
-
-
-
-	
-
 	["prisonslushie"] = {
 		label = "Slushie",
 		weight = 1000,
@@ -6253,6 +6156,17 @@ return {
 			image = "jerrycan.png",
 		}
 	},
+
+	["Burger"] = {
+		label = "Grilled Cheese Sandwich",
+		weight = 600,
+		stack = true,
+		close = true,
+		description = "Nice to eat",
+		client = {
+			image = "tosti.png",
+		}
+	},
 	["hr_toaster"] = {
         label = "Toaster",
         weight = 900,
@@ -6367,5 +6281,12 @@ return {
 		stack = true,
 		close = true,
 		description = ''
+	},
+	['matticket'] = {
+		label = 'Material Voucher',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Turn this in at sanitation to be rewarded with some scrapped material'
 	},
 }

@@ -154,8 +154,8 @@ Config.TargetModels = {
 	},
   ["CarDealer"] = {
     models = {
-        `np_showroom_stand`
-    },
+      `np_showroom_stand`
+  },
     options = {
         {
             type = "client",

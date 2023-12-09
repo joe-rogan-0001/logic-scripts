@@ -206,6 +206,30 @@ RegisterNetEvent('hospital:server:UseFirstAid', function(targetId)
 	end
 end)
 
+RegisterNetEvent('hospital:server:removeBandage', function()
+	local Player = QBCore.Functions.GetPlayer(source)
+
+	if not Player then return end
+
+	Player.Functions.RemoveItem('bandage', 1)
+end)
+
+RegisterNetEvent('hospital:server:removeIfaks', function()
+	local Player = QBCore.Functions.GetPlayer(source)
+
+	if not Player then return end
+
+	Player.Functions.RemoveItem('ifak', 1)
+end)
+
+RegisterNetEvent('hospital:server:removePainkillers', function()
+	local Player = QBCore.Functions.GetPlayer(source)
+
+	if not Player then return end
+
+	Player.Functions.RemoveItem('painkillers', 1)
+end)
+
 RegisterNetEvent('hospital:server:CanHelp', function(helperId, canHelp)
 	local src = source
 	if canHelp then

@@ -107,3 +107,59 @@ Config.Locations = { -- carwash
         ["coords"] = vector3(-699.6325, -932.7043, 17.0139),
     }
 }
+
+Config.Consumables = {
+    eat = { -- default food items
+        ["sandwich"] = math.random(35, 54),
+        ["burger"] = math.random(35, 54),
+        ["tosti"] = math.random(40, 50),
+        ["twerks_candy"] = math.random(20, 35),
+        ["snikkel_candy"] = math.random(20, 35),
+        ["burger-bleeder"] = math.random(55, 64),
+        ["burger-moneyshot"] = math.random(55, 64),
+        ["burger-torpedo"] = math.random(55, 64),
+        ["burger-heartstopper"] = math.random(55, 64),
+        ["burger-meatfree"] = math.random(55, 64),
+        ["burger-fries"] = math.random(40, 55),
+    },
+    drink = { -- default drink items
+        ["water_bottle"] = math.random(35, 54),
+        ["water"] = math.random(35, 54),
+        ["cola"] = math.random(35, 54),
+        ["kurkakola"] = math.random(35, 54),
+        ["coffee"] = math.random(40, 50),
+        ["burger-softdrink"] = math.random(55, 60),
+        ["burger-mshake"] = math.random(55, 60),
+    },
+    alcohol = { -- default alcohol items
+        ['whiskey'] = math.random(20, 30),
+        ['beer'] = math.random(30, 40),
+        ['vodka'] = math.random(20, 40),
+    },
+    custom = { -- put any custom items here
+    -- ['newitem'] = {
+    --     progress = {
+    --         label = 'Using Item...',
+    --         time = 5000
+    --     },
+    --     animation = {
+    --         animDict = 'amb@prop_human_bbq@male@base',
+    --         anim = 'base',
+    --         flags = 8,
+    --     },
+    --     prop = {
+    --         model = false,
+    --         bone = false,
+    --         coords = false, -- vector 3 format
+    --         rotation = false, -- vector 3 format
+    --     },
+    --     replenish = {'''
+    --         type = 'Hunger', -- replenish type 'Hunger'/'Thirst' / false
+    --         replenish = math.random(20, 40),
+    --         isAlcohol = false, -- if you want it to add alcohol count
+    --         event = false, -- 'eventname' if you want it to trigger an outside event on use useful for drugs
+    --         server = false -- if the event above is a server event
+    --     }
+    -- }
+    }
+}
