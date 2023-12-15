@@ -5,12 +5,14 @@ Config.MotelInteriors = {
     ['standardmotel_shell'] = {
         label = "Standard", 
         shell = `standardmotel_shell`,
+        zOffset = 25.0, -- How down from ground this shell will spawn
         exit = {x = -0.43, y = -2.51, z = 1.0, h = 271.29},
         stash = {x = 1.30, y = 2.70, z = 1.0},
     },
     ['modernhotel_shell'] = {
         label = "Modern", 
         shell = `modernhotel_shell`,
+        zOffset = 25.0, -- How down from ground this shell will spawn
         exit = {x = 4.98, y = 4.35, z = 1.16, h = 179.79},
         stash = {x = 3.05, y = -3.66, z = 1.16, h = 179.79},
     },

@@ -1,0 +1,323 @@
+{
+    "8": {
+        "steam": "steam:11000015f1ada26",
+        "name": "xxxx",
+        "manual": false,
+        "xbl": "xbl:2535463179813447",
+        "tokens": [
+            "3:821db0644b5de608f4b3d368869c72f5b6627dff54ae602b00dcdf0d56e12b23",
+            "5:64f4485d18d0d0ff8f8768667980221afee1adff5fc2ff84890175219998c229",
+            "2:b04eca4e5047f97764506b0e65662d37a0c7cdb64e9100cab1c007183fcb3096",
+            "4:2dc964492dc62a7ce80f93e8545eb9618f351b4888a77178c6410b84c4e8fd2c",
+            "4:121c39980de61bdeac0f96957a87e3023afb5ed2ce86a1e91ee0c136cd20024f",
+            "4:c65a3245897e7b2b11f37baff8e610d94526620f7163dbf83869a141be24f2ea"
+        ],
+        "license": "license:49d2d710b41b59c79693f72797d000fec019da30",
+        "reason": "Citizen Give Weapons Detected: WEAPON_COMBATPISTOL",
+        "discord": "1035798743053766730",
+        "ip": "176.254.132.47",
+        "live": "live:914799276063529"
+    },
+    "7": {
+        "steam": "steam:11000016039e6be",
+        "ip": "5.198.46.110",
+        "tokens": [
+            "3:dc3436a4be1897bbb992708593caa55b0f64e8f43a944e56af970f1fdf7c1287",
+            "2:1b15a22fa173194d3c1f00919313435b2c3a2f742e3c611f87941c6f0df2edca",
+            "4:3bd0f83142034411097ef3c3ce9fa743d2e60d1a3d28bec7546db5d41276946d",
+            "4:450d06f0d44f3317a1e1fca44f52826dcff724a879b93fb8431f1ca5975777e5",
+            "4:628b978dd4720b77f464aedfb9c6af437866e8ed4f6d6d36a310e5946ff78934"
+        ],
+        "manual": false,
+        "xbl": "Invalid",
+        "discord": "975086004727840918",
+        "name": "pdpwjatb",
+        "reason": "Noclip Detected (2), flags: 3",
+        "fg_ts": {
+            "t2": "e1606536:1af75e9d:187d77e6:a1167da3:465f2c88",
+            "t1": "7f80a34c103d54044d614643412b18fba6ab5ffa130b9e545148c509105d62d5",
+            "t4": "15608438211831974805",
+            "t3": "ZRr8vEtZ8a1m5f3Vehz0mqVe3Ix1ci0m"
+        },
+        "license": "license:b977543767fb3374a7c0daffa5a095fcec836b70",
+        "live": "Invalid"
+    },
+    "6": {
+        "steam": "steam:11000010b7365e1",
+        "ip": "86.186.137.149",
+        "tokens": [
+            "5:df17fdeb7729e945d30bcff032eeb0f29987ee82a9883a80e6445cde9d77e22c",
+            "3:a35670cd0a1973819a6e628959fb4a4b4d73277561e9a158ef76225b52e7d53b",
+            "2:db60e245705fc816c500b41cd7f110f933d16b4e5c69bdfeadb26b33af5e608f",
+            "4:214b09d995e8cb5f2631fc8eca4642b2fd5a7f0b40e9bc1a1c9cdbcd87f4548e",
+            "4:2d807531a2f452e8f69a5df322705da24dc530e8283112c6a3c25f7816f1e3e1",
+            "4:c74db3ad6e04d62372fdb1c48166b0ac43f6dc883fa5b81348db1a1b25707ec2"
+        ],
+        "manual": false,
+        "xbl": "Invalid",
+        "discord": "1102689548326162564",
+        "name": "DANK JR",
+        "reason": "Citizen Aimbot Detected",
+        "fg_ts": {
+            "t2": "844e5edd:e95fdc2d:22a57b0c:22a57b0c:39726e8f",
+            "t1": "f62ee9eff48d8178319051af9b77e791a16943202dd8d280e95705e3c1898b25",
+            "t4": "13427574131016902188",
+            "t3": "4W4x74jzGoRhGoMlPiGGFZwk30Pywwb1"
+        },
+        "license": "license:166b44c5f664b7e201ff376555b5b07ae8382ff6",
+        "live": "Invalid"
+    },
+    "5": {
+        "steam": "steam:11000015a60fd9f",
+        "ip": "80.1.7.124",
+        "tokens": [
+            "2:b2282aa7e459b5a47ec1ce67c95568ab9331cdf79b809bea0956dae2e809e95e",
+            "3:7be283ac6a519efbb6845bedc133f7c6687180273377fcbced1706220757eb81",
+            "2:bf12b21243b987440bf35decbd1218bfca3ba510ac7c69fad6051a1b9de701d1",
+            "4:1dec188feca26a7c66e1dbebf9a56e1b2a03d5f86f367a4ac568ed71b852f95b",
+            "4:89089174747c657654dee017fa6bf7b4b43600b6bdb55cd076838bf36852eaee",
+            "4:2e35189bfa9480ec6cb1a0b4e125c8ccddc89a1e9f2c99253afa40f4af8d294e"
+        ],
+        "manual": false,
+        "xbl": "Invalid",
+        "discord": "Invalid",
+        "name": "Gaming_Crocs_69",
+        "reason": "Detected String On Screen: Explode",
+        "fg_ts": {
+            "t2": "a5effa75:f1ba5004:92006fa4:8987484b:2082e36f:eb28c001:e381b670:4314f32e:f045ba9d",
+            "t1": "cbc3cbb2888e41cd6f38f6057a1dc6babb1b05b75daeea03cb2eb4db96d699a9",
+            "t4": "14763390411674185533",
+            "t3": "NOKB3p6qOhuX6kbJDfdWZvnh6UEKX0kN"
+        },
+        "license": "license:5354f02b29f1171d833e2ab412ceb360d976fe6c",
+        "live": "Invalid"
+    },
+    "4": {
+        "steam": "steam:11000015e9c84ab",
+        "ip": "109.170.146.0",
+        "tokens": [
+            "3:0c7df10e3dabd89bd34bf8946b760f6329058e311f404718b290f87abd77f3e7",
+            "2:ac9f2f9a8070a3088d6a963bbb2207dbfeb5eebbe32ab47320da73fbd715bbc1",
+            "5:cffdba259d5bfbe48f6a637f4a809a8653027e98c798497047a584f2e882dd5e",
+            "4:a5eddc992b461a902daf9138346d7085db6f0769a2e4c9d840d27dca3b293aea",
+            "4:0c09fc4778feec0825c3d65e39ac9a0edeaa3e19c906e0a00d7d1423ff5b8f1f",
+            "4:ac2b915bd7d78849f2b6920e5b4d80efcbec546ce2407c5c691443a448192486"
+        ],
+        "manual": false,
+        "xbl": "xbl:2535471289399548",
+        "discord": "817317767157121046",
+        "name": "~b~ Mizz",
+        "reason": "Invisible Vehicle Detected",
+        "fg_ts": {
+            "t2": "9e0b00ee:1af75e9d:634eb7a4:2183dcb3:eb899620:d1be5928:2ffc4bab",
+            "t1": "dd75bc49f2210aec9cdc6537cdd999352021e5ca1a65022dba6549e2264f77c7",
+            "t4": "18093885092109004388",
+            "t3": "fGcXtRGRLflFpRx9uGoMQ6GEB2UEyja5"
+        },
+        "license": "license:3daab4836bc9b9f4b9ffcbcef08b10c3d7653042",
+        "live": "live:985155359230272"
+    },
+    "3": {
+        "steam": "steam:1100001401858fd",
+        "ip": "90.196.252.250",
+        "tokens": [
+            "3:bfab21a4c1ca704b35978f743a424bcee916870bb3c5705a3344ea927ed7c504",
+            "2:88644af58ed8ef0a8e5d77671631302e6a05275f2055bde02b1e2289b1f6e42f",
+            "4:93d6ae50d02991d148d3e8051c04273eee63628de8efa90ea0d90f2c56570d8e",
+            "4:0e289c1b648dbf2bb31755b2f83caecb09ae2b64073a2d17da5769d56054a346",
+            "4:920a24c00d68ecb5c8f6c4dd4dd52b0a8d7bf61bdaf68e3cbb5ec7a3ce33d935"
+        ],
+        "manual": false,
+        "xbl": "xbl:2533274940966780",
+        "discord": "315452073724346378",
+        "name": "neb",
+        "reason": "Cheat Detected (AI) (1)",
+        "fg_ts": {
+            "t2": "9dcc26ef:bd9116ba:3ada1ba7:286aa857:1d382ae1:b836d680:eb899620:b1b7a0b3:41fae3e5:6e0edff5:e601c5e2",
+            "t1": "2fef522d3206238a8034c550f5687d1ebbb4fab10565f0a8eeac6c5efac5c67a",
+            "t4": "19410972461908673389",
+            "t3": "XE5MitrHVphFhJjgJduyUKobwnOu2oSx"
+        },
+        "license": "license:ab105032022e0f87fcb061ac2c17967d575ed632",
+        "live": "live:1688852622084892"
+    },
+    "2": {
+        "steam": "steam:110000106310e94",
+        "ip": "184.14.119.235",
+        "tokens": [
+            "5:91ce014a929cd8329094c66db5befa2e6312b5cb2957e0e003fb2de0c5574cb1",
+            "3:fb2911b3a41370d76c49f178ac960df99ccdfd6625f9f080fdc72c26faa71c80",
+            "2:515c6ea3da84293a4f3c5dd18cc26c19166f4aab0ef00a3896dfb58d9ecef3d7",
+            "4:680c5349bdedcf92089db5e3ec0ea67bb307ee5f1415a62933397fb3ecd90ea7",
+            "4:50b8394f054f1afa5a158bcf4b40f2969b00ba31d82b6649c8bb671500f77f2e",
+            "4:4e915ed0fd9158ff1e9b9937a3d749ee9c5a522bb1906b599d91483b428c72de"
+        ],
+        "manual": false,
+        "xbl": "Invalid",
+        "discord": "146400979598835712",
+        "name": "SCOUTONLY",
+        "reason": "Eulen Noclip Detected",
+        "fg_ts": {
+            "t2": "eb0d4524:b661005d:1589b727",
+            "t1": "73ed688b70243cd3ac67f846cec5dfe1183a3e7454813e4e151764b6fa23bdd8",
+            "t4": "19003249941936316596",
+            "t3": "WXBy7pHwj2apq7QpRQ54Cm9trGqBbxbH"
+        },
+        "license": "license:9dc5673f1d31b82bad681b160dcc67d252fe08f7",
+        "live": "Invalid"
+    },
+    "12": {
+        "steam": "steam:1100001070bdca5",
+        "ip": "185.125.221.22",
+        "tokens": [
+            "2:ba72f202f4cb89c47cc76ec96226a2431be3dd95338685dc578d8493d1bc80f9",
+            "5:89ab283bf07d7857930c6bc534359b8f79810c9ae36689d91f5af85407264fba",
+            "4:9ead8870a2919299afc6dd811be714b925dd8363baf79b63fed308f8222d73a5",
+            "4:665cdbef3b98ab63e330e3c36379cda5162004b8e1f114259fb7e5a8b2050e3a",
+            "4:a6a5ac8c24968eff6f4ee0c27cff83d693be5ff3f3c22fa8d4b12bdbff7824f5"
+        ],
+        "manual": false,
+        "xbl": "xbl:2535446421179704",
+        "discord": "300943567549890560",
+        "name": "Rasmus089",
+        "reason": "Eulen Noclip Detected",
+        "fg_ts": {
+            "t2": "b1252f3b:45d64203:c1d3dff3:69939880:157930e3",
+            "t1": "01a2578cf279c72fba73520ea81300517e72a56076e8c7ed4f7b5bf418cf8936",
+            "t4": "20348238121529032237",
+            "t3": "rjt5zUpzeWctUx3coO3jkBSWmRoJ4wOo"
+        },
+        "license": "license:365ac87ee6ed3f71386c764b2d6b57f73d94b2db",
+        "live": "live:914800767348170"
+    },
+    "10": {
+        "steam": "steam:1100001045104e8",
+        "tokens": [
+            "3:2abb2b30f6e35ad6f5a667412df8e40e3ac932b1f063ae78cc5427c62ed23ca0",
+            "7:c04981099537726fdd699e3171f3cbc81c58330623b78d55537b01a652b82cdc",
+            "2:50fe444f7b3c551f691f25a9699be8fd62ced9dc3ddd66f6dcae0baaf3f7bf17",
+            "5:c37eeb26da1e59c88ab91ebc9f3f3326bc0cf9db5c7065cdf532d6e87eb2b508",
+            "4:b744b51ba3c31cfa9719492fccc88cbef4c4680a4691635dd970fcec7deaa6ed",
+            "4:e292a6d3245cd9f5603b1a884a1ed3679a8f8ca9659c155717ba3639fce25480",
+            "4:1111803bf2915c2000f9ab5cf6d8c15fb9593afafc5fcb6dff56121aab0aa831"
+        ],
+        "ip": "5.69.233.101",
+        "manual": false,
+        "xbl": "xbl:2535423281363903",
+        "discord": "135542470476824576",
+        "name": "Dungus",
+        "reason": "Anti Vehicle Noclip, flags: 3",
+        "fg_ts": {
+            "t2": "57c5465d:0cad9a11:1af75e9d:eb899620:03b47e2e",
+            "t1": "7cedcccca9d70daeca579d1776a81d55876feb83d57c2829e53e731addc5aa74",
+            "t4": "16806585211507813389",
+            "t3": "0pfEwRfV1dk7WVVT7FaEPi02ON99oSyr"
+        },
+        "license": "license:f958afbd3d17e681664706a201ddbbd1e8a3df0e",
+        "live": "live:1829582315927939"
+    },
+    "13": {
+        "steam": "steam:110000142532983",
+        "ip": "86.165.202.150",
+        "tokens": [
+            "3:84309d89808b73f4fab19332b29661084c1ee63647cea3f643c6ed4b35b662fd",
+            "2:b706d4d2ce08e87efb4c30dd0b4ecd2cf359257eaeb5762fc40a6d15541fd8d3",
+            "5:026b277e45e2ba79195a56514b38db04ca7d31ba5afb8de94d124cd8d7d1223f",
+            "4:308c76f30cd6a41308ebc56a7e8c78f6921ea28faaea064dafa62a34c56d9739",
+            "4:25e256e8d3be09f2f627b43327cbaed6f67278cb395c0e3f6385a8c3742c826e",
+            "4:5218c352acb89d8fab2accf9f3a6d53b56d4495ccdcb31ec1c303d808e927bd1"
+        ],
+        "manual": false,
+        "xbl": "xbl:2535438735194485",
+        "discord": "971455737043750972",
+        "name": "3vzz",
+        "reason": "Infinite Ammo",
+        "fg_ts": {
+            "t2": "35f09e88:50a478b4:9f97097a:1af75e9d:84b7f959",
+            "t1": "1e9c39d52cc345de22c31a365f564bb0ed157d0082de698aba909cd38480d960",
+            "t4": "14151133621872795881",
+            "t3": "z2AKsXY1Tt21OBc5FpR4IPwCeyhzpobp"
+        },
+        "license": "license:b0a2b6bb9419add9b4e1776eb420535dd3133b3f",
+        "live": "live:985155002496277"
+    },
+    "14": {
+        "steam": "steam:110000136df3f61",
+        "ip": "86.162.6.175",
+        "tokens": [
+            "5:57713404dfeabcb27ec50bbfb67da28249892c0e7c61b0d05eda5301bf9c2bec",
+            "3:f2187f1282d06b2e792375c64db272697d4236a00caad8fe29a2a11954b28d8f",
+            "4:98d9aa318407055e4ad0027482da4f7a9117bb40d6cb76c98987311ec273dc0d",
+            "4:4b433a96949ddb17876608bbea64b6b352a48f509e8f3c2ec6784a21dc9bd7ae",
+            "4:f5ce55a07481ceafa1e721ec5651414a5f59d819d1f7524321e25d4605bf5bed"
+        ],
+        "manual": true,
+        "xbl": "xbl:2535473274512886",
+        "discord": "1068775632722481162",
+        "name": "garaside",
+        "reason": "fuck off mate",
+        "fg_ts": {
+            "t2": "5a1ac7d0:7283d3a9:e32fb0eb:9d4c070b:9bfa0866:4a8d3d96",
+            "t1": "3bad42ea3d422efd3522e8512a4047dfba32357776c4f2b169d76e26af9ae2ed",
+            "t4": "14215720652130976170",
+            "t3": "iDVGZyL1adQqTICQAequSJdimBAeHh8B"
+        },
+        "license": "license:be69788abf9c2c7d3f3e0af3f1fd922db3b929b1",
+        "live": "live:914799373210305"
+    },
+    "11": {
+        "steam": "steam:110000152874f25",
+        "tokens": [
+            "3:876f6b30ddafc783ed2b80925f4f535acf1cdfe9ac0c0dc616babe9bee8df51e",
+            "2:e7c9d8c167477a4b8173c0daf346ed30cd54f7073e5fba3c0fa4e24bde088d6b",
+            "5:869edd478d3e5cdca327b5fd5dad57712c56714d713087d047ddb4be48920593",
+            "4:ef8cfb2027f5cd5bbb64d0d5346e5e4cd607d08ad48de97d0ac079ea67fb12a7",
+            "4:c2e294ed6dd52c43b706e245a2ef400847bea402354879b3a6dc33d0d7a5724a",
+            "4:d1308dcde897f21c1aa4052935ed405e2eb04c342a76ae88956a23c2dc958992"
+        ],
+        "ip": "217.63.251.153",
+        "manual": false,
+        "xbl": "xbl:2535409284719414",
+        "discord": "590926097382637598",
+        "name": "jantje klaas",
+        "reason": "Has tried to mass explosion: 15 in 10 seconds, explosions type list: 7, ",
+        "fg_ts": {
+            "t2": "45be7afb:2697f5a7:8987484b:1af75e9d:8fc1948c:187d77e6:a342d750:ca0bb38b:3538ee5b",
+            "t1": "1f06ce2a2f95e0a528b11d677917af3eba187233aa738c70c1bdc841711c3f01",
+            "t4": "19134246742103993289",
+            "t3": "yJ3oXP5XWHCnGgOvsnHJVktTssdbt8W6"
+        },
+        "license": "license:4e9494c832a72022fc50b6ce3f5b9cc8a4ade558",
+        "live": "live:844426537780853"
+    },
+    "9": {
+        "steam": "steam:110000135935513",
+        "tokens": [
+            "3:85b88cab6fcf1db9d44db3ea1ceea436478ae1b79d7e80a6927ed818a81c176a",
+            "2:8b263648e16bb404e4fcebebd5b824d3b781bd384a7368784eb0708332734795",
+            "3:d47e3583c9a6b66501854b7faec850caee2beefb652e84d7428574d617a69a8b",
+            "2:bb14d73827188e7ba06e82758b17e1932857fa2553456812b9cf88f9dbd7394b",
+            "5:59f48e0fb225f2f5facc7c4756a38c225c06941a35138a5c871b0d15a2fc5ea6",
+            "5:16f262b154793730c387cd0d4cd90bbe74caa2c26c24f675f21ed70e678fcf6c",
+            "2:2446ac84093c257ab87dfffc16a9cf87d96986ce1c5ee779bbd5cf6a4d235207",
+            "3:937b772455e8baef21ce61c74e95c13311b944cab098d59e36bd6a628adfc702",
+            "4:85315a7c06023242cd8167a2491ec9698bff0a7a3faecda9c41d17a7857efc6d",
+            "4:cbe035a96d58864cb284fd5f0b239a87f2e655ed9e40ad89d264d748d89b643d",
+            "4:94d7a8134eed67d7ebf28584aa0e6b4f9049a6f64ed3751d1edeafd9e94848f9"
+        ],
+        "ip": "120.17.185.254",
+        "manual": false,
+        "xbl": "Invalid",
+        "discord": "1179996519395500054",
+        "name": "Spenny",
+        "reason": "Cheat Detected (AI) (1)",
+        "fg_ts": {
+            "t2": "86fcee3a:86fcee3a:4314f32e:84b7f959:e8717055",
+            "t1": "26d56ab62c60d8ea7b4f4c08127afc8ba76881166f11a02803a6064f030368d5",
+            "t4": "20692478331090738071",
+            "t3": "F9oCtX78mMHEeXdpfKvNOFO2f3HkhKwK"
+        },
+        "license": "license:36261e221e09b2270cb1d8d4aae39df902dfb738",
+        "live": "Invalid"
+    }
+}

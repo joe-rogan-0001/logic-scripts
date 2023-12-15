@@ -62,7 +62,7 @@ CreateThread(function()
 			if Config.LuckyWheelPrompt == 'walk-up' then 
 				TriggerEvent('doj:casinoLuckyWheelHeader') 
 			elseif Config.LuckyWheelPrompt == 'peek' then
-				text = "<b>Diamond Casino Lucky Wheel</b></p> $500 Spin | $2500 Turbo Spin"
+				text = "<b>Diamond Casino Lucky Wheel</b></p> $2000 Spin"
 				exports['textUi']:DrawTextUi('show', text)
 				exports['lrp-target']:AddCircleZone("LuckyWheel", vector3(988.68, 43.28, 71.27), 2.0, {
 					name="LuckyWheel",

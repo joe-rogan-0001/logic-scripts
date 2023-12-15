@@ -36,7 +36,7 @@ Config.BlipColor = 4
 Config.BlipIcon = 280
 Config.BlipScale = 0.75
 
-Config.TweetDuration = 8 -- How many hours to load tweets (12 will load the past 12 hours of tweets)
+Config.TweetDuration = 168 -- How many hours to load tweets (12 will load the past 12 hours of tweets)
 Config.MailDuration = 72 -- How many hours to load Mails (72 will load the past 72 hours of Mails)
 
 
@@ -387,9 +387,15 @@ Config.JobCenter = {
     },
     [5] = {
         vpn = false,
-        icon = 'fas fa-helicopter',
-        label = "Helicopter",
-        event = "jobcenter:waypoint:helicopter",
+        icon = 'fas fa-helmet-safety',
+        label = "Mining",
+        event = "jobcenter:waypoint:mining",
+    },
+    [6] = {
+        vpn = false,
+        icon = 'fas fa-truck',
+        label = "Postal",
+        event = "jobcenter:waypoint:postal",
     },
 }
 

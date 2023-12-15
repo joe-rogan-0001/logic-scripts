@@ -40,6 +40,7 @@ Config.Webhooks = {
     ['nuiblock'] = 'https://discord.com/api/webhooks/929124855289376899/VsfYXpRYNMR38wVydb0fjsXlDxYtfbpzbB6gnl1HSMdDuZdcm45XC7tWk9xxRxFYLSs8',
     ['pdbanking'] = 'https://discord.com/api/webhooks/932382183052677120/TZzr2c1XwNaDKqC_9_R57VQfwG_UpR2fW2mXzDGjkHT-UGetolVVWygKdEd8UIAxfkrm',
     ['pdbankingdeposit'] = 'https://discord.com/api/webhooks/932387463261986867/LcD3cIcdzSTF0YoWMHHjMnzfg-kmoMobpwo41Y22Gr_CqlIvadh2eiUL8e16QJEcjWLg',
+    ['ps-adminmenu'] = 'https://discord.com/api/webhooks/1177410758569631756/6UGTay7t9MvgBlH4sav8IUwsvvoHBSrhVMXXHUctDENlmqzauBc4_mxUyU7VyQaS1zO7',
 }
 
 Config.Colors = { -- https://www.spycolor.com/

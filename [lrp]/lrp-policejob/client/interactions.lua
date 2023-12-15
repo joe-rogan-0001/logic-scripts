@@ -421,7 +421,7 @@ RegisterNetEvent('police:client:GetCuffed')
 AddEventHandler('police:client:GetCuffed', function(playerId, isSoftcuff)
     if not isHandcuffed then
         local seconds = math.random(5,8)
-        local success = exports['lrp-skill']:StartLockPickCircle(1, seconds, success)
+        local success = exports['SN-Hacking']:SkillBar({3000, 3500}, 9, 2) --SkillBar(duration(milliseconds or table{min(milliseconds), max(milliseconds)}), width%(number), rounds(number))
         --print(success)
         if not success then
             isHandcuffed = true

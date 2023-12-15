@@ -7,12 +7,12 @@ Config.LockNPCDrivingCars = false -- Lock state for NPC cars being driven by NPC
 Config.LockNPCParkedCars = true -- Lock state for NPC parked cars [true = locked, false = unlocked]
 Config.UseKeyfob = false -- you can set this true if you dont need ui
 -- Lockpick Settings
-Config.RemoveLockpickNormal = 0.5 -- Chance to remove lockpick on fail
-Config.RemoveLockpickAdvanced = 0.2 -- Chance to remove advanced lockpick on fail
+Config.RemoveLockpickNormal = 0.4 -- Chance to remove lockpick on fail
+Config.RemoveLockpickAdvanced = 0.1 -- Chance to remove advanced lockpick on fail
 Config.LockPickDoorEvent = function() -- This function is called when a player attempts to lock pick a vehicle
     local seconds = math.random(5,15)
     local circles = math.random(3,5)
-    local success = exports['lrp-skill']:StartLockPickCircle(circles, seconds, success)
+    local success = exports['SN-Hacking']:SkillBar({5000, 6000}, 9, 3) --SkillBar(duration(milliseconds or table{min(milliseconds), max(milliseconds)}), width%(number), rounds(number))
 
     LockpickFinishCallback(success)
 end

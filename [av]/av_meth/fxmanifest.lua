@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 description 'AV Meth'
 author 'Avilchiis'

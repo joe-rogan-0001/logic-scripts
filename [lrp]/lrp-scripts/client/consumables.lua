@@ -5,6 +5,7 @@ local alcoholCount = 0
 local healing, parachuteEquipped = false, false
 local currVest, currVestTexture = nil, nil
 
+
 -- Functions
 RegisterNetEvent('QBCore:Client:UpdateObject', function()
     QBCore = exports['lrp-core']:GetCoreObject()
@@ -145,7 +146,7 @@ end
 -- Events
 
 RegisterNetEvent('consumables:client:Eat', function(itemName)
-    QBCore.Functions.Progressbar('eat_something', Lang:t('consumables.eat_progress'), 5000, false, true, {
+    QBCore.Functions.Progressbar('eat_something', Lang:t('consumables.eat_progress'), 6000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -167,7 +168,7 @@ RegisterNetEvent('consumables:client:Eat', function(itemName)
 end)
 
 RegisterNetEvent('consumables:client:Drink', function(itemName)
-    QBCore.Functions.Progressbar('drink_something', Lang:t('consumables.drink_progress'), 5000, false, true, {
+    QBCore.Functions.Progressbar('drink_something', Lang:t('consumables.drink_progress'), 6000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,

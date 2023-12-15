@@ -181,7 +181,7 @@ RegisterNetEvent('fishing:SkillBar', function(message)
 		end
 	elseif Config.Skillbar == "lrp-skill" then 
 		local seconds = math.random(6,10)
-        local success = exports['lrp-skill']:StartLockPickCircle(3, seconds, success)
+        local success = exports['SN-Hacking']:SkillBar({4000, 5000}, 9, 3) --SkillBar(duration(milliseconds or table{min(milliseconds), max(milliseconds)}), width%(number), rounds(number))
 		print(success)
 		if not success then
 			QBCore.Functions.Notify('The Fish Got Away!', 'error')

@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 -- Resources:
 -- **********
 -- IPL list: https://wiki.rage.mp/index.php?title=Interiors_and_Locations

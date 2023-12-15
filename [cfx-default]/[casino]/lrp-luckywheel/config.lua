@@ -22,8 +22,8 @@ Config.LimitedSpinResetTime = 3600000 	-- 1 hour real time
 -- available sounds: 'car', 'cash', 'chips', 'clothes', 'mystery', 'win'
 Config.Prices = {
 	[1]  = {type = 'car', 		name = 'car', 					count = 1, 		sound = 'car', 		probability = {a =   0, b =   0.1}},	--  0.1 %   0.1 -- VEHICLE
-	[2]  = {type = 'money', 	name = 'money', 				count = 50000, 	sound = 'cash', 	probability = {a =   1, b =   5}},	--  0.4 %   0.5 -- 15.000 RP
-	[3]  = {type = 'money', 	name = 'money', 				count = 40000, 	sound = 'cash', 	probability = {a =   5, b =  10}},	--  0.5 %   1.0 -- CLOTHING
+	[2]  = {type = 'money', 	name = 'money', 				count = 25000, 	sound = 'cash', 	probability = {a =   1, b =   5}},	--  0.4 %   0.5 -- 15.000 RP
+	[3]  = {type = 'money', 	name = 'money', 				count = 15000, 	sound = 'cash', 	probability = {a =   5, b =  10}},	--  0.5 %   1.0 -- CLOTHING
 	[4]  = {type = 'item', 		name = 'nil', 		count = 1, 	sound = 'clothes', 	probability = {a =  10, b =  20}},	--  1.0 %   2.0 -- 25.000 chips
 	[5]  = {type = 'money', 	name = 'money', 				count = 5000, 	sound = 'cash', 	probability = {a =  20, b =  40}},	--  2.0 %   4.0 -- 40.000 $
 	[6]  = {type = 'money', 	name = 'money', 				count = 2500, 	sound = 'cash', 	probability = {a =  40, b =  60}},	--  2.0 %   6.0 -- 10.000 RP
@@ -40,5 +40,5 @@ Config.Prices = {
 	[17] = {type = 'money',		name = 'money', 				count = 5000, 	sound = 'cash', 	probability = {a = 640, b = 700}},	--  8.0 %  72.0 -- 20.000 $
 	[18] = {type = 'item', 		name = 'nil', 				count = 1, 		sound = 'clothes', 	probability = {a = 700, b = 810}},	--  9.0 %  81.0 -- 2.500 RP
 	[19] = {type = 'item', 		name = 'nil', 				count = 1, 		sound = 'clothes', 	probability = {a = 810, b = 990}},	--  9.0 %  90.0 -- CLOTHING
-	[20] = {type = 'money', 	name = 'money', 				count = 20000, 	sound = 'cash', 	probability = {a = 990, b = 1000}},	--  1.0 % -- 50.000 $ 
+	[20] = {type = 'money', 	name = 'money', 				count = 15000, 	sound = 'cash', 	probability = {a = 990, b = 1000}},	--  1.0 % -- 50.000 $ 
 }

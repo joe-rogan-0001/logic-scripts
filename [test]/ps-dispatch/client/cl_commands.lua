@@ -63,7 +63,7 @@ end
 RegisterCommand('911', function(source, args, rawCommand)
     local msg = rawCommand:sub(5)
     if string.len(msg) > 0 then
-        if not exports['qb-policejob']:IsHandcuffed() then
+        if not exports['lrp-policejob']:IsHandcuffed() then
             if HasPhone() then
                 PhoneCallAnim()
                 Wait(RandomNum(3,8) * 1000)
@@ -105,7 +105,7 @@ end)
 RegisterCommand('911a', function(source, args, rawCommand)
     local msg = rawCommand:sub(5)
     if string.len(msg) > 0 then
-        if not exports['qb-policejob']:IsHandcuffed() then
+        if not exports['lrp-policejob']:IsHandcuffed() then
             if HasPhone() then
                 PhoneCallAnim()
                 Wait(RandomNum(3,8) * 1000)
@@ -148,7 +148,7 @@ end)
 RegisterCommand('311', function(source, args, rawCommand)
     local msg = rawCommand:sub(5)
     if string.len(msg) > 0 then
-        if not exports['qb-policejob']:IsHandcuffed() then
+        if not exports['lrp-policejob']:IsHandcuffed() then
             if HasPhone() then
                 PhoneCallAnim()
                 Wait(RandomNum(3,8) * 1000)
@@ -191,7 +191,7 @@ end)
 RegisterCommand('311a', function(source, args, rawCommand)
     local msg = rawCommand:sub(5)
     if string.len(msg) > 0 then
-        if not exports['qb-policejob']:IsHandcuffed() then
+        if not exports['lrp-policejob']:IsHandcuffed() then
             if HasPhone() then
                 PhoneCallAnim()
                 Wait(RandomNum(3,8) * 1000)

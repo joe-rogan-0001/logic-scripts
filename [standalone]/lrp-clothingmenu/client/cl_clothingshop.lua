@@ -149,6 +149,13 @@ Citizen.CreateThread(function()
 		  minZ=31.6,
 		  maxZ=34.4
 	  })
+
+	  --MRPD
+	exports["polyzonehelper"]:AddBoxZone("clothing_shop", vector3(461.34, -997.48, 30.2), 3.5, 3.5, {
+		heading=180,
+		minZ=30.2,
+		maxZ=32.2
+	})
 	  
   end)
   

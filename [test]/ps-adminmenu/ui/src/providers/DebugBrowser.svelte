@@ -232,7 +232,7 @@
 			resourceState: "stopped",
 		},
 		{
-			name: "cdn-fuel",
+			name: "ps-fuel",
 			version: "1.0.0",
 			description: "A cool gas pump",
 			author: "Project Sloth",

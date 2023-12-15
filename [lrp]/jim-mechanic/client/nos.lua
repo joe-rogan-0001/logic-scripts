@@ -64,7 +64,7 @@ RegisterNetEvent('jim-mechanic:client:applyNOS', function()
 		if Config.skillcheck == "qb-lock" then
 			local time = math.random(7000,10000)
 			playAnim("mini@repair", "fixing_a_ped", time, 16)
-			local success = exports['lrp-skill']:StartLockPickCircle(math.random(2,4), math.random(7,10), success)
+			local success = exports['SN-Hacking']:SkillBar({4000, 5000}, 9, 5) --SkillBar(duration(milliseconds or table{min(milliseconds), max(milliseconds)}), width%(number), rounds(number))
 			if success then
 				QBCore.Functions.Progressbar("drink_something", Loc[Config.Lan]["common"].installing.."NOS..", time, false, true, { disableMovement = true, disableCarMovement = true, disableMouse = false, disableCombat = false, },
 				{ animDict = "mini@repair", anim = "fixing_a_ped", flags = 8, }, {}, {}, function() SetVehicleModKit(vehicle, 0)

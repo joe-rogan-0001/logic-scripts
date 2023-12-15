@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 name "Jim-Mechanic"
 author "Jimathy"
 version "v2.9.8spamfix"

@@ -144,7 +144,7 @@ RegisterNetEvent('storerobbery:client:skillbar', function(data)
     TriggerEvent('ps-dispatch:client:storeRobbery')
 
     local seconds = math.random(5,10)
-    local success = exports['lrp-skill']:StartLockPickCircle(2, seconds, success)
+    local success = exports['SN-Hacking']:SkillBar({3000, 3500}, 9, 5) --SkillBar(duration(milliseconds or table{min(milliseconds), max(milliseconds)}), width%(number), rounds(number))
 
     local ped = PlayerPedId()
     local pos = GetEntityCoords(ped)

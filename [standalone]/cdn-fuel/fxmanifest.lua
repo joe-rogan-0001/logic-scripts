@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5'
 author 'https://www.github.com/CodineDev' -- Base Refueling System: (https://github.com/InZidiuZ/cdn-fuel), other code by Codine (https://www.github.com/CodineDev).

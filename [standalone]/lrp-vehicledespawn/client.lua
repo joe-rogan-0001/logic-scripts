@@ -1,5 +1,5 @@
 -- Debug printer
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['lrp-core']:GetCoreObject()
 
 function dprint(msg)
 	if debugMode then

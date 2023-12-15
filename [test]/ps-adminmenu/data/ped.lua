@@ -496,13 +496,5 @@ return {
     { label = "ig_car3guy1_m", value = "male"},
     { label = "tony", value = "male"},
     { label = "g_m_m_chigoon_02_m", value = "male"},
-    { label = "a_m_o_acult_01", value = "male"},
-    { label = "ig_jason", value = "male"},
-    { label = "ig_freddy", value = "male"},
-    { label = "ig_ghostface", value = "male"},
-    { label = "ig_leatherface", value = "male"},
-    { label = "ig_meyers", value = "male"},
-    { label = "ig_lennylarge", value = "male"},
-    { label = "ig_old_cop", value = "male"},
-    { label = "ig_norman", value = "male"}
+    { label = "a_m_o_acult_01", value = "male"}
 }

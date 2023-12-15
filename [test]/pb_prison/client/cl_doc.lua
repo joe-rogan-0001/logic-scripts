@@ -7,7 +7,7 @@ local function SetWeaponSeries()
 end
 
 RegisterNetEvent('qb-jail:client:Armory', function()
-    if PlayerData.job.type ~= "leo" then return end -- if PlayerData.job.name ~= "police" then return end
+    if PlayerData.job.type ~= "police" then return end -- if PlayerData.job.name ~= "police" then return end
     SetWeaponSeries()
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "police", Config.Armory)
 end)

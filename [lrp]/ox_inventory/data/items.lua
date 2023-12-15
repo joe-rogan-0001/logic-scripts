@@ -671,6 +671,16 @@ return {
 			image = "advancedlockpick.png",
 		}
 	},
+	["lockpick"]           = {
+		label = "Basic Lockpick",
+		weight = 500,
+		stack = true,
+		close = true,
+		description = "Pretty useful multitool, unscrew something or open a beer idk",
+		client = {
+			image = "lockpick.png",
+		}
+	},
 
 	["meth"]                       = {
 		label = "Meth",
@@ -5746,7 +5756,7 @@ return {
 		label = 'Male Marijuana Seed',
 		weight = 1000,
 		consume = 0,
-		stack = false,
+		stack = true,
 		description = 'Add this to a planted female seed to make it pregnant? You are pretty sure this seed has a penis.',
 		client = {
 			image = "weed-seed.png"
@@ -6169,32 +6179,32 @@ return {
 	},
 	["hr_toaster"] = {
         label = "Toaster",
-        weight = 900,
+        weight = 5000,
         stack = true
     },
     ["hr_toaster2"] = {
         label = "Broken Toaster",
-        weight = 900,
+        weight = 5000,
         stack = true
     },
     ["hr_microwave"] = {
         label = "Microwave",
-        weight = 1500,
+        weight = 6500,
         stack = true
     },
     ["hr_microwave2"] = {
         label = "Broken Microwave",
-        weight = 1500,
+        weight = 6500,
         stack = true
     },
     ["hr_boombox"] = {
         label = "Boombox",
-        weight = 1000,
+        weight = 10000,
         stack = true
     },
     ["hr_tv3"] = {
         label = "Old TV",
-        weight = 3000,
+        weight = 30000,
         stack = true
     },
     ["hr_flattv3"] = {
@@ -6204,7 +6214,7 @@ return {
     },
     ["hr_console"] = {
         label = "Game console",
-        weight = 1200,
+        weight = 4200,
         stack = true
     },
     ["hr_pan"] = {
@@ -6214,67 +6224,59 @@ return {
     },
     ["hr_vinyl"] = {
         label = "Vinyl",
-        weight = 50,
+        weight = 500,
         stack = true
     },
     ["hr_pendrive"] = {
         label = "Pendrive",
-        weight = 50,
+        weight = 500,
         stack = true
     },
     ["hr_pliers"] = {
         label = "Pliers",
-        weight = 250,
+        weight = 1000,
         stack = true
     },
     ["hr_mixer"] = {
         label = "Mixer",
-        weight = 450,
+        weight = 2500,
         stack = true
     },
     ["hr_headphones"] = {
         label = "Headphones",
-        weight = 300,
+        weight = 3000,
         stack = true
     },
     ["hr_phone"] = {
         label = "Phone",
-        weight = 100,
+        weight = 1000,
         stack = true
     },
     ["hr_coffeemaker"] = {
         label = "Coffee Machine",
-        weight = 100,
+        weight = 1000,
         stack = true
     },
     ["hr_bigtv"] = {
         label = "Big TV",
-        weight = 2000,
+        weight = 20000,
         stack = true
     },
     ["hr_printer"] = {
         label = "Printer",
-        weight = 500,
+        weight = 5000,
         stack = true
     },
     ["hr_telescope"] = {
         label = "Telescope",
-        weight = 100,
+        weight = 10000,
         stack = true
     },
     ["hr_laptop"] = {
         label = "Laptop",
-        weight = 100,
+        weight = 5000,
         stack = true
     },
-    ['lockpick'] = {
-		label = 'Lockpick',
-		weight = 160,
-		consume = 0,
-		server = {
-			export = "sf-houserobbery.useLockpick"
-		}
-	},
 	['hacking_usb'] = {
 		label = 'Hacking Usb',
 		weight = 100,
@@ -6288,5 +6290,15 @@ return {
 		stack = true,
 		close = true,
 		description = 'Turn this in at sanitation to be rewarded with some scrapped material'
+	},
+	['lockpick_set'] = {
+		label = 'Lockpick Set',
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = 'Set of all kinds of lockpicks, all you need to perhaps break into something?',
+		server = {
+			export = "sf-houserobbery.useLockpick"
+		}
 	},
 }

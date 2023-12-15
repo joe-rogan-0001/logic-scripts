@@ -1,8 +1,5 @@
 -- NumberOfCircles, MS
 local circleConfig = {
-    ["D"] = {circles = 5, ms = 40},
-    ["C"] = {circles = 6, ms = 40},
-    ["B"] = {circles = 7, ms = 40},
 }
 -- Type (alphabet, numeric, alphanumeric, greek, braille, runes), Time (Seconds), Mirrored (0: Normal, 1: Normal + Mirrored 2: Mirrored only )
 local decrypterConfig = {
@@ -10,6 +7,9 @@ local decrypterConfig = {
     ["A+"] = {type = "alphanumeric", time = 15, mirrored = 1},
     ["S"] = {type = "alphanumeric", time = 15, mirrored = 0},
     ["S+"] = {type = "runes", time = 15, mirrored = 1},
+    ["D"] = {type = "numeric", time = 15, mirrored = 0},
+    ["B"] = {type = "numeric", time = 15, mirrored = 0},
+    ["C"] = {type = "alphanumeric", time = 15, mirrored = 0},
 }
 
 function GiveKeys(plates)
@@ -34,7 +34,7 @@ RegisterNetEvent('av_boosting:useCracker', function()
             SetVehicleAlarm(vehicle,true)
             if circleConfig[class] then
                 exports['ps-ui']:Circle(function(success)
-                    -- Dispatch goes here
+                    exports['ps-dispatch']:CarBoosting(vehicle)
                     if success then
                         SetVehicleDoorsLockedForAllPlayers(vehicle,false)
                         GiveKeys(plates)
@@ -45,7 +45,7 @@ RegisterNetEvent('av_boosting:useCracker', function()
             end
             if decrypterConfig[class] then
                 exports['ps-ui']:Scrambler(function(success)
-                    -- Dispatch goes here
+                    exports['ps-dispatch']:CarBoosting(vehicle)
                     if success then
                         SetVehicleDoorsLockedForAllPlayers(vehicle,false)
                         GiveKeys(plates)

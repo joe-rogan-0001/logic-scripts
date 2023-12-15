@@ -21,7 +21,7 @@ Config.Categories = {
             {name = "gopro", label = "GoPro Camera", stock = 10, price = 750, account = "cosmo", accountLabel = "Cosmo"},
             {name = "cam_jammer", label = "Camera Jammer", stock = 10, price = 750, account = "cosmo", accountLabel = "Cosmo"},
             {name = "hacking_usb", label = "Hacking Usb", stock = 10, price = 150, account = "cosmo", accountLabel = "Cosmo"},
-
+            {name = "lockpick_set", label = "Lockpick Set", stock = 10, price = 170, account = "cosmo", accountLabel = "Cosmo"},
         }
     }, 
     ["drugs"] = { 

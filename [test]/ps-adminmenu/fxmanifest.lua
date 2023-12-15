@@ -1,9 +1,10 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 
 game "gta5"
 
 author "Project Sloth & OK1ez"
-version '1.0.8'
+version '1.0.9'
 description 'Admin Menu'
 repository 'https://github.com/Project-Sloth/ps-adminmenu'
 

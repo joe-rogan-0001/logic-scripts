@@ -21,7 +21,7 @@ Config.StopsAmt = {
     ["large"] = {min = 3, max = 6},
 }
 
-Config.MaterialTicket = true -- Enable or disable MaterialTickets and trades
+Config.MaterialTicket = false -- Enable or disable MaterialTickets and trades
 Config.Trade = {
     ["metalscrap"] = 25, -- Name of the material, the amount of materials the player will get for 1 ticket
     ["steel"] = 25,

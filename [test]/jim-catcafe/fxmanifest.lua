@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 name "Jim-CatCafe"
 author "Jimathy"
 version "v1.5.2"

@@ -477,7 +477,7 @@ AddEventHandler("lrp-trucklogistics:finishJob",function(data,distance,reward,tru
 		MySQL.Async.fetchAll(sql, {['@reward'] = received_amount, ['@distance'] = tonumber(string.format("%.2f", distance)), ['@exp_amount'] = received_xp, ['@user_id'] = user_id});
 		
 		-- TRUCEKR PAYOUT MULTI
-		giveTruckerMoney(user_id,received_amount * 3)
+		giveTruckerMoney(user_id,received_amount)
 		TriggerClientEvent("QBCore:Notify",source, Lang[Config.lang]['reward']:format(tostring(received_amount),tostring(trailer_body*100),tostring(received_xp)), "success")
 		local level2 = getPlayerLevel(user_id)
 		if level2 - level > 0 then

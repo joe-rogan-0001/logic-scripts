@@ -22,10 +22,12 @@ Made by Avilchiis for the community, you can download it [here](https://github.c
 |--------------|---------------|
 |en      |English    |
 |fr      |French    |
-|id      |Malay    |
+|id      |Indonesia    |
 |pt-br      |Brazilian Portuguese    |
 |tr      |Turkish    |
 |es      |Spanish    |
+|nl      |Dutch    |
+|no      |Norwegian    |
 
 # Features
 * Admin Car
@@ -99,7 +101,7 @@ Made by Avilchiis for the community, you can download it [here](https://github.c
 * Warn player
   
 # Depedency
-1. [qb-core](https://github.com/qbcore-framework/qb-core)
+1. [lrp-core](https://github.com/qbcore-framework/lrp-core)
 2. [ox_lib](https://github.com/overextended/ox_lib) 
 
 # Installation

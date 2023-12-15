@@ -66,19 +66,6 @@ Config.Teleports = {
         },
 
     },
-    --Coke Processing Enter/Exit
-    [2] = {
-        [1] = {
-            coords = vector4(909.49, -1589.22, 30.51, 92.24),
-            ["AllowVehicle"] = false, 
-            drawText = '[E] Enter Coke Processing'
-        },
-        [2] = {
-            coords = vector4(1088.81, -3187.57, -38.99, 181.7),
-            ["AllowVehicle"] = false,
-            drawText = '[E] Leave'
-        },
-    },
 }
 
 Config.Locations = { -- carwash
@@ -161,5 +148,25 @@ Config.Consumables = {
     --         server = false -- if the event above is a server event
     --     }
     -- }
+    }
+}
+
+Config.Disable = {
+    hudComponents = {1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
+    controls = {37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
+    displayAmmo = true, -- false disables ammo display
+    ambience = false, -- disables distance sirens, distance car alarms, flight music, etc
+    idleCamera = true, -- disables the idle cinematic camera
+    vestDrawable = true, -- disables the vest equipped when using heavy armor
+    pistolWhipping = true, -- disables pistol whipping
+}
+
+Config.Fireworks = {
+    delay = 5, -- time in s till it goes off
+    items = { -- firework items
+        'firework1',
+        'firework2',
+        'firework3',
+        'firework4'
     }
 }

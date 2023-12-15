@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 -- SCRIPT DEVELOPED BY OSMIUM | OSMFX | DISCORD.IO/OSMFX --
 
 fx_version 'bodacious'

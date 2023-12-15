@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 name "Jim-Mining"
 author "Jimathy"
 version "v2.4"

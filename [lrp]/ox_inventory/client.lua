@@ -74,6 +74,7 @@ local function canOpenTarget(ped)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_base', 3)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_enter', 3)
 	or IsEntityPlayingAnim(ped, 'random@mugging3', 'handsup_standing_base', 3)
+	or IsEntityPlayingAnim(ped, 'missarmenian2', 'drunk_loop', 3)
 end
 
 local defaultInventory = {
@@ -971,7 +972,7 @@ end)
 local function nearbyDrop(point)
 	if not point.instance or point.instance == currentInstance then
 		---@diagnostic disable-next-line: param-type-mismatch
-		DrawMarker(27, point.coords.x, point.coords.y, point.coords.z - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.30, 0.30, 0.17, 0, 100, 255, 222, false, false, 0, true, false, false, false)
+		DrawMarker(25, point.coords.x, point.coords.y, point.coords.z - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.20, 0.20, 0.40, 0, 140, 255, 222, false, false, 0, false, false, false, false)
 	end
 end
 

@@ -138,7 +138,7 @@ AddEventHandler('qb-cityhall:server:ApplyJob', function(job)
     local JobInfo = QBCore.Shared.Jobs[job]
 
     if (#(PedCoords - Config.Cityhall.coords) >= 20.0) or (not IsAvailableJob(job)) then
-        return DropPlayer(source, "Attempted exploit abuse")
+        --return DropPlayer(source, "Attempted exploit abuse")
     end
 
     Player.Functions.SetJob(job, 0)

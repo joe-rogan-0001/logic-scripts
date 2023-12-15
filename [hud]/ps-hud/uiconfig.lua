@@ -3,177 +3,219 @@ UIConfig = {}
 UIConfig.icons = {}
 
 UIConfig.icons['armed'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['armor'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['cruise'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['dev'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['fuel'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['harness'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['health'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['hunger'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['nitro'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['oxygen'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['parachute'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['stress'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['thirst'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.icons['voice'] = {
-    height = 50,
-    iconScaling = 0.35,
+    displayOutline = true,
+    height = 51,
+    iconRotateDegree = 0,
+    iconScaling = 0.38,
     iconTranslateX = 0,
     iconTranslateY = 0,
+    ringSize = 8,
     rotateDegree = 0,
-    shape = 'circle-square-fill',
+    shape = 'circle-ring',
     translateX = 0,
     translateY = 0,
     width = 51,
 }
 
 UIConfig.layout = {
+    iconBetweenSpacing = 14,
     xAxisSpacing = 0,
     layout = 'center-bottom-row',
-    iconBetweenSpacing = 7,
     yAxisSpacing = 10,
 }
 
@@ -182,7 +224,7 @@ UIConfig.colors = {}
 UIConfig.colors['armed'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -190,9 +232,9 @@ UIConfig.colors['armed'] = {
             outlineColor = '#ff488566',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#ff4885',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -200,7 +242,7 @@ UIConfig.colors['armed'] = {
 UIConfig.colors['armor'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -208,9 +250,9 @@ UIConfig.colors['armor'] = {
             outlineColor = '#326dbf66',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#326dbf',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -223,7 +265,7 @@ UIConfig.colors['armor'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#ff0000',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -231,7 +273,7 @@ UIConfig.colors['armor'] = {
 UIConfig.colors['cruise'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -239,9 +281,9 @@ UIConfig.colors['cruise'] = {
             outlineColor = '#ff488566',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#ff4885',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -249,7 +291,7 @@ UIConfig.colors['cruise'] = {
 UIConfig.colors['dev'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -257,9 +299,9 @@ UIConfig.colors['dev'] = {
             outlineColor = '#00000066',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#000000',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -267,7 +309,7 @@ UIConfig.colors['dev'] = {
 UIConfig.colors['fuel'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -275,9 +317,9 @@ UIConfig.colors['fuel'] = {
             outlineColor = '#3FA55466',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#3FA554',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -290,7 +332,7 @@ UIConfig.colors['fuel'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#DD6E14',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [3] = {
             iconColor = '#FFFFFFFF',
@@ -303,7 +345,7 @@ UIConfig.colors['fuel'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#FF0000',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -311,7 +353,7 @@ UIConfig.colors['fuel'] = {
 UIConfig.colors['harness'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -319,9 +361,9 @@ UIConfig.colors['harness'] = {
             outlineColor = '#b648ff66',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#b648ff',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -329,7 +371,7 @@ UIConfig.colors['harness'] = {
 UIConfig.colors['health'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -337,9 +379,9 @@ UIConfig.colors['health'] = {
             outlineColor = '#21ab6166',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#21ab61',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -352,7 +394,7 @@ UIConfig.colors['health'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#ff0000',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -360,7 +402,7 @@ UIConfig.colors['health'] = {
 UIConfig.colors['hunger'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -368,9 +410,9 @@ UIConfig.colors['hunger'] = {
             outlineColor = '#dd6e1466',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#dd6e14',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -383,7 +425,7 @@ UIConfig.colors['hunger'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#ff0000',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -391,7 +433,7 @@ UIConfig.colors['hunger'] = {
 UIConfig.colors['nitro'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -399,9 +441,9 @@ UIConfig.colors['nitro'] = {
             outlineColor = '#ffffff66',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#ffffff',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -414,7 +456,7 @@ UIConfig.colors['nitro'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#D64763',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -422,7 +464,7 @@ UIConfig.colors['nitro'] = {
 UIConfig.colors['oxygen'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -430,9 +472,9 @@ UIConfig.colors['oxygen'] = {
             outlineColor = '#8aa8bd66',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#8aa8bd',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -440,7 +482,7 @@ UIConfig.colors['oxygen'] = {
 UIConfig.colors['parachute'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -448,9 +490,9 @@ UIConfig.colors['parachute'] = {
             outlineColor = '#b9ff2866',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#b9ff28',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -458,7 +500,7 @@ UIConfig.colors['parachute'] = {
 UIConfig.colors['stress'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -466,9 +508,9 @@ UIConfig.colors['stress'] = {
             outlineColor = '#dc060666',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#dc0606',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -476,7 +518,7 @@ UIConfig.colors['stress'] = {
 UIConfig.colors['thirst'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -484,9 +526,9 @@ UIConfig.colors['thirst'] = {
             outlineColor = '#1a7cad66',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#1a7cad',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -499,7 +541,7 @@ UIConfig.colors['thirst'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#ff0000',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }
@@ -507,7 +549,7 @@ UIConfig.colors['thirst'] = {
 UIConfig.colors['voice'] = {
     colorEffects = {
         [1] = {
-            iconColor = '#FFFFFFFF',
+            iconColor = '#fefefeff',
             iconContrast = 100,
             iconDropShadowAmount = 0,
             innerColor = '#212121FF',
@@ -515,9 +557,9 @@ UIConfig.colors['voice'] = {
             outlineColor = '#98989866',
             outlineContrast = 100,
             outlineDropShadowAmount = 0,
-            progressColor = '#989898',
+            progressColor = '#61a3b9ff',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [2] = {
             iconColor = '#FFFFFFFF',
@@ -530,7 +572,7 @@ UIConfig.colors['voice'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#FFFF3E',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
         [3] = {
             iconColor = '#FFFFFFFF',
@@ -543,7 +585,7 @@ UIConfig.colors['voice'] = {
             outlineDropShadowAmount = 0,
             progressColor = '#D64763',
             progressContrast = 100,
-            progressDropShadowAmount = 0,
+            progressDropShadowAmount = 2,
         },
     },
 }

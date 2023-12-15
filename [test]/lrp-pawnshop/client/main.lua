@@ -77,7 +77,7 @@ AddEventHandler("spy_pawnshop:menu1", function()
     if #(pcoords - coords) <= 3 then
         lib.showContext("wbmenu")
     else
-        QBCore.Functions.Notify("Too far away!", 'error')
+        lib.showContext("wbmenu")
     end
 end)
 

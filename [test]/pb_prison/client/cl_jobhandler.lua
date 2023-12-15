@@ -60,7 +60,7 @@ end
 CreateThread(function()
     local planningBoardModel = 'p_planning_board_02'
     local coords = {
-        vector4(1759.023, 2496.597, 46.518, 300.00), -- cells
+        vector4(1755.81, 2496.01, 46.518, 120.00), -- cells
         vector4(1769.418, 2566.920, 46.934, 180.00) -- canteen
     }
 
@@ -127,7 +127,7 @@ RegisterNetEvent('qb-jail:client:SelectJobMenu', function()
                 }
             end
         end
-        exports['pb_ui']:openMenu(menu)
+        exports['lrp-menu']:openMenu(menu)
     end)
 end)
 

@@ -1,3 +1,5 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
+shared_script '@lrp-blips/ai_module_fg-obfuscated.js'
 game {'gta5'}
 
 fx_version 'cerulean'

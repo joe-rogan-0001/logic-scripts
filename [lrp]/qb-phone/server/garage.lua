@@ -53,11 +53,7 @@ lib.callback.register('qb-phone:server:GetGarageVehicles', function(source)
             local enginePercent = round(v.engine / 10, 0)
             local bodyPercent = round(v.body / 10, 0)
             if v.garage then
-                if Config.Garages[v.garage] then
-                    VehicleGarage = Config.Garages[v.garage]["label"]
-                else
-                    VehicleGarage = v.garage
-                end
+                VehicleGarage = v.garage
             end
 
             local VehicleState = "In"

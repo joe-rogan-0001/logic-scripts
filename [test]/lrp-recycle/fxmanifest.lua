@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 name "Jim-Recycle"
 author "Jimathy"
 version "v2.7"

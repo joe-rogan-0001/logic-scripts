@@ -4,14 +4,12 @@ function numberWithCommas(num) {
 
 function LoadPlayerMoneys(){
     var PlayerPhoneNumber = QB.Phone.Data.PlayerData.charinfo.phone;
-    var PlayerBankAcc = QB.Phone.Data.PlayerData.charinfo.account;
     var PlayerBankMoney = QB.Phone.Data.PlayerData.money.bank;
     var PlayerCashMoney = QB.Phone.Data.PlayerData.money.cash;
-    var PlayerCasinoMoney = QB.Phone.Data.PlayerData.money.casino;
+    var PlayerCasinoMoney = 0;
     var PlayerStateID = QB.Phone.Data.PlayerData.citizenid;
 
     $(".details-phone").html(PlayerPhoneNumber)
-    $(".details-bankserial").html(PlayerBankAcc)
     $(".details-bankmoney").html("$"+numberWithCommas(PlayerBankMoney))
     $(".details-cashmoney").html("$"+numberWithCommas(PlayerCashMoney))
     $(".details-casinomoney").html("$"+numberWithCommas(PlayerCasinoMoney))

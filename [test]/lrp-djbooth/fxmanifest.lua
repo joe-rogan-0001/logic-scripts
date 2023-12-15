@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 name "Jim-DJBooth"
 author "Jimathy"
 version "1.3.2"

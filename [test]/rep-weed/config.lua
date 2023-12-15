@@ -146,7 +146,7 @@ Config.Plant = {
         [223086562] = true,
         [1109728704] = true
     },
-    MaxHarvest = 2, -- Max harvest per plant. Once you harvested a plant, the plant will regrow for another cycle.
+    MaxHarvest = 1, -- Max harvest per plant. Once you harvested a plant, the plant will regrow for another cycle.
 }
 
 Config.TacoShop = {

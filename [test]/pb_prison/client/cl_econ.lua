@@ -13,7 +13,7 @@ RegisterNetEvent('qb-jail:client:MakeSlushie', function()
     TaskPlayAnim(ped, "mp_ped_interaction", "handshake_guy_a", 8.0, 8.0, -1, 16, 0.0, 0, 0, 0)
 
     -- Minigame
-    exports['pb_minigames']:Circle(function(success)
+    exports['ps-ui']:Circle(function(success)
         if success then
             -- Open Store
             TriggerServerEvent("inventory:server:OpenInventory", "shop", "Slushie Machine", {
@@ -103,7 +103,7 @@ RegisterNetEvent('qb-jail:client:OpenCraftingMenu', function()
             }
         }
     end
-    exports['pb_ui']:openMenu(menu)
+    exports['lrp-menu']:openMenu(menu)
 end)
 
 RegisterNetEvent('qb-jail:client:CraftItem', function(index)
@@ -250,7 +250,7 @@ RegisterNetEvent('qb-jail:client:PrisonerPedShop', function()
             }
         }
     end
-    exports['pb_ui']:openMenu(menu)
+    exports['lrp-menu']:openMenu(menu)
 end)
 
 RegisterNetEvent('qb-jail:client:PurchaseItem', function(index)

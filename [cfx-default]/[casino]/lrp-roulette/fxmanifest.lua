@@ -1,3 +1,4 @@
+shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 version '1.0.2'
 author 'freamee'
 decription 'Aquiver rulett'
