@@ -398,7 +398,7 @@ CreateThread(function()
 
                     if exittext then
                         exittext = false
-                        exports['textUi']:DrawTextUi('show', "[E] Exit Apartment")  
+                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>‎ ‎ (E)</b> Exit")  
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -437,7 +437,7 @@ CreateThread(function()
 
                     if stashtext then
                         stashtext = false
-                        exports['textUi']:DrawTextUi('show', "[E] Open Stash")  
+                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Stash")  
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -466,7 +466,7 @@ CreateThread(function()
 
                     if outfittext then
                         outfittext = false
-                        exports['textUi']:DrawTextUi('show', "[E] Change Outfit")  
+                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Outfits")  
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -495,7 +495,7 @@ CreateThread(function()
 
                     if logouttext then
                         logouttext = false
-                        exports['textUi']:DrawTextUi('show', "[E] Logout")  
+                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Logout")  
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -548,7 +548,7 @@ CreateThread(function()
                         if entertext then
                             entertext = false
                             TriggerEvent('apartments:client:UpdateApartment')
-                            exports['textUi']:DrawTextUi('show', "[E] Enter Apartment | [G] Ring Doorbell")  
+                            exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>‎ ‎ (E)</b> Enter")  
                         end
 
                         if IsControlJustReleased(0, 38) then

@@ -195,7 +195,7 @@ SetTimeout(0, function()
         require 'client.framework.ox'
     elseif utils.hasExport('es_extended.getSharedObject') then
         require 'client.framework.esx'
-    elseif utils.hasExport('qb-core.GetCoreObject') then
+    elseif utils.hasExport('lrp-core.GetCoreObject') then
         require 'client.framework.qb'
     end
 end)

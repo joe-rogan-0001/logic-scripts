@@ -475,7 +475,6 @@ CreateThread(function()
                 local tableId = blackjack_func_368(closestChair)
                 local limits = cfg.blackjackTables[tableId].limits
                 inZone  = true
-                text = "[E] Play " .. dwGetLimitTitleString()
                 --if not timeoutHowToBlackjack then
                     if IsControlJustPressed(0, 38) then
                         if blackjackTableData[closestChair] == false then
@@ -489,11 +488,11 @@ CreateThread(function()
             end
             if inZone and not alreadyEnteredZone then
                 alreadyEnteredZone = true
-                exports['textUi']:DrawTextUi('show', text)  
+                exports['ps-ui']:DisplayText("[E] Play", "primary")
             end
             if not inZone and alreadyEnteredZone then
                 alreadyEnteredZone = false
-                exports['textUi']:HideTextUi('hide')
+                exports['ps-ui']:HideText()
             end
         end
         Wait(sleep)		
@@ -541,7 +540,7 @@ CreateThread(function()
             exports['casinoUi']:DrawCasinoUi('show', "Diamond Casino Blackjack ($"..format_int(minbet)..")</p>Game Starting in: "..tostring(timeLeft).."s")  
         end
         if drawCurrentHand then
-            exports['textUi']:DrawTextUi('show', "Your hand: "..tostring(currentHand).."</p>Dealers Hand: "..tostring(dealersHand))  
+            exports['ps-ui']:DisplayText("Your hand: "..tostring(currentHand).."</p>Dealers Hand: "..tostring(dealersHand), "primary")  
         end
         Wait(500)
     end
@@ -558,7 +557,7 @@ RegisterNetEvent("Blackjack:beginBetsBlackjack")
 AddEventHandler("Blackjack:beginBetsBlackjack",function(gameID,tableId)
     globalGameId = gameID
     -- blackjackInstructional = setupBlackjackInstructionalScaleform("instructional_buttons")
-    exports['textUi']:HideTextUi('hide')
+    exports['ps-ui']:HideText()
     TriggerEvent("doj:client:openBetMenu")
     QBCore.Functions.Notify("Place your bets", 'primary', 3500)
     bettedThisRound = false
@@ -762,7 +761,6 @@ function goToBlackjackSeat(blackjackSeatID)
 
     
     -- print("[CMG Casino] start sit at blackjack seat") 
-    -- exports['textUi']:DrawTextUi('show', "Waiting for next game to start...") 
 
     blackjackAnimsToLoad = {
       "anim_casino_b@amb@casino@games@blackjack@dealer",

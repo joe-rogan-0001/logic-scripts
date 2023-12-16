@@ -175,7 +175,7 @@ createSlots = function(index, data)
 
 				CreateThread(function()
 					while selectedSlot ~= nil do
-						exports['textUi']:DrawTextUi('show', "Stand up: Backspace</p>Spin: Enter/Space</p>Change View: E")
+						exports['ps-ui']:DisplayText("Stand up: Backspace</p>Spin: Enter/Space</p>Change View: E", "primary")
 						QBCore.Functions.TriggerCallback('doj:server:whiteChipsAmount', function(result)
 							exports['casinoUi']:DrawCasinoUi('show', "Diamond Casino Slot Machines</p>Availble chips: "..result)   
 						end)
@@ -229,7 +229,7 @@ createSlots = function(index, data)
 			local rndspin = ({'exit_left', 'exit_right'})[math.random(1, 2)]
 			NetworkAddPedToSynchronisedScene(PlayerPedId(),SITTING_SCENE,L,rndspin,2.0,2.0,13,16,0,0)
 			NetworkStartSynchronisedScene(SITTING_SCENE)
-			exports['textUi']:HideTextUi('hide')
+			exports['ps-ui']:HideText()
 			exports['casinoUi']:HideCasinoUi('hide') 
 
 			Wait(3000)
@@ -515,11 +515,11 @@ CreateThread(function()
 		end
 		if inZone and not alreadyEnteredZone then
 			alreadyEnteredZone = true
-			exports['textUi']:DrawTextUi('show', text)
+			exports['ps-ui']:DisplayText("<b>Diamond Casino Slots</b> </p>Press [E] to sit</p>'..v.data.SlotName..'</p>'..v.data.bet..' white chip(s)", "primary")
 		end
 		if not inZone and alreadyEnteredZone then
 			alreadyEnteredZone = false
-			exports['textUi']:HideTextUi('hide')
+			exports['ps-ui']:HideText()
 			exports['casinoUi']:HideCasinoUi('hide')
 		end
         Wait(wait)

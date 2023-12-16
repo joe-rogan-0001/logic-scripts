@@ -1,4 +1,3 @@
-shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 -- FX Information
 fx_version 'cerulean'
 use_experimental_fxv2_oal 'yes'
@@ -8,7 +7,7 @@ game 'gta5'
 -- Resource Information
 name 'ox_target'
 author 'Overextended'
-version '1.13.0'
+version '1.13.1'
 repository 'https://github.com/overextended/ox_target'
 description ''
 
@@ -22,7 +21,6 @@ shared_scripts {
 client_scripts {
 	'@ox_lib/init.lua',
 	'client/main.lua',
-	'init.lua',
 }
 
 server_scripts {

@@ -70,7 +70,7 @@ CreateThread(function()
                 TriggerEvent('doj:casinoMenuHeader') 
             elseif Config.CasinoEmployeePrompt == 'peek' then
                 text = '<b>Diamond Casino Exchange</b>'
-                exports['textUi']:DrawTextUi('show', text)
+                exports['ps-ui']:DisplayText("<b>Diamond Casino Exchange</b>", "primary")
                 exports['lrp-target']:AddTargetModel(`U_F_M_CasinoCash_01`, {
                     options = {
                         { 
@@ -84,7 +84,7 @@ CreateThread(function()
             end
         else
             exports['lrp-menu']:closeMenu()
-            exports['textUi']:HideTextUi('hide')
+            exports['ps-ui']:HideText()
         end
     end)
 end)
@@ -120,7 +120,7 @@ RegisterNetEvent('doj:casinoMenuHeader', function()
 end)
 
 RegisterNetEvent('doj:casinoMainMenu', function()
-    exports['textUi']:HideTextUi('hide')
+    exports['ps-ui']:HideText()
     exports['lrp-menu']:openMenu({
         {
             header = "Diamond Casino",

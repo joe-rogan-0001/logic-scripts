@@ -168,9 +168,9 @@ RegisterNetEvent('Renewed-Deliveries:client:NewPlace', function(location, NetID,
     pZone:onPlayerInOut(function(isPointInside)
         if isPointInside then
             if prop == nil then return end
-            exports['lrp-core']:DrawText("[E] Deliver Package",'left')
+            exports['lrp-core']:DrawText("<b style=color:rgb(97,163,185);>‎ ‎ ‎ ‎ ‎ ‎(E)</b> Deliver Package",'right')
             Listen4Control()
-        else
+        else 
             listen = false
             exports['lrp-core']:HideText()
         end

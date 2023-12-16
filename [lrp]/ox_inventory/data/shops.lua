@@ -152,7 +152,9 @@ return {
 
 	PoliceArmoury = {
 		name = 'Police Armoury',
-		groups = shared.police,
+		groups = {
+			police = 0
+		},
 		blip = {
 			id = 110, colour = 84, scale = 0.7
 		}, inventory = {
@@ -325,6 +327,93 @@ return {
 			vector3(-660.8, -859.28, 24.52)
 		}, targets = {
 			{ loc = vec3(-660.55, -857.24, 23.54), length = 1.0, width = 1.0, heading = 0.0, minZ = 22.0, maxZ = 24.0, distance = 1.5 },
+		}
+	},
+	PerformanceParts = {
+		name = 'Performance Parts',
+		groups = {
+			wotc = 0
+		},
+		inventory = {
+			{ name = "turbo", price = 35000, amount = 50, info = {}, type = "item", },
+			{ name = "engine1", price = 7500, amount = 50, info = {}, type = "item", },
+			{ name = "engine2", price = 10000, amount = 50, info = {}, type = "item", },
+			{ name = "engine3", price = 15000, amount = 50, info = {}, type = "item", },
+			{ name = "engine4", price = 20000, amount = 50, info = {}, type = "item", },
+			{ name = "engine5", price = 34000, amount = 50, info = {}, type = "item", },
+			{ name = "transmission1", price = 7500, amount = 50, info = {}, type = "item", },
+			{ name = "transmission2", price = 10000, amount = 50, info = {}, type = "item", },
+			{ name = "transmission3", price = 15000, amount = 50, info = {}, type = "item", },
+			{ name = "transmission4", price = 30000, amount = 50, info = {}, type = "item", },
+			{ name = "brakes1", price = 5000, amount = 50, info = {}, type = "item", },
+			{ name = "brakes2", price = 7500, amount = 50, info = {}, type = "item", },
+			{ name = "brakes3", price = 15000, amount = 50, info = {}, type = "item", },
+			{ name = "car_armor", price = 30000, amount = 50, info = {}, type = "item", },
+			{ name = "suspension1", price = 5000, amount = 50, info = {}, type = "item", },
+			{ name = "suspension2", price = 10000, amount = 50, info = {}, type = "item", },
+			{ name = "suspension3", price = 15000, amount = 50, info = {}, type = "item", },
+			{ name = "suspension4", price = 20000, amount = 50, info = {}, type = "item", },
+			{ name = "suspension5", price = 25000, amount = 50, info = {}, type = "item", },
+			{ name = "bprooftires", price = 500000, amount = 50, info = {}, type = "item", },
+			{ name = "drifttires", price = 35000, amount = 50, info = {}, type = "item", },
+			{ name = "nos", price = 15000, amount = 50, info = {}, type = "item", },
+		}, locations = {
+			vector3(773.04, -1294.28, 26.24),
+		}, targets = {
+			{ loc = vec3(773.04, -1294.28, 25.24), length = 0.4, width = 0.4, heading = 0.0, minZ = 24.24, maxZ = 25.84, distance = 1.5 },
+		}
+	},
+	Tools = {
+		name = 'Tools',
+		groups = {
+			wotc = 0
+		},
+		inventory = {
+			{ name = "mechanic_tools", price = 1000, amount = 10, info = {}, type = "item", },
+			{ name = "toolbox", price = 1000, amount = 10, info = {}, type = "item", },
+			{ name = "ducttape", price = 1000, amount = 100, info = {}, type = "item", },
+			{ name = "paintcan", price = 1000, amount = 50, info = {}, type = "item", },
+			{ name = "tint_supplies", price = 1000, amount = 50, info = {}, type = "item", },
+			{ name = "underglow_controller", price = 1000, amount = 50, info = {}, type = "item", },
+			{ name = "cleaningkit", price = 1000, amount = 100, info = {}, type = "item", },
+			{ name = "sparetire", price = 1000, amount = 100, info = {}, type = "item", },
+			{ name = "axleparts", price = 1000, amount = 1000, info = {}, type = "item", },
+			{ name = "carbattery", price = 1000, amount = 1000, info = {}, type = "item", },
+			{ name = "sparkplugs", price = 1000, amount = 1000, info = {}, type = "item", },
+			{ name = "newoil", price = 1000, amount = 1000, info = {}, type = "item", },
+		}, locations = {
+			vector3(774.36, -1294.3, 26.24),
+		}, targets = {
+			{ loc = vec3(774.36, -1294.3, 25.24), length = 0.4, width = 0.4, heading = 0.0, minZ = 24.24, maxZ = 25.84, distance = 1.5 },
+		}
+	},
+	CosmeticParts = {
+		name = 'Cosmetic Parts',
+		groups = {
+			wotc = 0
+		},
+		inventory = {
+			{ name = "hood", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "roof", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "spoiler", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "bumper", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "skirts", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "exhaust", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "seat", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "livery", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "tires", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "horn", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "internals", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "externals", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "customplate", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "headlights", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "rims", price = 200, amount = 100, info = {}, type = "item", },
+			{ name = "rollcage", price = 200, amount = 50, info = {}, type = "item", },
+			{ name = "noscolour", price = 200, amount = 50, info = {}, type = "item", },
+		}, locations = {
+			vector3(775.98, -1294.31, 26.24),
+		}, targets = {
+			{ loc = vec3(775.98, -1294.31, 25.24), length = 0.4, width = 0.4, heading = 0.0, minZ = 24.24, maxZ = 25.84, distance = 1.5 },
 		}
 	},
 	VendingMachineDrinks = {

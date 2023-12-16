@@ -733,7 +733,7 @@ function Draw3DText(coords, text, size, font)
 end
 
 function hideUi()
-	exports['textUi']:HideTextUi('hide')
+    exports['ps-ui']:HideText()
 	exports['casinoUi']:HideCasinoUi('hide') 
 end
 
@@ -807,7 +807,7 @@ CreateThread(function()
                     local dist = Vdist(playerpos, objcoords)
                     if dist < 2.4 then
                         if dist < 2.3 then
-                            exports['textUi']:DrawTextUi('show',"Diamond Casino Roulette</p>Press [E] to sit down")
+                            exports['ps-ui']:DisplayText("Diamond Casino Roulette</p>Press [E] to sit down", "primary")
                             local closestChairData = getClosestChairData(v.tableObject)
 
                             if closestChairData == nil then
@@ -919,12 +919,13 @@ function casinoNuiUpdateGame(rulettIndex, ido, statusz)
             if not statusz then
                 exports['casinoUi']:DrawCasinoUi('show', "Diamond Casino Blackjack</p>"..ido.." Seconds Left</p>Current Bet: "..currentBetAmount.." chips</p>Availble chips: "..retval)
                 if Config.allowCustomBet then
-                    exports['textUi']:DrawTextUi('show', "Adjust Bet: <strong>↑/↓</strong></p>LEFT CLICK: Bet number</p>SPACEBAR: Custom Amount</p>E: Change camera</p>ESC: Exit")
+                    exports['ps-ui']:DisplayText("Adjust Bet: <strong>↑/↓</strong></p>LEFT CLICK: Bet number</p>SPACEBAR: Custom Amount</p>E: Change camera</p>ESC: Exit", "primary")
+
                 else
-                    exports['textUi']:DrawTextUi('show', "Adjust Bet: <strong>↑/↓</strong></p>LEFT CLICK: Bet number</p>E: Change camera</p>ESC: Exit")
+                    exports['ps-ui']:DisplayText("Adjust Bet: <strong>↑/↓</strong></p>LEFT CLICK: Bet number</p>E: Change camera</p>ESC: Exit", "primary")
                 end
             else
-                exports['textUi']:DrawTextUi('show', "The game is starting..") 
+                exports['ps-ui']:DisplayText("The game is starting..", "primary")
                 hideUi()
             end
         end

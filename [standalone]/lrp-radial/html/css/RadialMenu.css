@@ -28,8 +28,8 @@ svg.menu.outer {
 }
 
 svg.menu > g > path {
-    fill-opacity: 0.4;
-    fill: #00000080;
+    fill-opacity: 1.0;
+    fill: #313030d7;
 }
 
 svg.menu > g.sector > path {
@@ -44,19 +44,19 @@ svg.menu > g.sector > use {
 }
 
 svg.menu > g.sector.selected > path {
-    fill:rgb(0, 166, 231);
+    fill:rgb(97,163,185);
     fill-opacity: 0.6;
 }
 
 svg.menu > g.center:hover > circle {
-    fill:rgb(0, 166, 231);
+    fill:rgb(97,163,185);
     fill-opacity: 0.6;
 }
 
 svg.menu > g.center > circle {
     cursor: pointer;
     fill: #00000080;
-    fill-opacity: 0.4;
+    fill-opacity: 0.6;
 }
 
 svg.menu > g.center > text,

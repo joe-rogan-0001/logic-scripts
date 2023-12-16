@@ -278,7 +278,6 @@ local function startTargeting()
         else
             if hasTarget then
                 hasTarget = false
-                SendNuiMessage('{"event": "leftTarget"}')
             end
 
             if lastEntity then
@@ -321,6 +320,7 @@ local function startTargeting()
                             state.setNuiFocus(false, false)
                         end
                     elseif hasTarget and IsDisabledControlJustPressed(0, mouseButton) then
+                        SendNuiMessage('{"event": "ClickEvent"}')
                         state.setNuiFocus(true, true)
                     end
 

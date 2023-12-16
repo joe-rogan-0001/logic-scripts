@@ -63,7 +63,7 @@ CreateThread(function()
 				TriggerEvent('doj:casinoLuckyWheelHeader') 
 			elseif Config.LuckyWheelPrompt == 'peek' then
 				text = "<b>Diamond Casino Lucky Wheel</b></p> $2000 Spin"
-				exports['textUi']:DrawTextUi('show', text)
+				exports['ps-ui']:DisplayText("<b>Diamond Casino Lucky Wheel</b></p> $2000 Spin", "primary")
 				exports['lrp-target']:AddCircleZone("LuckyWheel", vector3(988.68, 43.28, 71.27), 2.0, {
 					name="LuckyWheel",
 					heading=160,
@@ -87,7 +87,7 @@ CreateThread(function()
 			end
         else
 			exports['lrp-menu']:closeMenu()
-            exports['textUi']:HideTextUi('hide')
+            exports['ps-ui']:HideText()
         end
     end)
 end)
@@ -245,7 +245,7 @@ end
 
 function doRoll(index)
     if not _isRolling then
-		exports['textUi']:HideTextUi('hide')
+		exports['ps-ui']:HideText()
 
         _isRolling = true
         local playerPed = PlayerPedId()

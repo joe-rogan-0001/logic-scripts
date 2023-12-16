@@ -34,19 +34,19 @@ CreateThread(function()
 			local jobLoc = loc.JobLocations
 			Targets[nameEnter] =
 				exports['lrp-target']:AddBoxZone(nameEnter, jobLoc.Enter.coords.xyz, jobLoc.Enter.w, jobLoc.Enter.d, { name=nameEnter, heading = jobLoc.Enter.coords.w, debugPoly=Config.Debug, minZ=jobLoc.Enter.coords.z-1, maxZ=jobLoc.Enter.coords.z+2 },
-					{ options = { { event = "jim-recycle:TeleWareHouse", label = Loc[Config.Lan].target["enter"]..(Config.PayAtDoor and " ($"..Config.PayAtDoor..")" or ""), tele = jobLoc.Enter.tele, job = loc.Job, enter = true }, },
+					{ options = { { event = "jim-recycle:TeleWareHouse", icon = "fas fa-hands", label = Loc[Config.Lan].target["enter"]..(Config.PayAtDoor and " ($"..Config.PayAtDoor..")" or ""), tele = jobLoc.Enter.tele, job = loc.Job, enter = true }, },
 					distance = 1.5 })
 
 			local nameExit = "RecycleExit"..location
 			Targets[nameExit] =
 				exports['lrp-target']:AddBoxZone(nameExit, jobLoc.Exit.coords.xyz, jobLoc.Exit.w, jobLoc.Exit.d, { name=nameExit, heading = jobLoc.Exit.coords.w, debugPoly=Config.Debug, minZ=jobLoc.Exit.coords.z-1, maxZ=jobLoc.Exit.coords.z+2, },
-					{ options = { { event = "jim-recycle:TeleWareHouse", label = Loc[Config.Lan].target["exit"], tele = jobLoc.Exit.tele }, },
+					{ options = { { event = "jim-recycle:TeleWareHouse", icon = "fas fa-hands", label = Loc[Config.Lan].target["exit"], tele = jobLoc.Exit.tele }, },
 					distance = 1.5 })
 
 			local nameDuty = "RecycleDuty"..location
 			Targets[nameDuty] =
 				exports['lrp-target']:AddBoxZone(nameDuty, jobLoc.Duty.coords.xyz, jobLoc.Duty.w, jobLoc.Duty.d, { name=nameDuty, heading = jobLoc.Duty.coords.w, debugPoly=Config.Debug, minZ=jobLoc.Duty.coords.z-0.5, maxZ=jobLoc.Duty.coords.z+0.5, },
-					{ options = { { event = "jim-recycle:dutytoggle", label = Loc[Config.Lan].target["duty"], job = loc.Job, Trolly = jobLoc.Trolly }, },
+					{ options = { { event = "jim-recycle:dutytoggle", icon = "fas fa-hands", label = Loc[Config.Lan].target["duty"], job = loc.Job, Trolly = jobLoc.Trolly }, },
 					distance = 1.5 })
 
 			if jobLoc.Trade then
@@ -55,7 +55,7 @@ CreateThread(function()
 					Peds[nameTrade] = makePed(jobLoc.Trade[i].model, jobLoc.Trade[i].coords, true, false, jobLoc.Trade[i].scenario, nil)
 					Targets[nameTrade] =
 						exports['lrp-target']:AddBoxZone(nameTrade, vec3(jobLoc.Trade[i].coords.x, jobLoc.Trade[i].coords.y, jobLoc.Trade[i].coords.z-1), jobLoc.Trade[i].w, jobLoc.Trade[i].d, { name=nameTrade, heading = jobLoc.Trade[i].coords.w, debugPoly=Config.Debug, minZ= jobLoc.Trade[i].coords.z-1, maxZ=jobLoc.Trade[i].coords.z+1 },
-							{ options = { { event = "jim-recycle:Trade:Menu", label = Loc[Config.Lan].target["trade"], job = loc.Job, Ped = Peds[nameTrade] }, },
+							{ options = { { event = "jim-recycle:Trade:Menu", icon = "fas fa-hands", label = Loc[Config.Lan].target["trade"], job = loc.Job, Ped = Peds[nameTrade] }, },
 							distance = 1.5 })
 				end
 			end
@@ -69,7 +69,7 @@ CreateThread(function()
 		if loc.Blip.blipEnable then makeBlip({ coords = loc.coords, sprite = loc.Blip.sprite, col = loc.Blip.col, name = loc.Blip.name } ) end
 		Targets[nameSell] =
 			exports['lrp-target']:AddBoxZone(nameSell, vec3(loc.coords.x, loc.coords.y, loc.coords.z-1), 1.0, 1.0, { name=nameSell, heading = loc.coords.w, debugPoly = Config.Debug, minZ = loc.coords.z-1, maxZ=loc.coords.z+1 },
-				{ options = { { event = "jim-recycle:Selling:Menu", label = Loc[Config.Lan].target["sell"], Ped = Peds[nameSell], }, },
+				{ options = { { event = "jim-recycle:Selling:Menu", icon = "fas fa-hands", label = Loc[Config.Lan].target["sell"], Ped = Peds[nameSell], }, },
 				distance = 2.5 })
 	end
 	--Bottle Selling Third Eyes
@@ -79,7 +79,7 @@ CreateThread(function()
 		if loc.Blip.blipEnable then makeBlip({ coords = loc.coords, sprite = loc.Blip.sprite, col = loc.Blip.col, name = loc.Blip.name } ) end
 		Targets[nameBank] =
 			exports['lrp-target']:AddBoxZone(nameBank, vec3(loc.coords.x, loc.coords.y, loc.coords.z-1), 1.0, 1.0, { name=nameBank, heading = loc.coords.w, debugPoly = Config.Debug, minZ = loc.coords.z-1, maxZ=loc.coords.z+1 },
-				{ options = { { event = "jim-recycle:Bottle:Menu", label = Loc[Config.Lan].target["sell_bottles"], job = Config.JobRole, Ped = Peds[nameBank] }, },
+				{ options = { { event = "jim-recycle:Bottle:Menu", icon = "fas fa-hands", label = Loc[Config.Lan].target["sell_bottles"], job = Config.JobRole, Ped = Peds[nameBank] }, },
 				distance = 1.5 })
 	end
 end)
@@ -131,7 +131,7 @@ function PickRandomPackage(Trolly)
 	--Generate Target Location on the selected package
 	Targets["Package"] =
 		exports['lrp-target']:AddTargetEntity(randPackage,
-			{ options = { { event = "jim-recycle:PickupPackage:Start", label = Loc[Config.Lan].target["search"], Trolly = Trolly} },
+			{ options = { { event = "jim-recycle:PickupPackage:Start", icon = "fas fa-hands", label = Loc[Config.Lan].target["search"], Trolly = Trolly} },
 			distance = 2.5,	})
 end
 
@@ -208,7 +208,7 @@ RegisterNetEvent("jim-recycle:PickupPackage:Hold", function(data) local Ped = Pl
 
 	Targets["DropOff"] =
 		exports['lrp-target']:AddTargetEntity(TrollyProp,
-			{ options = { { event = "jim-recycle:PickupPackage:Finish", label = Loc[Config.Lan].target["drop_off"], Trolly = data.Trolly } },
+			{ options = { { event = "jim-recycle:PickupPackage:Finish", icon = "fas fa-hands", label = Loc[Config.Lan].target["drop_off"], Trolly = data.Trolly } },
 			distance = 2.5,	})
 end)
 

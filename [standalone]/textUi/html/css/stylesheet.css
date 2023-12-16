@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap');
+
 html, body{
     width:100%;
     height:100%;
@@ -7,19 +9,18 @@ html, body{
 }
 @keyframes fadeIn {
     /* 0% {opacity:0; left:-15%;} */
-    100% {opacity:1; top:50%; left:1%}
+    100% {opacity:1; top:80%; left:47.4%}
 }
 @keyframes fadeOut {
-    0% {opacity:1; top:50%; left:1%}
+    0% {opacity:1; top:80%; left:47.4%}
     /* 100% {opacity:0; left:-15%;} */
 }
 #container{
     position:absolute;
-    top:50%;
-    left:1%;
+    top:80%;
+    left:47.4%;
     /* width:10%; */
-    max-width:25%;
-    transform: translateY(-50%);
+    max-width:5%;
 }
 
 .fadeIn{
@@ -31,7 +32,7 @@ html, body{
 
 #box{
     width:100%;
-    background: #0985e3f8; 
+    background: #0985e300; 
     border-radius:5px;
     
 }
@@ -48,16 +49,19 @@ html, body{
 }
 
 #title, #text{
-    width:calc(100% - 20px);
+    width:calc(100% - 1px);
 }
 
 #text{
-    padding:10px;
     color:#fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-weight: 600;
-    font-size:17px;
-    text-align:center;   
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.419);
-}  
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    position: relative;
 
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #00000000;
+    font-size: 2.1vh; /* Hier voeg je de lettergrootte toe (pas aan zoals nodig) */   
+}  

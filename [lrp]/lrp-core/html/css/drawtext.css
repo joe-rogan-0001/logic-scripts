@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap');
 
 :root {
-    --primary-bg: rgba(23, 23, 23, 90%);
-    --active-bg: #dc143c;
+    --primary-bg: rgba(23, 23, 23, 0);
+    --active-bg: #ffffff;
     --font-color: white;
 }
 
@@ -13,8 +13,8 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif !important;
-    font-weight: 300;
+    font-weight: bold;
+    font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .text {
@@ -24,7 +24,8 @@
     margin-top: 0.5rem;
     padding: 0.45rem;
     border-radius: 0.15rem;
-    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #00000000;
+    font-size: 1.7em; /* Hier voeg je de lettergrootte toe (pas aan zoals nodig) */
 }
 
 @media (width: 3840px) and (height: 2160px) {
@@ -35,63 +36,61 @@
         overflow: hidden;
         padding: 0;
         margin: 0;
-        font-family: "Poppins", sans-serif !important;
-        font-weight: 300;
-        font-size: 1.5vh;
+        font-weight: bold;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        font-size: 1.7vh;
     }
 }
+
 
 .text.pressed {
     background: var(--active-bg);
 }
 
 .top {
-    left: 45vw;
-    top: -100px;
+    left: 47%;
+    top: 80%;
 }
 
 .top.show {
-    transition: 0.5s;
-    top: 10px;
+    left: 47%;
+    top: 80%;
     opacity: 1;
 }
 
 .top.hide {
-    transition: 0.5s;
-    top: -100px;
+    top: 0;
     opacity: 0;
 }
 
 .right {
-    top: 50%;
-    right: -100px;
+    left: 45%;
+    top: 80%;
 }
 
 .right.show {
-    transition: 0.5s;
-    right: 10px;
+    left: 45%;
+    top: 80%;
     opacity: 1;
 }
 
 .right.hide {
-    transition: 0.5s;
-    right: -100px;
+    top: 0;
     opacity: 0;
 }
 
 .left {
-    top: 50%;
-    left: -100px;
+    left: 47.4%;
+    top: 80%;
 }
 
 .left.show {
-    transition: 0.5s;
-    left: 10px;
+    left: 47.4%;
+    top: 80%;
     opacity: 1;
 }
 
 .left.hide {
-    transition: 0.5s;
-    left: -100px;
+    left: 0;
     opacity: 0;
 }

@@ -1584,7 +1584,7 @@ CreateThread(function()
             })
             garages[k]:onPlayerInOut(function(isPointInside)
                 if isPointInside then
-                    exports['textUi']:DrawTextUi('show', "Parking")  
+                    exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Garage', 'left')
                     local ped = PlayerPedId()
                     local pos = GetEntityCoords(ped)
                     local vehicleclose = QBCore.Functions.GetClosestVehicle(pos)
@@ -1600,7 +1600,7 @@ CreateThread(function()
                         end
                     end, plate)
                 else
-                    exports['textUi']:HideTextUi('hide')
+                    exports['lrp-core']:HideText()
                     TriggerEvent('qb-radial:client:outgarage')
                 end
             end)
@@ -1723,7 +1723,7 @@ CreateThread(function()
             })
             garages[k]:onPlayerInOut(function(isPointInside)
                 if isPointInside then
-                    exports['textUi']:DrawTextUi('show', "Parking")  
+                    exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Garage', 'left')
                     local ped = PlayerPedId()
                     local pos = GetEntityCoords(ped)
                     local vehicleclose = QBCore.Functions.GetClosestVehicle(pos)
@@ -1739,7 +1739,7 @@ CreateThread(function()
                         end
                     end, plate)
                 else
-                    exports['textUi']:HideTextUi('hide')
+                    exports['lrp-core']:HideText()
                     TriggerEvent('qb-radial:client:outgarage')
                 end
             end)
@@ -1766,7 +1766,7 @@ CreateThread(function()
             })
             garages[k]:onPlayerInOut(function(isPointInside)
                 if isPointInside and PlayerJob.name == JobGarages[j].job then
-                    exports['textUi']:DrawTextUi('show', "Job Parking Zone")  
+                    exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Garage', 'left')
                     local ped = PlayerPedId()
                     local pos = GetEntityCoords(ped)
                     local vehicleclose = QBCore.Functions.GetClosestVehicle(pos)
@@ -1784,7 +1784,7 @@ CreateThread(function()
                         end
                     end, plate)
                 else
-                    exports['textUi']:HideTextUi('hide')
+                    exports['lrp-core']:HideText()
                     TriggerEvent('qb-radial:client:joboutgarage')
                 end
             end)
@@ -1811,7 +1811,7 @@ CreateThread(function()
             })
             garages[k]:onPlayerInOut(function(isPointInside)
                 if isPointInside and PlayerGang.name == GangGarages[j].gang then
-                    exports['textUi']:DrawTextUi('show', "Gang Parking Zone")  
+                    exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Garage', 'left')
                     local ped = PlayerPedId()
                     local pos = GetEntityCoords(ped)
                     local vehicleclose = QBCore.Functions.GetClosestVehicle(pos)
@@ -1827,7 +1827,7 @@ CreateThread(function()
                         end
                     end, plate)
                 else
-                    exports['textUi']:HideTextUi('hide')
+                    exports['lrp-core']:HideText()
                     TriggerEvent('qb-radial:client:gangoutgarage')
                 end
             end)

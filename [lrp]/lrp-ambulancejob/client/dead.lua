@@ -101,7 +101,7 @@ local function DrawTxt(x, y, width, height, scale, text, r, g, b, a, outline)
     SetTextOutline()
     SetTextEntry("STRING")
     AddTextComponentString(text)
-    DrawText(x - width/2, y - height/2 + 0.005)
+    DrawText(x - width/2, y - height/1 + 0.350)
 end
 
 
@@ -185,9 +185,11 @@ CreateThread(function()
             if isDead then
                 if not isInHospitalBed then
                     if deathTime > 0 then
-                        DrawTxt(0.93, 1.42, 1.0, 1.0,0.54, "Dead: ~r~ " .. math.ceil(deathTime) .. " ~w~ seconds remaining", 255, 255, 255, 255)
+                     --   (x, y, width, height, scale, text, r, g, b, a, outline)
+                        DrawTxt(0.936, 1.42, 1.0, 0.94, 0.48, "Dead: ~r~ " .. math.ceil(deathTime) .. " ~w~ seconds remaining", 255, 255, 255, 255)
+                        DrawTxt(0.936, 1.45, 1.0, 0.94, 0.38, "~w~ Press and hold [F1] to call ems/police ~w~", 255, 255, 255, 255)
                     else
-                        DrawTxt(0.865, 1.42, 1.0, 1.0, 0.54, "~w~ HOLD ~r~[E] ~w~("..hold..")~w~ TO ~r~RESPAWN ~w~OR WAIT FOR EMS", 255, 255, 255, 255)
+                        DrawTxt(0.936, 1.42, 1.0, 0.94, 0.48, "~w~ HOLD ~r~[E] ~w~("..hold..")~w~ TO ~r~RESPAWN ~w~OR WAIT FOR EMS", 255, 255, 255, 255)
                     end
                 end
 

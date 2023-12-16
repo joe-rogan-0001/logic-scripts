@@ -22,7 +22,7 @@ CreateThread(function()
                 TriggerEvent('doj:casinoinsideTrackHeader') 
             elseif Config.HorseBetPrompt == 'peek' then
                 text = '<b>Diamond Casino Inside Track</b>'
-                exports['textUi']:DrawTextUi('show', text)
+                exports['ps-ui']:DisplayText("<b>Diamond Casino Inside Track</b>", "primary")
                 exports['lrp-target']:AddCircleZone("Betting", vector3(995.88, 69.91, 69.66), 1.0, {
                     name="Betting",
                     heading=160,
@@ -41,7 +41,7 @@ CreateThread(function()
             end
         else
 			exports['lrp-menu']:closeMenu()
-            exports['textUi']:HideTextUi('hide')
+            exports['ps-ui']:HideText()
         end
     end)
 end)

@@ -77,16 +77,16 @@ AddEventHandler("cr-fleeca:startLoot_b", function(data, name)
 
                         if dst1 < 2 then
                             if not helpTextShowing then
-                                exports['textUi']:DrawTextUi('show', "[E] Grab it!")
+                                exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Grab Loot!', 'top')
                                 helpTextShowing = true
                             elseif dst1 < 0.75 and IsControlJustReleased(0, 38) then
-                                exports['textUi']:HideTextUi('hide')
+                                exports['lrp-core']:HideText()
                                 TriggerServerEvent("cr-fleeca:lootup", name, "Loot")
                                 StartGrab(name)
                             end
                         else   
                             if helpTextShowing then
-                                exports['textUi']:HideTextUi('hide')
+                                exports['lrp-core']:HideText()
                                 helpTextShowing = false
                             end
                         end
@@ -125,16 +125,16 @@ AddEventHandler("cr-fleeca:startLoot_c", function(data, name)
 
                         if dst1 < 2 then
                             if not helpTextShowing then
-                                exports['textUi']:DrawTextUi('show', "[E] Grab it!")
+                                exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Grab Loot!', 'top')
                                 helpTextShowing = true
                             elseif dst1 < 0.75 and IsControlJustReleased(0, 38) then
-                                exports['textUi']:HideTextUi('hide')
+                                exports['lrp-core']:HideText()
                                 TriggerServerEvent("cr-fleeca:lootup", name, "Loot")
                                 StartGrab(name)
                             end
                         else   
                             if helpTextShowing then
-                                exports['textUi']:HideTextUi('hide')
+                                exports['lrp-core']:HideText()
                                 helpTextShowing = false
                             end
                         end

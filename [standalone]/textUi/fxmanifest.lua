@@ -1,4 +1,3 @@
-shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 fx_version 'bodacious'
 game 'gta5'
 
@@ -14,6 +13,7 @@ files {
 	'html/index.html',
 	'html/js/script.js', 
 	'html/css/stylesheet.css',
+	'html/fonts/*'
 }
 
 client_scripts {

@@ -1608,14 +1608,14 @@ AddEventHandler("polyzonehelper:enter", function(zone, data)
 
         if plyVeh ~= 0 and GetPedInVehicleSeat(plyVeh, -1) == plyPed then
             inbennys = true
-            exports['textUi']:DrawTextUi('show', "Bennys")  
+            exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Bennys', 'left') 
         end
     elseif zone == "bennysPD" and isPolice then
         local plyPed = PlayerPedId()
         local plyVeh = GetVehiclePedIsIn(plyPed, false)
         if plyVeh ~= 0 and GetPedInVehicleSeat(plyVeh, -1) == plyPed then
             inbennys = true
-            exports['textUi']:DrawTextUi('show', "Bennys")
+            exports['lrp-core']:HideText()
         end
     end
 end)
@@ -1623,6 +1623,6 @@ end)
 AddEventHandler("polyzonehelper:exit", function(zone)
     if zone == "bennys" or zone == "tunershop" or zone == "bennysPD" then 
         inbennys = false
-        exports['textUi']:HideTextUi('hide')
+        exports['lrp-core']:HideText()
     end
 end)

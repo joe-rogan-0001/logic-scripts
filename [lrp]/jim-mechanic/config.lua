@@ -4,7 +4,7 @@ Config = {
 	Debug = false, -- Set to true to show green debug boxes to help track
 	img = "ox_inventory/web/images", -- Set this to the directory for your inventory image files
 	JimShops = true, -- If using my free script jim-shops, enable this to use it with the mechanic stores.
-	JimMenu = false, -- If using my free edit of lrp-menu enable this.
+	JimMenu = true, -- If using my free edit of lrp-menu enable this.
 	distkph = false, -- Set to false to read distance travelled in Miles.
 	Notify = "okok",
 
@@ -24,7 +24,7 @@ Config = {
 	FreeRepair = false,  -- Are repairs free? True means yes
 	StashRepair = false, -- Enable for repair materials to be removed from a job stash (disabled if RequiresJob = false)
 
-	Stores = true, -- Set true to turn on shop storage features
+	Stores = false, -- Set true to turn on shop storage features
 
 	Crafting = true, -- Set true to turn on crafting features
 	StashCraft = false,  -- Set true to grab materials from mechaincs stash for crafting

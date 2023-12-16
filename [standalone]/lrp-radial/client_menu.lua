@@ -10,7 +10,7 @@ local MAX_MENU_ITEMS = 7
 -- Main thread
 Citizen.CreateThread(function()
     local keyBind = "F1"
-    local keyBind2 = "`"
+    local keyBind2 = "Y"
     while true do
         Citizen.Wait(0)
         SetBigmapActive(false, false)
