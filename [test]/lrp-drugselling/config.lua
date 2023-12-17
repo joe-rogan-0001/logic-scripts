@@ -31,7 +31,7 @@ Config.GiveBonusOnPolice = false
 Config.SellPedOnVehicle = false
 
 -- Chance to sell drug
-Config.ChanceSell = 70 -- (in %) 
+Config.ChanceSell = 85  -- (in %) 
 
 -- Random sell amount
 Config.RandomSell = { min = 1, max = 6 } -- range: min, max
