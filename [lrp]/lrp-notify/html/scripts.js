@@ -15,9 +15,9 @@ $(function () {
             </div>`)
             $(`.wrapper-${number}`).css({
                 "margin-bottom": "10px",
-                "width": "275px",
+                "width": "325px",
                 "margin": "0 0 8px -180px",
-                "border-radius": "10px"
+                "border-radius": "0px"
             })
             $('.notification_main-'+number).addClass('main')
             $('.text-'+number).css({

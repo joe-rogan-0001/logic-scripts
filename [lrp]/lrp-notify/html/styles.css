@@ -17,7 +17,7 @@ body {
 }
 
 .main {
-    margin: 12px 16px 12px 56px;
+    margin: 13px 16px 12px 56px;
     position: relative;
 }
 
@@ -34,17 +34,17 @@ body {
 .success-icon::before {
     font-family: "Font Awesome 5 Free";
     content: "\f058";
-    color: #47cf73;
+    color: #ffffff;
 }
 
 .success {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: #77a00f;
     color: #fff;
     padding: 5px 5px 5px 5px;
 }
 
 .success-border {
-    border-left: 4px solid #47cf73;
+    border-left: 0px solid #77a00f;
 }
 
 /* Info Notification*/
@@ -52,17 +52,17 @@ body {
 .info-icon::before {
     font-family: "Font Awesome 5 Free";
     content: "\f05a";
-    color: #2f83ff;
+    color: #ffffff;
 }
 
 .info {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: #2197f2;
     color: #fff;
     padding: 5px 5px 5px 5px;
 }
 
 .info-border {
-    border-left: 4px solid #2f83ff;
+    border-left: 0px solid #2197f2;
 }
 
 /* Warning Notification */
@@ -80,7 +80,7 @@ body {
 }
 
 .warning-border {
-    border-left: 4px solid #ffc107;
+    border-left: 0px solid #ffc107;
 }
 
 /* Error Notification */
@@ -88,18 +88,18 @@ body {
 
 .error-icon::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f06a";
-    color: #dc3545;
+    content: "\f071";
+    color: #ffffff;
 }
 
 .error {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: #dc3545;
     color: #fff;
     padding: 5px 5px 5px 5px;
 }
 
 .error-border {
-    border-left: 4px solid #dc3545;
+    border-left: 0px solid #dc3545;
 }
 
 /* SMS Notification */
@@ -117,7 +117,7 @@ body {
 }
 
 .phonemessage-border {
-    border-left: 4px solid #f38847;
+    border-left: 0px solid #f38847;
 }
 
 /* Long Text Notification */
@@ -135,5 +135,5 @@ body {
 }
 
 .neutral-border {
-    border-left: 4px solid #6c757d;
+    border-left: 0px solid #6c757d;
 }
