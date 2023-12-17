@@ -65,7 +65,7 @@ return {
 		}
 	},
 
-	['blackmoney']                = {
+	['black_money']                = {
 		label = 'Dirty Money',
 	},
 
@@ -5743,7 +5743,7 @@ return {
 		label = 'Female Marijuana Seed',
 		weight = 1000,
 		consume = 0,
-		stack = false,
+		stack = true,
 		server = {
 			export = 'rep-weed.femaleseed',
 		},
@@ -5782,14 +5782,14 @@ return {
 		label = 'Wet Bud (100 grams)',
 		weight = 35000,
 		consume = 0,
-		stack = false,
-		description = 'THIS CANT BE DRIED WITHOUT STRAIN... Needs to be stored somewhere dry.'
+		stack = true,
+		description = 'Needs to be stored somewhere dry.'
 	},
 	['driedbud'] = {
 		label = 'Dried Bud (100 Grams)',
 		weight = 10000,
 		consume = 0,
-		stack = false,
+		stack = true,
 		server = {
 			export = 'rep-weed.driedbud',
 		},
@@ -5836,7 +5836,7 @@ return {
 	['weedbaggie'] = {
 		label = 'Baggie (7g)',
 		weight = 1000,
-		stack = false,
+		stack = true,
 		consume = 0,
 		server = {
 			export = 'rep-weed.weedbaggie',
