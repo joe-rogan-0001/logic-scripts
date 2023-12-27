@@ -760,7 +760,7 @@ Config.Locations = {
 		autoClock = { enter = false, exit = false, },
 		stash = { { coords = vec4(765.35, -1294.28, 25.24, 2.68), w = 4.0, d = 1.0, }, },
 		store = { { coords = vec4(774.44, -1294.28, 25.04, 358.59), w = 5.5, d = 1.0, }, },
-		crafting = { { coords = vec4(769.19, -1294.28, 25.04, 2.9), w = 0.6, d = 1.0, }, },
+		crafting = { { coords = vec4(769.19, -1294.28, 5.04, 2.9), w = 0.6, d = 1.0, }, },
 		clockin = { 
 			{ coords = vector4(772.25, -1313.11, 26.02, 182.65), prop = true, },
 			{ coords = vector4(757.39, -1312.91, 26.36, 181.83), prop = true, }, 

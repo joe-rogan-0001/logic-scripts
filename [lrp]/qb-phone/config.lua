@@ -19,7 +19,7 @@ Config.Webhook = 'https://discord.com/api/webhooks/923630356714889268/gHTc1lTnPW
 Config.VPNItem = 'vpn'
 
 -- The garage the vehicle goes to when you sell a car to a player
-Config.SellGarage = 'altastreet'
+Config.SellGarage = 'aptgarage'
 
 -- NEW --
 Config.Garage = 'qbcore'  -- Use 'jdev' if using JDev's QB Garage Script

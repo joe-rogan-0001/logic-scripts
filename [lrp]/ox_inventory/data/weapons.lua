@@ -813,7 +813,7 @@ return {
 			label = 'Police Issued Rubber Slug Shotgun',
 			weight = 20000,
 			durability = 0.03,
-			ammoname = 'ammo_ltl'
+			ammoname = 'ammo-ltl'
 		},
 		['WEAPON_PUMPSHOTUN_MK2PD'] = {
 			label = 'Police Issued Remington',
@@ -825,7 +825,7 @@ return {
 			label = 'Police Issued Tazer',
 			weight = 5000,
 			durability = 0.03,
-			ammoname = 'ammo-taser'
+			ammoname = 'ammo_taser'
 		},
 		['WEAPON_KATANAS'] = {
 			label = 'Katana',
@@ -1860,12 +1860,16 @@ return {
 			label = 'EMP round',
 			weight = 400,
 		},
-		['ammo-taser'] = {
+		['ammo_taser'] = {
 			label = 'Taser Cartridge',
 			weight = 15,
 		},
 		['ammo-hunting'] = {
 			label = 'Hunting Rifle Round',
+			weight = 15,
+		},
+		['ammo-ltl'] = {
+			label = 'Rubber Slug',
 			weight = 15,
 		},
 	}

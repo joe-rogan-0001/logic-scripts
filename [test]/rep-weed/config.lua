@@ -31,7 +31,7 @@ Config.MinDisPlant = 1.0 -- Min Distance from plant to plant to be allowed to pl
 Config.disPlant = 4.0    -- Max Distance from player to plant to be allowed to plant
 
 Config.MinCops = {
-    Corner = 2, -- allowed to do weed runs/cornering
+    Corner = 1, -- allowed to do weed runs/cornering
     Taco = 3,
 }
 

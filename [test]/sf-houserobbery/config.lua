@@ -14,7 +14,7 @@ Config.Controls = {
 }
 
 Config.Peds = {
-    { model = `s_m_m_dockwork_01`, scenario = "WORLD_HUMAN_AA_SMOKE", coords = vector4(-904.03, 147.31, 62.18, 57.27), event = "sf-houserobbery:getMission", locale = "get_mission" },
+    { model = `s_m_y_dockwork_01`, scenario = "WORLD_HUMAN_AA_SMOKE", coords = vector4(-904.03, 147.31, 62.18, 57.27), event = "sf-houserobbery:getMission", locale = "get_mission" },
     { model = `s_m_m_trucker_01`, scenario = "WORLD_HUMAN_CLIPBOARD", coords = vector4(-1594.352051, 5193.021484, -10.310093, 204.140137), event = "sf-houserobbery:sellItems", locale = "sell_items" },
 }
 

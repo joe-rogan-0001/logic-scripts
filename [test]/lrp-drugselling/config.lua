@@ -92,6 +92,12 @@ Config.BlacklistPeds = {
     "a_m_m_mlcrisis_01",
     "a_m_y_soucent_02",
     "ig_siemonyetarian",
+    "s_m_y_dockwork_01",
+    "s_m_y_busboy_01",
+    "ig_cletus",
+    "S_M_M_HighSec_03",
+    "G_M_M_ChemWork_01",
+    
 }
 
 -- The below option is for you to enable selling anywhere
@@ -100,7 +106,7 @@ Config.SellAnywhere = true
 -- SellItems to be configured only if [Config.SellAnywhere = true]
 Config.SellItems = {
     { item = 'cokebaggy',    price = math.random(100, 200) },
-    { item = 'weedbaggie', price = math.random(80, 140) },
+    { item = 'weedbaggie', price = math.random(70, 130) },
     { item = 'meth1g',         price = math.random(80, 160) },
 }
 

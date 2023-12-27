@@ -190,7 +190,7 @@ Config.DeliveryLocations = {
             coords = vector4(1162.71, 2119.91, 57.08, 181.97),
             rotation = vec3(0, 0.0, 90.0),
             targetHeading = 181.97,
-            pricePerPercent = math.random(3, 10),
+            pricePerPercent = math.random(3, 15),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -210,7 +210,7 @@ Config.DeliveryLocations = {
             coords = vector4(2408.8, 4985.74, 47.67, 130.56),
             rotation = vec3(0, 0, -135.0),
             targetHeading = 137.34,
-            pricePerPercent = math.random(3, 10),
+            pricePerPercent = math.random(3, 15),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -232,7 +232,7 @@ Config.DeliveryLocations = {
             coords = vector4(1246.87, -3155.74, 7.0, 270.07),
             rotation = vec3(0, -3.0, 0.0),
             targetHeading = 270,
-            pricePerLog = math.random(50, 100),
+            pricePerLog = math.random(50, 150),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -252,7 +252,7 @@ Config.DeliveryLocations = {
             coords = vector4(165.57, -3151.59, 7.0, 272.06),
             rotation = vec3(0, 0, 0.0),
             targetHeading = 272.06,
-            pricePerLog = math.random(50, 100),
+            pricePerLog = math.random(50, 150),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -274,7 +274,7 @@ Config.DeliveryLocations = {
             coords = vector4(119.48, -445.33, 42.33, 339.04),
             rotation = vec3(0, 0, 70.0),
             targetHeading = 339.04,
-            pricePerPallete = math.random(200, 300),
+            pricePerPallete = math.random(200, 450),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -294,7 +294,7 @@ Config.DeliveryLocations = {
             coords = vector4(-1095.58, -1638.03, 5.5, 35.11),
             rotation = vec3(0, 0, 125.0),
             targetHeading = 35.11,
-            pricePerPallete = math.random(200, 300),
+            pricePerPallete = math.random(200, 450),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -314,7 +314,7 @@ Config.DeliveryLocations = {
             coords = vector4(-477.95, -958.22, 24.99, 93.47),
             rotation = vec3(0, 0, 0.0),
             targetHeading = 93.47,
-            pricePerPallete = math.random(200, 300),
+            pricePerPallete = math.random(200, 450),
             itemRewards = {
                 -- {
                 --     item_name = "water_bottle",
@@ -531,6 +531,7 @@ Config.Lang = {
     ["hours"] = "h",
     ["minutes"] = "m",
     ["seconds"] = "s",
+    ["newBoss"] = "The previous lobby boss has left the server. You are now the team leader",
     ["logCarHidden"] = "Your log loader has been returned. Now you can rent your truck.",
     ["LogCarNotHidden"] = "You did not hide your log loader. You need to hide it first",
     ["alreadyRentedOneTruck"] = "You've already rented your company truck. We can't give you another one",
@@ -549,6 +550,8 @@ Config.Props = {
         height = 4.5,
     }
 }
+
+-- If you're using a Forests of SA, on our discord in snippets channels you can download a version which will not be conflicting with our map.
 
 Config.TreeSpawningCoords = {
     vector3(-645.61, 5411.87, 47.29),
@@ -614,7 +617,7 @@ Config.TreeSpawningCoords = {
     vector3(-667.43, 5011.87, 164.96),
     vector3(-666.18, 5056.28, 147.76),
     vector3(-605.13, 5043.49, 140.34),
-    vector3(-657.11, 5136.950, 1004.69),
+    vector3(-657.11, 5136.94, 124.69),
     vector3(-613.6, 5243.29, 72.38),
     vector3(-517.75, 5185.98, 89.79),
     vector3(-802.51, 5287.74, 86.55),

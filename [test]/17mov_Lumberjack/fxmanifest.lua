@@ -1,4 +1,3 @@
-shared_script '@lrp-blips/ai_module_fg-obfuscated.lua'
 fx_version "cerulean"
 game "gta5"
 author "Malizniak - 17Movement"

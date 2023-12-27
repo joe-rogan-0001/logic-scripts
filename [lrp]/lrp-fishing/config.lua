@@ -103,21 +103,21 @@ Config.Items = {
 -- [SOURCE: https://github.com/sjpfeiffer/ped_spawner]
 Config.PedList = {                                              -- Peds that will be spawned in (if you change a ped model here you need to also change the ped model in client/addons.lua qb-target exports)
 	{
-		model = "u_m_m_filmdirector",                            -- Boat/Gear Menu
+		model = "ig_cletus",                            -- Boat/Gear Menu
 		coords = vector3(-806.17, -1496.57, 0.6),               
 		heading = 100.0,
 		gender = "male",
         scenario = "WORLD_HUMAN_STAND_FISHING"
 	},
 	{
-		model = "u_m_m_filmdirector",                            -- Boat/Gear Menu
+		model = "ig_cletus",                            -- Boat/Gear Menu
 		coords = vector3(-1604.236, 5256.483, 1.073),               
 		heading = 291.202,
 		gender = "male",
         scenario = "WORLD_HUMAN_STAND_FISHING"
 	},
 	{
-		model = "s_m_o_busker_01",                            -- Boat/Gear Menu
+		model = "ig_cletus",                            -- Boat/Gear Menu
 		coords = vector3(3373.215, 5183.515, 0.46),               
 		heading = 266.111,
 		gender = "male",
@@ -131,7 +131,7 @@ Config.PedList = {                                              -- Peds that wil
         scenario = "WORLD_HUMAN_STAND_FISHING"
 	},
 	{
-		model = "a_m_m_hillbilly_01",                            -- Boat/Gear Menu
+		model = "ig_cletus",                            -- Boat/Gear Menu
 		coords = vector3(1299.665, 4231.885, 32.909),               
 		heading = 81.693,
 		gender = "male",

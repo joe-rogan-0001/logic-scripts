@@ -6,7 +6,7 @@
 <Item>
  <modelName>17mov_logTrailer</modelName>
       <txdName>17mov_logTrailer</txdName>
-      <handlingId>17mov_logTrailer</handlingId>
+      <handlingId>trflat</handlingId>
       <gameName>17mov_logTrailer</gameName>
       <vehicleMakeName />
       <expressionDictName>null</expressionDictName>

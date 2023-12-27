@@ -1627,7 +1627,7 @@ return {
 
 	["washedstone"]                = {
 		label = "Washed Stone",
-		weight = 2500,
+		weight = 3500,
 		stack = true,
 		close = false,
 		description = "ORE",
@@ -3347,7 +3347,7 @@ return {
 
 	["stone"]                      = {
 		label = "Stone",
-		weight = 2500,
+		weight = 3500,
 		stack = true,
 		close = false,
 		description = "ORE",
@@ -5780,14 +5780,14 @@ return {
 	},
 	['wetbud'] = {
 		label = 'Wet Bud (100 grams)',
-		weight = 35000,
+		weight = 500,
 		consume = 0,
 		stack = true,
 		description = 'Needs to be stored somewhere dry.'
 	},
 	['driedbud'] = {
 		label = 'Dried Bud (100 Grams)',
-		weight = 10000,
+		weight = 250,
 		consume = 0,
 		stack = true,
 		server = {
@@ -5830,12 +5830,12 @@ return {
 	},
 	['emptybaggies'] = {
 		label = 'Empty Baggies',
-		weight = 1000,
+		weight = 250,
 		description = 'Empty Baggies'
 	},
 	['weedbaggie'] = {
 		label = 'Baggie (7g)',
-		weight = 1000,
+		weight = 250,
 		stack = true,
 		consume = 0,
 		server = {
@@ -6296,6 +6296,7 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
+		consume = 0,
 		description = 'Set of all kinds of lockpicks, all you need to perhaps break into something?',
 		server = {
 			export = "sf-houserobbery.useLockpick"

@@ -6,7 +6,8 @@ local phoneModel = Config.PhoneModel
 
 -- Item checks to return whether or not the client has a phone or not
 local function HasPhone()
-    return QBCore.Functions.HasItem("phone")
+    -- fix this later
+    return true
 end
 
 

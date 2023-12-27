@@ -38,7 +38,14 @@ Config.BossPed = {
 }
 
 Config.SupplierPeds = {
-	`a_m_m_mlcrisis_01`,
+    `a_m_y_skater_01`,
+    `a_m_y_vinewood_03`,
+    `a_m_y_soucent_02`,
+    `a_m_y_soucent_03`,
+    `a_m_y_methhead_01`,
+    `a_m_m_eastsa_01`,
+    `a_m_m_genfat_01`,
+    `a_m_m_mexlabor_01`,
 }
 
 Config.BossLocation = {

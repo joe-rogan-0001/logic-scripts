@@ -160,7 +160,7 @@ return {
 		}, inventory = {
 			{ name = 'weapon_glockpd', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
 			{ name = 'weapon_stungun', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
-			{ name = 'weapon_pumpshotgun_mk2pd', price = 1000, metadata = {registered = true, serial = 'POL'}, license = 'weapon', grade = 3 },
+			{ name = 'weapon_pumpshotgun_mk2pd', price = 1000, metadata = {registered = true, serial = 'POL'}, license = 'weapon'},
 			{ name = 'weapon_m4pd', price = 1000, metadata = {registered = true, serial = 'POL'}, license = 'weapon', grade = 3 },
 			{ name = 'weapon_nightstick', price = 0 },
 			{ name = 'ammo-9', price = 0 },
@@ -182,7 +182,7 @@ return {
 			{ name = 'weapon_railgun', price = 2500, metadata = {registered = true, serial = 'POL', attachments = {}}, license = 'weapon', grade = 4 },
 			{ name = 'emp_cartilage', price = 500 },
 			{ name = 'weapon_ltl', price = 750 },
-			{ name = 'rubberslug', price = 20 },
+			{ name = 'ammo-ltl', price = 20 },
 			{ name = 'camera', price = 2000 },
 		
 		}, locations = {

@@ -234,7 +234,7 @@ RegisterNetEvent('jim-mining:MineOre:Pick', function(data) local Ped = PlayerPed
 	end)
 	if progressBar({label = Loc[Config.Lan].info["drilling_ore"], time = Config.Debug and 1000 or Config.Timings["Pickaxe"], cancel = true, icon = "pickaxe"}) then
 		TriggerServerEvent('jim-mining:Reward', { mine = true, cost = nil })
-		if math.random(1,10) >= 9 then
+		if math.random(1,20) >= 17 then
 			local breakId = GetSoundId()
 			PlaySoundFromEntity(breakId, "Drill_Pin_Break", Ped, "DLC_HEIST_FLEECA_SOUNDSET", 1, 0)
 			toggleItem(false, "pickaxe", 1)
