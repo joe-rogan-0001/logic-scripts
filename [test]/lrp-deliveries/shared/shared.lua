@@ -16,7 +16,7 @@ Config.StopsAmt = {
     ["large"] = {min = 4, max = 8},
 }
 
-Config.PedLocation = vector4(-429.29, -2783.94, 6.0, 10.85)
+Config.PedLocation = vector4(-429.29, -2783.94, -6.0, 10.85)
 Config.Ped = "s_m_y_airworker"
 
 Config.CarSpawns = {

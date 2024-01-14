@@ -567,24 +567,6 @@ Config.Peds = {
     },
    },
    { 
-    model = 's_m_y_garbage', 
-    coords = vector4(-322.25, -1545.78, 30.02, 270.41), 
-    gender = 'male',
-    freeze = true,
-    invincible = true,
-    blockevents = true, 
-    target = { 
-      options = { 
-        {
-          event = 'Renewed-Garbage:client:OpenMainMenu',
-          icon = 'fa-solid fa-cubes',
-          label = 'Talk to Eddie'
-      }
-      },
-      distance = 3,
-    },
-   },
-   { 
     model = 'a_m_m_indian_01', 
     coords = vector4(901.34, -170.06, 73.08, 228.81), 
     gender = 'male',
@@ -781,12 +763,13 @@ Config.Peds = {
  },
   --garbage
   {
-  model = 'a_m_m_indian_01', 
-  coords = vector4(-193.6, -1162.38, 22.67, 262.64), 
+  model = 'csb_cop', 
+  coords = vector4(408.90, -1622.81, 28.29, 230.60), 
   gender = 'male',
   freeze = true,
   invincible = true,
   blockevents = true,
+  scenario = 'WORLD_HUMAN_CLIPBOARD',
   target = { 
     options = { 
       {

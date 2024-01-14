@@ -76,6 +76,7 @@ RegisterNetEvent('Renewed-Deliveries:server:StartJob', function(run, coords)
 
     local deliverData = Player.PlayerData.metadata["delivery"] or 0
     if Config.Route[run] > deliverData then TriggerClientEvent('QBCore:Notify', src, "You don't have enough deliveries to do this route!", "error") return end
+  
     local placeHolder = run == "small" and "boxville4" or run == "medium" and "boxville4" or "pounder"
 
     local v = Config.StopsAmt
