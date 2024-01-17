@@ -652,7 +652,7 @@ function createNpcPickUpLocation()
         if isPlayerInside then
             if whitelistedVehicle() and not isInsidePickupZone and not NpcData.NpcTaken then
                 isInsidePickupZone = true
-                exports['lrp-core']:DrawText(Lang:t("info.call_npc"), Config.DefaultTextLocation)
+                exports['textUi']:Show("Taxi", Lang:t("info.call_npc"), Config.DefaultTextLocation)
                 callNpcPoly()
             end
         else
@@ -674,7 +674,7 @@ function createNpcDelieveryLocation()
         if isPlayerInside then
             if whitelistedVehicle() and not isInsideDropZone and NpcData.NpcTaken then
                 isInsideDropZone = true
-                exports['lrp-core']:DrawText(Lang:t("info.drop_off_npc"), Config.DefaultTextLocation)
+                exports['textUi']:Show("Taxi", Lang:t("info.drop_off_npc"), Config.DefaultTextLocation)
                 dropNpcPoly()
             end
         else
@@ -781,12 +781,12 @@ function setupCabParkingLocation()
     taxiParking:onPlayerInOut(function(isPlayerInside)
         if isPlayerInside and not Notified and Config.UseTarget then
             if whitelistedVehicle() then
-                exports['lrp-core']:DrawText(Lang:t("info.vehicle_parking"), Config.DefaultTextLocation)
+                exports['textUi']:Show("Taxi", Lang:t("info.vehicle_parking"), Config.DefaultTextLocation)
                 Notified = true
                 isPlayerInsideZone = true
             end
         else
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
             Notified = false
             isPlayerInsideZone = false
         end
@@ -831,14 +831,14 @@ CreateThread(function()
         if isPointInside then
             dutyKey = true
             if not PlayerJob.onduty then
-                exports['lrp-core']:DrawText(Lang:t('info.on_duty'),'left')
+                exports['textUi']:Show("Taxi", Lang:t('info.on_duty'), Config.DefaultTextLocation)
             else
-                exports['lrp-core']:DrawText(Lang:t('info.off_duty'),'left')
+                exports['textUi']:Show("Taxi", Lang:t('info.off_duty'), Config.DefaultTextLocation)
             end
             onDuty()
         else
             dutyKey = false
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
         end
     end)
 end)

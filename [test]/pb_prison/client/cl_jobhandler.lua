@@ -149,25 +149,25 @@ RegisterNetEvent('qb-jail:client:ChangeJob', function(selectedJob)
 
     if selectedJob == 'running' then
         startRunningJob()
-        exports['lrp-core']:DrawText('Current Task: Running - Progress: 0%', 'left')
+        exports['textUi']:Show("Prison Task", 'Current Task: Running - Progress: 0%')
         Wait(4000)
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     elseif selectedJob == 'workout' then
         QBCore.Functions.Notify('Make your way to the yard to work out!', 'primary', 2500)
         createJobTaskBlip(vector3(1745.71, 2540.47, 43.59), 'Workout', 311, true)
         createJobTaskBlip(vector3(1643.02, 2530.02, 45.56), 'Workout', 311, true)
         createJobTaskBlip(vector3(1747.63, 2482.18, 45.74), 'Workout', 311, true)
-        exports['lrp-core']:DrawText('Current Task: Workout - Progress: 0%', 'left')
+        exports['textUi']:Show("Prison Task", 'Current Task: Workout - Progress: 0%')
         Wait(4000)
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     elseif selectedJob == 'kitchen' then
         QBCore.Functions.TriggerCallback('qb-jail:server:GetCurrentKitchenTask', function(label, progress)
             if label and progress then
                 QBCore.Functions.Notify('Make your way to the cafetaria for work!', 'primary', 2500)
                 createJobTaskBlip(vector3(1783.57, 2552.57, 45.67), 'Kitchen', 436, true)
-                exports['lrp-core']:DrawText('Current Task: ' .. label .. ' - Progress: ' .. progress .. '%', 'left')
+                exports['textUi']:Show("Prison Task", 'Current Task: ' .. label .. ' - Progress: ' .. progress .. '%')
                 Wait(4000)
-                exports['lrp-core']:HideText()
+                exports['textUi']:Close()
             end
         end)
     elseif selectedJob == 'cleaning' then
@@ -176,36 +176,37 @@ RegisterNetEvent('qb-jail:client:ChangeJob', function(selectedJob)
                 createJobTaskBlip(result[i], 'Cleaning Cells', 456, false)
             end
             QBCore.Functions.Notify('Make your way to the cells for work!', 'primary', 2500)
-            exports['lrp-core']:DrawText('Current Task: Cleaning Cells - Progress: ' .. math.floor(100 * (Config.CleaningTaskAmount - #result) / Config.CleaningTaskAmount) .. '%', 'left')
+            exports['textUi']:Show("Prison Task", 'Current Task: Cleaning Cells - Progress: ' .. math.floor(100 * (Config.CleaningTaskAmount - #result) / Config.CleaningTaskAmount) .. '%')
             Wait(4000)
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
         end)
     elseif selectedJob == 'scrapyard' then
         createJobTaskBlip(vector3(1653.66, 2513.7, 45.56), 'Scrapyard', 728, true)
         QBCore.Functions.Notify('Make your way to the cells for work!', 'primary', 2500)
-        exports['lrp-core']:DrawText('Current Task: Scrapyard - Progress: 0%', 'left')
+        exports['textUi']:Show("Prison Task", 'Current Task: Scrapyard - Progress: 0%')
         Wait(4000)
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     elseif selectedJob == 'electrical' then
         QBCore.Functions.TriggerCallback('qb-jail:server:GetActiveElectricalTasks', function(result)
             for i=1, #result do
                 createJobTaskBlip(Config.Electrical[result[i]].coords.xyz, 'Electrical', 354, false)
             end
             QBCore.Functions.Notify('Go and fix the electrical boxes!', 'primary', 2500)
-            exports['lrp-core']:DrawText('Current Task: Electrical - Progress: ' .. math.floor(100 * (#Config.Electrical - #result) / #Config.Electrical) .. '%', 'left')
+            exports['textUi']:Show("Prison Task", 'Current Task: Electrical - Progress: ' .. math.floor(100 * (#Config.Electrical - #result) / #Config.Electrical) .. '%')
+
             Wait(4000)
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
         end)
     elseif selectedJob == 'lockup' then
         createJobTaskBlip(vector3(1768.65, 2490.387, 45.56), 'Lockup', 730, true)
-        exports['lrp-core']:DrawText('Current Task: Lockup - Stay in the cell block', 'left')
+        exports['textUi']:Show("Prison Task", "Current Task: Lockup , Stay inside your cell!")
         Wait(4000)
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     elseif selectedJob == 'gardening' then
         createJobTaskBlip(vector3(1693.38, 2546.65, 45.56), 'Gardening', 162, true)
         QBCore.Functions.Notify('You are tasked to tend to the garden!', 'primary', 2500)
-        exports['lrp-core']:DrawText('Current Task: Gardening', 'left')
+        exports['textUi']:Show("Prison Task", "Current Task: Gardening")
         Wait(4000)
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     end
 end)

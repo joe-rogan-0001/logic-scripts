@@ -1,26 +1,16 @@
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
 
-author 'Codesign#2715'
-description 'Draw screen UI replacment for 3D text'
-version '1.0'
+author 'Your Name'
+description 'Your Resource Description'
+version '1.0.0'
 
-ui_page {
-    'html/index.html',
-}
+ui_page 'index.html'
 
 files {
-	'html/index.html',
-	'html/js/script.js', 
-	'html/css/stylesheet.css',
-	'html/fonts/*'
+    'index.html',
+    'styles.css',
+    'script.js',
 }
 
-client_scripts {
-	'client/main.lua' 
-}
-
-exports {
-	'DrawTextUi',
-	'HideTextUi',
-} 
+client_script 'client.lua'

@@ -22,7 +22,7 @@ Config = {
         },
         [3] = {
             model = 'ig_barry',
-            coords = vector4(149.46, -1042.09, 29.37, 335.43)
+           coords = vector4(-1311.52, -823.01, 17.15, 220.36)
         },
         [4] = {
             model = 'ig_barry',

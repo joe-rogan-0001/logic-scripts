@@ -1,7 +1,7 @@
 cfg_wheelFitmentPos = {
   ["np-wheelfitment:zone1"] = {
-    heading = 180.58,
-    coords = vector3(135.89, -3030.31, 6.33),
+    heading = 269.30,
+    coords = vector3(426.62, -969.48, 25.52),
   },
   ["np-wheelfitment:zone2"] = {
     heading = 89.03,

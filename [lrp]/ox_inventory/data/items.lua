@@ -408,17 +408,6 @@ return {
 		}
 	},
 
-	["huntingbait"]                = {
-		label = "Hunting Bait",
-		weight = 2000,
-		stack = true,
-		close = true,
-		description = "Bait for hunting animals, works best up north.",
-		client = {
-			image = "huntingbait.png",
-		}
-	},
-
 	["water_bottle"]               = {
 		label = "Bottle of Water",
 		weight = 500,
@@ -6301,5 +6290,72 @@ return {
 		server = {
 			export = "sf-houserobbery.useLockpick"
 		}
+	},
+	["vehiclekey"] = {
+		label = "Vehicle Keys",
+		description = 'This is a car key, take good care of it, if you lose it you probably won\'t be able to use your car',
+		weight = 10,
+		stack = false
+	},
+	
+	["keybag"] = {
+		label = "Key Bag",
+		description = 'This is a key bag, you can store all your keys in it',
+		weight = 10,
+		stack = false
+	},
+	['animal_tracker'] = {
+		label = 'Animal Tracker',
+		weight = 200,
+		allowArmed = true,
+		stack = false,
+	},
+	['campfire'] = {
+		label = 'Campfire',
+		weight = 200,
+		allowArmed = true,
+		stack = false,
+	},
+	
+	['huntingbait'] = {
+		label = 'Hunting Bait',
+		weight = 100,
+		allowArmed = true,
+	},
+	
+	['cooked_meat'] = {
+		label = 'Cooked Meat',
+		weight = 200,
+	},
+	['raw_meat'] = {
+		label = 'Raw Meat',
+		weight = 200,
+	},
+	
+	['skin_deer_ruined'] = {
+		label = 'Tattered Deer Pelt',
+		weight = 200,
+		stack = false,
+	},
+	['skin_deer_low'] = {
+		label = 'Worn Deer Pelt',
+		weight = 200,
+	},
+	['skin_deer_medium'] = {
+		label = 'Supple Deer Pelt',
+		weight = 200,
+	},
+	['skin_deer_good'] = {
+		label = 'Prime Deer Pelt',
+		weight = 200,
+	},
+	['skin_deer_perfect'] = {
+		label = 'Flawless Deer Pelt',
+		weight = 200,
+	},
+	
+	['deer_horn'] = {
+		label = 'Deer Horn',
+		weight = 1000,
 	},
 }

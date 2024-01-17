@@ -60,7 +60,7 @@ Citizen.CreateThread(function()
 									scraping = true
 									ScrapVehicle(vehicle)
 									sleep = 1000
-									exports['lrp-core']:HideText()
+									exports['textUi']:Close()
 									TriggerServerEvent("qb-scrapyard:server:ScrapVehicle", GetVehicleKey(GetEntityModel(vehicle)))
 									if 5 == math.random(1,5) then	
 										PoliceCall()
@@ -568,13 +568,13 @@ CreateThread(function()
 			if isPointInside then
 				local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
 				if IsPedInAnyVehicle(PlayerPedId()) and GetPedInVehicleSeat(vehicle, -1) == PlayerPedId() then
-					exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Scrap Vehicle', 'top')
+					exports['textUi']:Show("Chop Shop", "Press [E] To Scrap Vehicle")
 					inScrapYard = true
 				end
 			else
 				inScrapYard = false
 				scraping = false
-				exports['lrp-core']:HideText()
+				exports['textUi']:Close()
 			end
 		end)
     end

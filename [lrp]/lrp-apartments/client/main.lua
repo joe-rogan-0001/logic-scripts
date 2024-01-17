@@ -398,7 +398,7 @@ CreateThread(function()
 
                     if exittext then
                         exittext = false
-                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>‎ ‎ (E)</b> Exit")  
+                        exports['textUi']:Show("Apartments", "Press [E] To exit") 
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -437,7 +437,7 @@ CreateThread(function()
 
                     if stashtext then
                         stashtext = false
-                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Stash")  
+                        exports['textUi']:Show("Apartments", "Press [E] To access stash") 
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -466,7 +466,7 @@ CreateThread(function()
 
                     if outfittext then
                         outfittext = false
-                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Outfits")  
+                        exports['textUi']:Show("Apartments", "Press [E] To access outfits") 
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -495,7 +495,7 @@ CreateThread(function()
 
                     if logouttext then
                         logouttext = false
-                        exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>(E)</b> Logout")  
+                        exports['textUi']:Show("Apartments", "Press [E] To log out") 
                     end
 
                     if IsControlJustReleased(0, 38) then
@@ -513,7 +513,7 @@ CreateThread(function()
                     shownHeader = true
                     --exports['lrp-menu']:showHeader(headerMenu)
 
-                    exports['textUi']:HideTextUi('hide')
+--                    exports['textUi']:Close()
                     TriggerEvent("iconic-clothingmenu:enable", false)
 
                     exittext = true
@@ -525,8 +525,8 @@ CreateThread(function()
                 if not inRange and shownHeader then
                     shownHeader = false
                     exports['lrp-menu']:closeMenu()
-                    
-                    exports['textUi']:HideTextUi('hide')
+                
+                    exports['textUi']:Close()
                     TriggerEvent("iconic-clothingmenu:enable", false)
 
                     exittext = true
@@ -548,7 +548,7 @@ CreateThread(function()
                         if entertext then
                             entertext = false
                             TriggerEvent('apartments:client:UpdateApartment')
-                            exports['textUi']:DrawTextUi('show', "<b style=color:rgb(97,163,185);>‎ ‎ (E)</b> Enter")  
+                            exports['textUi']:Show("Apartments", "Press [E] To Enter apartment Press [G] To knock") 
                         end
 
                         if IsControlJustReleased(0, 38) then
@@ -604,7 +604,7 @@ CreateThread(function()
                     shownHeader = true
                     TriggerEvent('apartments:client:UpdateApartment')
                     --exports['lrp-menu']:showHeader(headerMenu)
-                    exports['textUi']:HideTextUi('hide')
+                    
                     TriggerEvent("iconic-clothingmenu:enable", false)
 
                     entertext = true
@@ -614,7 +614,7 @@ CreateThread(function()
                     shownHeader = false
                     exports['lrp-menu']:closeMenu()
                     TriggerEvent('apartments:client:UpdateApartment')
-                    exports['textUi']:HideTextUi('hide')
+                   exports['textUi']:Close()
                     TriggerEvent("iconic-clothingmenu:enable", false)
                     entertext = true
                 end

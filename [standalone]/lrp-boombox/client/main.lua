@@ -183,16 +183,16 @@ CreateThread(function()
                   currentData = NetworkGetNetworkIdFromEntity(object)
                     --helpText('Press ~INPUT_CONTEXT~ to play music.')
                     hidetextui = false
-                    exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Interact', 'left') 
+                    exports['textUi']:Show("Boombox", "Press [E] To Interact")
                     textuishown = true
                     if IsControlJustReleased(0, 38) then
                         TriggerEvent('qb-boombox:client:playMusic')
-                        exports['lrp-core']:HideText()
+                        exports['textUi']:Close()
                     end
                     sleep = 5
                 elseif not hidetextui and #(coords - objCoords) > 4 then
                   hidetextui = true
-                  exports['lrp-core']:HideText()
+                  exports['textUi']:Close()
                   exports['lrp-menu']:closeMenu()
                 end
             end

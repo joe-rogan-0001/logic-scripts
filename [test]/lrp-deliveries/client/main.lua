@@ -147,7 +147,7 @@ RegisterNetEvent('Renewed-Deliveries:client:NewPlace', function(location, NetID,
     curLocation = location
 
     if blip then RemoveBlip(blip) end
-    if pZone then exports['lrp-core']:HideText() pZone:destroy() listen = false pZone = nil end
+    if pZone then exports['textUi']:Close() pZone:destroy() listen = false pZone = nil end
     if not doinJob then doinJob = true end
 
     blip = AddBlipForCoord(curLocation)
@@ -168,18 +168,18 @@ RegisterNetEvent('Renewed-Deliveries:client:NewPlace', function(location, NetID,
     pZone:onPlayerInOut(function(isPointInside)
         if isPointInside then
             if prop == nil then return end
-            exports['lrp-core']:DrawText("<b style=color:rgb(97,163,185);>‎ ‎ ‎ ‎ ‎ ‎(E)</b> Deliver Package",'right')
+            exports['textUi']:Show("PostOP Delivery", "Press [E] To Drop Off Package")
             Listen4Control()
         else 
             listen = false
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
         end
     end)
 end)
 
 local jobDone = false
 RegisterNetEvent('Renewed-Deliveries:client:JobDone', function()
-    if pZone then exports['lrp-core']:HideText() pZone:destroy() listen = false pZone = nil end
+    if pZone then exports['textUi']:Close() pZone:destroy() listen = false pZone = nil end
     if blip then RemoveBlip(blip) blip = nil end
     jobDone = true
     curLocation = vector3(-427.09, -2785.91, 6.0)
@@ -194,7 +194,7 @@ RegisterNetEvent('Renewed-Deliveries:client:JobDone', function()
 end)
 
 RegisterNetEvent('Renewed-Deliveries:client:ResetClient', function()
-    if pZone then exports['lrp-core']:HideText() pZone:destroy() listen = false pZone = nil end
+    if pZone then exports['textUi']:Close() pZone:destroy() listen = false pZone = nil end
     if blip then RemoveBlip(blip) blip = nil end
     jobDone = false
 

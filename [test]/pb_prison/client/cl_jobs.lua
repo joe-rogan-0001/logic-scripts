@@ -131,8 +131,7 @@ createCheckpoint = function(checkpoint)
                 currentCheckpoint = 1
                 TriggerServerEvent('qb-jail:server:RequestSentenceReduction', currentJob)
             end
-
-            exports['lrp-core']:DrawText('Progress: ' .. math.floor((currentCheckpoint - 1) * 100 / #obstacles) .. '%', 'left')
+            exports['textUi']:Show("Prison Task", 'Progress: ' .. math.floor((currentCheckpoint - 1) * 100 / #obstacles) .. '%')
 
             -- Delete Existing Obstacle
             Wait(2000)
@@ -326,7 +325,7 @@ RegisterNetEvent('qb-jail:client:ChinUp', function(data)
     end
 
     local progress = 0
-    exports['lrp-core']:DrawText('Progress: ' .. progress .. '%', 'left')
+    exports['textUi']:Show("Prison Task", 'Progress: ' .. progress .. '%')
 
     if data.index == 1 then
         TaskPlayAnimAdvanced(ped, 'amb@prop_human_muscle_chin_ups@male@enter', 'enter', 1643.44, 2527.82, 45.56, 0.0, 0.0, 50.0, 1.0, 1.0, -1, 0, 0, 0, 0)
@@ -335,14 +334,15 @@ RegisterNetEvent('qb-jail:client:ChinUp', function(data)
     end
     Wait(GetAnimDuration('amb@prop_human_muscle_chin_ups@male@enter', 'enter') * 1000)
     progress += 15.4
-    exports['lrp-core']:DrawText('Progress: ' .. progress .. '%', 'left')
+    exports['textUi']:Show("Prison Task", 'Progress: ' .. progress .. '%')
+    exports['textUi']:Show("Prison Task", 'Progress: ' .. progress .. '%', 'left')
 
     CreateThread(function()
         local totalWait = GetAnimDuration('amb@prop_human_muscle_chin_ups@male@base', 'base') * 1000
         for i=1, 5 do
             Wait(totalWait / 5)
             progress += (72.85 / 5)
-            exports['lrp-core']:DrawText('Progress: ' .. progress .. '%', 'left')
+            exports['textUi']:Show("Prison Task", 'Progress: ' .. progress .. '%')
         end
     end)
 
@@ -351,7 +351,7 @@ RegisterNetEvent('qb-jail:client:ChinUp', function(data)
 
     TaskPlayAnim(ped, 'amb@prop_human_muscle_chin_ups@male@exit', 'exit', 8.0, 8.0, -1, 0, 0.0, false, false, false)
     Wait(GetAnimDuration('amb@prop_human_muscle_chin_ups@male@exit', 'exit') * 1000)
-    exports['lrp-core']:HideText()
+    exports['textUi']:Close()
 
     RemoveAnimDict('amb@prop_human_muscle_chin_ups@male@enter')
     RemoveAnimDict('amb@prop_human_muscle_chin_ups@male@base')
@@ -852,12 +852,12 @@ RegisterNetEvent('qb-jail:client:FinishCleaningTask', function(coords)
 end)
 
 RegisterNetEvent('qb-jail:client:CompletedCleaningTask', function(result)
-    exports['lrp-core']:DrawText('Current Task: Cleaning Cells - Progress: COMPLETED', 'left')
+    exports['textUi']:Show("Prison Task", "Task Completed! Good Job!")
     for i=1, #result do
         createJobTaskBlip(result[i], 'Cleaning Cells', 456, false)
     end
     Wait(4000)
-    exports['lrp-core']:DrawText('Current Task: Cleaning Cells - Progress: 0%', 'left')
+    exports['textUi']:Show("Prison Task", 'Current Task: Cleaning Cells - Progress: 0%')
 end)
 
 CreateThread(function()
@@ -1041,7 +1041,7 @@ RegisterNetEvent('qb-jail:client:CompleteElectrical', function(index)
         end
     end
 
-    exports['lrp-core']:DrawText('Current Task: Electrical - Progress: ' .. math.floor(100 * (#Config.Electrical - amount) / #Config.Electrical) .. '%', 'left')
+    exports['textUi']:Show("Prison Task", 'Current Task: Electrical - Progress: ' .. math.floor(100 * (#Config.Electrical - amount) / #Config.Electrical) .. '%')
 end)
 
 RegisterNetEvent('qb-jail:client:ResetElectrical', function()
@@ -1050,9 +1050,9 @@ RegisterNetEvent('qb-jail:client:ResetElectrical', function()
         Config.Electrical[i].completed = false
         createJobTaskBlip(Config.Electrical[i].coords.xyz, 'Electrical', 354, false)
     end
-    exports['lrp-core']:DrawText('Current Task: Electrical - Progress: COMPLETED', 'left')
+    exports['textUi']:Show("Prison Task", 'Task Completed, Well Done!')
     Wait(4000)
-    exports['lrp-core']:DrawText('Current Task: Electrical - Progress: 0%', 'left')
+    exports['textUi']:Show("Prison Task", 'Current Task: Electrical - Progress: 0%')
 end)
 
 CreateThread(function()

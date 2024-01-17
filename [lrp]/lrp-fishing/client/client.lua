@@ -66,7 +66,7 @@ CreateThread(function()
 					TriggerEvent('fishing:SkillBar')
 				else
 					QBCore.Functions.Notify('The Fish Escaped!', 'error')
-					exports['textUi']:DrawTextUi('hide')
+					exports['textUi']:Close() 
 					loseBait()
 				end
 			end
@@ -83,7 +83,7 @@ CreateThread(function()
 			pause = true
 			correct = 1
 			TriggerEvent('3dme:triggerDisplay', 'Fishing Rod Starts to Tug!')
-			exports['textUi']:DrawTextUi('show', "Press [F] to Catch Fish!")
+			exports['textUi']:Show("Fishing", "Press [F] To Catch Fish")
 			input = 0
 			pausetimer = 0
 		end
@@ -150,7 +150,7 @@ end)
 
 
 RegisterNetEvent('fishing:SkillBar', function(message)
-	exports['textUi']:DrawTextUi('hide')
+	exports['textUi']:Close() 
 	if Config.Skillbar == "reload-skillbar" then
 		local finished = exports["reload-skillbar"]:taskBar(math.random(5000,7500),math.random(2,4))
 		if finished ~= 100 then
@@ -278,7 +278,7 @@ RegisterNetEvent('fishing:fishstart', function()
 		local time = 1000
 		QBCore.Functions.Notify('Using Fishing Rod', 'primary', time)
 		Wait(time)
-		exports['textUi']:DrawTextUi('show', "Press [X] to stop fishing at any time")
+		exports['textUi']:Show("Fishing", "Press [X] To Stop Fishing")
 		fishAnimation()
 	else
 		QBCore.Functions.Notify('You need to go further away from the shore', 'error')
@@ -528,9 +528,9 @@ loseBaitAnimation = function()
 	end
 	TaskPlayAnim(ped, animDict, animName, 1.0, -1.0, 1.0, 0, 0, 0, 48, 0)
 	RemoveAnimDict(animDict)
-	exports['textUi']:DrawTextUi('show', "Fish took your bait!")
+	exports['textUi']:Show("Fishing", "Fish Took Your Bait!")
 	Wait(2000)
-	exports['textUi']:DrawTextUi('hide')
+	exports['textUi']:Close() 
 	fishAnimation()
 end
 
@@ -578,7 +578,7 @@ fishAnimation = function()
 			fishingRodEntity()
 			fishing = true
 			Wait(3700)
-			exports['textUi']:DrawTextUi('hide') 
+			exports['textUi']:Close()  
 		else
 		  endFishing()
 		  QBCore.Functions.Notify("You dont have any fishing bait", "error")
@@ -602,7 +602,7 @@ endFishing = function()
 		ClearPedTasks(ped)
 		fishing = false
 		rodHandle = 0
-		exports['textUi']:DrawTextUi('hide')
+		exports['textUi']:Close() 
     end
 end
 

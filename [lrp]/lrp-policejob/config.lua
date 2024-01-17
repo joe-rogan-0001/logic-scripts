@@ -10,7 +10,7 @@ Config.Objects = {
 
 Config.Locations = {
    ["duty"] = {
-       [1] = vector3(440.47, -981.97, 30.69),
+       [1] = vector3(450.01, -984.09, 30.69),
        [2] = vector3(-449.811, 6012.909, 31.815),
    },
    ["vehicle"] = {
@@ -40,15 +40,15 @@ Config.Locations = {
     [1] = vector3(472.51, -991.37, 26.27),
    },
    ["stations"] = {
-       [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
-       [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
-       [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+       [1] = {label = "Police Station", coords = vector4(436.13, -1005.80, 26.99, 180.00)},
+       [2] = {label = "Prison", coords = vector4(1693.96, 2573.82, 50.36, 22.47)},
+       [3] = {label = "Sheriff Station", coords = vector4(1878.50, 3706.25, 38.59, 22.47)},
    },
 }
 
 Config.ArmoryWhitelist = {}
 
-Config.Helicopter = "polas350"
+Config.Helicopter = "airone"
 
 Config.SecurityCameras = {
     hideradar = false,

@@ -9,8 +9,8 @@ Config.QuickJobs = {
 
 Config.PoliceLocations = {
     --Add your poly zone box locations and job name for each store and it will add it to the lrp-target loop above
-    { coords = vec3(451.05, -973.19, 25.7), heading = 180.0, }, -- MRPD UNDERGROUND PARKING
-    { coords = vec3(342.51, -570.98, 28.8), heading = 70.0, }, -- PILL BOX GARAGE
+ --   { coords = vec3(451.05, -973.19, 20.7), heading = 180.0, }, -- MRPD UNDERGROUND PARKING
+ --   { coords = vec3(342.51, -570.98, 20.8), heading = 70.0, }, -- PILL BOX GARAGE
 }
 
 local bench = {}

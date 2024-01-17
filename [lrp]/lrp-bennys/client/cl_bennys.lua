@@ -28,14 +28,14 @@ local bennyLocation
 
 local bennysLocations = {
     ["bennysmrpd"] = {
-        pos = vector3(451.84, -975.96, 25.51),
-        heading = 90.0,
+        pos = vector3(455.19, -974.55, 25.52),
+        heading = 180.0,
         access = 'police'
     },
     ["bennyspillbox"] = {
         pos = vector3(340.39, -570.6, 28.8),
         heading = 160.0,
-        access = 'police'
+        access = 'ambulance'
     },
 }
 

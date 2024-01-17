@@ -341,12 +341,12 @@ CreateThread(function()
     EndTextCommandSetBlipName(blip)
 
     -- Prison Phone
-    exports['lrp-target']:AddBoxZone('prison_services', vector3(1828.75, 2579.79, 46.01), 0.6, 0.5, {
+    exports['lrp-target']:AddBoxZone('prison_services', vec3(1832.0, 2579.85, 46.4), 0.5, 0.5, {
         name = 'prison_services',
         heading = 270,
         debugPoly = false,
-        minZ = 46.00,
-        maxZ = 47.00
+        minZ = 45.00,
+        maxZ = 46.00
     }, {
         options = {
             {

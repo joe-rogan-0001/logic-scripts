@@ -5,26 +5,6 @@ Config.CircleZones = {
 }
 
 Config.BoxZones = {
-    ["boxzone7"] = {
-      name = "pdarmoury",
-      coords = vector3(483.95, -995.33, 30.69),
-      length = 2,
-      width = 8,
-      heading = 0,
-      debugPoly = false,
-      minZ = 29,
-      maxZ = 35,
-      options = {
-          {
-             type = "client",
-             event = "police:client:armourything",
-             icon = "fas fa-bullseye",
-             label = "Open Armoury",
-             job = 'police'
-          },
-      },
-      distance = 2
-  },  
   ["jewelheist"] = {
     name = "jewelheist",
     coords = vector3(-595.8919, -283.6023, 50.3237),

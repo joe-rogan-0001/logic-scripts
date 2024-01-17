@@ -1,4 +1,20 @@
 Garages = {
+    ["MRPD"] = {
+        ["parking"] = {
+            [1] = vector4(426.45, -987.42, 25.52, 269.68),
+            [2] = vector4(426.61, -984.26, 25.52, 269.12),
+            [3] = vector4(426.72, -980.74, 25.52, 269.82),
+        },
+        ["width"] = {
+            [1] = vector2(4.0, 3.0),
+            [2] = vector2(4.0, 3.0),
+            [3] = vector2(4.0, 3.0),
+        },
+        label = "LSPD Personal",
+        blip = vector3(426.61, -984.30, 25.52),
+        showBlip = false
+    },
+
     ["aptgarage"] = {
         ["parking"] = {
             [1] = vector4(-297.59, -990.32, 31.08, 339.98),
@@ -75,7 +91,7 @@ Garages = {
             [5] = vector2(6.0, 3.0),
             [6] = vector2(6.0, 3.0),
         },
-        label = "Casion Parking",
+        label = "Casino Parking",
         blip = vector3(901.8, -9.53, 78.3),
         showBlip = true
     },
@@ -98,9 +114,9 @@ Garages = {
         },
         label = "Tunershop Parking",
         blip = vector3(850.50, -2107.67, 30.58),
-        showBlip = true
+        showBlip = false
     },
-    --[[
+
     ["uwucafe"] = {
         ["parking"] = {
             [1] = vector4(-573.81, -1100.98, 22.18, 270),
@@ -118,11 +134,11 @@ Garages = {
             [5] = vector2(6.0, 3.5),
             [6] = vector2(6.0, 3.5),
         },
-        label = "UwUCafe Parking",
+        label = "Cafe Parking",
         blip = vector3(-577.37, -1104.67, 22.38),
         showBlip = true
     },
-    ]]--
+
     ["legion"] = {
         ["parking"] = {
             [1] = vector4(38.00, -887.70, 30.00, 160),
@@ -232,20 +248,20 @@ GangGarages = {
 JobGarages = {
     ["police"] = {
         ["parking"] = {
-            [1] = vector4(437.55, -996.9, 25.51, 88.84),
-            [2] = vector4(437.79, -991.58, 25.51, 90.57),
-            [3] = vector4(437.81, -986.15, 25.51, 89.89),
-            [4] = vector4(445.06, -986.12, 25.51, 270.05),
-            [5] = vector4(445.43, -991.56, 25.51, 269.31),
-            [6] = vector4(445.44, -996.95, 25.51, 270.32),
+            [1] = vector4(445.42, -969.62, 25.52, 270.33),
+            [2] = vector4(445.42, -973.23, 25.52, 268.91),
+            [3] = vector4(445.42, -976.65, 25.52, 271.05),
+            [4] = vector4(438.65, -969.45, 25.52, 89.64),
+            [5] = vector4(438.52, -973.07, 25.52, 90.10),
+            [6] = vector4(438.42, -976.46, 25.52, 90.62),
         },
         ["width"] = {
-            [1] = vector2(4.0, 5.0),
-            [2] = vector2(4.0, 5.0),
+            [1] = vector2(4.0, 3.0),
+            [2] = vector2(4.0, 3.0),
             [3] = vector2(4.0, 3.0),
             [4] = vector2(4.0, 3.0),
-            [5] = vector2(4.0, 5.0),
-            [6] = vector2(4.0, 5.0),
+            [5] = vector2(4.0, 53.0),
+            [6] = vector2(4.0, 3.0),
         },
         label = "Police",
         job = "police"

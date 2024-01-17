@@ -1172,7 +1172,7 @@ local function listenForKeypress(zoneName, zoneData, isFree)
 
                 OpenMenu(zoneName, 0, 0)
 
-                exports['lrp-core']:HideText()
+                exports['textUi']:Close()
             end
             Wait(0)
         end
@@ -1198,8 +1198,8 @@ end)
 AddEventHandler("polyzonehelper:enter", function(zone, data)
     local currentZone = MenuData[zone]
     if currentZone then
-        --TriggerEvent('iconic-textui:ShowUI', 'show', ("[M] %s"):format(currentZone.text))
-        exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Open Menu', 'top') 
+--        TriggerEvent('iconic-textui:ShowUI', 'show', ("[M] %s"):format(currentZone.text))
+        exports['textUi']:Show("Clothing", "Press [E] To access shop | Do /outfits , /outfitadd 1-20")
         TriggerEvent("iconic-clothingmenu:enable", true)
         listenForKeypress(zone, currentZone, ((data and data.isFree) and true or false))
     end
@@ -1210,7 +1210,7 @@ AddEventHandler("polyzonehelper:exit", function(zone)
     if currentZone then
         listening = false
         --TriggerEvent('iconic-textui:HideUI')
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
         TriggerEvent("iconic-clothingmenu:enable", false)
     end
 end)

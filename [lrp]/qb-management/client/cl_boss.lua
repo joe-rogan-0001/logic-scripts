@@ -6,7 +6,7 @@ local DynamicMenuItems = {}
 -- UTIL
 local function CloseMenuFull()
     exports['lrp-menu']:closeMenu()
-    exports['lrp-core']:HideText()
+    exports['textUi']:Close()
     shownBossMenu = false
 end
 
@@ -356,11 +356,11 @@ CreateThread(function()
                                 if #(pos - coords) <= 1.5 then
                                     nearBossmenu = true
                                     if not shownBossMenu then
-                                        exports['lrp-core']:DrawText(Lang:t("drawtext.label"), 'left')
+                                        exports['textUi']:Show("Taxi", Lang:t('info.on_duty') )
                                         shownBossMenu = true
                                     end
                                     if IsControlJustReleased(0, 38) then
-                                        exports['lrp-core']:HideText()
+                                        exports['textUi']:Close()
                                         TriggerEvent("qb-bossmenu:client:OpenMenu")
                                     end
                                 end

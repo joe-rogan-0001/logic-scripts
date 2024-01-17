@@ -6,15 +6,19 @@ local MugShots = {}
 
 -- Mugshot location  ( Position is the default QBCore Prison Interior )
  
-	x = 473.0
-    y = -1012.59
-    z = 26.86
-    r = {x = 0.0, y = 0.0, z = 359.71}
-    suspectheading = 178.98
-    suspectx = 473.0
-    suspecty = -1011.39
-    suspectz = 25.27
+	x = 473.10
+    y = -1002.51
+    z = 26.79
+    r = {x = -10.0, y = 0.0, z = 90.0}
+    suspectheading = 270.0
+    suspectx = 471.62
+    suspecty = -1002.51
+    suspectz = 25.39
 	
+
+-- -1002.51
+-- -1002.46
+
 -- Mugshot functions
 
 local function TakeMugShot()

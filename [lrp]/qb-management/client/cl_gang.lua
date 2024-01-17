@@ -6,7 +6,7 @@ local DynamicMenuItems = {}
 -- UTIL
 local function CloseMenuFullGang()
     exports['lrp-menu']:closeMenu()
-    exports['lrp-core']:HideText()
+    exports['textUi']:Close()
     shownGangMenu = false
 end
 
@@ -358,11 +358,12 @@ CreateThread(function()
                                 if #(pos - coords) <= 1.5 then
                                     nearGangmenu = true
                                     if not shownGangMenu then
-                                        exports['lrp-core']:DrawText(Lang:t("drawtextgang.label"), 'left')
+                                        exports['textUi']:Show("Taxi","drawtextgang.label") )
+
                                     end
 
                                     if IsControlJustReleased(0, 38) then
-                                        exports['lrp-core']:HideText()
+                                        exports['textUi']:Close()
                                         TriggerEvent("qb-gangmenu:client:OpenMenu")
                                     end
                                 end

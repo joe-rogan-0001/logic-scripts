@@ -224,7 +224,7 @@ Config.FuelUsage = { -- The left part is at percentage RPM, and the right is how
 }
 
 Config.AirAndWaterVehicleFueling = {
-    ['enabled'] = true,
+    ['enabled'] = false,
     ['locations'] = {
         -- MRPD Helipad
         [1] = {

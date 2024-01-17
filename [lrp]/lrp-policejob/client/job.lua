@@ -454,23 +454,23 @@ CreateThread(function()
     end
 end)]]--
 
-exports['lrp-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -982.0529, 30.67834), 0.45, 0.35, {
+exports['lrp-target']:AddBoxZone("MissionRowDutyClipboard", vector3(450.4, -984.05, 30.8), 0.4, 0.4, {
 	name = "MissionRowDutyClipboard",
-	heading = 11.0,
+	heading = 0.0,
 	debugPoly = false,
-	minZ = 30.77834,
+	minZ = 30.47834,
 	maxZ = 30.87834,
 	}, {
 		options = {
 			{
             	type = "client",
             	event = "qb-policejob:ToggleDuty",
-				icon = "fas fa-sign-in-alt",
+				icon = "fas fa-clipboard",
 				label = "Duty Action",
 				job = "police",
 			},
 		},
-		distance = 2.5
+		distance = 1.0
 })
 
 RegisterNetEvent('qb-policejob:ToggleDuty', function()

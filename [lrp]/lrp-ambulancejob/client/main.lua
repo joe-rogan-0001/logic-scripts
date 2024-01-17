@@ -109,10 +109,10 @@ WeaponDamageList = {
 -- Functions
 
 local function GetAvailableBed(bedId)
-    DoScreenFadeIn(200000)
+    DoScreenFadeIn(300000)
     local pos = GetEntityCoords(PlayerPedId())
 
-    SetEntityCoords(PlayerPedId(), 303.30, -571.13, 43.28, false, true, false, false)
+    SetEntityCoords(PlayerPedId(), Config.Locations["beds"][closestBed].coords.x, Config.Locations["beds"][closestBed].coords.y, Config.Locations["beds"][closestBed].coords.z, false, true, false, false)
 
     local retval = nil
     if bedId == nil then
@@ -1039,7 +1039,7 @@ AddEventHandler('qb-ambulancejob:main:getoutofbed', function()
         if isInHospitalBed and canLeaveBed then
             sleep = 0
             local pos = GetEntityCoords(PlayerPedId())
-            DrawText3D(pos.x, pos.y, pos.z, "~g~E~w~ - To get out of bed..")
+            exports['textUi']:Show("Hospital", "Press [E] To Get Out Of Bed")
                 LeaveBed()
                 bedId = nil
 
@@ -1050,11 +1050,40 @@ end)
 
 
 
-exports['lrp-target']:AddCircleZone("pillboxheli", vector3(351.71, -588.41, 74.16), 7, {
-    name = "pillboxheli",
+
+exports['lrp-target']:AddBoxZone("pillboxheli1", vector3(313.09, -1465.40, 45.40), 9, 9, {
+    name = "pillboxheli1",
+    heading =  319.49,
     debugPoly = false,
-    minZ = 74.0,
-    maxZ = 78.46,
+    minZ = 45.39,
+    maxZ = 46.39,
+    }, 
+    { 
+    options = {
+        {
+           type = "client",
+           event = "qb-ambulancejob:job:spawnheli",
+           icon = "fas fa-helicopter",
+           label = "Spawn Heli",
+           job = "ambulance",
+        },
+        {
+          type = "client",
+          event = "qb-ambulancejob:job:deleteheli",
+          icon = "fas fa-helicopter",
+          label = "Delete Heli",
+          job = "ambulance",
+       },
+    },
+    distance = 10
+})
+
+exports['lrp-target']:AddBoxZone("pillboxheli2", vector3(299.26, -1453.52, 45.39), 9, 9, {
+    name = "pillboxheli2",
+    heading = 321.60,
+    debugPoly = false,
+    minZ = 45.39,
+    maxZ = 46.39,
     }, 
     { 
     options = {
@@ -1077,12 +1106,12 @@ exports['lrp-target']:AddCircleZone("pillboxheli", vector3(351.71, -588.41, 74.1
 })
 
 
-exports['lrp-target']:AddBoxZone("pillbox4", vector3(312.43, -593.38, 42.28), 2.0, 1.0, {
+exports['lrp-target']:AddBoxZone("pillbox4", vector3(355.76, -1397.43, 31.24), 1.0, 3.0, {
     name = "pillbox4",
-    heading = 250,
+    heading = 230,
     debugPoly = false,
-    minZ = 40.28,
-    maxZ = 42.29,
+    minZ = 30.24,
+    maxZ = 32.24,
     }, 
     { 
     options = {
@@ -1234,7 +1263,7 @@ exports['lrp-target']:AddBoxZone("pillboxsurgery3", vector3(315.34, -566.38, 44.
 
 CreateThread(function()
 	local models = {
-	  'v_med_bed1',
+	  'gn_med_bed_prop',
 	}
 	exports['lrp-target']:AddTargetModel(models, { 
 		options = {

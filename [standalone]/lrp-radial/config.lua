@@ -74,6 +74,19 @@ rootMenuConfig =  {
     },
 
     {
+        id = 'resethunting',
+        displayName = 'Reset Hunting',
+        icon = "#cuffs-check-inventory", -- change the icon to your liking
+        type = 'client',
+        functionName = 'qb-hunting:client:Reset',
+        enableMenu = function()
+            if vehiclelist then
+                return (not isDead)
+            end
+        end
+    },
+
+    {
         id = "Sling",
         displayName = "Sling",
         icon = "#cuffs-check-inventory",
@@ -1608,14 +1621,14 @@ AddEventHandler("polyzonehelper:enter", function(zone, data)
 
         if plyVeh ~= 0 and GetPedInVehicleSeat(plyVeh, -1) == plyPed then
             inbennys = true
-            exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(F1)</b> Bennys', 'left') 
+            exports['textUi']:Show("Bennys", "[F1] To Access Bennys")
         end
     elseif zone == "bennysPD" and isPolice then
         local plyPed = PlayerPedId()
         local plyVeh = GetVehiclePedIsIn(plyPed, false)
         if plyVeh ~= 0 and GetPedInVehicleSeat(plyVeh, -1) == plyPed then
             inbennys = true
-            exports['lrp-core']:HideText()
+            exports['textUi']:Close()
         end
     end
 end)
@@ -1623,6 +1636,6 @@ end)
 AddEventHandler("polyzonehelper:exit", function(zone)
     if zone == "bennys" or zone == "tunershop" or zone == "bennysPD" then 
         inbennys = false
-        exports['lrp-core']:HideText()
+        exports['textUi']:Close()
     end
 end)

@@ -156,7 +156,7 @@ return {
 			police = 0
 		},
 		blip = {
-			id = 110, colour = 84, scale = 0.7
+			id = 110, colour = 84, scale = 0.0
 		}, inventory = {
 			{ name = 'weapon_glockpd', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
 			{ name = 'weapon_stungun', price = 0, metadata = {registered = true, serial = 'POL'}, license = 'weapon' },
@@ -186,9 +186,9 @@ return {
 			{ name = 'camera', price = 2000 },
 		
 		}, locations = {
-			vec3(451.51, -979.44, 30.68)
+			vec3(462.41, -994.64, 30.69)
 		}, targets = {
-			{ loc = vec3(482.56, -994.83, 30.00), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+			{ loc = vec3(462.49, -995.13, 30.1), length = 1.45, width = 1.6, heading = 462.46, minZ = 30.1, maxZ = 31.1, distance = 2 }
 		}
 	},
 

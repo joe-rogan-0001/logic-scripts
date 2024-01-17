@@ -77,16 +77,16 @@ AddEventHandler("cr-fleeca:startLoot_b", function(data, name)
 
                         if dst1 < 2 then
                             if not helpTextShowing then
-                                exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Grab Loot!', 'top')
+                                exports['textUi']:Show("Fleeca", "Press [E] To Grab Loot!")
                                 helpTextShowing = true
                             elseif dst1 < 0.75 and IsControlJustReleased(0, 38) then
-                                exports['lrp-core']:HideText()
+                                exports['textUi']:Close()
                                 TriggerServerEvent("cr-fleeca:lootup", name, "Loot")
                                 StartGrab(name)
                             end
                         else   
                             if helpTextShowing then
-                                exports['lrp-core']:HideText()
+                                exports['textUi']:Close()
                                 helpTextShowing = false
                             end
                         end
@@ -125,16 +125,16 @@ AddEventHandler("cr-fleeca:startLoot_c", function(data, name)
 
                         if dst1 < 2 then
                             if not helpTextShowing then
-                                exports['lrp-core']:DrawText('<b style=color:rgb(97,163,185);>(E)</b> Grab Loot!', 'top')
+                                exports['textUi']:Show("Fleeca", "Press [E] To Grab Loot!")
                                 helpTextShowing = true
                             elseif dst1 < 0.75 and IsControlJustReleased(0, 38) then
-                                exports['lrp-core']:HideText()
+                                exports['textUi']:Close()
                                 TriggerServerEvent("cr-fleeca:lootup", name, "Loot")
                                 StartGrab(name)
                             end
                         else   
                             if helpTextShowing then
-                                exports['lrp-core']:HideText()
+                                exports['textUi']:Close()
                                 helpTextShowing = false
                             end
                         end
@@ -489,7 +489,7 @@ AddEventHandler('cr-fleeca:uselaptop3', function(item)
 	        local dist = GetDistanceBetweenCoords(plyCoords, v.doors.startloc.x, v.doors.startloc.y, v.doors.startloc.z, true)
             if dist < 1.0 then
                 QBCore.Functions.TriggerCallback('cr-fleeca:server:getCops', function(cops)
-                    if cops >= 4 then
+                    if cops >= 3 then
                         TriggerServerEvent("QBCore:Server:RemoveItem", "heistlaptop3", 1)
                         TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["heistlaptop3"], "heistlaptop3")
                         ClearPedSecondaryTask(ply)

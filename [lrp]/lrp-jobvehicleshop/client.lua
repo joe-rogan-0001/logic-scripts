@@ -177,18 +177,18 @@ CreateThread(function()
 
                     if job == job2 then
 
-                        exports['textUi']:DrawTextUi('show', "[E] To open vehicle shop")  
+                        exports['textUi']:Show("Job Vehicleshop", "Press [E] To Open Menu")
 
                         while isPointInside do
                             Citizen.Wait(0) 
                             if IsControlJustReleased(1, 51) then
                                 TriggerEvent("openmenu")
-                                exports['textUi']:HideTextUi('hide')
+                                exports['textUi']:Close() 
                             end           
                         end
                     end            
                 else
-                    exports['textUi']:HideTextUi('hide')
+                    exports['textUi']:Close() 
                     exports['lrp-menu']:closeMenu()
                 end
                 

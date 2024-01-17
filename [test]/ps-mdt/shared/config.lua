@@ -19,7 +19,7 @@ Config.QBManagementUse = true
 -- Set up your inventory to automatically retrieve images when a weapon is registered at a weapon shop or self-registered.
 -- If you're utilizing lj-inventory's latest version from GitHub, no further modifications are necessary. 
 -- However, if you're using a different inventory system, please refer to the "Inventory Edit | Automatic Add Weapons with images" section in ps-mdt's README.
-Config.InventoryForWeaponsImages = "ox-inventory"
+Config.InventoryForWeaponsImages = "ox_inventory"
 
 -- "cdn-fuel", "cdn-fuel", "cdn-fuel"
 Config.Fuel = "cdn-fuel"
