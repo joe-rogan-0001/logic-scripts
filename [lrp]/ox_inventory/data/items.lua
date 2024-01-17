@@ -6358,4 +6358,12 @@ return {
 		label = 'Deer Horn',
 		weight = 1000,
 	},
+
+
+
+	['tourniquet'] = {
+		label = 'Tourniquet',
+		description = 'Military Certified Tourniquet, used to stop bleeding.',
+		weight = 2000,
+	},
 }

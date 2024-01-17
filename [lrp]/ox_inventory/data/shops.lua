@@ -7,7 +7,7 @@ return {
 			{ name = 'beer', price = 7 },
 			{ name = 'whiskey', price = 10 },
 			{ name = 'vodka', price = 12 },
-			{ name = 'bandage', price = 100 },
+			{ name = 'bandage', price = 200 },
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'burger', price = 10 },
@@ -47,7 +47,7 @@ return {
 			{ name = 'beer', price = 7 },
 			{ name = 'whiskey', price = 10 },
 			{ name = 'vodka', price = 12 },
-			{ name = 'bandage', price = 100 },
+			{ name = 'bandage', price = 200 },
 			{ name = 'lighter', price = 2 },
 			{ name = 'rolling_paper', price = 2 },
 			{ name = 'burger', price = 10 },
@@ -327,6 +327,31 @@ return {
 			vector3(-660.8, -859.28, 24.52)
 		}, targets = {
 			{ loc = vec3(-660.55, -857.24, 23.54), length = 1.0, width = 1.0, heading = 0.0, minZ = 22.0, maxZ = 24.0, distance = 1.5 },
+		}
+	},
+	HospitalCafeteria = {
+		name = 'Cafeteria',
+		inventory = {
+			{ name = 'burger', price = 10 },
+			{ name = 'water', price = 10 },
+			{ name = 'sandwich', price = 10 },
+			{ name = 'cola', price = 10 },
+		}, locations = {
+			vector3(344.62, -1431.63, 32.42)
+		}, targets = {
+			{ loc = vec3(344.62, -1431.63, 32.42), length = 1.0, width = 1.0, heading = 0.0, minZ = 32.23, maxZ = 33.43, distance = 1.5 },
+		}
+	},
+	HospitalPharmacy = {
+		name = 'Pharmacy',
+		inventory = {
+			{ name = 'bandage', price = 150 },
+			{ name = 'tourniquet', price = 500 },
+			{ name = 'firstaid', price = 1500 },
+		}, locations = {
+			vector3(351.48, -1397.89, 32.42)
+		}, targets = {
+			{ loc = vec3(351.48, -1397.89, 32.42), length = 1.0, width = 1.0, heading = 0.0, minZ = 32.23, maxZ = 33.43, distance = 1.5 },
 		}
 	},
 	PerformanceParts = {

@@ -19,23 +19,43 @@ return {
 	},
 
 	{
-		coords = vec3(301.3, -600.23, 43.28),
+		coords = vec3(379.51, -1411.98, 32.9),
 		target = {
-			loc = vec3(301.82, -600.99, 43.29),
-			length = 0.6,
-			width = 1.8,
+			loc = vec3(379.51, -1411.98, 32.9),
+			length = 1.5,
+			width = 2.0,
 			heading = 340,
-			minZ = 43.34,
-			maxZ = 44.74,
-			label = 'Open personal locker'
+			minZ = 32.9,
+			maxZ = 33.4,
+			label = 'Open Stash'
 		},
 		name = 'emslocker',
-		label = 'Personal Locker',
-		owner = false,
-		slots = 40,
+		label = 'Hospital Stash',
+		owner = true,
+		slots = 20,
 		weight = 70000,
 		groups = {['ambulance'] = 0}
 	},
+
+	{
+		coords = vec3(377.31, -1411.9, 32.9),
+		target = {
+			loc = vec3(377.31, -1411.9, 32.9),
+			length = 2.5,
+			width = 2.0,
+			heading = 340,
+			minZ = 32.9,
+			maxZ = 33.4,
+			label = 'Open Stash'
+		},
+		name = 'emsstash',
+		label = 'Hospital Stash',
+		owner = false,
+		slots = 200,
+		weight = 1000000,
+		groups = {['ambulance'] = 0}
+	},
+
 	{
 		coords = vec3(-1193.75, -1184.26, 11.84),
 		target = {
@@ -107,5 +127,23 @@ return {
 		slots = 200,
 		weight = 3000000,
 		groups = {['gambino'] = 0}
+	},
+	{
+		coords = vec3(1397.35, 1131.6, 114.5),
+		target = {
+			loc = vec3(1397.35, 1131.6, 113.5),
+			length = 2.0,
+			width = 0.05,
+			heading = 0,
+			minZ = 112.5,
+			maxZ = 114.5,
+			label = 'Open Gang Stash'
+		},
+		name = 'guatemalagangstash',
+		label = 'Gang Stash',
+		owner = false,
+		slots = 200,
+		weight = 2000000,
+		groups = {['guatemala'] = 0}
 	},
 }
